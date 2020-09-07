@@ -1,0 +1,95 @@
+*{padding: 0;margin: 0}
+a{color: #4D4D4D;}
+a:link{text-decoration: none;}
+h1,p{margin: 0}
+body{
+    font-family: "Microsoft YaHei", "Arial", sans-serif;
+}
+.app-banner{
+    width: 100%;
+    min-width: 1200px;
+    height: 500px;
+    background: url("../image/app-banner.png") no-repeat center center;
+}
+.app-banner img{
+    width: 100%;
+}
+.breadcrumb_nav{
+    width: 1200px;
+    line-height: 50px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 12px
+}
+.breadcrumb_nav img{display: inline-block;width: 14px;height: 14px;margin-top: -3px}
+.breadcrumb_nav a{color: #666666}
+.breadcrumb_nav a:hover{color: #3197FA}
+.main{
+    width: 100%;
+    background: #F5F5F7
+}
+.main .main_content{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.sideBar{
+    float: left;
+}
+.sideBar_title,.right_title{
+    font-size: 22px;
+    color: #4D4D4D;
+    font-weight:600;
+    margin-bottom: 30px;  
+}
+.sideBar_nav li{
+    line-height: 54px;
+    width: 230px;
+    border-left: 1px solid #fff;
+    background: #fff;
+    font-size: 16px;
+    position: relative;
+    padding-left: 37px;
+    box-sizing: border-box;
+    border: 1px solid #EFEFEF;
+    margin-top: -1px
+}
+.sideBar_nav li a{width: 100%;height: 100%;display: block}
+.sideBar_nav .active{
+    background: #E4F2FF;
+    border-left: 1px solid #3197FA
+}
+.sideBar_nav .active a{
+    color: #3197FA;
+}
+.sideBar .icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -8px;
+    margin-left: 10px;
+    background-image: url(../image/icon.png);
+    background-repeat: no-repeat;
+}
+.sideBar_icon{
+    background-position: 0 0
+}
+.sideBar_icon1{
+    background-position: 0 -17px
+}
+.sideBar_icon2{
+    background-position: 0 -34px
+}
+.sideBar_icon3{
+    background-position: 0 -51px
+}
+.sideBar_icon4{
+    background-position: 0 -68px
+}
+.sideBar_icon5{
+    background-position: 0 -85px
+}

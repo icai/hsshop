@@ -1,0 +1,141 @@
+.form-horizontal {
+    margin-bottom: 30px;
+    width: auto;
+}
+.list-filter-form .filter-groups {
+    margin-right: -10px;
+    float: left;
+}
+.form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+.list-filter-form.form-horizontal .control-label {
+    width: 110px;
+    font-size: 12px;
+    float:left;
+    text-align:right;
+}
+.form-horizontal .control-label {
+    width: 120px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.list-filter-form .filter-groups .control-label select {
+    width: 110px;
+    margin-top: -5px;
+    border-color: #e5e5e5;
+    border-radius: 2px;
+    outline: none;
+    text-align: center;
+}
+.list-filter-form .filter-groups select, .list-filter-form .filter-groups input {
+    width: 130px;
+    height: 28px;
+    font-size: 12px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list-filter-form.form-horizontal .controls {
+    margin-left: 115px;
+}
+.form-horizontal .controls {
+    margin-left: 130px;
+    word-break: break-all;
+   /* position:relative;
+    top:-26px;*/
+}
+.list-filter-form .filter-groups select, .list-filter-form .filter-groups input {
+    width: 130px;
+    height: 28px;
+    font-size: 12px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-color: #e5e5e5;
+    border-radius: 2px;
+    border:1px solid #ddd;
+}
+.pull-left {
+    float: left;
+}
+.list-filter-form .time-filter-groups input {
+    width: 130px;
+    height:28px;
+    border:1px solid #e5e5e5 
+}
+input[type="text"] {
+    font-size: 12px;
+}
+.list-filter-form .time-filter-groups .date-quick-pick {
+    display: inline-block;
+    color: #07d;
+    cursor: pointer;
+    padding: 2px 4px;
+    border: 1px solid transparent;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+.list-filter-form .time-filter-groups .date-quick-pick+.date-quick-pick {
+    margin-left: 0;
+}
+.zent-btn-primary:link, .zent-btn-primary:visited, .zent-btn-primary:focus {
+    color: #fff;
+}
+.zent-btn:link, .zent-btn:visited, .zent-btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+.zent-btn-primary {
+    color: #fff !important;
+    background: #3283fa !important;
+    border-color: #3283fa;
+}
+.zent-btn {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #bbb;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    margin-right:10px;
+}
+.controls a:hover{
+    border:1px solid #3283fa;
+}
+.js-order-text{
+    border:1px solid #e5e5e5    
+}
+.list-filter-form .time-filter-groups .date-quick-pick.current {
+    background: #fff;
+    border-color: #07d;
+}
+
+.mgb15{margin-bottom:15px;}
+/*公共样式*/
+.green_3c3{color:#3c3;font-weight:bold;}
+.f14{font-size:14px;}
+.w50{width:50px;}
+.chart_items{min-height:300px;border:1px solid #e4e4e4;}
+/*交易导航*/
+.trade_nav{border-bottom:1px solid #e5e5e5;}
+.trade_nav:after{content:"";display:block;clear:both;}
+.trade_nav li{min-width:100px;float:left;text-align:center;padding:10px;}
+.trade_nav li.hover{border-bottom:2px solid #f60;}
+.trade_nav li a{display:inline-block;text-align:center}

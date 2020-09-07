@@ -1,0 +1,266 @@
+ /**头部区域**/
+        
+.order_info_header {
+    margin-bottom: 20px;
+}
+
+.order_info_header .border_right {
+    border-right: 1px dotted #ccc;
+}
+
+.order_info_header a {
+    color: #38f;
+    cursor: pointer;
+    text-align: center;
+}
+
+.order_info_header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: flex;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0px;
+}
+
+.order_info_header div {
+    width: 20%;
+}
+
+.order_info_header div p {
+    text-align: center;
+}
+
+.order_info_header div p:last-child {
+    font-size: 12px;
+}
+
+.order_info_header .block {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+/**7天趋势**/
+
+.subcontent {
+    position: relative;
+    background: #f8f8f8;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.subcontent h3 {
+    display: inline-block;
+    margin: 0 12px 0 0;
+    padding: 0 0 0 10px;
+    border-left: 4px solid #f70;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.subcontent nav {
+    display: inline-block;
+}
+
+.subcontent nav>span {
+    display: inline-block;
+}
+
+a.new-window {
+    color: blue;
+}
+
+.subcontent nav>span:last-of-type::after {
+    content: '';
+    margin: 0;
+}
+
+.subcontent nav>span::after {
+    content: '-';
+    color: #ccc;
+    margin: 0 3px 0 5px;
+}
+
+.ui-block-head-help {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+
+.ui-block-head-help>a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    background: #bbb;
+    color: #fff;
+}
+
+.ui-block-head-help>a:hover {
+    background: #4b0;
+}
+
+.ui-block-head-help>a:after {
+    content: "?";
+}
+/**弹出框**/
+
+.popover.bottom {
+    margin-top: 5px;
+}
+
+.popover-help-notes,
+.popover-intro {
+    width: auto;
+    z-index: 1060;
+}
+
+.popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1010;
+    display: none;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    max-width: none;
+}
+
+.popover-help-notes.bottom:not(.center) .arrow,
+.popover-intro.bottom:not(.center) .arrow {
+    margin-left: -5px;
+}
+
+.popover.bottom .arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #000000;
+}
+
+.popover .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.popover-help-notes.bottom:not(.center) .popover-inner,
+.popover-intro.bottom:not(.center) .popover-inner {
+    margin-left: -240px;
+}
+
+.popover-inner {
+    padding: 3px;
+    width: 280px;
+    overflow: hidden;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.popover-content {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    background-clip: padding-box;
+}
+
+.popover-help-notes .popover-inner p,
+.popover-intro .popover-inner p {
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.popover-content p,
+.popover-content ul,
+.popover-content ol {
+    margin-bottom: 0;
+}
+
+.popover-help-notes .popover-inner p:last-of-type,
+.popover-intro .popover-inner p:last-of-type {
+    margin-bottom: 0;
+}
+/**尾部**/
+/*会员信息统计图表*/
+
+.echarts {
+    padding-top: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.echarts:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.echarts div {
+    box-sizing: border-box;
+}
+
+.echarts .echarts_left {
+    min-height: 250px;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.echarts_right {
+    min-height: 250px;
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+ /*区域分布图*/
+                
+.area_echarts {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.area_echarts table{
+    border:1px solid #ddd;
+    margin-bottom:0;
+}
+.area_echarts table tr th{
+    padding:15px 0;
+    background:#f8f8f8;
+}
+.area_echarts table tr:nth-child(even){background:#f8f8f8;}
+.area_echarts:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.area_echarts div {
+    box-sizing: border-box;
+}
+
+.area_echarts .left_area {
+    min-height: 350px;
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+
+.area_echarts .range {
+    min-height: 350px;
+    width: 40%;
+    float: right;
+}

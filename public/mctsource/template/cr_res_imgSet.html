@@ -1,0 +1,24 @@
+<div class="editer-content">
+        <div class="control-group">
+            <label class="control-label">
+                标题：
+            </label>
+            <div class="controls page_title">
+                <input class="form-control" type="text" name="title"  ng-model="editors[index].title">
+            </div>
+            <label class="control-label res_time">广告图：</label>
+            <div class="controls page_title res_time addImges" ng-repeat="item in editors[index]['sub_rules']">
+                <div class="images-box type-content">
+                    <img ng-src="{{item.image}}" ng-show="item.rule_image_flag">
+                    <a class="close-modal js-delete-goods small" ng-show="item.rule_image_flag" data-id="" title="删除" ng-click="removeShareImg(0)">×</a>
+                    <a href="javascript:void(0);" class="js-add-goods add-goods" ng-click="addShareImages(0)" ng-show="!item.rule_image_flag">
+                        <i class="icon-add"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="js-add-goods add-goods" style="left: 60px;" ng-click="addShareImages(0)" ng-show="item.rule_image_flag">
+                        <i class="icon-add"></i>
+                    </a>
+                </div>
+                <span class="advise" style="color: #999999;font-size: 12px">建议图片尺寸为320*80mm</span> 
+            </div>
+        </div>
+    </div>

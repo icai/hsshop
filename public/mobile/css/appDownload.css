@@ -1,0 +1,138 @@
+.banner img {
+    width: 100%;
+}
+.tool-box {
+    padding: .71rem 0 1rem;
+    background-color: #EFF5F9;
+    text-align: center;
+}
+.year{
+    font-size: .86rem;
+    color: #A1A8AF;
+}
+.tool-title {
+    color: #333;
+    font-size: .4rem;
+    padding: .61rem 0 .95rem;
+}
+.swiper-slide img{
+    width: 5.38rem;
+}
+.service-box {
+    background-color: #fff;
+    padding: 1.08rem 0 1.4rem;
+    text-align: center;
+}
+.service-title {
+    font-size: .4rem;
+    color: #333;
+}
+.icon-container {
+    margin-top: .99rem;
+    font-size: 0;
+}
+.icon-item {
+    display: inline-block;
+    width: 50%;
+    height: 3rem;
+}
+.icon-item img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.service-t1 {
+    font-size: .32rem;
+    color: #333;
+    margin-top: .25rem;
+}
+.service-t2 {
+    font-size: .24rem;
+    color: #929395;
+    margin-top: .14rem;
+}
+.footer-ercode {
+    margin-top: .43rem;
+    text-align: center;
+}
+.er-code-img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.down-tips {
+    color: #66676A;
+    font-size: .25rem;
+    margin-top: .24rem;
+}
+.phone-icon-box {
+    margin-top: .71rem;
+    text-align: center;
+}
+.phone-item {
+    display: inline-block;
+    width: 2rem;
+    height: .66rem;
+    line-height: .66rem;
+    background-color: #4B4B4B;
+    margin-right: .6rem;
+    text-align: left;
+    border-radius: .06rem;
+}
+.phone-item:last-child{
+    margin-right: 0;
+}
+.phone-item span {
+    color: #fff;
+    font-size: .3rem;
+}
+.phone-icon {
+    float: left;
+    width: .32rem;
+    height: .36rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: .15rem .13rem 0 .3rem;
+}
+.icon1 {
+    background-image: url(../images/ios-icon.png)
+}
+.icon2 {
+    background-image: url(../images/android-icon.png)
+}
+.down-link-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+.logo-footer {
+    width: .78rem;
+    height: .78rem;
+    margin-left: .3rem;
+    margin-right: .19rem;
+}
+.footer-tips{
+    color: #fff;
+    font-size: .32rem;
+    font-weight: 700;
+}
+.down-link {
+    color: #fff;
+    background-color: #3197FA;
+    padding: .2rem .41rem;
+    font-size: .3rem;
+    border-radius: .1rem;
+    line-height: 1;
+    float: right;
+    margin-right: .3rem;
+    margin-top: .21rem; 
+}
+.down-link:link,
+.down-link:active,
+.down-link:visited{
+    color: #fff;
+}

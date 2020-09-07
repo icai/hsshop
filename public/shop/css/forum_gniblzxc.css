@@ -1,0 +1,94 @@
+html,body{height:100%;}
+.body-wrapper{width:100%;max-width:760px;min-width:300px;margin:auto;min-height:100%;}
+ 
+/*顶部*/
+.header{display: flex;display:-webkit-flex;height:1.8rem;background:url(../images/community_bg@2x.png) no-repeat;background-size: 100% 100%;background-position: center;}
+.header-left{flex:1;-webkit-flex:1;-ms-flex:1;padding:0.3rem 0.2rem;}
+.header-left .head-img{width:1.2rem;height:1.2rem;border-radius: 50%;}
+.header-right{flex:6;-webkit-flex:6;-ms-flex:6;color:#fff; }
+.header-right-title{font-size:0.3rem;font-weight: 600; margin-top:0.44rem;color:#fff;}
+.header-right-content{font-size:0.24rem;margin-top:0.2rem;color:#fff;}
+.header-right-content span{margin-right:0.1rem;}
+/*导航*/
+.post-msg-list{width:100%;display: flex;display: -webkit-flex;display: -ms-flex;-webkit-justify-content: space-around;-ms-justify-content: space-around;justify-content: space-around;padding:0.22rem;box-sizing: border-box;font-size:0.28rem;}
+.post-msg-list li{text-align:center;flex:1;-webkit-flex:1;-ms-flex:1;position: relative;}
+.post-msg-list li a{display: block;width:84%;margin:auto; height:1rem;}
+.post-msg-list li a.active{border:1px solid #ff4444;border-radius: 5px;}
+.post-msg-list li .br-i{height:.45rem;border-right:1px solid #ccc;position: absolute;right:0;top:50%;margin-top:-0.225rem;}
+.post-msg-list li p{font-size:0.28rem;color:#333;margin-top: 5px;}
+.post-nav-list{height:0.68rem;display: flex;display: -webkit-flex;justify-content: space-between;border-bottom: 1px solid #E6E6E6;margin-top:0.22rem;}
+.post-nav-list li{font-size:0.28rem;color:#666;text-align: center;flex:1;-webkit-flex:1;-ms-flex:1;}
+.post-nav-list li a{display: inline-block;height:0.68rem;padding:0 10px;font-weight: 600;}
+.post-nav-list li.active a{color:#ff4444;border-bottom:2px solid #ff4444;}
+/*内容*/
+.container{padding:0 0.22rem 0.22rem;font-size:0.24rem;}
+.brnone{border-right:none !important;}
+ 
+/*文章列表*/
+.aricle-wrapper{}
+.aricle-list{margin-top:0.4rem;}
+.aricle-list-user,.aricle-list-detail{display: flex;display:-webkit-flex;border-bottom:1px solid #E6E6E6;padding-bottom:0.2rem;}
+.aricle-list-detail{margin-top:0.2rem;}
+.aricle-list-detail a{color:#57A7FE;}
+.aricle-list-user-head{flex:1;-webkit-flex:1;-ms-flex:1;}
+.aricle-list-user-head img{width:0.8rem;height:0.8rem;border-radius: 50%}
+.aricle-list-user-info{flex:6;margin-left:0.15rem;}
+.aricle-list-user-info .user_name{font-size:0.3rem;font-weight: 600;color:#000;}
+.aricle-list-user-info .create_time{margin-top:0.04rem;}
+.aricle-list-img{width:100%;}
+.aricle-list-img img{visibility: hidden;}
+.aricle-list-img .aricle-img-1{display: block; width:60%; overflow:hidden;margin-top:.2rem; float: left;}
+.aricle-list-img .aricle-img-1 .w-img{height:auto !important;width:100% !important;}
+.aricle-list-img .aricle-img-1 .h-img{height: 5rem !important;width:auto !important;}
+.aricle-list-img .aricle-img-3{ overflow:hidden;width: 2.1rem;height: 2.1rem;margin-top:.2rem;float:left;width:30%;margin-left:5%;}
+.aricle-list-img .aricle-img-3 .w-img{height:auto !important;width:100% !important;}
+.aricle-list-img .aricle-img-3 .h-img{height: 100% !important;width:auto !important;}
+.aricle-list-title{font-size: 0.3rem;font-weight: 600;color: #000;overflow:hidden;text-overflow: ellipsis;white-space:nowrap;margin-top:.3rem;}
+.aricle-list-content{margin-top: .15rem;height:40px;overflow:hidden;line-height:20px;}
+.aricle-list-comment{margin:0.3rem 0 .3rem 1.1rem;font-size: 0.3rem;}
+.aricle-title-wrapper{background-color:#E6E6E6;padding: .3rem;margin-top:.3rem;border-radius: 3px;position: relative;}
+.aricle-title-wrapper::before{content: "";position: absolute;top: -12px;left: 20px;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 15px solid #E6E6E6;}
+.aricle-zan-wrapper{text-align:right;margin-top:0.2rem;}
+.aricle-zan,.aricle-comment{color:#B3B3B3;vertical-align: middle;display: inline-block;height: 0.34rem;padding-left: 0.4rem;line-height: 0.4rem;background-size: .37rem .37rem;background-repeat: no-repeat;}
+.aricle-zan-01{background-image:url(../images/laud01@2x.png);}
+.aricle-zan-02{background-image:url(../images/laud02@2x.png);}
+.aricle-comment-01{background-image:url(../images/comment01@2x.png);} 
+.aricle-comment-02{background-image:url(../images/comment02@2x.png);} 
+.aricle-close{position: absolute;top:10px;right:0;display: inline-block;width:0.52rem;height:0.52rem;background:url(../images/delete@2x.png) no-repeat;background-size: 0.52rem 0.52rem;}
+.aricle-btn-comment{position: absolute;top:15px;right:0;display: inline-block;width:0.4rem;height:0.4rem;background:url(../images/reply.png) no-repeat;background-size: 0.4rem 0.4rem;}
+/*下拉刷新样式*/
+.drop-refresh{text-align: center;font-size:0.3rem;line-height: 40px;}
+
+/*底部*/
+.footer{position: fixed;bottom:0;left:0;width:100%;height:1rem;text-align: center;border-top:1px solid #DADADA;background-color:#fff;}
+.footer .footer-list{font-size:0.24rem;padding:.15rem 0;display: flex;display: -webkit-flex;-ms-justify-content: space-between;-webkit-justify-content: space-between;justify-content: space-between;}
+.footer .footer-list li{flex:1;-webkit-flex:1;-ms-flex:1;}
+.footer .footer-icon{background-size: .5rem .5rem;background-repeat: no-repeat;padding-left:.6rem;display: inline-block;height:0.5rem;line-height:0.58rem; }
+.footer .home-icon{background-image:url(../images/home_icon1@2x.png);color:#ff4444;}
+/* .footer .post-icon{background-image:url(../images/post@2x.png);    font-size: 0.3rem;font-weight: 600;background-color: #ff4444;color: #fff;display: block;padding: 5px 0;background-position: .5rem 7px;border-radius: 30px;background-size:0.45rem 0.45rem;} */
+/* update by 倪凯嘉 2019-06-13 营销-微社区（公众号）底部发帖子按钮样式优化 start */
+.footer .post-icon{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.3rem;
+  font-weight: 600;
+  background-color: #ff4444;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 30px;
+}
+.footer .post-icon .post-img{
+  width:0.45rem;
+  height: 0.45rem;
+  margin-right: 5px;
+  background-image:url(../images/post@2x.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+/* update by 倪凯嘉 2019-06-13 营销-微社区（公众号）底部发帖子按钮样式优化 end */
+.footer .my-icon{background-image:url(../images/my_icon2@2x.png);}
+.footer .message-num{position: absolute;left: 10px;top: -7px;color: #fff;background-color: #ff4444;border-radius: 50%;width: .3rem;height: .3rem;line-height: .3rem;font-size:0.24rem;overflow: hidden;}
+
+

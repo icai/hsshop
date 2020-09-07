@@ -1,0 +1,27 @@
+<div class="editer-content">
+    <div>
+        <form class="form-horizontal edit-custom-coupon" novalidate="" onsubmit="return false">
+            <div class="control-group" >
+                <label class="control-label">拼团分类：</label>
+                <div class="controls">
+                    <ul class="coupon-list" ng-show="editors[index]['pages'].length">
+                        <li ng-repeat="title in editors[index]['pages']">
+                            <div class="coupon-list-content">
+                                <div class="coupon-list-summary">
+                                    <span class="label label-success">分类</span>
+                                    <span v-bind="coupon.name"></span>
+                                    <span class="c-gray">（{{title.name}}）</span>
+                                </div>
+                            </div>
+                            <div class="coupon-list-opts">
+                                <a href="javascript:void(0);" class="js-remove-coupon" ng-click="deleteSpellPage($index)">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="control-action js-add-coupon" ng-click="showSpellTitleModel()" ng-hide="editors[index]['couponList'].length==3">添加分类</a>
+                    <input type="hidden" name="coupon">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

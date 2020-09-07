@@ -1,0 +1,37 @@
+<div class="control-group adv_images" ng-show="editor['slideLists'].length">
+    <div class="custom-image-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="image in editor['slideLists'] track by $index">
+                    <a href="javascript: void(0);">
+                        <h3 class="title image_text_title" ng-show="image['title']">{{image['title']}}</h3>
+                        <img ng-src="{{image['cover']}}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="swiper-pagination image_text_pagination">
+        <span class="swiper-pagination-switch {{image['pagagtionClass']}}" ng-repeat="image in editor['slideLists'] track by $index"></span>
+    </div> -->
+    <div class="component-border"></div>
+</div>
+<div class="js-collection-region ti_list">
+    <ul class="tabber tabber-bottom red clearfix tabber-n2 ">
+        <a class="ng-binding ng-scope" ng-class="$index==0 ? 'current':''" ng-style="{'width':editor.width + '%'}" ng-repeat="kind in editor['lists']">{{kind.title}}</a>
+        <!-- <a class="ng-binding ng-scope" style="width: 33.3333%;">商品分组</a> -->
+    </ul>
+    <div>
+        <ul>
+            <li ng-repeat = "item in editor['lists'][0]['lists']">
+                <div class="image">
+                    <img ng-src="{{item.cover}}">
+                </div>
+                <div class="ti_content">
+                    <p class="image_title">{{item.title}}</p>
+                    <p class="image_desc">{{item.digest}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

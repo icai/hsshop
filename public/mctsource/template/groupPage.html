@@ -1,0 +1,19 @@
+<div class="control-group">
+    <div class="group_wrap" style="min-height: 323px;">
+		<div class="list_left">
+			<p class="list_left_item" ng-class="list.isActive ? 'active':''" ng-repeat="list in editor['classifyList']" ng-click="leftNav(list,editor['classifyList'],$index)">
+				{{list.category_name}}
+			</p>
+		</div>
+        <div class="list_right">
+        	<img class="banner" ng-src="{{host+editor['classifyList'][navindex].thumbnail}}" alt="" />
+        	<p>{{editors[1]['classifyList'][navindex].category_name}}</p>
+        	<div class="list_right_warp">
+        		<div class="list_right_item" ng-repeat="list in editor['classifyList'][navindex]['subClassifyList']">
+        			<img ng-src="{{host+list.thumbnail}}" alt="" />
+        			<span>{{list.category_name}}</span>
+        		</div>
+        	</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*main*/
+.bd_main{padding-left: 20px;}
+.bd_img img{display: inline-block;}
+.bd_img{border-bottom: 1px solid #e5e5e5;height: 40px;padding-left: 20px;font-size: 30px;}
+.bd_box{padding-left: 20px;}
+.bd_box div{line-height: 40px;height: 40px;}
+.bd_box div i{display: inline-block;width: 120px;}
+.bd_box div span{padding-left: 40px;}
+.bd_box div select{margin-left: 40px;}
+.bd_box div textarea{margin-left: 40px;}
+#bd_txt{height: 320px;overflow: hidden;}
+#bd_txt p{float: left;width: 120px;}
+#bd_txt textarea{float: left;line-height: 20px;width:500px ;height:300px ;}
+#anniu{height: 60px;background: #f9f9f9;display: flex;justify-content: flex-end;align-items: center;margin-top: 20px;}
+.bd_btnq{width:40px ;height:30px ;line-height:30px ;background: #f9f9f9;border: 0;border:1px solid #e5e5e5;}
+.bd_btnt{width:40px ;height:30px ;line-height:30px ;background: #38f;border: 0;border:1px solid #e5e5e5;margin:0 10px 0 10px;color: #fff;}
+
+

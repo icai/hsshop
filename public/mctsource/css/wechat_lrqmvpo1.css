@@ -1,0 +1,35 @@
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*右侧内容开始*/
+.right_content .box{position: relative;display: inline-block;}
+.right_content .btn-success{font-size: 12px;padding: 6px 12px;border-radius: 2px;margin-top: 20px;margin-bottom: 20px;}
+.right_content .new_cap{display: none; position: absolute;top: 60px;left: 0;width: 340px;padding: 15px;background: #fff;border: 1px solid #f2f2f2;box-shadow: 2px 3px 10px rgba(0,0,0,0.4);}
+.new_cap .details{background: #FFF5CB;border: 1px solid #FDEEB2;color: #333;font-size: 12px;padding: 10px;}
+.new_cap ul{margin-top: 20px;}
+.new_cap li{width: 136px;float: left;border: 1px solid #e5e5e5;padding: 10px;}
+.new_cap li:first-child{margin-right: 20px;}
+.new_cap li:first-child div{height: 100px;margin-top: 10px;}
+.new_cap li:last-child div{height: 45px;margin-top: 10px;}
+/*数据列表开始*/
+.data_list table{min-width: 800px;}
+.data_list .title{width: 35%;text-align: left;}
+.data_list .set_time{width: 15%;text-align: left;}
+.data_list .prev_send{width: 15%;text-align: left;}
+.data_list .options{width: 35%;text-align: right;position: relative;}
+.data_list tbody .set_time{font-size: 12px;}
+.data_list tbody .prev_send{font-size: 12px;}
+/*列表标题内容开始*/
+.data_list .item{width: 250px;}
+.data_list .item .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 2px 2px 0 0;}
+.data_list .item .green{padding: 0 3px;background: #3197FA;color: #fff;border-radius: 2px;margin-right: 10px;}
+.data_list .item .img_text a{font-size: 13px;}
+.data_list .item .read_all{cursor: pointer; padding: 2px 10px;border: 1px solid #eee;border-radius: 0 0 2px 2px;margin-top: -1;font-size: 13px;color: #666;}
+/*页码*/
+.data_list .page{padding-top: 20px;border-top: 2px solid #ddd;font-size: 12px;}
+
+.table>thead>tr>th{border-bottom:2px solid #E5E5E5;}
+.table>tbody>tr>td{border-top:1px solid #E5E5E5;}
+.co_blue{color: #3197FA;}
+.co_blue:hover {color: #3197FA;}
+a:hover{color: #3197FA;}
+.co_38f {color: #3197FA;}

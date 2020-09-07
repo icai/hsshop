@@ -1,0 +1,19 @@
+.hide{display: none;}
+label{font-weight: normal;}
+.verLine{margin: 0 5px;}
+
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: 50px; line-height: 50px; font-size: 16px;}
+.main .main_content .table_title{background: #f0f0f0;}
+.main .main_content ul{height: 50px; border-bottom: 1px solid #ccc;} 
+.main .main_content ul li{width: 18%; height: 100%; line-height: 49px; overflow: hidden; text-align: center; font-size: 15px;}
+.main .main_content ul li:nth-child(1){width: 6%;}
+.main .main_content ul li:nth-child(3){width: 40%;}
+.main .main_content .permission_list{padding: 30px; border: 1px solid #ccc;}
+
+/*修改手机号*/
+.change_flex{display: flex;}
+.change_left{width: 80px;height: 33px; line-height: 33px;}
+.change_code{margin: 10px 0;}
+.change_span{line-height: 33px;}
+.change_tip{display:none;}

@@ -1,0 +1,41 @@
+/*公共样式*/
+*{box-sizing: content-box;-moz-box-sizing: inherit;-webkit-box-sizing: inherit;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.blue_38f{color:#38f;}
+.blue_38f:hover{color:#27f;}
+a.blue_38f:focus{color:#38f;text-decoration:none;}
+/*导航模块*/
+.nav_module{border-bottom: 1px solid #e5e5e5;margin-bottom: 15px;position: relative;}.nav_module .tab_nav{margin-bottom:-1px;}
+/*tab式的导航*/
+.tab_nav:after{content: "";display: block;clear: both;}
+.tab_nav li{float: left;margin-left: -1px;}
+.tab_nav li a{font-size:12px;padding:0 12px;line-height:32px;min-width:80px;box-sizing:border-box;text-align:center;color: #333;border: 1px solid #e5e5e5;background: #f8f8f8;display: block;}
+.tab_nav li.hover a{border-bottom-color: #fff;background: #fff;}
+/*列表过滤*/
+.widget-list-filter{margin-bottom:15px;}
+/*搜索模块*/
+.search_module{position:relative;width:300px;}
+.search_items{right:0;top:0;background:#fff;position:absolute;z-index:2;}
+.search_items .search_input{width:90px;font-size:12px;border:1px solid #ddd;margin:0;padding:4px 5px 3px 21px;background:#fff url('../../images/ico-search.png') 4px center no-repeat;background-image:-webkit-image-set( url('../../static/images/ico-search.png') 1x, url('../../static/images/ico-search.png') 2x);border-radius:2px;-webkit-transition:width linear 0.25s;-moz-transition:width linear 0.25s;transition:width linear 0.25s;}
+.search_items .search_input:focus{width:200px;border-color:rgba(82,168,236,.8);outline:0;outline:dotted thin\9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);}
+.search_items .search_btn{width:20px;height:20px;text-align:center;font-size:12px;line-height:20px;display:block;}
+
+/**/
+/*公共样式*/
+.third_title:hover{color: #38f;cursor: pointer;}
+.model_title {overflow: hidden;position: relative;}
+a:hover{text-decoration: none;}
+
+/*下部按钮公共样式*/
+.btn-no, .btn-yes{display: inline-block;padding: 3px 12px;font-size: 13px;margin-top: 15px;border-radius: 2px;cursor: pointer;} 
+.btn-no{background: #f2f2f2;}
+.btn-yes{background: #38f;color: #fff;border: none;}
+/*表单公共样式*/
+/*时间*/
+#start_date, #end_date{cursor: pointer;background-color: #fff;}
+/*必填*/
+.required{ font-size: 16px; color: #f00;vertical-align: middle;}
+.successPromrt {position: fixed;top: 30px;left: calc(50% - 250px);width: 500px;height: 40px;line-height: 40px;text-align: center;color: white;background: #45b182;border-radius: 5px;}
+.no_result {text-align: center;border: 1px solid #eee;padding: 39px 0;}
+

@@ -1,0 +1,45 @@
+/*图标样式*/
+.box{width: 100%;}
+.main .content{padding-left: 15px;}
+.location-btn{text-decoration: none;color: #fff; background: #49c800; border-color: #399f00;display: inline-block; border-radius: 2px; height: 26px; line-height: 26px; padding: 0 12px; cursor: pointer; border: 1px solid #f3ee6f;text-align: center; font-size: 12px;-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;}
+.location-btn:hover{color: #fff;}
+.location-table{border-bottom:1px solid #e6e6e6 !important; margin-top: 30px; width: 100%; font-size: 12px; text-align: left; margin-bottom: 0;}
+.text-left{padding: 10px; border-bottom: 1px solid #e5e5e5; vertical-align: top; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #f8f8f8; text-align: left; font-weight: normal;}
+.cell-8{width: 8%;}
+.cell-15{width: 15%;}
+.cell-53{width: 53%;}
+.cell-12{width: 12%;}
+.cell-12{width: 12%;}
+.location-table tbody tr:hover{background-color:#f7f7f7}
+.location-table thead{background-color:#f2f2f2;}
+.location-table th, .location-table td{vertical-align: middle;;vertical-align: middle; padding: 10px;text-align: left; border-bottom: 1px solid #e6e6e6;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box;}
+.show{margin-bottom: 5px;}
+.show .show-sp{ padding:2px 4px;background: #44BB88;color: #fff; margin-left: 4px; font-size: 10px;}
+.list-account{float: right;}
+.ui-btn-link{color: #337ab7;}
+.z_none{text-align: center !important;padding-top: 50px !important;padding-bottom: 50px !important;}
+.z_right{float: right;}
+.z_left{float: left;}
+.z_lef20{margin-left: 20px;}
+.invite_id{color: #0099FC;}
+/*上传图片样式*/
+.set{width: 500px;margin:10px auto;}
+.set .set_group{height: 50px;font-size: 15px;}
+.set .set_group>div{display: inline-block;}
+.set .set_group input{padding:5px;border-radius: 3px;border:1px solid #ccc;}
+.set .set_left{width: 120px;text-align: right;font-weight: bold;}
+.set .changePsd{margin-left: 45px;}
+.set .logo{width: 70px;height: 70px;display: inline-block;}
+.set form{display: inline-block;margin-left: 55px;margin-top: 10px;}
+.set .alter{margin-left: 10px;position: relative;}
+.set .alter input{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;}
+.btn_group{margin-top: 80px;}
+.btn_group .btn{margin-left: 120px;margin-right: 20px;}
+.wid15{width: 40px; height: 40px;}
+.location-action a{margin-right: 10px;}
+.img_span{border: 1px solid #e5e5e5;padding: 2px 10px;}
+.img_src{margin-left: 65px;margin-top: 15px;}
+/*分页*/
+.flex-end{display: flex; justify-content: flex-end; align-items: center;}
+.main_bottom{margin-top: 20px;}
+.main_bottom span a{padding: 0 5px; color: dodgerblue;}

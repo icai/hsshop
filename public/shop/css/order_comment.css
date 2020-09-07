@@ -1,0 +1,204 @@
+.relative{position: relative;}
+.absolute{position: absolute;}
+
+body{ font-size: 15px; }
+/*  顶部title  */
+.header span { display: inline-block; padding: 0 10px; margin-right: 10px; font-size: 30px; border-right: 2px solid #000; }
+/* 内容*/
+  
+
+/* 商品信息 */
+.ware{background-color: #fff; }
+.ware .detail{ overflow: hidden; padding: 0.2rem;}
+.ware .detail .detail_img{ float: left; width: 1.6rem;height: 1.6rem;overflow: hidden;}
+.ware .detail .detail_img img{width: 100%}
+.com_detail{
+    margin-left: 1.6rem;
+    padding-left: 0.2rem;
+    height: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.ware .detail .com_detail .number,
+.ware .detail .com_detail .con_detail{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.1rem 0 0.14rem 0;
+    box-sizing: border-box;
+}
+.ware .detail .com_detail .con_detail{
+    width: 3.58rem;
+    margin: 0;
+}
+.ware .detail .content .comment,
+.ware .detail .content .name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.ware .detail .content .name{
+    -webkit-line-clamp: 2;
+    font-size: 0.28rem;
+    color: #333333;
+    line-height: 0.36rem;
+}
+.ware .detail .content .comment{
+    -webkit-line-clamp: 1;
+    color: #999999;
+    font-size: 0.24rem;
+}
+.ware .detail .com_detail .number{
+    text-align: right;
+}
+.ware .detail .com_detail .number .price{
+    font-size: 0.28rem;
+    color: #333333;
+}
+.ware .detail .com_detail .number .num{
+    color: #666666;
+    font-size: 0.22rem;
+}
+.ware .detail .com_detail .number .num span{
+    padding-left: 0.1rem;
+}
+/* 3.1 */
+.form_submit{
+    background-color: #ffffff;
+}
+form{ text-align: center;  }
+
+form textarea{
+    padding: 0.34rem 0.2rem 0.2rem 0.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    resize:none;
+    font-size: 0.26rem;
+    outline:none;
+}
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cccccc;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #cccccc;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cccccc;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cccccc;
+}
+
+/*上传图片*/
+form .upload_images{text-align: left; padding:0 0.2rem;}
+form .upload_images div{display: inline-block;}
+.uploaderDiv{
+    margin-bottom: 0.2rem
+}
+form .upload_images .img_item{
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #F5F5F5;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+form .upload_images .img_item div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+form .upload_images .img_item img:nth-child(2){top: -8px; right: -8px;border-radius: 50%;
+    width: 0.36rem !important;
+    height: 0.36rem !important;
+}
+form .upload_images .uploaderDiv input{left: 0; top: 0; height: 1.6rem; width: 1.6rem; opacity: 0;}
+form .upload_images .uploaderDiv img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/* 评价 */
+.com_evaluate{
+    background-color: #F5F5F5;
+    padding-top: 0.2rem;
+}
+.population{padding: 0.2rem; background-color: #fff;}
+.feel{ /*float: left;*/ text-align: left; padding-top:0.1rem;font-size: 0.3rem;color: #333333}
+.evaluate{ padding-top: 0.4rem; display: flex;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -moz-justify-content: space-between; -webkit-justify-content: space-between;}
+.evaluate .btn{
+    width: 1.8rem;
+    height: 0.7rem;
+    display: inline-block;
+    border-radius: 0.08rem;
+    padding: 0;
+    line-height: 0.7rem;
+    text-align: center;
+    margin: 0;
+    font-size: 0.28rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    border: none;
+    color: #666666;
+}
+.evaluate .btn.box_1px:before{
+    border: 1px solid #cccccc;
+    border-radius: 0.08rem;
+}
+.evaluate .btn.choosed{
+    position: relative;
+    color:#ffffff;
+    background-color: #F72F37
+}
+.evaluate .btn.choosed.box_1px:before{
+    border: 1px solid #F72F37;
+}
+/* 服务打分 */
+.mark{ margin-top: 0.2rem; background-color: #fff; }
+.mark .title{ padding: 0.3rem 0 0 0.2rem; font-size: 0.3rem; color: #333333}
+.mark .class{padding: 0.2rem;}
+.mark .class div{margin: 0.2rem 0; color: #666666; font-size: 0.28rem;display: flex;align-items: center}
+.mark .class span{
+    float: left;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url("../images/pick_xing.png") no-repeat;
+    background-size: cover;
+    margin-left: 0.4rem;
+}
+.mark .class span.red_xing{
+    background: url("../images/red_xing.png") no-repeat;
+    background-size: cover;
+}
+.share{
+    margin: 0.38rem 0 0 0.2rem;
+    color: #666666;
+    display: flex;
+    align-items: center;
+}
+.input_order{
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../images/ap-weixuan@2x.png") no-repeat;
+    background-size: cover;
+    margin-right: 0.2rem;
+}
+.input_order_gou{
+    background: url("../images/dui@2x.png") no-repeat;
+    background-size: cover;
+}
+.submit{
+    margin: 0.6rem 0.2rem 0 0.2rem;
+    height: 0.9rem;
+    background-color: #F72F37;
+    color: #ffffff;
+    border-radius: 0.08rem;
+    text-align: center;
+    line-height: 0.9rem;
+    font-size: 0.36rem;
+}
+
+
+    

@@ -1,0 +1,14 @@
+<div class="editer-content">
+    <div class="control-group richtext">
+        <div class="pull-left setting">
+            <label class="control-label">背景颜色：</label>
+            <div class="input-append">
+                <input type="color" ng-model="editors[index]['bgcolor']" name="color" class="span1">
+                <!--add by 韩瑜 2018-9-5 添加16进制颜色输入框-->
+		        <input class="form-control color_input" style="margin-left: 10px;height: 23px;width: 80px;" maxlength="7" type="text" value="#f8f8f8" ng-model="editors[index]['bgcolor']" >
+		        <!--end-->
+            </div>
+        </div>
+    </div>
+    <textarea id="editor" type="text/plain" style="width:100%;height:150px"></textarea>
+</div>

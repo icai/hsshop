@@ -1,0 +1,23 @@
+.flex-end{display: flex; justify-content: flex-end; align-items: center;}
+
+.screen{background: #f5f5f5; padding: 20px; height: 210px;}
+.screen .screen_top{height: 80px;}
+.screen .screen_bottom{height: 60px;}
+.screen .form-inline label{display: inline-block; font-weight: normal;}
+.shortHint{padding: 20px;}
+.member_list .list_item{padding: 10px; display: flex; justify-content: space-between; align-items: center; height: 50px; border-bottom: 1px solid #dfdfdf;}
+.member_list .list_header{background: #f5f5f5;}
+.member_list .list_item li{width: 20%; text-align: center; overflow: hidden;}
+.member_list .list_item li:nth-child(1){padding-left: 10px; width: calc(40% - 10px); text-align: left; }
+.member_list .list_item li img{display: inline-block; margin-right: 5px;}
+.member_list .list_item .picName{cursor: pointer;}
+.member_list .list_item .picName span{display: inline-block; width: 20px; height: 20px; margin-right: 10px; font-size: 18px; text-align: center; line-height: 16px; border: 1px solid #333; border-radius: 50%;}
+/*查看更多*/
+.content .member_list .look_more{justify-content: flex-end; padding-right: 75px; color: dodgerblue; cursor: pointer;}
+
+.level_1{margin-left: 0;}
+.level_2{margin-left: 30px;}
+.level_3{margin-left: 60px;}
+
+.main_bottom{margin-top: 20px;}
+.main_bottom span a{padding: 0 5px; color: dodgerblue;}

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+* creater 华亢 2018/07/09
+*/
+/* 采用grid 8 进行布局 */
+.red {
+  color: red; }
+
+.hide {
+  display: none; }
+
+.noData {
+  font: 48px/64px '微软雅黑';
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 24px 0;
+  text-align: center; }
+
+/**
+* creater 华亢 2018/07/09
+*/
+.top-wrap .top {
+  font-size: 16px; }
+.top-wrap .top ul {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6; }
+.top-wrap .top ul li {
+  display: inline-block;
+  padding: 0 8px; }
+.top-wrap .top ul .schedule {
+  cursor: pointer; }
+.top-wrap .top ul .checked {
+  font-weight: bold;
+  color: #3197FA; }
+
+.article-wrap {
+  width: 80%;
+  margin: 0 auto; }
+
+/* 完成续费 */
+.payment-complete .complete-pay {
+  text-align: center; }
+.payment-complete .complete-pay .complete-top {
+  font: 24px/48px '微软雅黑';
+  margin: 104px 0 64px; }
+.payment-complete .complete-pay .complete-top img {
+  display: inline-block;
+  padding-right: 8px; }
+.payment-complete .complete-pay .complete-top .state2 {
+  vertical-align: text-top; }
+.payment-complete .complete-pay .complete-top .paytype-3 {
+  color: #e0883c; }
+.payment-complete .complete-pay .complete-top .paytype-2 {
+  color: #d0821d; }
+.payment-complete .complete-pay .complete-top .paytype-1 {
+  color: #b9b91d; }
+.payment-complete .complete-pay .complete-bottom {
+  color: #666; }
+.payment-complete .complete-pay .complete-bottom .over-nav {
+  padding-top: 24px; }
+.payment-complete .complete-pay .complete-bottom .over-nav a {
+  display: inline-block;
+  color: red;
+  text-decoration: underline;
+  padding: 4px 16px; }
+
+.complete-top-tip {
+  font-size: 14px;
+  text-indent: 116px;
+  margin-top: -32px; }
+
+/*# sourceMappingURL=payFinish.css.map */

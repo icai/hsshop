@@ -1,0 +1,26 @@
+.flex_around{display: flex; justify-content: space-around; align-items: center;}
+/*导航条*/
+.nav-tabs{margin-bottom: 10px;}
+.nav-tabs>li>a{	border-radius: 0px;margin-right: -1px; cursor: pointer; background-color: #eee; border: 1px solid #ddd;}
+.nav-tabs>li>a:hover { border-color: #ddd #ddd #ddd;}
+
+/*搜索*/
+.content{overflow: hidden;}
+.content .searchDiv{float: right; margin: 20px 0; width: 400px; }
+.content .searchDiv select{width: 160px;}
+.content .searchDiv input{width: 160px;}
+/*列表*/
+.td-flo{overflow: hidden;}
+.flo-lef{display: inline;}
+.mgl10{margin-left: 10px;}
+/*add by 韩瑜 2018-8-16 样式优化*/
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+td p{
+	overflow: hidden;
+    word-wrap: break-word;
+    width: 240px;
+}
+td{
+    vertical-align: middle!important;
+}

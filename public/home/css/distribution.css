@@ -1,0 +1,140 @@
+.container {
+	min-width: 1200px;
+	background-color: #fff;
+}
+.g-gray{
+	background-color: #f5f5f7;
+}
+.banner-wraper {
+	width: 100%;
+	background-color: #02C5A2;
+}
+.banner {
+	position: relative;
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+	background: #02C5A2 url(../image/distribution-banner.png) no-repeat center;
+	background-size: cover;
+}
+.link-btn {
+	position: absolute;
+	left: 0;
+	bottom: 84px;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 18px;
+	padding: 11px 30px;
+}
+.link-btn:hover,.footer-order:hover{
+	background-color: #fff;
+	color: #02C5A2;
+}
+.main-value {
+	padding: 90px 0 118px;
+}
+.wraper-title {
+	font-size: 30px;
+	color: #4E5256;
+	text-align: center;
+	font-weight: 700;
+}
+.value-wraper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 105px;
+	font-size: 16px;
+	color: #4E5256;
+	font-weight: 700;
+}
+.value-img {
+	width: 100px;
+	height: 100px;
+}
+.value-desc {
+	margin-top: 30px;
+	text-align: center;
+}
+.model-wraper {
+	padding: 88px 0 92px;
+}
+.img-wraper {
+	margin-top: 89px;
+}
+.img-item {
+	display: flex;
+	margin-top: 100px;
+	font-size: 16px;
+	color: #666;
+}
+.img-item:first-child{
+	margin-top: 0;
+}
+.item-box {
+	flex: 1;
+}
+.center-box{
+	text-align: center;
+}
+.padding-box1 {
+	padding-top: 20px;
+	padding-left: 60px;
+}
+.padding-box2 {
+	padding-top: 20px;
+	padding-left: 80px;
+}
+.title-big {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 24px;
+}
+.icon-img {
+	height: 300px;
+}
+.system-wraper {
+	padding: 89px 0 150px;
+}
+.title-system {
+	width: 340px;
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	font-size: 22px;
+	background-color: #02C5A2;
+	border-radius:8px 8px 0px 0px;
+	margin-bottom: 19px;
+}
+.index-icon {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 50%;
+	margin: 0 9px 0 6px;
+	background-color: #fff;
+	color: #02C5A2
+}
+.content{
+	line-height: 30px;
+}
+.distribution-footer {
+	background: url(../image/distribution-bg.png) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 37px 0 36px;
+	font-size: 28px;
+}
+.footer-order {
+	display: inline-block;
+	padding: 12px 50px;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 37px;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}

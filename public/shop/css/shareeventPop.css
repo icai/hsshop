@@ -1,0 +1,128 @@
+/* 享立减页面弹窗样式 */
+
+/* 背景样式 */
+#pop_info {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.info_content {
+  height: 100%;
+  width: 100%;
+}
+/* 阴影样式 */
+.pop_info_shade {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.info_content .Pcontent {
+  background: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+/* 内容样式-活动结束 */
+.info_content .content_end {
+  width: 240px;
+  height: 160px;
+  border-radius: 16px;
+}
+.info_content .content_end > p {
+  line-height: 56px;
+  margin-bottom: 8px;
+}
+.info_content .content_end .content_bottom button {
+  background: white;
+  outline: none;
+  border: 1px solid #b1292d;
+  color: #b1292d;
+  padding: 8px 40px;
+  border-radius: 24px;
+}
+/* 内容样式-点击链接进入 */
+.info_content .content_share_partner {
+  width: 240px;
+  height: 200px;
+  border-radius: 8px;
+}
+.info_content .content_share_partner .content_top {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 8px;
+  font-size: 0;
+}
+.info_content .content_share_partner .content_top p {
+  text-align: center;
+  line-height: 32px;
+}
+.content_share_partner .content_top .text_content {
+  font-size: 16px;
+}
+.content_share_partner .content_top .image_user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ff8f17;
+}
+.info_content .content_share_partner .content_bottom button {
+  border: 1px solid #e6e6e6;
+  background: white;
+  padding: 8px 24px;
+  border-radius: 24px;
+  color: #bbb;
+}
+/* 享立减完成-owner */
+.info_content .content_share_owner {
+  width: 320px;
+  height: 240px;
+  border-radius: 16px;
+  justify-content: space-between;
+}
+.info_content .content_share_owner .content_top .image_user {
+  background: url(https://upx.cdn.huisou.cn/wscphp/xcx/images/xcxImg/shareEventBackground.jpg);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-size: cover;
+  background-position-x: center;
+  font-size: 0;
+  padding: 32px 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.info_content .content_share_owner .content_top .image_user img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ff8f17;
+  border-radius: 50%;
+}
+.content_share_owner .content_top .text_content {
+  font-weight: bold;
+  padding: 8px;
+}
+.content_share_owner .content_top .text_tip {
+  font: 20px/32px '微软雅黑';
+}
+
+.info_content .content_share_owner .content_bottom button {
+  background: #09c211;
+  border: 0;
+  color: white;
+  line-height: 32px;
+  padding: 0 32px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+}

@@ -1,0 +1,32 @@
+.green_3c3{color:#3c3;}
+.red_f00{color:#f00}
+.detail-title{font-size: 16px;font-weight: bold;text-align: center;margin: 60px 0;}
+/*账单详情*/
+.account-detail>li{float:left;width:50%;}
+.account-detail>li>span{display: inline-block;text-align: right;color: #999;min-width: 70px;}
+/*面板*/
+.data-content{
+	 margin-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left:-10px;
+}
+.data-items{
+	    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+   margin-left:10px;
+    padding-bottom: 40px;
+    min-height: 120px;
+}
+.data-items .data-list{
+	border-bottom: 1px dashed #e5e5e5;
+    margin-bottom: 20px;
+}
+.print-btn{text-align:center;}

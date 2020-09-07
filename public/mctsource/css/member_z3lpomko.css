@@ -1,0 +1,63 @@
+.content_header{
+    margin-bottom:20px;
+    position:relative;
+}
+.content_header:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.conent_header .btn_grounp{
+    float:left;
+}
+.content_header .search{
+    float:right;
+}
+/*搜索框*/
+.ui-search-box {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 10;
+    vertical-align: middle;
+    margin: 0;
+}
+.ui-search-box .txt {
+    width: 70px;
+    height: 16px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid #ddd;
+    margin: 0;
+    padding-left: 20px;
+    background: #fff url(images/ico-search.png) 4px center no-repeat;
+    background-image: -webkit-image-set(url(images/ico-search.png) 1x, url(images/ico-search@2x.png) 2x);
+    border-radius: 2px;
+    -webkit-transition: width linear 0.25s;
+    -moz-transition: width linear 0.25s;
+    transition: width linear 0.25s;
+}
+.ui-search-box .txt:focus {
+    border-color: #aaa;
+    outline: none;
+    width: 180px
+}
+.content table tr th{
+    font-weight: normal;
+    background:#f8f8f8;
+}
+.content table tbody tr:last-child{
+    border-bottom:1px solid #ddd;
+}
+.content_list table .action a{
+    color:#38f;
+}
+.content .page:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.content .page span{
+    float:right;
+}

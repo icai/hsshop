@@ -1,0 +1,82 @@
+.content{
+    background: #F5F5F7
+}
+a{
+    font-size: .32rem;
+    color: #555555
+}
+.app_header {
+    background: url("../images/banner05.jpg"),no-repeat;
+    background-size: cover;
+    height: 4rem;
+}
+.help-search{
+    padding: .4rem .35rem
+}
+.search-box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: .45rem;
+    overflow: hidden;
+    border: 1px solid #DBDBDB;
+    position: relative;
+}
+.search-box input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: .3rem .5rem;
+    font-size: .3rem
+}
+.search-box .search-pic{
+    position: absolute;
+    top: 50%;
+    right: .3rem;
+    transform: translateY(-50%);
+    width: 0.48rem;
+    height: 0.48rem;
+    background-color: #fff
+}
+.search-pic img{
+    width: 100%;
+}
+.help-item{
+    width: 100%;
+    margin-bottom: .2rem;
+    background: #fff
+}
+.help-title{
+    width: 100%;
+    height: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid #E6E6E6;
+    padding-left: .35rem
+}
+.help-title h1{
+    color: #1A1A1A;
+    font-size: .36rem;
+    font-weight: 600
+}
+.help-item ul{
+    padding-left: .35rem
+}
+.help-item ul li{
+    height: 1.1rem;
+    border-top: 1px solid #E6E6E6;
+    line-height: 1.1rem;
+    
+}
+.help-item ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.help-item ul li:first-child{
+    border-top: 0
+}
+
+

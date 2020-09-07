@@ -1,0 +1,41 @@
+body{background: #e12638; height: 100%;}
+.top{width: calc(100% - 20px); background: #393a3f; font-weight: bold; color: white;padding: 10px;}
+.main { position: relative; background: #e12638;}
+.out{width: calc(100% - 40px);width: -webkit-calc(100% - 40px); padding: 10px 20px; background: url(../images/wheel-bac.png); background-size: 100% 100%; position: relative;}
+.in {
+    position: absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width: 16%;
+    z-index: 1000;
+}
+.out img, .in img{width: 100%; height: 100%;}
+#btnstart{cursor: pointer;}
+.out .posiab{position: absolute; left: 0; bottom: -15px;}
+.info{width: calc(100% - 54px); background: url(../images/bac-box.png); background-size: 100% 100%; padding: 7px; margin: 20px; }
+.info .border{padding: 5px; border-radius: 5px;}
+.info .border p{line-height: 20px;}
+.title{ width: 80px; height: 22px; line-height: 22px; text-align: center; margin-bottom: 8px; border-radius: 10px; background:#e12639; color: #fff; }
+.prize_set .content p span{font-weight: bold; color: #ff2017;}
+.activity_info .content p:nth-child(1){color: #ff2017;}
+
+.prizeBtn img{margin: 0 auto; display: block; width: 35%;}
+.grade{text-align: center;}
+.layui-layer-dialog .layui-layer-content{text-align: center;}
+.layui-layer-title,.layui-layer-setwin{display: none;}
+body .layui-layer-btn a{background-color: red;border:1px solid red;border-radius: 5px; margin-top: 8px;}
+body .layui-layer-dialog{border-radius: 5px;}
+body .layui-layer-btn .layui-layer-btn1{background: #fff; border: 1px solid #999; color: #999; margin-top: 8px;}
+.price_image{height: 100px;text-align: center;width: 100%;}
+.price_image img{max-width:100%;max-height: 100%}
+#lotteryBtn{z-index: 999;position: relative;}
+body .layui-layer { width: 270px; }
+.copyright{background-color: #e12638;margin-bottom: 0px;padding-bottom: 20px;}
+.footer{padding: 0;}
+.activity_time{margin-bottom: 0;}
+.main{padding-bottom: 14px;}

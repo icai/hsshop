@@ -1,0 +1,23 @@
+.container{background-color: #fff;min-height: 500px;position: relative;font-weight: 500;}
+.earning-header{
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f72f37;
+}
+.header-item {
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+.wd_40{width: 40%;}
+.wd_30{width: 30%;}
+.earning-body-item{
+    height: 50px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+.status-light {
+    color: #E5333A;
+}

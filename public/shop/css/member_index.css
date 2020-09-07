@@ -1,0 +1,218 @@
+html{height:100%;background-color:#eee;}
+body{padding-bottom:0px !important;}
+.nav-menu .submenu{display:flex;display:-webkit-flex;display:-ms-flex;}   
+.nav-menu .submenu .before-arrow {right: auto;left: 38px;}
+.nav-menu-1 .submenu .after-arrow {left: 38px;right: auto;}
+.nav-menu-1 .submenu ul>li{position:relative;width:72px;}
+.nav-menu-1 .submenu ul>li {border-bottom: 1px solid #eee;}
+[v-cloak]{display: none;}
+.custom-level{
+    height: 3rem;position: relative;
+}
+.custom-level .custom-level-img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.logo{width: 100%;height: 100%;padding-left:0.3rem;box-sizing:border-box;display: flex;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;-webkit-align-items: center;-webkit-justify-content: space-between;align-items: center;justify-content: space-between;}
+.logo p{width: 3.4rem;padding-top:0.24rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #fff;margin-left:0.3rem;font-size: 0.26rem;}
+.logo img{width: 60px;height: 60px;border-radius: 50%;border:0.04rem solid #ffffff;flex: none;-webkit-flex: none;}
+.logo .qrcode_img{width: 1.15rem;height: 1rem; background: url("../images/erweima@2x.png") no-repeat; background-size: cover}
+.member_logo{
+    display: flex;
+    align-items: center;
+}
+.member_logo p span{
+    display: block;
+}
+.member_logo p span:first-child{
+    margin-bottom: 0.3rem;
+    font-size: 0.36rem;
+}
+.member_logo p a{
+    font-size: 0.26rem;
+}
+/*新增我的财富*/
+/* .order-related .block.block-list.list-vertical>a.my_wealth:before{    
+    background-image: url(../images/wodecaifu@2x.png);
+    background-size: 18px 18px;
+    background-position: 3px;
+}
+.order-related .block.block-list.list-vertical>a.wealth:before{
+	background-image: url(../images/caifuyan@2x.png);
+    background-size: 18px 18px;
+}
+.order-related .block.block-list.list-vertical>a.myjifen:before{    
+    background-image: url(../images/myjf@2x.png);
+    background-size: 18px 18px;
+    background-position: 3px;
+} */
+.wealth{display:flex;display:-webkit-flex;display:-ms-flex;}
+.wealth .title-info{}
+.wealth .wealth_info{-webkit-flex: 1;-ms-flex: 1;flex: 1;text-align: center;font-size: 12px;color: #ccc;line-height: 22px;}
+.wealth .wealth_share{position: relative; width: 50px;border:1px solid #aaa;border-radius: 10px;height: 20px;}
+.wealth .wealth_share_left{background-color: #ff4343;border-color:#ff4343;}
+.wealth .wealth_share .switch{position: absolute;top: -1px;width: 20px;height: 20px;border:1px solid #aaa;color:#ccc;border-radius: 50%;font-size: 12px;text-align: center;line-height: 20px;background-color: #fff;}
+.wealth .wealth_share .switch_right{right: -1px;border-color:#ff4343;}
+.wealth .wealth_share .switch_left{left:-1px;}
+.wealth .wealth_share input{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;}
+/*公告*/
+.scroll-notice {display: inline-block;white-space: nowrap;-webkit-animation: scrollNotice 25s linear 0s infinite;-moz-animation: scrollNotice 25s linear 0s infinite;animation: scrollNotice 25s linear 0s infinite}
+/*图片导航*/
+.custom-nav-4 li {width: 25%;float: left;overflow: hidden;text-align: center;height:auto;}
+.image_ad h3{padding-left:10px;}
+/*会员卡*/
+.card-coupon li{ border: none;font-size: 16px;-webkit-justify-content: center;-ms-justify-content: center;justify-content: center;-ms-align-items: center;-webkit-align-items: center;align-items: center;background: none !important;height: auto;}
+.card-coupon:after{content:'';display:table;clear:both;}
+.card-coupon a{    position: relative;color: #4E3706 !important;height: 100%;display: block;}
+.card-coupon li img{width:100%;}
+.card-coupon .card_title{position: absolute;width: 100%;left: 0;top: 0;right: 0;bottom: 0;display: flex;align-items: center;justify-content: center;}
+.custom-store .custom-store-img{left:17px;}
+.custom-store .custom-store-name{padding-left:38px;} 
+.myjifen{border-bottom: 1px solid;}
+/*分销客炫富按钮*/
+.be_distribute{position: fixed; bottom: 60px; right: 50px; z-index: 999;}
+.be_distribute img{width: 45px;height: 60px;}
+/*add by 韩瑜 2018-8-10 会员主页添加收货地址入口*/
+.member-address span{
+	float: left;
+	padding-top: 2px;
+}
+.member-address span img{
+	width: 20px;
+	margin-left:-3px;
+}
+.order-related .allOrder{
+    height: 0.9rem;
+    position: relative;
+    background: #fff
+}
+.order-related .allOrder a{
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.3rem
+}
+.order-related .allOrder a .all_order{
+    color: #999999;
+    font-size: 0.26rem;
+    margin-right: 10px;
+}
+.order-related .allOrder a::after{
+    content: '';
+    position: absolute;
+    width: 0.18rem;
+    height: 0.18rem;
+    border-top: 1px solid #C2C2C2;
+    border-right: 1px solid #C2C2C2;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.12rem;
+}
+/*.order-related .all_order{*/
+    /*display: inline-block;*/
+    /*float: right;*/
+    /*margin-right: 12px*/
+/*}*/
+/* add by zhaobin 2018-9-11 */
+.order-related .block.block-list.list-vertical{
+    border: none;
+}
+.block.block-list {
+    margin: 0.2rem 0 0 0;
+    padding: 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+.pageList{
+    display: block;
+    padding-left: 0.3rem;
+    position: relative;
+    height: 0.9rem;
+    line-height: 0.9rem;
+}
+.pageList div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 0.3rem;
+}
+.pageList div:after{
+    content: '';
+    position: absolute;
+    width: 0.18rem;
+    height: 0.18rem;
+    border-top: 1px solid #C2C2C2;
+    border-right: 1px solid #C2C2C2;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.12rem;
+}
+.order-related .all_order{
+    display: inline-block;
+    float: right;
+    margin-right: 12px
+}
+/* add by zhaobin 2018-9-11 */
+.new-sign{
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 28px;
+    width: 29px;
+    height: 16px;
+    border: 2px solid #F72F37;
+    border-radius: 3px;
+    color: #F72F37;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px
+}
+
+.icon_img{
+    width: 0.34rem;
+    height: 0.34rem;
+    margin-right: 0.2rem;
+}
+
+/*绑定手机号登录操作*/
+.bind_action{
+    background:#fff;
+    padding:15px;
+    margin:10px 0;
+    font-size:12px;
+}
+.bind_action span{
+    display:inline-block;
+    float:right;
+    background:#f72f37;
+    padding:5px 8px;
+    color:#fff;
+    position: relative;
+    top:-4px;
+}
+.order-related .uc-order.list-horizon{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around
+}

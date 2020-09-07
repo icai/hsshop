@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/**
+* creater 华亢 2018/07/09
+*/
+/* 采用grid 8 进行布局 */
+.red {
+  color: red; }
+
+.hide {
+  display: none; }
+
+.noData {
+  font: 48px/64px '微软雅黑';
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 24px 0;
+  text-align: center; }
+
+label {
+  font-weight: normal; }
+label span {
+  display: inline-block;
+  margin-right: 16px; }
+
+.content-wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 32px; }
+.content-wrap .invoiceDetail {
+  width: 55%;
+  border-right: 1px solid #B8B8B8; }
+.content-wrap .invoiceDetail .iWrap {
+  display: inline-block;
+  width: 20%;
+  text-align: right; }
+.content-wrap .invoiceDetail input[type="text"] {
+  width: 64%;
+  padding: 0 8px; }
+.content-wrap .consigneeDetail {
+  width: 45%;
+  padding-left: 48px; }
+.content-wrap .consigneeDetail .address-county {
+  width: 120px; }
+.content-wrap .consigneeDetail .iWrap {
+  display: inline-block;
+  width: 21%;
+  text-align: right; }
+.content-wrap .consigneeDetail .tip {
+  background: #F7F7F7;
+  padding: 12px 24px;
+  color: #666666;
+  width: 78%; }
+.content-wrap .consigneeDetail input[type="text"] {
+  width: 72%;
+  padding: 0 8px; }
+.content-wrap .submit {
+  width: 100%;
+  text-align: center;
+  margin-top: 24px; }
+.content-wrap .submit button {
+  background: #3197FA;
+  color: white;
+  width: 200px;
+  text-align: center; }
+.content-wrap .title {
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 24px; }
+.content-wrap li {
+  margin: 16px 0; }
+
+/*! 自定义input radio*/
+input[type="radio"] + span:before {
+  content: "\a0";
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 1em;
+  height: 1em;
+  margin-right: .4em;
+  border-radius: 50%;
+  border: 1px solid #B8B8B8;
+  text-indent: .15em;
+  margin-top: -4px; }
+
+input[type="radio"]:checked + span:before {
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  border: 5px solid #3197FA;
+  font-size: 14px;
+  width: 1em;
+  height: 1em;
+  margin-top: -4px; }
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+/* 弹窗 */
+.layui-layer {
+  border-radius: 5px; }
+.layui-layer .layui-layer-title {
+  font-size: 16px;
+  line-height: 48px;
+  background: white;
+  text-align: left;
+  height: 48px; }
+.layui-layer .layui-layer-close {
+  margin-right: 8px; }
+.layui-layer .layui-layer-close::before {
+  content: 'x';
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: white; }
+.layui-layer .layui-layer-ico {
+  background: none; }
+
+#pop {
+  padding: 8px 24px 0;
+  line-height: 32px; }
+#pop .table .table-head {
+  background: #F2F2F2; }
+#pop .table .t_body ul {
+  border-bottom: 1px solid #e6e6e6; }
+#pop .table ul {
+  text-align: center; }
+#pop .table ul li {
+  width: 10%;
+  float: left; }
+#pop .table ul li:nth-of-type(1) {
+  width: 14%; }
+#pop .table ul li:nth-of-type(2) {
+  width: 16%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+#pop .table ul li:nth-of-type(3) {
+  width: 24%; }
+#pop .table ul li:nth-of-type(7) {
+  width: 16%; }
+#pop .page {
+  text-align: right; }
+#pop .page .pagination {
+  margin: 10px 0; }
+
+/*# sourceMappingURL=printInvoice.css.map */

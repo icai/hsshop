@@ -1,0 +1,74 @@
+<div class="editer-content">
+    <div class="control-group">
+        <label class="control-label">显示方式：</label>
+        <div class="controls">
+            <label class="radio inline">
+                <input type="radio" name="show_method" ng-model="editors[index]['advsListStyle']" value="2" ng-checked="editors[index]['advsListStyle']==2">折叠轮播
+            </label>
+            <label class="radio inline">
+                <input type="radio" name="show_method" ng-model="editors[index]['advsListStyle']" value="3" ng-checked="editors[index]['advsListStyle']==3">分开显示
+            </label>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">显示大小：</label>
+        <div class="controls">
+            <label class="radio inline">
+                <input type="radio" name="size" value="1" ng-model="editors[index]['advSize']" ng-checked="editors[index]['advSize']==1">大图
+            </label>
+            <label class="radio inline" ng-show="editors[index]['advsListStyle']==3">
+                <input type="radio" name="size" value="2" ng-model="editors[index]['advSize']" ng-checked="editors[index]['advSize']==2">
+                小图
+            </label>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">图片放大：</label>
+        <div class="controls">
+            <label class="checkbox inline">
+                <input style="position:relative;top:2px" type="checkbox" name="size" value="1" ng-true-value="1" ng-false-value="0" ng-model="editors[index]['resize_image']" ng-checked="editors[index]['resize_image']==1">点击放大(当图片没有链接时)
+            </label>
+        </div>
+    </div>
+    <div class="control-group js-choices-region">
+        <ul class="choices ui-sortable">
+            <li class="choice" ng-repeat="image in editors[index]['images'] track by $index" ng-drop="true" ng-drop-success="onDropAdvsComplete($index, $data,$event)">
+                <div>
+                    <div class="choice-image" ng-drag="true" ng-drag-data="image">
+                        <img ng-src="{{image['FileInfo']['path']}}" class="thumb-image">
+                        <a class="modify-image js-trigger-image" href="javascript: void(0);" ng-click="reUpload($index)">重新上传</a>
+                        <!-- for error msg -->
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="hidden" name="image_url">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice-content">
+                        <div class="control-group">
+                            <label class="control-label">标题：</label>
+                            <div class="controls">
+                                <input class="form-control" ng-model="image['title']" type="text" name="title[c71]">
+                            </div>
+                        </div>
+                        
+                        <div class="help-desc" style="padding-left:10px;margin-top:17px">
+                            <span ng-if="editors[index]['advSize']==1">图片推荐宽度：640PX</span>
+                            <span ng-if="editors[index]['advSize']==2">请根据左侧预览图进行调整图片</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <span class="action add close-modal" title="添加">+</span>
+                        <span class="action delete close-modal" title="删除" ng-click="removeAdvImages($index)">×</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="control-group options add_advs" ng-click="addAdvs()">
+        <a href="javascript:void(0);" class="add-option js-add-option">
+            <i class="icon-add"></i>
+            <span>添加一个广告</span>
+        </a>
+    </div>
+</div>

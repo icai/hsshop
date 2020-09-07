@@ -1,0 +1,26 @@
+<div class="editor-content">
+    <div>
+        <div class="form-horizontal" novalidate="">
+            <div class="control-group error">
+                <label class="control-label">
+                    <em class="required">*</em>模版名称：</label>
+                <div class="controls">
+                    <input class="input-xxlarge form-control" type="text" name="model_title" value="baseInfo.title" ng-model="baseInfo.title" required ng-maxlength="10">
+                    <p class="help-block error-message" ng-show="editorForm.model_title.$dirty && editorForm.model_title.$error.required || iserror && editorForm.model_title.$invalid">请填写模版名称</p>
+                    <p class="help-block error-message" ng-show="editorForm.model_title.$dirty && editorForm.model_title.$error.maxlength || iserror && editorForm.model_title.$invalid">最大长度不能大于10</p>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">模版样式：</label>
+                <div class="controls">
+                    <label class="radio inline">
+                        <input type="radio" name="template_style" value="1" ng-model="baseInfo.syle" ng-checked="baseInfo.style==1">普通版</label>
+                    <a href="javascript:;" data-index="0" class="goods-template-demo-link js-show-demo">示例</a>
+                    <label class="radio inline">
+                        <input type="radio" name="template_style" value="2" ng-model="baseInfo.style" ng-checked="baseInfo.style==2">简洁流畅版</label>
+                    <a href="javascript:;" data-index="1" class="goods-template-demo-link js-show-demo">示例</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

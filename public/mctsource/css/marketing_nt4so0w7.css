@@ -1,0 +1,35 @@
+/*表格*/
+ .table>tbody>tr>td{
+	line-height: 50px;
+}
+table tr>td:first-child{
+	display:flex;
+	display:-webkit-box;
+	display: -moz-box;
+	box-align:start;
+	-webkit-box-align:start;
+	-moz-box-align:start;
+	box-pack:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	line-height: 20px;
+}
+
+table tr>td .img_wrap{
+	width:50px;
+	height:50px;
+	margin-right:10px;
+}
+/*设置&分页模块*/
+.pageSet_module{
+	display:flex;
+	display:-webkit-box;
+	display:-moz-box;
+	box-align:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	box-pack:justify;
+	-webkit-box-pack:justify;
+	-moz-box-pack:justify;
+}
+.switch_items{margin:40px 10px 0 300px;}

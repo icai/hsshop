@@ -1,0 +1,34 @@
+/*app*/
+.app{background: #ececec;font-size: 15px;}
+.bookList_banner img{width: 100%;height: 160px;}
+.bookList_banner{width: 100%;height: 160px;}
+
+.bookList_content{min-height:260px;_height:160px;border: 1px solid #c7c7c7;background: #fdfdfd;margin: 10px;border-radius: 5px;}
+.bookList_content div:nth-of-type(1){
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+justify-content: space-between;
+-webkit-justify-content: space-between;
+-moz-justify-content: space-between;
+-o-justify-content: space-between;
+line-height: 30px;border-bottom: 1px solid #ccc;background:#ececec ;padding: 0 10px;
+}
+.bookList_content div:nth-of-type(2){line-height: 30px;padding-left: 10px;}
+
+.bookList_ipt{
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+justify-content: space-around;
+-webkit-justify-content: space-around;
+-moz-justify-content: space-around;
+-o-justify-content: space-around;
+}
+input{width: 46%;height: 35px;border: 0;color: #fff;border-radius: 5px;margin-bottom: 10px;}
+.b_revise{background:#2aa210 ;-webkit-appearance:none;}
+.b_delete{background:#ff0000 ;-webkit-appearance:none;}

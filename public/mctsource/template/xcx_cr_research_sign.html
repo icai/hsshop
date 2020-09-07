@@ -1,0 +1,28 @@
+<div class="editer-content">
+    <div>
+        <form class="form-horizontal edit-custom-coupon" novalidate="" onsubmit="return false">
+            <div class="control-group" >
+                <label class="control-label">留言板：</label>
+                <div class="controls">
+                    <ul class="coupon-list" ng-show="editors[index]['resList'].length">
+                        <li ng-repeat="item in editors[index]['resList']" style='list-style: none;margin-left: 0px;padding-top: 5px'>
+                            <div class="coupon-list-content">
+                                <div class="coupon-list-summary">
+                                    <!--<span class="label label-success">优惠券</span>-->
+                                    <!--<span v-bind="coupon.name"></span>-->
+                                    <!--<span class="c-gray">（{{coupon.limit_desc}}）</span>-->
+                                    {{item.name}}
+                                </div>
+                            </div>
+                            <div class="coupon-list-opts" style='top: 5px'>
+                                <a href="javascript:void(0);" class="js-remove-coupon" ng-click="deleteResearch()">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a ng-show="!(editors[index]['resList'].length)" href="javascript:void(0);" class="control-action js-add-coupon" ng-click="showResearchModel(1,0)">添加报名活动</a>
+                    <input type="hidden" name="coupon">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

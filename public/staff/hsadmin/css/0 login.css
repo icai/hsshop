@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0;}
+body { height:100%; font-family:Tahoma, Arial, sans-serif; background: url(../images/12763409_670435.jpg) 0 0 no-repeat; background-size: cover}
+img { border:0; }
+#container { width:400px; margin:0 auto; background: white; margin-top: 180px; padding: 50px 0; border: 1px solid #CCC; border-radius: 5px; box-shadow: 0 0 20px #ccc;}
+#container .logo { width:auto;}
+#container .logo #logoImg{display: flex; justify-content: center; align-items: center; text-decoration: none}
+#container .logo #logoImg span{font-size: 20px; color: #333; font-weight: bold}
+#container .logo img{display: inline-block;width: 100px;height: 100px;margin-right: 5px;}
+#container #box { margin:50px auto 0; }
+#box h4.alert_error { background: url(public/hsadmin/images/icn_alert_error.png) no-repeat scroll 10px 10px #F3D9D9; border: 1px solid #D20009; border-radius: 5px 5px 5px 5px; color: #7B040F; display: none; font-size: 14px; margin: 20px 3%; padding: 10px 0; text-indent: 40px; width: 0px; height: 0px; }
+#box h4.alert_success { display: none; width: 95%; margin: 20px 3%; margin-top: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background: #E2F6C5 url(public/hsadmin/images/icn_alert_success.png) no-repeat; background-position: 10px 10px; border: 1px solid #79C20D; color: #32510F; padding: 10px 0; text-indent: 40px; font-size: 14px; width: 0px; height: 0px; }
+form .admin_info, .login{text-align: center;}
+form .admin_info input{height: 24px; padding: 3px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;}
+form .login input[type="submit"]{width: 60px; height: 30px; margin-left: 20px; font-size: 15px; border: 1px solid #ccc; border-radius: 5px;background: #f0f0f0;}
+form .login input[type="submit"]:hover{cursor: pointer; background: #CFCFCF;}
+#sub{width: 80px; height: 40px; line-height: 40px; font-size: 20px; border-radius: 5px; border:none; background: #3074C1; color: white}

@@ -1,0 +1,170 @@
+/*按钮*/
+    .switch_items{
+        width: 80px;
+        height: 30px;
+        position: relative;
+    }
+    .switch_items input{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin:0;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        position: absolute;
+        opacity: 0;
+        filter:  opacity(0); 
+        z-index: 3;
+    }
+	.switch_items input:hover{cursor: pointer;}
+    /*默认状态*/
+    .switch_items label {
+        width: 100%;
+        height: 100%;
+        margin:0;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        line-height:30px;
+        display: block;
+        background: #666;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        position: relative;
+    }
+    .switch_items label:before{
+        content:"";
+        width:26px;
+        height: 26px;
+        display: block;
+        border-radius: 50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        background: #fff;
+        top:2px;
+        left: 2px;
+        position: absolute;
+    }
+    .switch_items label:after{
+        content:"未启用";
+        width:46px;
+        height: 100%;
+        right:4px;
+        top:0;
+        background:none;
+        position: absolute; 
+    }
+
+    /*关闭*/
+    .switch_items:hover label{
+        background:#333;
+    }
+    .switch_items:hover label:after{
+        content:"启用";
+    }
+    /* 开启（默认状态）*/
+    .switch_items input:checked~label{
+        background:#4b0;
+    }
+    .switch_items input:checked~label:before{
+        content:"已开启";
+        width:46px;
+        height: 100%;
+        left:4px;
+        top:0;
+        background: none;
+        position: absolute; 
+    }
+    .switch_items input:checked~label:after{
+        content:"";
+        width:26px;
+        height: 26px;
+        display: block;
+        border-radius: 50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        background: #fff;
+        top:2px;
+        right: 2px;
+        position: absolute;
+    }
+    .switch_items:hover input:checked ~ label{
+        background:#d00;
+    }
+    .switch_items:hover input:checked~ label:before{
+        content:"禁止";
+    }
+    .switch_items input:checked ~ label.loadding:before{
+        content: "" !important;
+        width:0 !important;
+        height:0;
+        border:15px solid #4b0;
+        top:0!important;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-color:#666 #4b0 #666 #4b0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        -moz-animation:loading 1s linear infinite;
+        animation:loading 1s linear infinite;
+        -webkit-animation:loading 1s linear infinite
+    }
+
+    .switch_items label.loadding:after{
+        content: "";
+        width: 0;
+        height:0;
+        border:15px solid #4b0;
+        border-color:#666 #4b0 #666 #4b0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        top:0!important;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -moz-animation:loading 1s linear infinite;
+        animation:loading 1s linear infinite;
+        -webkit-animation:loading 1s linear infinite
+    }
+
+    @keyframes loading {
+        0% {
+            -webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            transform:rotate(0deg)
+        }
+        100% {
+            -webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+    @-moz-keyframes loading {
+        0% {
+            -moz-transform:rotate(0deg);
+            transform:rotate(0deg)
+        }
+        100% {
+            -moz-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+    @-webkit-keyframes loading {
+        0% {
+            -webkit-transform:rotate(0deg);
+            transform:rotate(0deg)
+        }
+        100% {
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+/*按钮样式结束*/ 

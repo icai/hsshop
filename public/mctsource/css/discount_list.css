@@ -1,0 +1,106 @@
+.del_popover{height: 56px !important;}
+.search-form {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 10;
+    vertical-align: middle;
+    margin: 0;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.content .main_content ul{
+    text-align: center;
+}
+.content .main_content ul li:nth-of-type(1) {
+    width: 20%;
+}
+.content .main_content ul li:nth-of-type(2) {
+    width: 20%;
+}
+.content .main_content ul li:nth-of-type(3) {
+    width: 25%;
+}
+.content .main_content ul li:nth-of-type(4) {
+    width: 15%;
+}
+.content .main_content ul li:nth-of-type(5) {
+    width: 20%;
+    text-align: left;
+}
+.empty {
+    text-align:center;
+    padding:10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.watch-model {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+.watch-wraper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -380px;
+    margin-top: -160px;
+    width: 760px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0 20px;
+}
+.watch-title {
+    height: 50px;
+    line-height: 50px;
+    box-shadow:0px 1px 0px 0px rgba(217,217,217,1);
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+.close-wraper {
+    float: right;
+    font-size: 14px;
+    color: #B3B3B3;
+    cursor: pointer;
+}
+.activity-title {
+    margin-top: 31px;
+    color: #333;
+    font-size: 14px;
+}
+.activity-data {
+    height: 98px;
+    background-color: #F8F8F8;
+    border: 1px solid #D9D9D9;
+    margin-top: 17px;
+    padding: 19px 0;
+    font-size: 0;
+}
+.data-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    border-right: 1px dotted #D9D9D9;
+
+}
+.data-item:last-child {
+    border-right: 0;
+}
+.item-title {
+    font-size: 14px;
+    color: #333;
+}
+.item-num {
+    color: #333;
+    font-size: 22px;
+}

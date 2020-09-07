@@ -1,0 +1,78 @@
+
+
+
+.auction-details{width: 750px;margin: 0 auto;overflow: hidden;display: none;}
+.auction-details h2{font-size: 14px;line-height: 40px;background-color: #f2f2f2;}
+.left-div{position: relative;width: 320px;font-size: 16px;overflow: hidden;border: 1px solid #e5e5e5;}
+.iphone-font{position: absolute;color: #fff;top: 28px;left: 142px;font-weight: bold;}
+.main-img{width: 320px;height: 200px;background-color: #e5e5e5;text-align: center;line-height: 200px;cursor: pointer;overflow: hidden;}
+.go-time{position: relative;}
+.the-price{position: absolute;background-color: #ff4343;top: -19px;left: 0;font-size: 12px;padding: 4px 8px;border-radius: 0 4px 0 0;color: #fff;}
+.del{text-decoration: line-through;vertical-align: middle;color: #999;font-size: 12px;margin: 5px 0 10px;display: inline-block;}
+.white, .next{color: #fff;}
+.big-x{font-size: 30px;}
+.currcy{background-color: #ff4343;padding-bottom: 4px;}
+.next{float: right;font-size: 12px;}
+.next-font{display:inline-block;margin: 3px 0;}
+.letter{display:inline-block;width: 16px;color: #ff4343;font-size: 10px;background-color: #fff;text-align: center;line-height: 15px;}
+.auction-title{height: 22px;line-height: 22px;font-size: 14px;border-bottom: 1px solid #e5e5e5;}
+.range-rule{font-size: 14px;padding: 15px;border-bottom: 1px solid #e5e5e5;}
+.rule img{width: 10px;height: 14px;padding-left: 10px;padding-top: 4px;}
+.rule, .rule img{float: right;}
+.auction-footer{padding: 20px 0;margin-top: 10px;background-color: #e5e5e5;color: #666;}
+.auction-footer span{display: block;text-align: center;}
+.auction-footer .font-s{font-size: 12px;}
+.right-div{float: right;border: 1px solid #e5e5e5;width: 420px;}
+.add-img{width: 50px;height: 50px;display: inline-block;float: left;border: 1px solid #e5e5e5;margin: 10px 0 20px 0;cursor: pointer;position: relative;}
+.add-img .img{padding: 18px 0 0 18px;}
+.activity-name{padding: 10px;float: left;}
+.activity{overflow: hidden;}
+.font-blue{color: blue;}
+.commodity-name{clear: both;}
+.margin-bottom{padding-left: 17px; margin-bottom: 10px;}
+.start-price{padding:10px 0 10px 10px;clear: both;overflow: hidden;}
+.form-control{width: 100px;line-height: 15px;position: relative;top: -4px;border-top-left-radius: 0;border-bottom-left-radius: 0;height: 15px;box-sizing: content-box;-moz-box-sizing: inherit;-webkit-box-sizing: inherit;}
+.money-symbol{font-weight: normal;padding: 4px 5px;background: #eee;text-shadow: 0 1px 0 #fff;border: 1px solid #ccc;}
+.form-control, .control-label{float: left;display: inline-block;}
+.small, .start-time, .money-symbol{border-bottom-left-radius: 4px;border-top-left-radius: 4px;} 
+.start-time{width: 200px;}
+.small{width: 12px;}
+.font-normal{font-weight: normal;}
+.calc-start{display: inline-block;font-size: 12px;padding: 1px 10px;border: 1px solid #e5e5e5;height: 20px;cursor: pointer;}
+.margin-left1,.margin-left{float: left;font-size: 12px;}
+.margin-left{margin-left: 60px;}
+.fixed-bottom{background: #ffffcc;z-index: 100;text-align: center;height: 5vw;display: none;}
+.start_date{display: none;}
+.error-prompt{color: red;}
+.greater{position: relative;top: -23px;display: inline}
+/*选择图文模态框*/
+.modal-dialog .list li{cursor: pointer;font-weight: bold;color: #38f;display: inline-block;border-right: 2px solid #000;padding: 0px 10px;}
+.modal-dialog .list li:last-child{border-right: 0;}
+.modal-dialog .list .list_active{color: #000;}
+.modal-dialog .title{width: 444px;font-weight: 600;text-align: left;}
+.modal-dialog .set_time{width: 88px;font-weight: 600;text-align: left;}
+.modal-dialog .search input{width: 100px;border: 1px solid #ccc;border-radius: 5px 0 0 5px;padding: 4px 10px;}
+.modal-dialog .search button{margin-left: -6px;display: inline;border-radius: 0 5px 5px 0;}
+.modal-dialog .info{border: 1px solid #ccc;border-radius: 5px;width: 100%; height: 100px;text-align: center;line-height: 100px;margin-bottom: 100px;}
+.modal-dialog{width: 800px;}
+.modal-dialog tr td{text-align: left;}
+.modal-dialog tr td:last-child{text-align: center;}
+.modal-dialog td{font-size: 12px;}
+.modal-dialog .list .js_manage{display: none;}
+.modal-dialog td img{width: 50px;height: 50px; display: inline-block;}
+.modal-dialog td a{vertical-align: top;display: inline-block;}
+.modal-footer span{font-size: 12px;}
+.table>thead>tr>th{border-bottom:0 ;}
+/*列表标题内容开始*/
+.modal-dialog .title_content{width: 250px;}
+.modal-dialog .title_content .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 5px 5px 0 0;}
+.modal-dialog .title_content .green{padding: 0 3px;background: #468847;color: #fff;border-radius: 3px;margin-right: 10px;}
+.modal-dialog .title_content .img_text a{font-size: 13px;}
+.modal-dialog .title_content .read_all{cursor: pointer; padding: 2px 10px;border: 1px solid #eee;border-radius: 0 0 5px 5px;margin-top: -1;font-size: 13px;color: #666;} 
+.co_38f{color: #38f;}
+.co_38f:hover{color: #38f;}
+.co_000{color: #000;}
+.co_000:hover{color: #000;}
+.btn_d{padding: 4px 8px;border: 1px solid #ccc;background: #fff;color: #000;}
+.addImg{width: 100%;}
+.delImg{text-align: center;line-height: 20px;width: 20px;height: 20px;background-color: #666;color: #000;border: 1px solid #e5e5e5;border-radius: 50%;position: absolute;left: 39px;top: -10px;}

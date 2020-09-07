@@ -1,0 +1,133 @@
+/*top*/
+.form{
+    background-color: #f8f8f8;
+    overflow: hidden;
+    padding: 20px 10px;
+
+}
+input.col-xs-4{
+    width: 170px;;
+    float: none;
+    display: inline-block;
+    margin-left: 2px;
+}
+input.col-xs-8{
+    width: 395px;
+    float: none;
+    display: inline-block;
+}
+.form-group label{
+    width: auto;
+    height: 34px;
+    font-weight: normal;
+    line-height: 34px;
+    float: none;
+}
+.blue-btn{
+    color: #3283fa;
+    margin-left: 15px;
+    cursor: pointer;
+}
+select.form-control{
+    display: inline-block;
+    width: 150px;
+}
+.btn-primary{
+    margin-left: 105px;
+}
+/*section*/
+.state{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #f8f8f8;
+}
+.state span{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.orange-under-line{
+    border-bottom: 2px solid #ff6600;
+}
+.no-data{
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    border: 1px solid #f8f8f8;
+}
+
+/*table*/
+table{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #f8f8f8;
+}
+table,th,td{
+    text-align: center;
+}
+th{
+    border: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+    font-weight: normal;
+}
+.receiving-mesg{
+    text-align: left;
+}
+.operation span{
+    color: #3283fa;
+    cursor: pointer;
+}
+.bootstrap-datetimepicker-widget{
+    cursor: pointer;
+}
+
+/*弹框*/
+.bgcolor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1021;
+    display: none;
+}
+
+.play-money,
+.sure-play-money,
+.off-money,
+.sure-off-money{
+    display: none;
+    position: relative;
+    width: 400px;
+    height: 220px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: calc(50vh - 150px);
+    margin-top: -moz-calc(50vh - 150px);
+    margin-top: -webkit-calc(50vh - 150px);
+    text-align: center;
+    border-radius: 5px;
+}
+.bgcolor .header{
+    padding: 40px 0 20px 0 ;
+}
+.bgcolor .footer{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+.bgcolor .footer span{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #f8f8f8;
+    background: #337ab7;
+    color: white;
+    cursor: pointer;
+}
+.bgcolor .font-red{
+    color: #ff0000;
+}

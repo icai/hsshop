@@ -1,0 +1,33 @@
+.pointsstore-total .point_tip{display: flex;display: -webkit-flex;-webkit-justify-content: space-between;}
+.pointsstore-total .point_tip p{height: 30px;line-height: 30px;}
+#Xms3Sq4JR6{display: none;}
+#jifenRule{
+    color: #333;
+}
+.point-desc {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+.point-answer {
+    padding: 20px;
+}
+.point-answer div{overflow: hidden;margin-bottom: 10px;}
+.point-answer div p{float: left;font-size: 14px;}
+.point-answer div .jifentxt{width: 230px;word-wrap: break-word;margin-left: 5px;}
+.point-answer div .atip{font-size: 12px;line-height: 24px;}
+.point-answer div .atxt{font-size: 12px;line-height: 24px;margin-left: 10px;}
+.rule_tip{padding: 0 15px;background-color:rgba(255,255,255,0.3);border-radius: 10px;}
+.js-cancel{position: absolute;right: 0;top: 0;padding: 15px;}
+
+.list_cont{padding: 15px 0 0 10px;}
+.list_cont_chlid{display: flex;display: -webkit-flex;border-bottom: 1px solid #efefef;padding-bottom: 10px;}
+.list_cont_chlid ul{overflow: hidden;flex: 1;-webkit-flex: 1;}
+.list_cont_chlid ul .list_li1{font-size: 14px;margin-bottom: 17px;margin-left: 2px;}
+.list_cont_chlid ul .list_li2{font-size: 12px;}
+.list_cont_chlid p{padding-right: 10px;padding-top: 10px;}
+
+.col1{color: #2aae26;}
+.col0{color: #e8717a;}

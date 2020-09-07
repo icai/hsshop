@@ -1,0 +1,55 @@
+*{padding: 0; margin: 0;}
+html,body{position: relative; height: 100%; padding: 0; margin: 0; }
+ul{list-style: none; padding: 0; margin: 0;}
+ul li{list-style: none;}
+.hide{display: none;}
+
+.swiper-container,.swiper-wrapper{ height: 100%; }
+.pages{ height: 100%; width: 100%; position: relative;}
+.page1{background: url(../../static/img/1.jpg) 0 0 no-repeat ; background-size:100% 100%;}
+.page2{background: url(../../static/img/BJJ@2x.png) 0 0 no-repeat ; background-size:100% 100%;}
+.page3{background: url(../../static/img/BJJ@3x.png) 0 0 no-repeat ; background-size:100% 100%;}
+.page4{background: url(../../static/img/BJJ@4x.png) 0 0 no-repeat ; background-size:100% 100%;}
+.page5{background: url(../../static/img/BJJ@5x.png) 0 0 no-repeat ; background-size:100% 100%;}
+.page6{background: url(../../static/img/BJJ@6x.png) 0 0 no-repeat ; background-size:100% 100%;}
+.page7{background: url(../../static/img/answer.jpg) 0 0 no-repeat ; background-size:100% 100%;}
+.page1 .img_1{ width: 80%; margin: 0 10%; position: absolute; top:80px }
+/*继续的图片*/
+.pages .img_2{ width: 60%; margin: 0 20%; position: absolute; bottom:2rem }
+.pages .share{ width: 80%; margin: 0 10%; position: absolute; bottom:6rem }
+/*题目的样式*/
+.pages .topic{margin-top: 10rem; width: 80%; margin-left: 10%;}
+.pages .topic li{height: 2rem; line-height: 2rem; padding: .3rem 1rem; margin-bottom: .8rem; font-size: 1.1rem; font-weight: 200; color: white; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border-radius: 2rem; background: rgba(140,140,140,.7);}
+.pages .topic li input[type='radio']{margin-right: .8rem;}
+
+.page7 .topic{width: 85%; margin-left: 7.5%; margin-top: 26%; font-size: 1rem;}
+.page7 .topic:nth-child(2){margin-top: 11%;}
+.page7 .topic p{margin-bottom: 10px; text-align: center; white-space: normal;}
+.page7 .btn{position: fixed; bottom: 70px; width: 100%; height: 15%; background: transparent;}
+
+/*蒙板*/
+.board{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; background: rgba(0,0,0,.5);}
+.board img:nth-child(1){position: fixed; right: 10px; top: 10px; width: 30%;}
+.board img:nth-child(2){position: fixed; right: 0; top: 100px; width: 70%; margin-right: 15%}
+/*提示*/
+.hint{position: fixed; left: 25%; top: 240px; width: 50%; height: 30px; line-height: 30px; padding: 5px; text-align: center; color: white; border-radius: 20px; background: rgba(0,0,0,.8); z-index: 90;}
+/***********音乐*****************/
+.music{position: absolute; top: .8rem; right: .8rem; width: 2.5rem; height: 2.5rem; z-index: 10;}
+.music-animate{-webkit-animation: music linear infinite 3s; animation: music linear infinite 3s; }
+@-webkit-keyframes music{
+    from{
+        -webkit-transform: rotate(0);
+
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes music{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

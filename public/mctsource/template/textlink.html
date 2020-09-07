@@ -1,0 +1,18 @@
+<div class="control-group">
+    <ul class="custom-nav clearfix">
+        <li ng-show="!editor['textlink'].length">
+            <a class="clearfix" href="javascript:void(0);">
+                <span class="custom-nav-title">点此添加一个『文本导航』</span>
+                <i class="pull-right right-arrow"></i>
+            </a>
+        </li>
+        <li ng-show="editor['textlink'].length" ng-repeat = "item in editor['textlink']">
+            <a class="clearfix" href="javascript:void(0);">
+                <span class="custom-nav-title" ng-bind="item.titleName"></span>
+                <i class="pull-right right-arrow"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="custom-nav clearfix js-custom-nav"></ul>
+    <div class="component-border"></div>
+</div>

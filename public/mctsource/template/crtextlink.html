@@ -1,0 +1,79 @@
+<div>
+    <div class="control-group js-collection-region">
+        <ul class="choices">
+            <li class="choice" ng-repeat = "list in editors[index]['textlink']">
+                <div class="control-group error">
+                    <label class="control-label">
+                        <em class="required">*</em>名称：</label>
+                    <div class="controls">
+                        <input type="text" name="title_{{$index}}" value="" ng-model="list['titleName']" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required="">
+                        <p class="help-block error-message ng-hide" ng-show="editorForm.title_{{$index}}.$dirty && editorForm.title_{{$index}}.$error.required || iserror && editorForm.title_{{$index}}.$invalid">导航名称不能为空。</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        <em class="required">*</em>链接：
+                    </label>
+                    <div class="controls">
+                        <div class="dropdown hover" ng-show="!list['chooseLink']">
+                            <a class="js-dropdown-toggle dropdown-toggle control-action" id="setlink_9" href="javascript:void(0);">设置链接到的页面地址
+                                <i class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,5)">微页面及分类</a></li>
+                                <li>
+                                    <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,5)">商品及分类</a></li>
+                                <li>
+                                    <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,5,shop_url,3)">店铺主页</a></li>
+                                <li>
+                                    <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,5,member_url,4)">会员主页</a>
+                                </li>
+                                <!-- <li>
+                                    <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,5,community_url,4)">微社区</a>
+                                </li> -->
+                                <li>
+                                    <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,5)">营销活动</a></li>
+                                <li>
+                            </ul>
+                        </div>
+                        <div class="linkTo control-action clearfix ng-hide" ng-show="list['chooseLink']">
+                            <div class="pull-left js-link-to link-to">
+                                <a href="javascript:void(0);" class="new-window link-to-title">
+                                    <span class="label label-success ng-binding" ng-bind="list.linkName"></span>
+                                </a>
+                                <a href="javascript:void(0);" class="js-delete-link link-to-title close-modal" title="删除" ng-click="removeLink($index,3)">×</a></div>
+                            <div class="dropdown hover pull-right">
+                                <a class="dropdown-toggle" href="javascript:void(0);" ng-mouseover="showDown($index,5)" id="change_link_9">修改
+                                    <i class="caret"></i></a>
+                                <ul class="dropdown-menu ng-hide" ng-show="list['dropDown']">
+                                    <li>
+                                        <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,5)">微页面及分类</a></li>
+                                    <li>
+                                        <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,5)">商品及分类</a></li>
+                                    <li>
+                                        <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,5,shop_url,3)">店铺主页</a></li>
+                                    <li>
+                                        <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,5,member_url,4)">会员主页</a></li>
+                                    <!-- <li>
+                                        <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,5,community_url,4)">微社区</a>
+                                    </li> -->
+                                    <li>
+	                                    <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,5)">营销活动</a></li>
+	                                <li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <span class="action delete close-modal" title="删除" ng-click="deleteOneTextLink($index)">×</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="control-group options" style="display: block;">
+        <a class="add-option js-add-option" href="javascript:void(0);" ng-click="addOneTextLink()">
+            <i class="icon-add"></i><span>添加一个文本导航</span>
+        </a>
+    </div>
+</div>

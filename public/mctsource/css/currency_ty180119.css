@@ -1,0 +1,28 @@
+.content h5{background-color: #f4f4f4;line-height: 50px;text-indent: 10px}
+#QcodeChange{position: relative;top: -40px;}
+#QcodeChange span{color: #3197fa;display: inline-block;text-align:center}
+#QcodeChange #files{position: absolute; top: 0; left: 0; width: 100px; opacity: 0;} 
+#QcodeChange #files_1{position: absolute; top: 0px; left: 0; height: 20px; width: 56px; opacity: 0; }
+.codeImgShow{display: none;}
+.storeImage{position: relative;}
+#files_store{position: absolute; top: 0; left: 15px; width: 100px; height: 100px; z-index: 10; opacity: 0;}
+.col-sm-4 .help-block{
+    display: inline-block;margin-left:10px
+}
+.xcx-setting{
+    border:1px solid #e6e6e6;
+    width: 200px
+}
+.xcx-help-block{
+    position: absolute;
+    width:100px;
+    left:240px;
+    top:0px
+}
+.col-sm-4 .help-block{
+    margin-left:0px;
+    width: 305px
+}
+#QcodeChange .QcodeChange-span{
+    line-height: 90px;border:1px solid #e6e6e6;width:90px;
+}

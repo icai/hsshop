@@ -1,0 +1,46 @@
+<div class="control-group">
+  <div class="live-header">
+    <span>直播设置</span>
+    <a class="live-navigator" href="https://www.huisou.cn/home/index/helpList?info_type=182&Pid=106" target="_blank">玩转直播>></a>
+  </div>
+  <div class="live-content">
+    <div class="section">
+      <div class="title">直播间：</div>
+      <div ng-hide="editors[index].room.id">
+        <div class="no-room" ng-click="showLiveDialog(1)">选择直播间</div>
+      </div>
+      <div ng-show="editors[index].room.id" class="room-box">
+        <div class="room">
+          <div>{{editors[index].room.name}}</div>
+          <div>开播：{{editors[index].room.start_time}}</div>
+          <div>结束：{{editors[index].room.end_time}}</div>
+          <div>主播：{{editors[index].room.anchor_name}}</div>
+        </div>
+        <span class="close" ng-click="cancelRoom()">×</span>
+      </div>
+    </div>
+    <div class="section">
+      <div class="title">直播间入口图：</div>
+      <div class="img-box">
+        <div ng-if="editors[index].img">
+          <img src="{{editors[index].img}}" alt="" class="cover-img">
+          <span class="close" ng-click="cancelCoverImg()">×</span>
+        </div>
+        <div ng-click="addLiveCoverImg()" ng-if="!editors[index].img">
+          <div class="no-img">+</div>
+          <div class="add-text">添加图片</div>
+        </div>
+        <div class="tips">(图片建议宽度750px，大小不超过2M)</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="title">显示标题：</div>
+      <div>
+        <div><input type="checkbox" ng-model="editors[index].show_title"></div>
+        <div ng-if="editors[index].show_title">
+          <input class="live-input" type="text" maxlength="17" placeholder="这是直播标题" ng-model="editors[index].title">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

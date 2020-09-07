@@ -1,0 +1,206 @@
+.content {
+    font-size: 13px;
+    color: #333;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #3197fa;
+}
+label {
+    margin: 0;
+    font-weight: 400;
+}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{*zoom:1}
+.createApply {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px 14px;
+    background-color: #44BB00;
+    border-radius: 2px;
+}
+.createApply:link,
+.createApply:visited,
+.createApply:hover,
+.createApply:active {
+    color: #fff;
+}
+.list-wraper {
+    margin-top: 20px;
+}
+.list_item {
+    display: flex;
+    padding-left: 10px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    box-shadow:0px 1px 0px 0px rgba(230,230,230,1);
+}
+.list_item li:nth-child(1){
+    width: 30%;
+    text-align: left;
+}
+.list_item label {
+    display: flex;
+    align-items: center;
+}
+.list_item li:nth-child(2){
+    width: 25%;
+}
+.list_item li:nth-child(3){
+    width: 25%;
+}
+.list_item li:nth-child(4){
+    width: 20%;
+}
+.list_item:hover {
+    background-color: #F7F7F7;
+}
+.list_header,
+.list_header:hover {
+    background-color: #F2F2F2;
+}
+.check-btn {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid #D7D7D7;
+    margin: 0 5px 0 0 !important;
+}
+.choose-del {
+    float: left;
+    margin-top: 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 2px;
+    padding: 11px 14px;
+    cursor: pointer;
+}
+.choose-del:hover {
+    color: #3197fa;
+    border-color: #3197fa;
+}
+
+/*推广分销客开始*/
+.hs-btn, .input-append, .t-pop-header, .widget-promotion-main .qrcode-links, .xiazai {
+    text-align: center;
+}
+.widget-promotion {
+    position: absolute;
+    z-index: 1000;
+    width: 360px;
+    height: 420px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.widget-promotion::after,.widget-promotion::before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    right: -19px;
+    border: 10px solid transparent;
+    border-left-color: white
+}
+
+.widget-promotion::before {
+    right: -21px;
+    border-left-color: #ccc
+}
+.widget-promotion-tab{
+	border-bottom: #CCCCCC 1px solid;
+}
+.widget-promotion-tab li {
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background: #f2f2f2;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.widget-promotion-tab li:first-child {
+    border-top-left-radius: 9px
+}
+
+.widget-promotion-tab li:last-child {
+    border-top-right-radius: 9px
+}
+.widget-promotion-tab li{
+	background: #fff;
+}
+.widget-promotion-tab li.active {
+    border-bottom: #3b9cf9 2px solid;
+}
+.widget-promotion-main {
+    min-height: 200px;
+    padding: 10px 15px 20px
+}
+
+.widget-promotion-main label {
+	padding:0 0 15px 20px;
+    font-size: 12px;
+    line-height: 12px
+}
+.widget-promotion-main .label-b{
+	padding:15px 0 0 20px;
+}
+.widget-promotion-main input[type="text"] {
+    width: 230px;
+    background-color: #f1f2f6;
+    border: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.widget-promotion-main .btn{
+	color: #fff;
+    background-color: #38f;
+    margin-left: -6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.widget-promotion-main button.btn {
+    width: 55px
+}
+
+.widget-promotion-main select {
+    width: 166px
+}
+
+.widget-promotion-main .widget-promotion-content {
+    margin-top: 15px;
+}
+.widget-promotion-content a{
+	color:#38f;
+}
+.qrcode{
+	width: 100%;
+}
+.widget-promotion-main .qrcode-right-sidebar {
+    background-color: #FFF;
+    width: 100%;
+    min-height: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.widget-promotion-main .qrcode-right-sidebar .qr_img {
+    text-align: center;
+}
+.widget-promotion-main .qrcode-right-sidebar .qr_img_xcx {
+    text-align: center;
+}
+.qr_img_xcx img {
+    display: inline-block;
+    width: 200px;
+}
+/*推广分销客结束*/

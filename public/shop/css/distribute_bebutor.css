@@ -1,0 +1,28 @@
+.distribute_box{height: 100%; background: url(../static/images/distribute@2x.png) no-repeat 100%; overflow: hidden;}
+.container{height: 100%;overflow: hidden;}
+.zx_texcenter{text-align: center;}
+.distribute_title{font-size: 26px;margin-top: 58px;color: #267fc1;font-weight: bold;}
+.distribute_subtitle{color: #267fc1; margin-top: 18px;font-size: 18px; font-weight: bold;}
+.distribute_con{margin-top: 27px;font-size: 16px; color: #5ba9e0;}
+.distribute_button{margin: auto; margin-top: 24px;width: 90%;}
+.distribute_button .button_click{border-radius:5px;margin: auto;font-size: 16px;margin-bottom: 12px;}
+.button_sure{background: #fe6700;color: #fff;padding: 15px 0;}
+.button_close{color: #fe6700; border: 1px solid #fe6700;padding: 14px 0;}
+.distribute_xieyi{font-size: 12px;color:#999999;margin-bottom: 50px;margin-top: 20px;}
+.xieyi_a{color: #fe6700;text-decoration: underline;}
+.distribute_tip{position: absolute;bottom: 60px; text-align:center;color: #fe6700;font-size: 14px; width: 100%;}
+.zx_mabom10{margin-bottom: 10px;}
+.distribute_agreement{
+    padding: 0 10px
+}
+.distribute_agreement .title{
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold
+}
+.distribute_agreement p{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 12px
+}

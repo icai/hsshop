@@ -1,0 +1,38 @@
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+.content label{font-weight: normal;}
+
+.content .content_top {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E5E5;}
+.content .content_top ul{overflow: hidden; margin-bottom: -1px;}
+.content .content_top ul .active{background: white; border-bottom-color: white;}
+.content .content_top ul li{float: left; padding: 5px 10px; background: #F8F8F8; border: 1px solid #E5E5E5; border-right: none;}
+.content .content_top ul li:nth-child(4){border-right: 1px solid #E5E5E5;}
+.content .content_top ul li:hover{cursor: pointer;}
+.content .content_top a span{display: inline-block; width: 15px; height: 15px; border-radius: 50%; text-align: center; line-height: 15px; background: #3c3; color: white;}
+
+.content .content_center{display: flex; justify-content: space-between; align-items: center; position: relative; margin: 10px 0;}
+.content .content_center input{width: 150px; padding-left: 20px;}
+.content .content_center #FDimg{position: absolute; right: 130px; height: 15px; width: 15px; background: url(../../static/images/chosen-sprite.png) -34px -25px no-repeat;}
+
+.content .content_bottom{display: none; min-height: 150px; height: auto; width: 100%; padding: 10px; border: 1px solid #EEEEEE;} 
+.content .content_bottom p{text-align: center; padding-top: 50px;}
+.content .B_active{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*预约管理*/
+.bs_gl{height: 50px;}
+.bs_left{height: 40px;padding-left: 20px;font-size: 27px;float: left;}
+.bs_left img{display: inline-block;}
+.bs_right{float: right;}
+.form-control{height: 30px;}
+.bs_slt{width: 50px;height: 42px;margin:0 10px 0 22px;}
+.bs_btn{display: inline-block;width: 50px;height: 44px;background: #d43f3a;text-align: center;line-height: 44px;color: #fff;border: 0;}
+/*按钮*/
+.right_content{margin-top: 10px;}
+/*main*/
+.t_content_header{display: flex;justify-content: space-around;align-items: center;background: #C1C3C6;height: 60px;}
+.t_content_con{display: flex;justify-content: space-around;align-items: center;background: #F0F0F0;height: 80px;margin-top: 5px;}
+#t_content{margin-top: 10px;}
+.t_content_con li{display:block;text-align: center;width: 126px;}
+.t_content_header li{display:block;text-align: center;width: 126px;}
+.t_content_con li:last-child{color: #f0ad4e;cursor: pointer;}
+.t_content_con li:last-child a{color: #f0ad4e;cursor: pointer;}
+

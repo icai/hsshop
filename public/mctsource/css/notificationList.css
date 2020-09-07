@@ -1,0 +1,289 @@
+/*列表开始*/
+a {
+    color: #3197FA;
+    text-decoration: none;
+}
+a:hover{color: #187dde;}
+.widget-app-board{
+	padding: 20px;
+    background: #f8f8f8;
+    zoom: 1;
+    margin-bottom: 15px;
+}
+.widget-app-board-info{
+	/*width:80%;*/
+}
+.widget-app-board-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.widget-app-board-info p {
+    line-height: 20px;
+    font-size:12px;
+	color: #666;
+}
+.common-helps-entry a {
+    color: #38f;
+    text-decoration: none;
+}
+
+.ui-message-warning{
+	background: #ffc;
+    border-color: #fc6;
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    color: #f30;
+    border: 1px solid #e5e5e5;
+    line-height: 24px;
+    font-size:12px;
+}
+
+.ui-block-head {
+    position: relative;
+    padding: 10px;
+    line-height: 20px;
+    background: #f8f8f8;
+}
+
+.ui-block-head .block-title {
+    margin-right: 5px;
+}
+.ui-block-head h3 {
+    display: inline-block;
+    margin: 0 12px 0 0;
+    padding: 0 0 0 10px;
+    border-left: 4px solid #f70;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.switches {
+    margin-top: 10px;
+}
+
+.switch-item {
+    float: left;
+    width: 23.5%;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 1.33%;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    position: relative;
+}
+.switch-item .title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.switch-item .disable {
+    color: #f30;
+} 
+.switch-item .enable {
+    color: #4b0;
+}
+.switch-item .disable .free-tip {
+    color: #999;
+}
+.switch-item .switch-setting { 
+    color: #07d;
+}
+.switch-item:hover {
+    background-color: #f2f2f2;
+}
+/*列表结束*/
+/*开关按钮样式开始*/
+.ui-switcher-on {background: #4b0;}
+.ui-switcher-on:hover {background: #d00;}
+.ui-switcher-off {background: #666;}
+.ui-switcher-off:hover {background: #333;}
+.ui-switcher {position: relative;display: inline-block;width: 110px;height: 40px;padding: 2px;font-size: 16px;color: #fff;vertical-align: middle;border: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;outline: none;cursor: pointer;border-radius: 20px;}
+.ui-switcher-on::before {top: 2px;display: inline-block;width: 62px;line-height: 36px;text-align: center;vertical-align: top;content: '\5DF2\542F\7528';padding-left: 8px;}
+.ui-switcher::before {position: absolute;left: 2px;}
+.ui-switcher-on::after {top: 2px;display: inline-block;content: '';width: 36px;height: 36px;background: #fff;border-radius: 18px;-webkit-transition: rotate 100s;-moz-transition: rotate 100s;transition: rotate 100s;}
+.ui-switcher::after {position: absolute;right: 2px;}
+.ui-switcher-off::before {top: 2px;display: inline-block;content: '';width: 36px;height: 36px;background: #fff;border-radius: 18px;-webkit-transition: rotate 100s;-moz-transition: rotate 100s;transition: rotate 100s;}
+.ui-switcher-off::after {top: 2px;display: inline-block;width: 62px;line-height: 36px;text-align: center;vertical-align: top;content: '\672A\542F\7528';padding-right: 8px;}
+.ui-switcher-off:hover::after {content: '\542F\7528';}
+.ui-switcher-on:hover::before {content: '\7981\7528';}
+
+.switch-small .ui-switcher-on {background: #4b0;}
+.switch-small .ui-switcher-on:hover {background: #d00;}
+.switch-small .ui-switcher-off {background: #666;}
+.switch-small .ui-switcher-off:hover {background: #333;}
+.switch-small .ui-switcher {position: relative;display: inline-block;width: 80px;height: 30px;padding: 2px;font-size: 12px;color: #fff;vertical-align: middle;border: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;outline: none;cursor: pointer;border-radius: 20px;}
+.switch-small .ui-switcher-on::before {top: 2px;display: inline-block;width: auto;line-height: 25px;text-align: center;vertical-align: top;content: '\5DF2\542F\7528';padding-left: 8px;}
+.switch-small .ui-switcher::before {position: absolute;left: 2px;}
+.switch-small .ui-switcher-on::after {top: 2px;display: inline-block;content: '';width: 25px;height: 25px;background: #fff;border-radius: 18px;-webkit-transition: rotate 100s;-moz-transition: rotate 100s;transition: rotate 100s;}
+.switch-small .ui-switcher::after {position: absolute;right: 2px;}
+.switch-small .ui-switcher-off::before {top: 2px;display: inline-block;content: '';width: 25px;height: 25px;background: #fff;border-radius: 50%;-webkit-transition: rotate 100s;-moz-transition: rotate 100s;transition: rotate 100s;}
+.switch-small .ui-switcher-off::after {top: 2px;display: inline-block;width: auto;line-height: 25px;text-align: center;vertical-align: top;content: '\672A\542F\7528';padding-right: 8px;}
+.switch-small .ui-switcher-off:hover::after {content: '\542F\7528';}
+.switch-small .ui-switcher-on:hover::before {content: '\7981\7528';} 
+
+/*开关按钮样式结束*/
+
+/*详情开始*/
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+.push-setting-form .setting-hr {
+    margin: 20px 10px;
+} 
+.form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+.push-setting-form .control-label {
+    width: 130px; 
+}
+.form-horizontal .control-label {
+    width: 120px;
+    font-size: 14px;
+    line-height: 18px;
+    float:left;
+} 
+
+.form-horizontal .controls { 
+    word-break: break-all;
+    float:left;
+    box-sizing: border-box;
+    width:100%;
+    margin-left:-130px;
+    padding-left:130px;
+}
+
+.push-setting-form select {
+    width: 80px;
+    margin: 0 10px 2px;
+    height: 30px;
+    border-radius: 5px;
+}
+.divide-box {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+.divide-title {
+    padding: 4px 8px 6px 10px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+}
+.push-setting-form .controls span {
+    font-size: 14px;
+}
+.radio, .checkbox {
+    padding-left: 16px;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    margin-left: -16px;
+    margin-top: 2px;
+}
+.push-setting-form .msg-content-one {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.wx-template {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 15px 15px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.wx-title {
+    position: relative;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wx-date {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.wx-content {
+    margin-bottom: 20px;
+}
+.wx-link {
+    position: relative;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.wx-link:after {
+    content: '>';
+    display: block;
+    float: right;
+}
+
+/*详情结束*/
+
+/*消息列表开始*/
+.notice-list-item {
+    border: 1px solid #e5e5e5;
+    margin-top: -1px;
+}
+
+.notice-list-item:hover {
+    background-color: #f8f8f8;
+}   
+.notice-list-item-inner {
+    position: relative;
+    padding: 15px 20px;
+    color: #666;
+    border-left: 3px solid transparent;
+    margin-left: -1px;
+}
+.notice-close {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #ccc;
+    cursor: pointer;
+}
+.notice-list-item:hover .notice-close {
+    display: block;
+}
+.notice-close:hover {
+    color: #333;
+}
+.notice-from, .notice-datetime {
+    font-size: 12px;
+    color: #999;
+}
+.notice-content {
+    margin: 10px 0;
+    word-break: break-all;
+}
+.notice-from, .notice-datetime {
+    font-size: 12px;
+    color: #999;
+}
+.notice-empty {
+    margin-top: -1px;
+    padding: 60px 0;
+    border: 1px solid #e5e5e5;
+    color: #999999;
+    text-align: center;
+}
+
+.notice-footer{
+    text-align: right;
+}
+

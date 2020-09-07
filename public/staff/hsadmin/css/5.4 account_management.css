@@ -1,0 +1,25 @@
+.hide{display: none;}
+label{font-weight: normal;}
+
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: 50px; line-height: 50px; font-size: 16px;}
+.main .main_content .sorts .verLine{margin: 0 5px;}
+.main .main_content .table_title{background: #f0f0f0;}
+.main .main_content ul{height: 50px; border-bottom: 1px solid #ccc;} 
+.main .main_content ul li{width: 25%; height: 100%; line-height: 49px; overflow: hidden; text-align: center; font-size: 15px;}
+.main .main_content ul li .del{color: #f00;}
+.main .main_content .main_bottom{margin-top: 10px;}
+.main .main_content .main_bottom span a{margin: 0 5px;}
+.main .main_content .main_bottom span input{width: 60px; height: 34px; margin-left: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 5px;}
+.main .main_content .main_bottom span button{margin-left: 10px;}
+
+/*弹框*/
+body .modal-content select{width: 269px; height: 34px; padding: 2px 5px; border: 1px solid #ccc; border-radius: 5px;}
+body .modal-content input{}
+body .modal-footer{text-align: center;}
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+.main .content{}
+
+/*头部样式设置*/
+.content .content_top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+/*中部表格的样式设置*/
+.content .content_center{}
+.content .content_center .title{background: #f2f2f2;}
+.content .content_center .title, .tatilMsg{
+	height: 45px;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	border-bottom: 1px solid #e6e6e6;
+	overflow: hidden;
+}
+.content .content_center .tatilMsg:hover{
+	background-color:#f7f7f7 
+}
+.content_center .title li, .tatilMsg li{
+	float: left;
+	width: 11.1%;
+	text-align: center;
+}
+.content_bottom{
+	width: calc(100% - 16px);
+	height: auto;
+	min-height: 180px;
+	padding: 8px;
+	background: #ffc;
+	border: 1px solid #ffa704;
+}
+.content_bottom span{line-height: 30px; color: #666;}
+
+
+/*------------------------------添加管理员页面；---------------------------------*/
+/*上部字段样式*/
+.content_2 .content_top_2 span{
+	display: inline-block;
+	width: calc(100% - 10px);
+	height: 30px;
+	line-height: 30px;
+	background: #fff5cb;
+	border: 1px solid #fdeeb2;
+	padding: 5px;
+}
+
+/*中部信息样式*/
+.content_center_2{height: auto; padding: 30px;}
+.content_center_2 label{font-size: 14px; font-weight: normal;}
+.content_center_2 .account i{display: inline-block; color: #b94a48;}
+.content_center_2 .account input{ display: inline-block; width: 150px; height: 15px;}
+.content_center_2 ._msg{
+	width: calc(100% - 105px);
+	height: auto;
+	padding: 10px;
+	margin: 20px 0 20px 85px;
+	line-height: 25px;
+	border: 1px solid #FC6;
+	background: #ffc;
+	/*display: none;*/
+}
+.content_center_2 ._msg{display: none;}
+.content_center_2 .showed{display: block;}
+.content_center_2 ._msg a{color: #27F;}
+.content_center_2 button{margin-left: 85px;}
+
+/*下部表格样式*/
+.content_bottom_2 table{ width: 100%; border: 1px solid #C0C0C0; margin-bottom: 50px;}
+.content_bottom_2 table th{padding-left: 10px;text-align: left;background: #f2f2f2;}
+.content_bottom_2 table td{padding-left: 10px;text-align: left}
+.content_bottom_2 table i{display: inline-block; color: #C0C0C0;}
+
+/*列表样式*/
+.content_center .title .admin_grid_spc,.tatilMsg .admin_grid_spc{width:10%}
+.content_center .title .admin_grid_nick,.tatilMsg .admin_grid_nick{width:6%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.content_center .title .admin_grid_wechat,.tatilMsg .admin_grid_wechat{width:8%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.content_center .title .admin_grid_shop,.tatilMsg .admin_grid_shop{width:7%}
+.content_center .title .admin_grid_qq,.tatilMsg .admin_grid_qq{width: 5%}
+.content_center .title .admin_grid_time,.tatilMsg .admin_grid_time{width:16%}
+.content_center .title .admin_grid_op,.tatilMsg .admin_grid_op{width:13%}
+.tatilMsg a{cursor: pointer;}
+.list_page{text-align: right;width:100%;height: 60px}

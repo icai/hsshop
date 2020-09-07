@@ -1,0 +1,49 @@
+.content_title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 20px;
+}
+.content_title .title_left{
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.content_title .title_center{width: 40%; font-size: 12px; color: #999;}
+
+.content_body{border: 1px solid #ccc; margin-bottom: 60px;}
+.content_body .content_top{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	margin: 0 30px;
+	color: #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.content_body .content_top span{font-size: 16px; color: #333; margin-left: 30px;}
+.content_body .content_main{
+	height: auto;
+	margin: 20px 30px;
+	margin-left: 145px;
+}
+.content_body .content_main span{
+	display: block;
+	color: #003333;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+.content_body .content_main p{color: #666; font-size: 15px; line-height: 30px;}
+.content_body ul{display: flex; justify-content: space-between;}
+#firstUl{width: 85%;}
+#secondUl{width: 80%;}
+#firstUl p, #secondUl p, #thirdUl p{font-size: 12px;}
+.content_body li{list-style: disc; width: 150px; height: auto;}
+.content_body li:nth-child(1){margin-left: 20px;}
+.content_bottom {text-align: center;}
+.content_bottom label{font-weight: normal;}
+.content_bottom a{color: #27F;}
+.content_bottom button{width: 170px; height: 50px; margin: 30px 0;}

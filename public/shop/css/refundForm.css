@@ -1,0 +1,367 @@
+[v-cloak]{display: none;}
+.weui-cells {
+    margin-top: 1.17647059em;
+    background-color: #FFFFFF;
+    line-height: 1.41176471;
+    font-size: 17px;
+    overflow: hidden;
+    position: relative;
+}
+.weui-cells:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.weui-cell {
+    padding: 10px 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.weui-cells .weui-cell {
+    font-size: 15px;
+}
+.weui-label {
+    display: block;
+    width: 105px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.weui-cell__bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.weui-input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    height: 1.41176471em;
+    line-height: 1.41176471;
+}
+.weui-cell__ft {
+    text-align: right;
+    color: #999999;
+}
+.weui-mask_transparent {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.weui-toast {
+    position: fixed;
+    z-index: 5001;
+    width: 7.6em;
+    min-height: 7.6em;
+    top: 180px;
+    left: 50%;
+    margin-left: -3.8em;
+    background: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.weui-toast {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 0!important;
+}
+.weui-toast.weui-toast_text {
+    min-height: 0;
+}
+[class^="weui-icon-"], [class*=" weui-icon-"] {
+    display: inline-block;
+    vertical-align: middle;
+    font: normal normal normal 14px/1 "weui";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.weui-icon-success-no-circle {
+    font-size: 23px;
+    color: #09BB07;
+}
+.weui-icon_toast {
+    margin: 22px 0 0;
+    display: block;
+}
+.weui-icon-success-no-circle {
+    font-size: 23px;
+    color: #09BB07;
+}
+.weui-toast__content {
+    font-size: 16px;
+}
+.weui-toast_text .weui-toast__content {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+.weui-textarea {
+    display: block;
+    border: 0;
+    resize: none;
+    width: 100%;
+    color: inherit;
+    font-size: 1em;
+    line-height: inherit;
+    outline: 0;
+}
+.weui-textarea-counter {
+    color: #B2B2B2;
+    text-align: right;
+}
+.weui-cells:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+/*上传图片区域*/
+.vux-label {
+    display: block;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.vux-label-desc {
+    font-size: 14px;
+    color: #666;
+}
+.weui-cell__ft.vux-cell-align-left {
+    text-align: left;
+}
+.vue-uploader {
+    border: 1px solid #e5e5e5;
+}
+.vue-uploader .file-list {
+    padding: 10px 0px;
+}
+.vue-uploader .file-list .file-item {
+    float: left;
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+#hideInp {
+    position: relative;
+}
+.vue-uploader .add {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    line-height: 90px;
+    border: 1px dashed #ececec;
+    font-size: 30px;
+    cursor: pointer;
+}
+.vue-uploader .file-list .file-item img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ececec;
+}
+#hideInp input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+}
+.vue-uploader .file-list:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+.submit {
+    position: fixed;
+    bottom: 0;
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    border-top: 1px solid #DFDFDF;
+}
+.submit button {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: #B0282C;
+    border: none;
+    border-radius: 3px;
+}
+.vue-uploader .file-list .file-item .file-remove {
+    position: absolute;
+    right: 12px;
+    display: none;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    color: white;
+    cursor: pointer;
+    line-height: 16px;
+    border-radius: 100%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: rgba(0, 0, 0, 0.5);
+}
+.vue-uploader .file-list .file-item .file-remove {
+    display: inline;
+}
+
+#main #group_2{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: white;
+}
+#main #group_2 p{
+    width: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid #EDEDED;
+}
+.submitDiv {
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 20px);
+  background: white;
+  border-top: 1px solid #DFDFDF;
+  z-index: 10;
+}
+.submitDiv button {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #B0282C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#main #group_2 .imgs{
+    margin-top: 10px;
+}
+#main #group_2 .imgs .imgs_item{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #DFDFDF;
+}
+#main #group_2 .imgs .imgs_item img{
+    width: 100%;
+    height: 100%;
+}
+#main #group_2 .imgs .imgs_item .delImg{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+}
+#main #group_2 .imgs .imgs_up{
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #DFDFDF;
+}
+#main #group_2 .imgs .imgs_up img{
+    margin-top: 15px;
+    width: 50px;
+    height: 40px;
+}
+#main #group_2 .imgs .imgs_up form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+}
+#main #group_2 .imgs .imgs_up form input{
+    width: 100%;
+    height: 100%;
+}
+#group_2 .upload_images .uploaderDiv input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    opacity: 0;
+}
+#group_2 .upload_images {
+    margin-top: 10px;
+}
+#group_2 .upload_images .uploaderDiv {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 2px;
+}
+#group_2 .upload_images .imgs_item img {
+    width: 100%;
+    height: 100%;
+}
+#group_2 .upload_images .imgs_item {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #DFDFDF;
+}
+#group_2 .upload_images .imgs_item .delImg {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+}

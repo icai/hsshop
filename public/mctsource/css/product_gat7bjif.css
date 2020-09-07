@@ -1,0 +1,240 @@
+a {
+    color: #38f;
+    cursor: pointer;
+}
+  a.new-window {
+    color: blue;
+}
+.gray {
+    color: #999;
+}
+
+table .cell-40 {
+    width: 40%;
+}
+.ui-box {
+    margin-bottom: 15px;
+}
+.js-list-filter-region {
+    position:relative;
+}
+.zent-btn-success:link, .zent-btn-success:visited, .zent-btn-success:focus {
+    color: #fff;
+}
+.zent-btn {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #bbb;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+.zent-btn-success {
+    color: #fff;
+    background: #06bf04;
+    border-color: #00ab00;
+}
+.common-helps-entry {
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.clearfix::after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.common-helps-entry .help-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    line-height: 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #fff;
+    background: #3c3;
+    text-align: center;
+}
+.common-helps-entry .help-icon:after {
+    content: "?";
+}
+
+/*搜索框*/
+.form--search, .form--searchbox {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 10;
+    vertical-align: middle;
+    margin: 0;
+}
+.form--search .txt {
+    -webkit-transition: width linear 0.25s;
+    -moz-transition: width linear 0.25s;
+    transition: width linear 0.25s;
+    border-radius: 4px;
+}
+.form--search .txt:focus {
+    border-color: #aaa;
+    outline: none;
+    width: 180px
+}
+.form--search .txt, .form--searchbox .txt {
+    width: 97px;
+    height: 28px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding-left: 20px;
+    background: #fff url(../../static/images/ico-search.png) 4px center no-repeat;
+    background-image: -webkit-image-set( url(../../static/images/ico-search.png) 1x, url(/v2/image/ico-search@2x.png) 2x);
+}
+.clearfix::after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/*列表*/
+/*没有数据*/
+.no-result {
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 39px 0;
+}
+
+/*导入商品素材弹窗*/
+ .modal-backdrop {
+     display: none;
+     opacity: 0.7;
+     z-index:11;
+ }
+ 
+ .modal {
+     display: none;
+ }
+ 
+ .modal-body {
+     max-height: none;
+ }
+ 
+ .form-horizontal .control-group {
+     margin-bottom: 10px;
+ }
+ 
+ .form-horizontal .control-label {
+     width: 120px;
+     font-size: 14px;
+     line-height: 18px;
+     float: left;
+ }
+ 
+ .form-horizontal .controls {
+     margin-left: 130px;
+     word-break: break-all;
+ }
+ 
+ .form-horizontal .control-action {
+     padding-top: 5px;
+     display: inline-block;
+     font-size: 14px;
+     line-height: 18px;
+ }
+ 
+ .file-select-button {
+     position: relative;
+     overflow: hidden;
+     width: 80px;
+     background: none;
+     padding: 0;
+ }
+ 
+ .form-horizontal .control-action {
+     padding-top: 5px;
+     display: inline-block;
+     font-size: 14px;
+     line-height: 18px;
+ }
+ 
+ .file-select-button input {
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin: 0;
+     opacity: 0;
+     filter: alpha(opacity=0);
+     font-size: 23px;
+     direction: ltr;
+     cursor: pointer;
+     width: 80px;
+ }
+ 
+ .form-horizontal .help-block,
+ .form-horizontal .help-desc {
+     opacity: 0.6;
+     line-height: 14px;
+     font-size: 12px;
+     margin-top: 6px;
+     margin-bottom: 10px;
+ }
+ 
+ .upload-modal .help-section {
+     margin-top: 10px;
+ }
+ 
+ .choose {
+     color: #38f;
+ }
+ 
+ .down_load {
+     color: #38f;
+ }
+ 
+ .name_container {
+     display: none;
+ }
+ 
+ .size_container {
+     display: none;
+ }
+ 
+ .js-notice {
+     display: none;
+ }
+
+
+/*分页*/
+.page{
+	text-align:right;
+}
+/*tip*/
+.tip {
+        height: 44px;
+        width: 450px;
+        background: red;
+        color: #fff;
+        text-align: center;
+        line-height: 44px;
+        font-size: 20px;
+        position: fixed;
+        top: 35px;
+        left: 50%;
+        margin-left: -225px;
+        display: none;
+    }

@@ -1,0 +1,241 @@
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+.clearfix:before,.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/*顶部搜索区域*/
+.help_top{
+	width: 100%;
+	height: 300px;
+	background: url("../image/help_banner.jpg") no-repeat;
+	background-size: cover;
+}
+.help_top_content{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+.help_top_left{
+	padding-top: 5px;
+	font-size: 36px;
+	color: #FFFFFF;
+	font-family: "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+	padding-left: 130px;
+}
+.help_top_right{
+
+}
+.help_top_right .right_inp{
+	width:630px;
+	height:44px;
+	background:rgba(255,255,255,1);
+	border-radius:4px 0 0 4px;
+	outline:none;
+	padding: 0;
+	border-width:0;
+	font-size: 14px;
+	padding-left: 10px;
+	line-height: 44px;
+}
+.help_top_right .right_btn{
+	width:80px;
+	height:44px;
+	background:rgba(49,151,250,1);
+	border-radius:0px 4px 4px 0px;
+	position: relative;
+	cursor: pointer;
+}
+.help_top_right .right_btn span{
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	background: url("../image/help_search.png") no-repeat;
+	background-size: cover;
+	top: 50%;
+	left: 50%;
+	margin: -12px 0 0 -12px;
+}
+.help_top_right_tip{
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 11px 10px;
+}
+.help_top_right_tip span{
+	margin-right: 28px;
+	font-family: "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+}
+
+/*帮助中心 内容导航*/
+.help_nav{
+	width: 100%;
+	padding-top: 21px;
+	background-color: #F0F0F0;
+	box-shadow:1px 0px 0px rgba(240,240,240,1);
+}
+.help_nav_content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.help_nav_content a{
+	color: #4D4D4D;
+	font-size: 16px;
+	font-family: "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+	display: inline-block;
+	margin-right: 56px;
+	padding-bottom: 17px;
+}
+
+.help_nav_content a.nav_active{
+	border-bottom: 2px solid #3197FA;
+	color: #3197FA;
+}
+
+/*帮助中心 常见问题*/
+.help_list{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 59px 0;
+}
+/*帮助中心 常见问题 左侧*/
+.help_list_left{
+	width: 260px;
+}
+.list_left_ul{
+	border-top: 1px solid #E6E6E6;
+}
+.list_left_ul li .list_left_div{
+	border-bottom: 1px solid #E6E6E6;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	padding-left: 20px;
+	position: relative;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-right: 45px;
+}
+.list_left_ul li .list_left_div span{
+	position: absolute;
+	width: 16px;
+	height: 9px;
+	background: url("../image/help_array.png") 0 -10px no-repeat;
+	right: 30px;
+	top: 50%;
+	margin-top: -5px;
+}
+.list_left_ul li .list_left_div span.span_active{
+	background: url("../image/help_array.png") 0 0px no-repeat;
+}
+.list_left_ul_li{
+	padding-top: 10px;
+	display: none;
+	border-bottom: 1px solid #E6E6E6;
+}
+.list_left_ul_li li {
+	margin-bottom: 10px;
+	height: 38px;
+	line-height: 38px;
+}
+.list_left_ul_li li a{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 100%;
+	font-size: 14px;
+	color: #666666;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.list_left_ul_li li.li_active a{
+	background-color: #F8F8F8;
+	color: #333333;
+}
+.list_left_ul_li li:hover a{
+	color: #3197FA;
+}
+.list_left_ul_li li:hover.li_active a{
+	color: #333333;
+}
+/*帮助中心 常见问题 右侧*/
+.help_list_right{
+	width: 910px;
+	margin-left: 30px;
+}
+.help_list_right h4{
+	font-size: 14px;
+	color: #656565;
+	font-weight: normal;
+	margin-bottom: 27px;
+}
+.help_list_right h4 a{
+	color: #3197FA;
+	font-size: 16px;
+}
+.help_list_expand{
+	padding-top: 20px;
+}
+.help_list_expand h4{
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 20px;
+}
+.help_list_expand ul li{
+	margin-bottom: 14px;
+}
+.help_list_expand ul li a{
+	font-size: 12px;
+	color: #3197FA;
+}
+
+.list_right_content{
+	margin-top: 38px;
+	margin-bottom: 30px;
+}
+.list_right_content h3{
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 25px;
+}
+.list_right_content .list_right_content_div{
+	font-size: 12px;
+	color: #999999;
+	padding-bottom: 29px;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 30px;
+}
+.list_right_box_div{
+	width: 100%;
+}
+.list_right_box_div img{
+	width: auto;
+}
+.help_nav_content a:hover{
+	color:#3197FA;
+}

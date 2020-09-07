@@ -1,0 +1,98 @@
+.app{
+    .title{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        background: #ff4552;
+        font-family: "微软雅黑";
+        font-size: .8rem;
+        z-index: 10;
+    }
+    .content{
+        margin-top: 50px;
+        margin-bottom: 60px;
+        #topTitleImg{
+            padding: 10px;
+            width: 70%;
+            margin-left: calc(~"15% - 10px");
+        }
+        .weui-cells_form{
+            margin-top: 0;
+            border-bottom: 10px solid #f0f0f0;
+            .firstLabel{
+                padding-bottom: 0;
+            }
+            .weui-cell{
+                .weui-cell__hd{
+                    .weui-label{
+                        width: 120px;
+                    }
+                }
+            }
+            .style_img{
+                padding: 5px;
+                img{
+                    display: inline-block; 
+                    margin: 0 5px;
+                    width: calc(~"50% - 17px");
+                    border: 2px solid transparent;
+                    border-radius: 9px;
+                    
+                    &:nth-child(1){
+                        margin: 5px;
+                        width: calc(~"100% - 14px");
+                    }
+                }
+                .active{
+                    border-color: red;
+                    box-shadow: 0 0 10px red;
+                }
+            }
+            .radios{
+                p{
+                    padding: 5px 10px;
+                    img{
+                        margin-right: 10px;
+                    }
+                    input{
+                        width: 300px;
+                        border: none;
+                        font-size: .8rem;
+                    }
+                }
+            }
+            .picker{
+                width: 300px;
+                border: none;
+                font-size: .8rem;
+            }
+        }
+        .submit{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: white;
+            border-top: 1px solid #f0f0f0;
+            button{
+                margin-left: 5%;
+                margin-top: 10px;
+                width: 90%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background: #ff4552;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: .8rem;
+            }
+        }
+    }
+}

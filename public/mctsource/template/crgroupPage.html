@@ -1,0 +1,110 @@
+<div class="editer-content">
+    <div class="control-group">
+    	<P class="group_title">
+            <span>分类</span>
+        </P>
+    	<div class="group_item" ng-init="p_index=$index" ng-repeat="(key,list) in editors[index]['classifyList']" ng-click="delgroup($index,1)">
+    		<div class="input_item">
+		        <label class="control-label">分类名:</label>
+		        <div class="controls">
+			        <input class="form-control" maxlength="6" type="text" value="最多6个字" ng-model="list.category_name">
+			    </div>
+		    </div>
+		    <div class="input_item">
+			    <label class="control-label">广告图:</label>
+			    <div class="controls addimage" ng-if="list.thumbnail">
+			        <img ng-src="{{host+list.thumbnail}}" width="100" height="100" class="thumb-image">
+			        <a class="changeimage" href="javascript: void(0);" ng-click="GroupAddPic($index)">更换图片</a>
+			        <p>建议尺寸530x190px</p>
+			    </div>
+			    <div class="controls addimage" ng-if="!list.thumbnail">
+			        <div ng-click="GroupAddPic($index)">
+			        	+添加图片
+			        </div>
+			        <p>建议尺寸530x190px</p>
+			    </div>
+		    </div>
+		    <div class="group_item_s" ng-repeat="item in list['subClassifyList']">
+		        <div class="addimage" ng-if="item.thumbnail">
+			        <img ng-src="{{host+item.thumbnail}}" width="80" height="80" class="thumb-image">
+			        <a class="changeimage2" href="javascript: void(0);" ng-click="GroupAddItemPic(p_index,$index)">更换图片</a>
+			    </div>
+		    	<div class="addimage" ng-click="GroupAddItemPic(p_index,$index)" ng-if="!item.thumbnail">
+		        	+添加图片
+		        </div>
+		        <div class="addimage_r">
+			        <div class="input_item_s">
+				        <label class="control-label">标题:</label>
+				        <div class="controls">
+					        <input class="form-control" maxlength="5" type="text" value="最多5个字" ng-model="item.category_name">
+					    </div>
+				    </div>
+				    <div class="input_item_s">
+				    	<div class="control-group" style="padding: 10px 0;" ng-if="!item.linkUrl">
+					        <label class="control-label" style="line-height: 12px;">链接:</label>
+					        <div class="controls">
+		                        <div class="dropdown hover">
+		                            <a class="js-dropdown-toggle dropdown-toggle control-action" href="javascript:void(0);">设置链接到的页面地址
+		                                <i class="caret"></i></a>
+		                            <ul class="dropdown-menu">
+		                                <li><a href="javascript:void(0);" ng-click="GroupChoosePageLink(p_index,$index,9)">微页面及分类</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupChooseShop(p_index,$index,9)">商品及分类</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupCouponModel(p_index,$index,9)">优惠券</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupKillModel(p_index,$index,9)">秒杀活动</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupSpellModel(p_index,$index,9)">拼团活动</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupShareEventModel(p_index,$index)">享立减活动</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupChooseActivity(p_index,$index,9)">营销活动</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupLinkUrl($event,p_index,$index,shop_url,8)">店铺主页</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupLinkUrl($event,p_index,$index,member_url,9)">会员主页</a></li>
+		                                <li><a href="javascript:void(0);" ng-click="GroupLinkUrl($event,p_index,$index,cart_url,10)">购物车</a></li>
+		                                <li ng-if="!isxcx"><a href="javascript:void(0);" ng-click="GroupOutLink(p_index,$index,$event)">自定义外链</a></li>
+		                            </ul>
+		                        </div>
+						    </div>
+					    </div>
+					    <div class="control-group" ng-if="item.linkUrl">
+		                    <label class="control-label" style="line-height: 12px;">链接：</label>
+		                    <div class="controls">
+		                        <div class="control-action clearfix">
+		                            <div class="pull-left js-link-to link-to" style="max-width: 66%;">
+		                                <a href="javascript:void(0);" class="new-window link-to-title" style="width: 100%;">
+		                                    <span class="label label-success">
+		                                        <em class="link-to-title-text" ng-bind="item.linkName" style="border-left:none;padding:5px"></em></span>
+		                                </a>
+		                                <a href="javascript:void(0);" class="js-delete-link link-to-title close-modal" title="删除" ng-click="deleteGroupLink(p_index,$index)">×</a>
+		                            </div>
+		                            <div class="dropdown hover">
+		                                <a class="js-dropdown-toggle dropdown-toggle" href="javascript:void(0);">修改
+		                                    <i class="caret"></i></a>
+		                                <ul class="dropdown-menu">
+		                                    <li><a href="javascript:void(0);" ng-click="GroupChoosePageLink(p_index,$index,9)">微页面及分类</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupChooseShop(p_index,$index,9)">商品及分类</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupCouponModel(p_index,$index,9)">优惠券</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupKillModel(p_index,$index,9)">秒杀活动</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupSpellModel(p_index,$index,9)">拼团活动</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupShareEventModel(p_index,$index)">享立减活动</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupChooseActivity(p_index,$index,9)">营销活动</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupLinkUrl($event,p_index,$index,shop_url,8)">店铺主页</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupLinkUrl($event,p_index,$index,member_url,9)">会员主页</a></li>
+			                                <li><a href="javascript:void(0);" ng-click="GroupLinkUrl($event,p_index,$index,cart_url,10)">购物车</a></li>
+			                                <li ng-if="!isxcx"><a href="javascript:void(0);" ng-click="GroupOutLink(p_index,$index,$event)">自定义外链</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+				    </div>
+			    </div>
+			    <span class="action delete close-modal" title="删除" ng-click="delSmallGroup(key,$index)">×</span>
+		    </div>
+		    <div class="group_add_s" ng-click="addSmallGroup($index)">
+		    	<h3>+&nbsp;添加一个子分类</h3>
+		    	<p>建议图片尺寸为136x136像素</p>
+		    </div>
+	        <span class="action delete close-modal" title="删除" ng-click="delBigGroup($index)">×</span>
+	    </div>
+	    <div class="group_add" ng-click="addBigGroup()">
+	    	+&nbsp;添加一个主分类
+	    </div>
+    </div>
+</div>

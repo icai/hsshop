@@ -1,0 +1,86 @@
+/**
+ * layer自定义皮肤 
+ */
+.pr{position: relative;}
+body .layer-tskin,body .layer-tskin .layui-layer-content,body .layer-tskin1,body .layer-tskin1 .layui-layer-content {
+    border-radius: 5px; 
+}
+body .layer-tskin{
+    max-height:70%;
+    overflow: auto;
+}
+
+body .layui-layer-shade{
+    opacity: 0.7 !important;
+}
+body .layer-tskin .layui-layer-title{
+    text-align: left;
+    padding: 10px 0 5px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 45px;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+body .layer-tskin .layui-layer-setwin {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 16px;
+    line-height: initial;
+}  
+body .layer-tskin .layui-layer-setwin::after {
+    content:"×";
+    position: absolute;
+    right: 5px;
+    top: 0; 
+} 
+body .layer-tskin .layui-layer-btn{
+    text-align: right;
+    padding: 0px 15px 10px; 
+}
+body .layer-tskin .layui-layer-btn a {
+    margin: 0;
+    margin-left:15px;
+    padding: 0 10px;
+    font-weight: 300;
+}
+body .layer-tskin .layui-layer-btn0{
+    border-radius: 3px;
+    background-color:#0077DD;
+}
+body .layer-tskin .layui-layer-btn1{
+    border-radius: 3px;
+    background-color:#fff;
+    border:1px solid #0077DD;
+    color: #0077DD;
+} 
+
+/*修改物流、维权弹等外层及框提示区*/
+.layer-wrap{margin:15px;}
+.t-tips{background-color:#FFF5CB;font-size:12px;padding:10px 30px 10px 10px;}
+.t-tips-middle{position: absolute;left:0;top:0;right:0;bottom:0;margin:auto;width: 100px;height: 28px;}
+.layer-wrap select,.layer-wrap input{height:28px;padding:0 10px;}
+.refuse-textarea{width:400px;height:100px;display: inline-block;vertical-align: top;}
+.bule{color:blue;}
+.t-bule{color:#3388FF;} 
+/*----内容----*/ 
+.layer-wrap .order-table{width: 100%;} 
+.layer-wrap .order-table thead tr{background-color:#f5f5f5;}
+.layer-wrap .order-table th,.order-table td{text-align: left;font-size:12px;}
+.layer-wrap .order-table td input[type='text']{text-align: left;font-size:12px;height:30px;}
+.layer-wrap .order-table td{vertical-align: top;}
+.layer-wrap .order-table .freight{margin-top:3px;display: inline-block;}
+/*----底部----*/
+.layer-wrap .footer{position: fixed;left:0;bottom:0;width:100%;padding-bottom:10px;background-color:#F5F5F5;padding:10px 10px 10px 15px;}
+.layer-wrap .footer p{font-size:12px;color:#666;}
+.layer-wrap .footer .btn{padding:0px 10px;margin-right:15px;}
+.layer-wrap .footer .btn-yes{position: absolute;right:0;top:10px; background-color:#3388FF;color:#fff;}
+.layer-wrap .footer .btn-close{background-color:#fff;color:#3388FF;border:1px solid #3388FF;}
+/*物流详情*/
+.layer-wrap-logistics{padding:0px 15px 20px 15px;font-size:13px;}
+.layer-wrap-logistics .logistics-p{padding-left:150px;position: relative;}
+.layer-wrap-logistics .logistics-p .logistics-p-date{position: absolute;left:0px;}
+.layer-wrap-logistics .logistics-p .logistics-p-week{position: absolute;left:90px;}
+.layer-wrap-logistics .logistics-p .logistics-p-time{margin-right:30px;}

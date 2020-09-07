@@ -1,0 +1,20 @@
+.form-horizontal .form-group {margin-right:0;margin-left:0;}
+.rewrite-bootstrap{padding:0 6px;font-size:14px;font-weight:normal;}
+.fastSelect_time{color:#38f;font-size:12px;}
+.mgl10{margin-left:10px;}
+.red_f00{color:#f00;font-weight:bold; }
+.main{overflow-x:visible;}
+.glyphicon-triangle-bottom{width:14px;height:14px;position:relative;}
+.glyphicon-triangle-bottom:before {
+    content: "";
+    width:0;
+    height:0;
+    display:block;
+    border:5px solid transparent;
+    border-top-color:#000;
+    top:5px;
+    position:relative;
+}
+.f12{font-size:12px;}
+.note_tips{cursor:pointer;}
+.gray_999{color:#999;}

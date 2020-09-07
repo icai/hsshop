@@ -1,0 +1,194 @@
+.clearfix:after {content: ""; display: block;clear: both;}  
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: 50px; line-height: 50px; font-size: 16px;}
+.main .main_content .sorts .verLine{margin: 0 5px;}
+.main .main_content .addNews_list{padding: 30px; border: 1px solid #ccc;}
+.main .main_content .addNews_list .news_detail button{margin: 0 5px;}
+.main .main_content .addNews_list .news_detail .inpGroup{width: 100%; margin: 0px 0px 70px 0;}
+.main .main_content .addNews_list .news_detail .inpGroup select{height: 34px; width: 300px; padding: 5px; border: 1px solid #ccc; border-radius: 5px;}
+.btn_group{text-align:center}
+.img_submit{
+    color:#fff;
+    background-color:#337ab7;
+    border-color:#2e6da4;
+    margin: 0px 0px 30px 0px;
+}
+/* 上传文件弹窗 */
+.main .main_content .syn-data{
+    height: 50px;
+    width:200px;
+    background: #337ab7;
+    border: 1px solid #2e6da4;
+    line-height: 50px;
+    text-align: center;
+    margin: 30px 0px;
+    border-radius:5px;
+    color: #fff
+}
+.main .main_content .lead-data{
+    height: 50px;
+    width:200px;
+    background: #337ab7;
+    border: 1px solid #2e6da4;
+    line-height: 50px;
+    text-align: center;
+    margin: 30px 0px;
+    border-radius:5px;
+    color: #fff
+}
+.main .content .lead-dialog{
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    top: 300px;
+    left: 700px;
+}
+input[type="text"] {
+    width: 260px;
+    height: 34px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding-left: 4px;
+}
+.action-btn {
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    color: #4D4D4D;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.submit-btn {
+    border-color: #3197FA;
+    background-color: #3197FA;
+    color: #fff;
+    margin-left: 16px;
+}
+#laydate_ys {
+    overflow: hidden;
+}
+.lead-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    transition: top 0.5s;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 520px;
+    z-index: 1040;
+}
+.dialog-title {
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #E8E8E8;
+}
+.dialog-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #B3B3B3;
+    font-size: 20px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.dialog-close:hover{
+    color: #B3B3B3;
+}
+.dialog-body {
+    padding: 20px 0 30px 0;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.file-box {
+    position: relative;
+}
+.add-file {
+    width: 80px;
+    height: 30px;
+    background-color: #F7F7F7;
+    border-radius:2px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+.choose-file {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 100;
+}
+.file-tips {
+    margin-top: 9px;
+    font-size: 12px;
+    color: #999;
+}
+.desc {
+    margin-top: 29px;
+}
+.desc-title {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.download {
+    color: #3197FA;
+    font-size: 14px;
+}
+.download:hover {
+    color: #3197FA;
+}
+.dialog-footer {
+    height: 34px;
+    line-height: 34px;
+    padding: 14px 0 18px;
+}
+.sure-btn{
+    float: right;
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #3197FA;
+    cursor: pointer;
+ }
+ .sure-btn.disabled {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.qrcode_img{
+    height: 100px;
+    width:100px;
+    margin-bottom: 20px;
+}
+

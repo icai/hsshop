@@ -1,0 +1,204 @@
+.content {
+	padding-bottom: 0;
+	background: #fff;
+}
+.app_header {
+	text-align: center;
+	color: #fff;
+	background: url("../images/appdz-banner.jpg") no-repeat;
+	background-size: 100%;
+	height: 6rem;
+}
+.app_header p{
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #fff;
+	height: .78rem;
+	line-height: .78rem;
+	width: 2.8rem;
+	margin-top: 4.4rem;
+}
+.app_ys{
+	padding-bottom: .4rem;
+}
+h2{
+	color: #4E5256;
+	font-size: .4rem;
+	padding: 1rem 0 .5rem 0;
+	text-align: center;
+	font-weight: 600;
+}
+.ys-item{
+	border-bottom: #E5E5E5 1px solid;
+	width: 90%;
+	height: 2.2rem;
+	margin: 0 auto;
+}
+.ys-item img{
+	width: 1rem;
+	float: left;
+	margin: .6rem 0 0 .2rem;
+}
+.ys-item-r{
+	padding: .5rem 0 0 1.8rem;
+}
+.ys-item-r h3{
+	color: #333333;
+	font-size: .32rem;
+	font-weight: 600;
+}
+.ys-item-r p{
+	color: #999999;
+	font-size: 0.26rem;
+	padding-top: .2rem;
+}
+
+.app-lc{
+	background: #F5F5F7;
+	padding-bottom: .8rem;
+}
+.lc-item{
+	width: 90%;
+	height: 1.6rem;
+	margin: 0 auto;
+}
+.lc-item img{
+	width: 1rem;
+	float: left;
+	margin: .6rem 0 0 .2rem;
+}
+.lc-item-r{
+	padding: .7rem 0 0 1.8rem;
+}
+.lc-item-r h3{
+	color: #333333;
+	font-size: .28rem;
+	font-weight: 600;
+}
+.lc-item-r p{
+	color: #999999;
+	font-size: 0.26rem;
+	padding-top: .15rem;
+}
+.app-al{
+	*zoom:1;
+	padding-bottom: .8rem;
+}
+.app-al:after{
+	content:'';
+	display:block;
+	clear:both;
+	height:0;
+}
+.al-item{
+	float: left;
+	width: 25%;
+	height: 1.5rem;
+	margin:.5rem .31rem .3rem .31rem;
+	text-align: center;
+}
+.al-item img{
+	width: .97rem;
+}
+.al-item p{
+	color:#333333;
+	font-size: .28rem;
+	padding-top: .15rem;
+}
+
+.app-hy{
+	background: #F5F5F7;
+	*zoom:1;
+	padding-bottom: .6rem;
+}
+.app-hy:after{
+	content:'';
+	display:block;
+	clear:both;
+	height:0;
+}
+.hy-item{
+	height: 1.5rem;
+	width: 1.3rem;
+	text-align: center;
+	float: left;
+	margin: 0.4rem .28rem 0 .28rem;
+}
+.hy-item img{
+	width: .9rem;
+}
+.hy-item p{
+	color: #333333;
+	font-size: .28rem;
+	padding-top: .15rem;
+}
+
+.app-yuyue{
+	background: #F93A50;
+	text-align: center;
+	width: 100%;
+	height: 1.4rem;
+}
+.app-yuyue p{
+	line-height: 1.4rem;
+	font-size: 0.3rem;
+	color: #fff;
+	display: inline-block;
+}
+.app-yuyue span{
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.app-yuyue span img{
+	width: 0.4rem;
+	margin-left: .3rem;
+}
+
+.order-footer:link, .order-footer:active, .order-footer:visited {
+    color: #2589FF;
+}
+.order-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: .33rem 0;
+    text-align: center;
+    color: #2589FF;
+    font-size: .36rem;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

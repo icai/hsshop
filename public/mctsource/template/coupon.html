@@ -1,0 +1,104 @@
+<div class="control-group">
+    <ul class="custom-coupon coupon-item-multi coupon-item-three clearfix" ng-show="!editor['couponList'].length">
+        <li ng-class="{'coupon-style1':editor['couponStyle']==1,'coupon-style2':editor['couponStyle']==2,'coupon-style3':editor['couponStyle']==3,'coupon-style4':editor['couponStyle']==4,'coupon-color1':editor['couponColor']==1,'coupon-color2':editor['couponColor']==2,'coupon-color3':editor['couponColor']==3,'coupon-color4':editor['couponColor']==4,'coupon-color5':editor['couponColor']==5}">
+            <a href="javascript:void(0);">
+                <i class="coupon-icon coupon-left-icon"></i>
+                <i class="coupon-icon coupon-right-icon"></i>
+                <div class="coupon-bg"></div>
+                <div class="coupon-content">
+                    <div class="coupon-content-left">
+                        <div class="custom-coupon-price">
+                            <span>￥</span>
+                            <span class="custom-coupon-amount">100</span>
+                        </div>
+                        <div class="custom-coupon-desc">
+                            <div class="coupon-name-lg">优惠券</div>
+                            <div>满500元可用</div>
+                        </div>
+                    </div>
+                    <div class="coupon-content-right">
+                        立即领取
+                    </div>
+                    <i class="cap-coupon__dot-above" ng-if="editor['couponStyle']==1"></i>
+                    <i class="cap-coupon__dot-below" ng-if="editor['couponStyle']==1"></i>
+                </div>
+            </a>
+        </li>
+        <li class="coupon-disabled" ng-class="{'coupon-style1':editor['couponStyle']==1,'coupon-style2':editor['couponStyle']==2,'coupon-style3':editor['couponStyle']==3,'coupon-style4':editor['couponStyle']==4,'coupon-color1':editor['couponColor']==1,'coupon-color2':editor['couponColor']==2,'coupon-color3':editor['couponColor']==3,'coupon-color4':editor['couponColor']==4,'coupon-color5':editor['couponColor']==5}">
+            <a href="javascript:void(0);">
+                <div class="cap-coupon__disabled-text-wrap"><div class="cap-coupon__disabled-text">已领完</div></div>
+                <i class="coupon-icon coupon-left-icon"></i>
+                <i class="coupon-icon coupon-right-icon"></i>
+                <div class="coupon-bg"></div>
+                <div class="coupon-content">
+                    <div class="coupon-content-left">
+                        <div class="custom-coupon-price">
+                            <span>￥</span>
+                            <span class="custom-coupon-amount">100</span>
+                        </div>
+                        <div class="custom-coupon-desc">
+                            <div class="coupon-name-lg">优惠券</div>
+                            <div>满500元可用</div>
+                        </div>
+                    </div>
+                    <div class="coupon-content-right">
+                        立即领取
+                    </div>
+                    <i class="cap-coupon__dot-above" ng-if="editor['couponStyle']==1"></i>
+                    <i class="cap-coupon__dot-below" ng-if="editor['couponStyle']==1"></i>
+                </div>
+            </a>
+        </li>
+        <li class="coupon-disabled" ng-class="{'coupon-style1':editor['couponStyle']==1,'coupon-style2':editor['couponStyle']==2,'coupon-style3':editor['couponStyle']==3,'coupon-style4':editor['couponStyle']==4,'coupon-color1':editor['couponColor']==1,'coupon-color2':editor['couponColor']==2,'coupon-color3':editor['couponColor']==3,'coupon-color4':editor['couponColor']==4,'coupon-color5':editor['couponColor']==5}">
+            <a href="javascript:void(0);">
+                <div class="cap-coupon__disabled-text-wrap"><div class="cap-coupon__disabled-text">已过期</div></div>
+                <i class="coupon-icon coupon-left-icon"></i>
+                <i class="coupon-icon coupon-right-icon"></i>
+                <div class="coupon-bg"></div>
+                <div class="coupon-content">
+                    <div class="coupon-content-left">
+                        <div class="custom-coupon-price">
+                            <span>￥</span>
+                            <span class="custom-coupon-amount">100</span>
+                        </div>
+                        <div class="custom-coupon-desc">
+                            <div class="coupon-name-lg">优惠券</div>
+                            <div>满500元可用</div>
+                        </div>
+                    </div>
+                    <div class="coupon-content-right">
+                        立即领取
+                    </div>
+                    <i class="cap-coupon__dot-above" ng-if="editor['couponStyle']==1"></i>
+                    <i class="cap-coupon__dot-below" ng-if="editor['couponStyle']==1"></i>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <ul class="custom-coupon clearfix" ng-show="editor['couponList'].length" ng-class="{'coupon-item-multi coupon-item-three':editor['couponList'].length==3,'coupon-item-multi coupon-item-two':editor['couponList'].length==2,'coupon-item-one':editor['couponList'].length==1}">
+        <li ng-class="{'coupon-style1 coupon-color1':!editor['couponStyle'],'coupon-style1':editor['couponStyle']==1,'coupon-style2':editor['couponStyle']==2,'coupon-style3':editor['couponStyle']==3,'coupon-style4':editor['couponStyle']==4,'coupon-color1':editor['couponColor']==1,'coupon-color2':editor['couponColor']==2,'coupon-color3':editor['couponColor']==3,'coupon-color4':editor['couponColor']==4,'coupon-color5':editor['couponColor']==5}" ng-repeat="coupon in editor['couponList']">
+            <a href="javascript:void(0);">
+                <i class="coupon-icon coupon-left-icon"></i>
+                <i class="coupon-icon coupon-right-icon"></i>
+                <div class="coupon-bg"></div>
+                <div class="coupon-content">
+                    <div class="coupon-content-left">
+                        <div class="custom-coupon-price">
+                            <span>￥</span>
+                            <span class="custom-coupon-amount">{{coupon.amount}}</span>
+                        </div>
+                        <div class="custom-coupon-desc">
+                            <div class="coupon-name-lg">优惠券</div>
+                            <div>{{coupon.limit_desc}}</div>
+                        </div>
+                    </div>
+                    <div class="coupon-content-right">
+                        立即领取
+                    </div>
+                    <i class="cap-coupon__dot-above" ng-if="editor['couponStyle']==1"></i>
+                    <i class="cap-coupon__dot-below" ng-if="editor['couponStyle']==1"></i>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>

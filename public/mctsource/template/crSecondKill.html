@@ -1,0 +1,115 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group">
+            <P class="title">
+                <span>秒杀</span><a href="{{host}}home/index/helpDetail/721">查看教程</a></span>
+            </P>
+            <label class="control-label">选择商品:</label>
+            <div class="controls">
+                <ul class="module-goods-list clearfix ui-sortable" name="goods">
+                    <li class="sort" 
+                    ng-show="editors[index]['killList'].length" 
+                    ng-repeat="image in editors[index]['killList']" 
+                    ng-mouseover="showKillDelete($index)" 
+                    ng-mouseout="hideKillDelete($index)" 
+                    ng-drop="true"
+                    ng-drop-success="onDropShopComplete($index, $data,$event)">
+                        <div ng-drag="true" ng-drag-data="image" class="goods" style="height:100%;width:100%">
+                            <a href="javascript:void(0);">
+                                <img alt="商品图" width="50" height="50"
+                                ng-src="{{host}}{{image.product['img']}}">
+                            </a>
+                            <a class="close-modal js-delete-goods small" data-id="" title="删除" ng-show="image['deleteBtn']" ng-click="deleteKillGood($index)">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="js-add-goods add-goods" ng-click="killModelShow(1)">
+                            <i class="icon-add"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="js-goods-style-region">
+            <div>
+                <div class="control-group">
+                    <label class="control-label">列表样式：</label>
+                    <div class="controls">
+                        <label class="radio inline">
+                            <input type="radio" name="secKillSize" value="1" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==1">大图</label>
+                        <label class="radio inline">
+                            <input type="radio" name="secKillSize" value="2" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==2">小图</label>
+                        <label class="radio inline">
+                            <input type="radio" name="secKillSize" value="3" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==3">详细列表</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="controls-card clearfix">
+                            <p class="pull-left">显示内容：</p>
+                            <div class="pull-left">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" value="1" name="secShowTitle" 
+                                        ng-model="editors[index]['showTitle']" 
+                                        ng-checked="editors[index]['showTitle']==true"> 商品名称</label></p>
+                                <p><label>
+                                    <input type="checkbox"
+                                    ng-model="editors[index]['showTimer']" 
+                                    ng-checked="editors[index]['showTimer']==true"> 抢购倒计时</label>
+                                </p>
+                                <p><label>
+                                    <input type="checkbox" name="remanent" 
+                                    ng-model="editors[index]['remanent']" 
+                                    ng-checked="editors[index]['remanent']==true">剩余库存</label></p>
+                                <p class="sub-text" ng-show="editors[index]['remanent']==true">
+                                    <label><input type="radio" name="remanentStyle" 
+                                    ng-model="editors[index]['remanentStyle']" 
+                                    ng-checked="editors[index]['remanentStyle']==1" value="1"/>数量</label>
+                                    <label><input type="radio" name="remanentStyle"
+                                    ng-model="editors[index]['remanentStyle']" 
+                                    ng-checked="editors[index]['remanentStyle']==2" value="2"/>进度条</label>
+                                </p>
+                                <p><label><input type="checkbox" name="showBtn" 
+                                    ng-model="editors[index]['showBtn']" 
+                                    ng-checked="editors[index]['showBtn']==true"> 购买按钮</label></p>
+
+                                <p class="choiceStyle sub-text" ng-show="editors[index]['showBtn']==true">
+                                    <label><input type="radio" name="btnStyle" value="1"
+                                        ng-model="editors[index]['btnStyle']" 
+                                        ng-checked="editors[index]['btnStyle']==1"
+                                        />样式1</label>
+                                    <label><input type="radio" name="btnStyle" value="2"
+                                        ng-model="editors[index]['btnStyle']" 
+                                        ng-checked="editors[index]['btnStyle']==2"
+                                        />样式2</label>
+                                    <label><input type="radio" name="btnStyle" value="3"
+                                        ng-model="editors[index]['btnStyle']" 
+                                        ng-checked="editors[index]['btnStyle']==3"
+                                        />样式3</label>
+                                    <label><input type="radio" name="btnStyle" value="4"
+                                        ng-model="editors[index]['btnStyle']" 
+                                        ng-checked="editors[index]['btnStyle']==4"
+                                        />样式4</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix bottom control-group">
+                    <p class="pull-left b-title">更多设置：</p>
+                    <div class="pull-left">
+                        <p>
+                            <label><input type="checkbox" name="hideOut" 
+                                ng-model="editors[index]['hideOut']" 
+                                ng-checked="editors[index]['hideOut']==true"/>隐藏已售罄商品</label></p>
+                        <p>
+                            <label><input type="checkbox" name="hideEnd"
+                                ng-model="editors[index]['hideEnd']" 
+                                ng-checked="editors[index]['hideEnd']==true"/>隐藏活动结束商品</label></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

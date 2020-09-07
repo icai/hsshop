@@ -1,0 +1,189 @@
+<div class="editer-content">
+    <div class="control-group">
+        <label class="control-label">显示方式：</label>
+        <div class="controls">
+            <label class="radio inline">
+                <input type="radio" name="show_method" ng-model="editors[index]['advsListStyle']" value="2" ng-checked="editors[index]['advsListStyle']==2">折叠轮播
+            </label>
+            <label class="radio inline">
+                <input type="radio" name="show_method" ng-model="editors[index]['advsListStyle']" value="3" ng-checked="editors[index]['advsListStyle']==3">分开显示
+            </label>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">显示大小：</label>
+        <div class="controls">
+            <label class="radio inline">
+                <input type="radio" name="size" value="1" ng-model="editors[index]['advSize']" ng-checked="editors[index]['advSize']==1">大图
+            </label>
+            <label class="radio inline" ng-show="editors[index]['advsListStyle']==3">
+                <input type="radio" name="size" value="2" ng-model="editors[index]['advSize']" ng-checked="editors[index]['advSize']==2">
+                小图
+            </label>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">图片放大：</label>
+        <div class="controls">
+            <label class="checkbox inline">
+                <input style="position:relative;top:2px" type="checkbox" name="size" value="1" ng-true-value="1" ng-false-value="0" ng-model="editors[index]['resize_image']" ng-checked="editors[index]['resize_image']==1">点击放大(当图片没有链接时)
+            </label>
+        </div>
+    </div>
+    <div class="control-group" style="margin-left: 16px">图片推荐宽度：640px</div>
+    <div class="control-group js-choices-region">
+        <ul class="choices ui-sortable">
+            <li class="choice" ng-repeat="image in editors[index]['images'] track by $index" ng-drop="true" ng-drop-success="onDropAdvsComplete($index, $data,$event)">
+                <div>
+                    <div class="choice-image" ng-drag="true" ng-drag-data="image">
+                        <img ng-src="{{image['FileInfo']['path']}}" class="thumb-image">
+                        <a class="modify-image js-trigger-image" href="javascript: void(0);" ng-click="reUpload($index)">重新上传</a>
+                        <!-- for error msg -->
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="hidden" name="image_url">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice-content">
+                        <div class="control-group">
+                            <label class="control-label">标题：</label>
+                            <div class="controls">
+                                <input class="form-control" ng-model="image['title']" type="text" name="title[c71]">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">链接：</label>
+                            <div class="controls">
+                                <div class="dropdown hover" ng-show="!image['chooseLink']">
+                                    <a class="js-dropdown-toggle dropdown-toggle control-action" id="settinglink_{{$index}}" href="javascript:void(0);">设置链接到的页面地址
+                                        <i class="caret"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="js-modal-magazine xcx_hide" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,1)">微页面及分类</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,1)">商品<span  ng-if='changeWaiLinkFlag'>及分类</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,1)">营销活动</a></li>
+                                        <li>
+                                            <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,shop_url,3)">店铺主页</a></li>
+                                        <li>
+                                            <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,member_url,4)">会员主页</a>
+                                        </li>
+                                        <li ng-if='isSpell'>
+                                            <!--<a class="js-modal-usercenter xcx_hide" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,group_url,5)">拼团</a>-->
+                                            <a class="js-modal-usercenter xcx_hide" data-type="usercenter" href="javascript:void(0);" ng-click="chooseSpellModel($index,1)">拼团</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,community_url,6)">微社区</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,sign_url,7)">签到</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-usercenter xcx_show" data-type="community" href="javascript:void(0);" ng-click="choose_shareGoods($index,1)">享立减商品</a>
+                                        </li>
+                                        <li ng-if="isShowli == 1">
+                                            <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="choose_liGoods($index,1)">享立减二期</a>
+                                        </li>
+                                        <li ng-if="isCard == 1">
+                                            <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="wheel($index,1)">大转盘活动</a>
+                                        </li>
+                                        <li ng-if="isCard == 1">
+                                            <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="scratchCard($index,1)">刮刮乐活动</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="chooseAppoint($index,1)">预约</a>
+                                        </li>
+                                        <li>
+                                            <a class="js-modal-usercenter" ng-if="wai_setting" data-type="community" href="javascript:void(0);" ng-click="changeWaiLink($index,1,$event)">自定义外链</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a class="js-modal-usercenter" ng-if="group_good" data-type="community" href="javascript:void(0);" ng-click="chooseGroupGoods($index,3)">拼团商品</a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <div class="linkTo control-action clearfix" ng-show="image['chooseLink']">
+                                    <div class="pull-left js-link-to link-to">
+                                        <a href="javascript:void(0);" class="new-window link-to-title">
+                                            <span class="label label-success" id="link_name_{{$index}}">{{image['linkName']}}</span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="js-delete-link link-to-title close-modal" title="删除" ng-click="removeLink($index,1)">×</a>
+                                    </div>
+                                    <div class="dropdown hover pull-right">
+                                        <a class="dropdown-toggle" href="javascript:void(0);" ng-mouseover="showDown($index,1)">修改
+                                            <i class="caret"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" ng-show="image['dropDown']">
+                                            <li>
+                                                <a class="js-modal-magazine xcx_hide" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,1)">微页面及分类</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,1)">商品<span  ng-if='changeWaiLinkFlag'>及分类</span></a></li>
+                                            <li>
+                                                <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,1)">营销活动</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,shop_url,3)">店铺主页</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,member_url,4)">会员主页</a>
+                                            </li>
+                                            <li ng-if='isSpell'>
+                                                <!--<a class="js-modal-usercenter xcx_hide" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,group_url,5) ">拼团</a>-->
+                                                <a class="js-modal-usercenter xcx_hide" data-type="usercenter" href="javascript:void(0);" ng-click="chooseSpellModel($index,1)">拼团</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,community_url,6) ">微社区</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,1,sign_url,7)">签到</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="choose_shareGoods($index,1)">享立减商品</a>
+                                            </li>
+                                            <li ng-if="isShowli == 1">
+                                                <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="choose_liGoods($index,1)">享立减二期</a>
+                                            </li>
+                                            <li ng-if="isCard == 1">
+                                                <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="wheel($index,1)">大转盘活动</a>
+                                            </li>
+                                            <li ng-if="isCard == 1">
+                                                <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="scratchCard($index,1)">刮刮乐活动</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-usercenter xcx_hide" data-type="community" href="javascript:void(0);" ng-click="chooseAppoint($index,1)">预约</a>
+                                            </li>
+                                            <li>
+                                                <a class="js-modal-usercenter" ng-if="wai_setting" data-type="community" href="javascript:void(0);" ng-click="changeWaiLink($index,1,$event)">自定义外链</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a class="js-modal-usercenter" ng-if="group_good" data-type="community" href="javascript:void(0);" ng-click="chooseGroupGoods($index,3)">拼团商品</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help-desc" style="padding-left:10px;margin-top:17px">
+                            <span ng-if="editors[index]['advSize']==1">图片推荐宽度：640PX</span>
+                            <span ng-if="editors[index]['advSize']==2">请根据左侧预览图进行调整图片</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <span class="action add close-modal" title="添加">+</span>
+                        <span class="action delete close-modal" title="删除" ng-click="removeAdvImages($index)">×</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="control-group options add_advs" ng-click="addAdvs()">
+        <a href="javascript:void(0);" class="add-option js-add-option">
+            <i class="icon-add"></i>
+            <span>添加一个广告</span>
+        </a>
+    </div>
+</div>

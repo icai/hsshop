@@ -1,0 +1,44 @@
+[v-cloak]{
+	display: none;
+}
+body{
+	background: #fff;	
+	font-size: 15px;
+	padding-bottom: 60px;
+	height:auto !important;
+}
+.baby_index_img{height: 153px;width: 100%;}
+.baby_index_img img{
+	width: 100%;
+	height: 100%;
+}
+.baby_index img{
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+
+/*底部*/
+
+.sign_img{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	font-size: 14px;
+	border-top: 1px solid #ececec;
+	background: #fff;
+}
+.sign_img a{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+}
+.sign_img .icon{
+	height: 100%;
+}
+.sign_img .icon img{
+	width: 23px;
+	height: 23px;
+	margin: 8px 0
+}

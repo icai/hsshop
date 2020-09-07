@@ -1,0 +1,129 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../image/download-bg11.jpg) no-repeat center;
+    background-size: cover;
+}
+.download-btn-box {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.download-item {
+    display: inline-block;
+    width:210px;
+    margin-right: 130px;
+}
+.download-btn {
+    height:56px;
+    line-height: 56px;
+    background-color:rgba(0,0,0,.4);
+    border-radius:28px;
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
+}
+.download-item:last-child{
+    margin-right: 0;
+}
+.down-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 36px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-top: 12px;
+    float: left;
+}
+.icon1 {
+    background-image: url(../image/ios-small.png);
+}
+.icon2 {
+    background-image: url(../image/android-small.png);
+}
+.icon3 {
+    background-image: url(../image/er-code.png);
+}
+.down-link:hover {
+    background-color: #3197FA;
+    cursor: pointer;
+}
+.er-code-box {
+    display: none;
+    position: absolute;
+    margin-left: 5px;
+}
+.active {
+    display: block;
+}
+.tool {
+    background-color: #F0F5F9;
+}
+.year {
+    text-align: center;
+    color: #A1A8AF;
+    font-size: 86px;
+    padding: 107px 0 42px;
+    font-weight: 100;
+}
+.tool-desc {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+}
+.banner-slider {
+    margin-top: 94px;
+}
+.swiper-slide {
+    text-align: center;
+}
+.swiper-slide img {
+    width: 538px;
+}
+.service-box {
+    background-color: #fff;
+    padding: 112px 0 130px;
+}
+.service-tips {
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+}
+.icon-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.icon-item {
+    text-align: center;
+}
+.service-t1 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 25px;
+}
+.service-t2 {
+    font-size: 16px;
+    color:#929395;
+    margin-top: 16px;
+}
+.footer-wraper {
+    background-color: #278DEF;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-item {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-right: 130px;
+}
+.footer-item:last-child{
+    margin-right: 0;
+}

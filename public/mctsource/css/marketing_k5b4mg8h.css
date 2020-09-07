@@ -1,0 +1,31 @@
+
+/****************************************/
+.decorate-link, .btn-right{position: relative;}
+.one{padding-left: 20px;margin-left: 15px;}
+.decorate-link{padding-left: 20px;margin-left: 15px;} 
+.decorate-link:before{    content: '';position: absolute;left: 0;bottom: 8px;width: 15px;height: 15px;background: url("../images/icon1.png") no-repeat;background-size: 15px 15px;}
+/*<!--模版市场 图片列表-->*/
+.img-item{width: 191px;height: 328px;padding: 10px;border: 1px solid #e5e5e5;float: left;}
+.img-item:hover{ border-color: #4b0;}
+.img{width: 190px;height: 260px;}
+.img-item h3{margin:15px 0; color: #08c} 
+.price{margin-right: -6px; color:#9e9e9e;}
+.currency{margin-right: -5px;}
+.red{color: #ff2734;}
+.btn-right{height: 21px;width:50px;float: right;bottom: 3px;line-height: 21px;padding: 0 6px;color: #fff;background: #4b0;border-color: #3da900;display: inline-block;border-radius: 2px;font-size: 12px;}
+.item-num{display: block;clear: both;}
+.item-num span{float: right;padding: 6px 0px;}
+/*右侧*/
+.body_content p{color: #9e9e9e;}
+.help-core{border-left: 2px solid #3283FA; padding-left: 8px; line-height: 12px;}
+.sigin-right{float: right;}
+.p1{margin-bottom: 6px;}
+.p2{border-bottom: 1px solid #e5e5e5; padding-bottom: 20px;}
+.server-suggest{padding: 10px 0; border-bottom: 1px solid #e5e5e5; margin-bottom:20px; }
+.decorate-link, .img-item,{display: inline-block;}
+.one:hover, .two:hover, .one, .two, .sigin-right, .sigin-right:hover{color: #38f; }
+.img-item h3, .img-name, .currency, .price, .one, .two{font-size: 12px;}
+.money, .body_content p, .sigin-right ,.item-num span{font-size: 13px;}
+
+
+

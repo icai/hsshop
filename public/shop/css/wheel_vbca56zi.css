@@ -1,0 +1,163 @@
+.giftbox{
+	padding: 20px;
+	display: flex;
+	background: #fff;
+	margin-top: 10px;
+	border: 1px solid #d9d9d9;
+}
+.gift-div{
+	margin-left: 15px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex: 2;   
+}
+.gift-img{
+	border-radius: 3px;
+	flex: 1;
+}
+.gift-p{
+	color: #000;
+}
+.gift-list{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+}
+.gift-list a{
+	display: block;
+	width: 90px;
+	height: 25px;
+	text-align: center;	
+	border-radius: 14px;
+	line-height: 25px;
+	font-size: 12px;
+}
+.gift-look{
+	float: left;
+	color: red;
+	border: 1px solid red;
+	cursor: pointer;
+}
+.gift-del{
+	float: right;
+	border: 1px solid #999999;
+	cursor: pointer;
+}
+.mod-con{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	width: 100%;
+	height: 100%;
+}
+.mod-div{
+	background: #fff;
+	width: 60%;
+	height: 110px;
+	margin:auto;
+	margin-top: 70%;
+	text-align: center;
+    border-radius: 8px;
+}
+.mod-div p{
+	height: 70%;
+	line-height: 77px;
+	font-weight: bold;
+}
+.mod-bom{
+	border-top:1px solid #cccccc ;
+	display: flex;
+	flex-direction: row;
+	height: 30%;
+}
+.mod-bom a{
+	flex: 1;
+	color: #3197fa;
+	text-align: center;
+	line-height: 34px;
+}
+.mod-quxiao{
+	border-right:1px solid #cccccc ;
+}
+.div-box {
+	width: 333px;
+	height: 103px;
+	position: relative;
+}
+.points-box {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 21px;
+	width: 100%;
+  }
+  .points-title {
+	display: block;
+	font-size: 26px;
+	color: #333;
+  }
+  .gmt-time {
+	margin-top: 15px;
+	font-size: 16px;
+	color: #999;
+	display: block;
+  }
+  .points-right {
+	font-size: 30px;
+	color: #e33d25;
+	margin-top: -2px;
+  }
+  .lotter-box {
+	position: absolute;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 330px;
+	height: 130px;
+	background-size: 100% 100%;
+	background-image:url('../images/award-bg.png');
+	color: #fff;
+  }
+  .lottery-title {
+	font-size: 16px;
+	margin: 15.5px 0 0 14.5px;
+  }
+  .lottert-content {
+	position: relative;
+	margin: 14px 21.5px 0 34.5px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+   }
+   .lottery-num {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+   }
+   .lottery-num span {
+	 font-size: 30px;
+	 font-weight: bold;
+	 margin-left: 4px;
+   }
+   .limit-box {
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 width: 105px;
+	 height: 40px;
+	 line-height: 40px;
+   }
+   .limit-amount {
+	  height: 20px;
+	  line-height: 20px;
+   }
+   .live-time {
+	 text-align: center;
+	 font-size: 12px;
+	 margin-top: 16px;
+   }

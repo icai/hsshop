@@ -1,0 +1,125 @@
+.share-mp-info {
+    position: relative;
+    background: #1e1d22;
+    color: #999;
+    font-size: 0;
+    line-height: 0;
+    padding: 1px 176px 1px 1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}.share-mp-info .page-mp-info {
+    display: block;
+    padding: 4px 0 4px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+.share-mp-info .page-mp-info, .share-mp-info .links {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+
+.share-mp-info a {
+    color: #999;
+}
+.share-mp-info img.mp-image {
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+a img {
+    border: none;
+}
+.share-mp-info i {
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.share-mp-info em, .share-mp-info i {
+    vertical-align: middle;
+    font-style: normal;
+}
+.share-mp-info .links {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: inline-block;
+}
+
+.share-mp-info .page-mp-info, .share-mp-info .links {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+body{
+    background-color: #f8f8f8 !important;
+}
+.share-mp-info .mp-search {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 27px;
+}
+.share-mp-info .mp-search::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: url(../image/data-image.png) no-repeat;
+    background-size: 12px 12px;
+}
+.share-mp-info .links a:last-child {
+    margin-right: 0;
+}
+.share-mp-info .links .mp-homepage {
+    margin-left: 0;
+}
+.share-mp-info .links a {
+    margin-right: 8px;
+}
+.share-mp-info a {
+    color: #999;
+}
+
+.result-area.success {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    border-radius: 50px;
+    background-position: center;
+    background-image: url(../images/icon_lingqu@2x.png);
+}
+.result-content {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.btn.btn-block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+}
+.copyright .ft-links ~ .ft-copyright {
+ 
+    border-top:2px solid #e5e5e5
+}

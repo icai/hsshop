@@ -1,0 +1,297 @@
+
+body {
+    min-width: 1000px;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-family: Helvetica,STHeiti,"Microsoft YaHei",Verdana,Arial,Tahoma,sans-serif;
+    background-color: #fff;
+    font-size: 12px;
+    background: #fff;
+}
+.contenter{
+    margin-right: auto;
+    margin-left: auto;
+    width: 940px;
+}
+a {
+    color: #07d;
+}
+.wrapper-app {
+    width: 800px;
+    margin: 0 auto;
+}
+#header {
+    margin-top: 40px;
+    color: #666666;
+}
+#header .header-title-wrap {
+    padding-bottom: 22px;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+#header .account {
+    float: right;
+    margin-top: 12px;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: right;
+}
+#header .header-title {
+    position: relative;
+    top: 12px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 10px;
+    margin: 0 300px 0 145px;
+    border-left: 2px solid #ebebeb;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+#header .user-info {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    height: 87px;
+    padding: 16px 25px;
+    background-color: #f8f8f8;
+    color: #333333;
+    text-align: left;
+    font-size: 14px;
+}
+#header .user-info .avatar {
+    float: left;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+}
+#header .user-info .user-info-content {
+    position: relative;
+    margin-left: 10px;
+    padding: 5px 10px;
+    padding-right: 40px;
+    float: left;
+    border: 1px solid transparent;
+}
+#header .user-info .user-info-content .info-row {
+    margin-bottom: 8px;
+}
+ #header .user-info .user-info-content .info-row-info {
+    font-size: 12px;
+    line-height: 12px;
+    color: #666;
+}
+#header .user-info .user-info-content .personal-setting {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 12px;
+}
+.wrapper-app .search-team {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.wrapper-app .search-team .form-search {
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+.wrapper-app .search-team .search-query {
+    margin-bottom: 0px;
+    border-radius: 15px;
+    padding: 4px 14px;
+}
+input[type=text], .team input[type=password], input[type=number] {
+    border-radius: 2px;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+.btn {
+    border-radius: 2px;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+.btn {
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #333;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+#header .header-logo {
+    float: left;
+    width: 105px;
+    height: 40px;
+    background: url(../images/gupiaodaima.png) no-repeat;
+    position: relative;
+    top: 4px;
+    left: -5px;
+    background-size: 100% 100%;
+    background-position: 0;
+}
+#header .user-info .search-team.hide+.team-opt-wrapper {
+    bottom: 23px;
+}
+ #header .user-info .team-opt-wrapper {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 12px;
+}
+.progress-nav {
+    list-style: none;
+    margin: 0;
+}
+.progress-nav .progress-nav-item.current-active {
+    background: #f60;
+    color: #fff;
+}
+
+.progress-nav .progress-nav-item {
+    position: relative;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: calc(50% - 30px);
+    text-align: center;
+    background: #e5e5e5;
+    margin-right: 1px;
+}
+/*content*/
+.cert-done-wrap {
+    position: relative;
+    padding-top: 60px;
+}
+.cert-welc-wrap {
+    float: left;
+    width: 250px;
+    margin-left: -10px;
+    text-align: left;
+    border-right: 1px solid #e5e5e5;
+    padding-left: 50px;
+}
+.cert-welc-wrap .cert-welc-title {
+    margin-top: 0;
+    font-size: 16px;
+    color: #4b0;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.cert-welc-wrap .cert-welc-subtitle {
+    color: #666;
+}
+.cert-welc-wrap .cert-welc-qrcode-wrap {
+    width: 200px;
+    margin: 20px 0 45px;
+}
+.loading {
+    background: url(/v2/image/loader.gif) center center no-repeat;
+}
+.cert-welc-wrap .cert-welc-qrcode {
+    width: 180px;
+    height: 180px;
+    border: 10px solid #f8f8f8;
+}
+img {
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    position: relative;
+}
+.cert-wxauth-wrap {
+    margin-left: 350px;
+}
+.cert-wxauth-wrap .cert-wxauth-title {
+    margin-top: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+}
+.cert-wxauth-wrap .cert-important-text {
+    color: #d00;
+}
+.cert-wxauth-wrap .form-horizontal {
+    margin: 11px 0 0 0;
+    padding-left: 0;
+    padding-right: 40px;
+    width: auto;
+}
+.form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+.cert-wxauth-wrap .form-horizontal .cert-setting-btn {
+    font-size: 14px;
+    height: 50px;
+    padding: 0 25px 0 50px;
+    background-image: url(../images/weixin_icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px 23px;
+    background-position: 10px;
+    line-height: 50px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cert-wxauth-wrap .form-horizontal .cert-wxauth-help-info {
+    padding: 10px 0 25px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 5px;
+}
+.cert-wxauth-wrap .form-horizontal .cert-setting-btn {
+    font-size: 14px;
+    height: 50px;
+    padding: 0 25px 0 50px;
+    background-image: url(../images/weixin_icon.png);
+    background-repeat: no-repeat;
+    background-size: 30px 23px;
+    background-position: 10px;
+    line-height: 50px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cert-wxauth-wrap .form-horizontal ul.cert-help-list {
+    list-style: inside;
+    font-size: 12px;
+    color: #666;
+}
+.cert-wxauth-wrap .form-horizontal ul.cert-help-list li {
+    line-height: 2em;
+}
+.cert-wxauth-wrap .form-horizontal ul.cert-help-list a {
+    color: #666;
+    text-decoration: underline;
+}
+.btn-success {
+    color: #fff;
+    background-color: #4b0;
+    border-color: #3da900;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #07d;
+    border-color: #006cc9;
+}

@@ -1,0 +1,10 @@
+.main form{ padding-top: 50px; }
+.main form label{font-weight: normal;}
+.main form i{ display: inline-block; padding-right: 5px; color: #B94A48; }
+form .linkage input{ display: inline-block; height: 35px; border: 1px solid #ccc; border-radius: 5px; padding-left: 5px; font-size: 12px; }
+form .linkage select{ height: 30px; width: 100px; padding: 0 5px; margin-bottom: 10px; border-color: #ccc; border-radius: 5px; }
+form .adress #addTxt{ width: 400px; padding: 0 5px;}
+form .adress #addBtn{ width: 80px; border-width: 1px; border-radius: 5px; }
+form .map #mapShow{ width: auto; min-width: 500px; height: 500px; border: 1px solid #ccc; }
+form .map #saveBtn{ margin-left: 85px; }
+.successPromrt { position: fixed; top: 30px; left: calc(50% - 250px); width: 500px; height: 40px; line-height: 40px; text-align: center; color: white; background: #45b182; border-radius: 5px; }

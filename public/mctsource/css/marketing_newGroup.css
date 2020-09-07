@@ -1,0 +1,71 @@
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+.content label{font-weight: normal;}
+
+.content .content_top {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E5E5;}
+.content .content_top ul{overflow: hidden;}
+.content .content_top ul li{float: left; padding: 5px 10px; background: #F8F8F8; border: 1px solid #E5E5E5; border-right: none; border-bottom-color: transparent;}
+.content .content_top ul li:nth-child(4){border-right: 1px solid #E5E5E5;}
+.content .content_top ul li:hover{cursor: pointer;}
+.content .content_top a span{display: inline-block; width: 15px; height: 15px; border-radius: 50%; text-align: center; line-height: 15px; background: #3c3; color: white;}
+
+.content .content_center{width: 750px; margin: 10px auto; overflow: hidden;}
+.content .content_center .remind{display: block; height: 42px; width: 100%; line-height: 42px; padding: 0 10px; margin: 10px 0; font-size: 13px; background: #FFF5CB; border: 1px solid #FDEEB2;}
+.content .content_center .setGroupDetail{background: #F2F2F2; font-size: 15px; border: none;}
+
+.content .content_center .content_change_left{float: left; width: 43%; border: 1px solid #c5c5c5;}
+.content .content_center .content_change_left .title_img img{width: 100%;}
+.content .content_center .content_change_left .goods_img{min-height: 200px; height: auto; width: 100%; text-align: center; line-height: 200px; font-size: 16px; background: #E5E5E5;}
+.content .content_center .content_change_left .goods_img img{width: 100%; height: 100%;}
+.content .content_center .content_change_left .goods_price{position: relative;display: flex; justify-content: space-between; padding: 10px; color: white; background: #ff4343;}
+.content .content_center .content_change_left .goods_price lft{float: left; font-size: 25px;}
+.content .content_center .content_change_left .goods_price rgt{float: right;}
+.content .content_center .content_change_left .goods_price rgt span{display: inline-block; width: 20px; height: 20px; text-align: center; border-radius: 3px; color: #ff4343; background: white;}
+.content .content_center .content_change_left .goods_price #floatDiv{position: absolute; left: 0; top: -20px; padding: 0 5px; background: #ff4343; border-radius: 0 5px 0 0;}
+.content .content_center .content_change_left .goods_name, #cashback, #sell_number{display: block; height: 40px; padding: 5px 10px; line-height: 30px; font-size: 16px;}
+.content .content_center .content_change_left .goods_name{height: auto;}
+.content .content_center .content_change_left #cashback{display: flex; justify-content: space-between; font-size: 13px; background: #fff1e8; border-bottom: 1px solid #E5E5E5;}
+.content .content_center .content_change_left #sell_number{font-size: 13px; background: #fff8f3; border-bottom: 1px solid #E5E5E5;}
+.content .content_center .content_change_left #sell_number p{display: inline-block;}
+.content .content_center .content_change_left .detail_msg{min-height: 100px; height: auto; padding: 10px; text-align: center; color: #666; background: #E5E5E5;}
+.content .content_center .content_change_left .detail_msg h5{margin-top: 20px; font-size: 16px;}
+
+.content .content_center .content_change_right{position: relative; float: right; width: 55%; padding: 10px; border: 1px solid #CCCCCC; border-radius: 5px; background: #F8F8F8;}
+.content .content_center .content_change_right i{display: inline-block; color: #A94442;}
+.content .content_center .content_change_right .hide{display: none;}
+.content .content_center .content_change_right #row{position: absolute; top: 20px; left: -7px; height: 15px; width: 15px; transform: rotate(45deg); border: 1px solid #CCCCCC; background: #F8F8F8; border-top-color: transparent; border-right-color: transparent;}
+.content .content_center .content_change_right .top .add_goods{width: 50px; height: 50px; border: 1px solid #ccc;}
+.content .content_center .content_change_right .top .add_goods:hover{cursor: pointer;}
+.content .content_center .content_change_right .top .add_goods span{display: block; height: 15px; width: 15px; line-height: 15px; text-align: center; margin: 18px auto; background: #44BB00; border-radius: 50%; color: white;}
+.content .content_center .content_change_right .bottom{padding: 10px 0; background: white; border: 1px solid #F2F2F2;}
+.content .content_center .content_change_right .bottom .col-sm-7, .col-sm-8{margin-top: 7px;}
+.content .content_center .content_change_right .bottom .Reward_conditions_show span{display: inline-block; font-size: 13px; margin-bottom: 10px;}
+.content .content_center .content_change_right .bottom .Reward_conditions_show span input{width: 40px; height: 30px; display: inline-block; }
+
+.content .content_bottom{position: fixed; z-index: 120; bottom: 0; left: 210px; width: calc(100% - 420px); height: 50px; line-height: 50px; text-align: center; background: #ffc} 
+
+
+/*弹出层*/
+.layer_content{padding: 20px;}
+.layer_content ul{display: flex; align-items: center; height: 50px; border-bottom: 1px solid #CCCCCC;}
+.layer_content ul li{padding: 0 10px;}
+.layer_content ul li:nth-child(1){width: 50%;}
+.layer_content ul li:nth-child(2){width: 20%;}
+.layer_content ul li:nth-child(3){width: 30%;}
+.layer_content .layer_content_top{background: #f5f5f5;}
+.layer_content .layer_content_main{height: 80px; font-size: 12px;}
+.layer_content .layer_content_main li:nth-child(1){display: flex; justify-content: space-between; align-items: center;}
+.layer_content .layer_content_main li:nth-child(3){text-align: right;}
+.layer_content .layer_content_main li img{display: inline-block; height: 60px; width: 60px; margin-right: 10px;}
+
+.layer_bottom{position: fixed; bottom: 0; width: 100%; height: 40px; line-height: 40px; text-align: right; padding-right: 20px; border-radius: 0 0 5px 5px ; background: #F5F5F5;}
+
+.wrong, .successPromrt { position: fixed; top: 30px; left: calc(50% - 250px); width: 500px; height: 40px; line-height: 40px; text-align: center; color: white; background: #FF4343; border-radius: 5px; }
+.successPromrt{background: #45b182;}
+
+/*弹出层样式重置*/
+body .demo-class{border-radius: 5px;}
+body .demo-class  a{color: #2277FF;}
+body .demo-class .layui-layer-title{height: 40px; font-size: 14px; font-weight: 600; background: white; border-radius: 5px 5px 0 0 ;}
+/*body .demo-class .layui-layer-setwin .layui-layer-close1{border: none;}*/
+body .demo-class .layui-layer-btn a{background: blue;}

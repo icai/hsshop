@@ -1,0 +1,41 @@
+/*活动规则*/
+#act_gz{height: 140px;margin-bottom: 5px;}
+.gz_1{width: 15%;height: 140px;background: #f8f8f8;float: left;padding: 20px 0 0 20px;}
+.gz_2{float:left;display: flex;flex-direction: column;align-items: flex-start;width: 80%;height: 140px;background: #f8f8f8;margin-left: 10px;}
+.js-add-picture{display:inline-block;width: 50px;height: 50px;border: 1px solid #ccc;text-align: center;line-height: 50px;}
+.basi_set{margin: 0 0 5px 262px;font-size: 16px;}
+.hd{padding-left: 14px;}
+/*活动首页信息*/
+#act_sy{overflow: hidden;margin-bottom: 5px;height: 466px}
+#act_syb{overflow: hidden;margin-bottom: 5px;height: 140px}
+.sy_1{width: 15%;height: 466px;background: #f8f8f8;float: left;padding: 20px 0 0 20px;}
+.sy_2{float: left;display: flex;flex-direction: column;background: #f8f8f8;width: 80%;margin-left: 10px;}
+.control-label{line-height: 35px;}
+.control-group{display: flex;}
+.col-sm-4{padding-left: 0;}
+/*大奖设置信息*/
+#act_dj{overflow: hidden;margin-bottom: 5px;}
+.dj_1{width: 15%;background: #f8f8f8;float: left;height: 310px;padding: 20px 0 0 20px;}
+.dj_2{float: left;background: #f8f8f8;width: 80%;margin-left: 10px;height: 310px;}
+
+/*报名其他信息*/
+.dj_21{width: 25%;border: 0;border:1px solid #ccc;border-radius: 4px;height: 35px;}
+.dj_22{float: left;background: #f8f8f8;width: 80%;margin-left: 10px;height: 330px;padding: 20px 0 0 20px;}
+.dj_2_1p{padding-left:10px ;}
+.dj_2_2p{padding-left: 10px;}
+
+/*提交预览*/
+#act_tj{text-align: center;}
+.tj_1,.tj_2{border: 0;width: 50px;height: 30px;border: 1px solid #ccc;border-radius: 5px;text-align: center;line-height: 30px;}
+.col-sm-9{width: 100%;}
+.form-group{margin-bottom: 0;}
+.uploadImg{margin-top: 6px;}
+.uploadImg .setImg{width: 100px;height: 100px;line-height: 100px;display: block;text-align: center;font-size: 50px;color: #3388FF;}
+.uploadImg .setImg:hover .clear_img{display: block;}
+ .uploadImg .set_bg{height: 140px; line-height: 140px; background: url(../../hsadmin/images/hitEggBg.png) 0 0 no-repeat; background-size: cover;}
+ .uploadImg .setImg .clear_img{display: none; position: absolute; top: -6px; left: 90px; z-index: 50; width: 15px; height: 15px; line-height: 13px; text-align: center; color: white; background: #999999; font-size: 15px; border-radius: 50%;}
+.uploadImg .setImg input[type='file']{z-index: 10; width: 100%; height: 100%; opacity: 0;}
+.rtv{position: relative;}
+.abt{position: absolute; top: 0;left: 0;}
+
+.tip_span{font-size: 12px;color: #999999;margin: 5px 0;}

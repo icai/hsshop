@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import "public";
+
+/* 协议弹窗 */
+.layui-layer{
+    border-radius: 5px;
+    .layui-layer-title{
+        font-size:24px;
+        line-height:64px;
+        background:white;
+        text-align:center;
+        height:64px;
+    }
+    .layui-layer-title{
+        padding:0
+    }
+    .layui-layer-close{
+        margin-right:8px;
+        &::before{
+            content: 'x';
+            font-size:16px;
+            width: 24px;
+            height:24px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            background: rgba(0,0,0,.5);
+            border-radius: 50%;
+            color:white
+        }
+    }
+    .layui-layer-ico{
+        background: none
+    }
+}
+
+/*! 自定义input radio*/
+input[type="radio"] + span:before {
+    content: "\a0";
+    box-sizing:border-box;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #B8B8B8;
+    text-indent: .15em;
+    margin-top: -4px
+  }
+  input[type="radio"]:checked + span:before {
+    box-sizing:border-box;
+    background-size: 100% 100%;
+    border:5px solid #3197FA;
+    font-size:14px;
+    width: 1em;
+    height: 1em;
+    margin-top: -4px
+  }
+  input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+//   修改的确定按钮
+.submit{
+    text-align: center;
+    width: 100%;
+    margin:16px 0 0;
+    button{
+        border:1px solid #3197FA;
+        background: #3197FA;
+        width: 128px;
+        color:white
+    }
+}
+#pop{
+    padding:16px 24px;
+    dl{
+        margin:16px 0;
+        dt{
+            float: left;
+            line-height:24px;
+            width:20%;
+            text-align: center;
+            
+        }
+        dd{
+            float: left;
+            p{
+                line-height: 24px
+            }
+        }
+    }
+    .form{
+        width:448px;
+    }
+    input{
+        display: inline-block
+    }
+}
+.grey{
+    color:grey;
+    vertical-align: bottom
+}
+#upfile{
+    width: 100px;
+    height:100px;
+    position: relative;
+    &:before{
+        content: '+';
+        width: 93px;
+        height:93px;
+        position: absolute;
+        left:5px;
+        border-radius: 5px;
+        top:1px;
+        background: white;
+        text-align: center;
+        font:50px/90px '';
+        color:grey;
+        outline: 0;
+        font-weight:bold
+    }
+}
+.info_tip{
+    z-index: 100000000 !important;
+}

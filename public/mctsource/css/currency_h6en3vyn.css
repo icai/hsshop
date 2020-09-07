@@ -1,0 +1,108 @@
+
+.hide{display: none;}
+.show{display: block;}
+.main{position: relative;}
+.content .div{
+	width: calc(100% - 20px);
+	height: auto;
+	margin-bottom: 20px;
+	border: 1px solid #CCCCCC;
+}
+.div .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	padding: 0 10px;
+	background: #F8F8F8;
+}
+.div .title:hover{cursor: pointer;}
+.div .title b{font-size: 18px; font-weight: 600;}
+.div .rowImg{
+	display: inline-block;
+	width: 12px; 
+	height: 12px; 
+	background: url(../../static/images/chosen-sprite@2x.png) -4px -14px no-repeat;
+}
+
+.contentDiv{
+	display: none;
+	width: calc(100% - 40px);
+	height: auto;
+	padding: 10px 20px;
+}
+.contentDiv span{
+	display: block;
+	margin: 20px 0;
+}
+.contentDiv span a, .yellowBG a{color: #0000FF;}
+.contentDiv span p{font-size: 12px; display: block; margin: 5px 0;}
+.contentDiv .yellowBG{
+	width: calc(100% - 20px);
+	height: auto;
+	line-height: 25px;
+	padding: 10px;
+	font-size: 12px;
+	border: 1px solid #FFCC66;
+	background: #FFFFCC;
+}
+
+/*蒙板*/
+.board{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 110;
+	background: #C3C3C3;
+	opacity: .8;
+}
+/*弹出层*/
+.weixin_Layer{
+	position: absolute;
+	z-index: 120;
+	top: 20%;
+	left: calc(50% - 400px);
+	width: 800px;
+	height: auto;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	background: white;
+}
+.weixin_Layer .layer_title{
+	height: 50px;
+	padding: 0 10px;
+	font-size: 18px;
+	border-bottom: 1px solid #CCCCCC;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.layer_title #title_right{
+	width: 10px;
+	height: 10px;
+	background: url(../../static/images/chosen-sprite.png) -43px 0 no-repeat;
+}
+.layer_title #title_right:hover{
+	cursor: pointer;
+	background: url(../../static/images/chosen-sprite.png) -43px -11px no-repeat;
+}
+.layer_content{padding: 30px ;}
+.layer_content span{display: block; font-size: 15px; padding-bottom: 10px;}
+.layer_content p{font-size: 13px; padding-bottom: 10px;}
+
+
+
+/*微信店铺未绑定认证服务号的提示弹出层*/
+.approveLayer{
+	position: absolute;
+	left: calc(50% - 165px);
+	top: 80px;
+	width: 330px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	color: white;
+	background: #ff4343;
+	border-radius: 5px;
+	z-index: 130;
+}

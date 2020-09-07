@@ -1,0 +1,21 @@
+.ding-xp2{font-size: 30px;}
+.ding-box{height: 730px;}
+.searchHistory{text-align: center; color: #fff; height: 90px; margin-top: 55px;}
+.historyItem span{margin-right: 15px;}
+.dinp1{width: 125px; text-align: center;}
+.chenghu, .haoma, .hangy{margin-left: 130px;}
+.yuyue{padding-left: 0;}
+/*查询弹框样式*/
+.c_model{position: fixed;top: 100px; width: 300px; border:1px solid #ccc;border-radius: 5px;z-index: 1000;}
+.delete{display: inline-block;width: 15px;height: 15px;background:url("../image/nav-close.png") center center no-repeat;background-size: 100% 100%;}
+.icon_logo{display: inline-block;width:40px;height: 40px; background:url('../image/icon01.png') center center no-repeat;background-size: 100% 100%;}
+.icon_logo1{display: inline-block;width:40px;height: 40px; background:url('../image/icon02.png') center center no-repeat;background-size: 100% 100%;}
+.content_top{text-align: center;margin-top: 10px;}
+.ff49{color: #ffb133;}
+.fb31{color: #3197fb;}
+.content_top .info{display: inline-block; font-size: 25px;vertical-align: top;margin-top: 5px;margin-left: 5px;}
+.content_info{text-align: center;padding:20px 0 25px; font-size: 16px;}
+.content_info span{padding-right: 15px;}
+.button_group{width: 80%;margin-left:10%;}
+.button_group .register{display: block; margin: auto; width:340px; height: 60px; line-height: 60px; font-size: 20px; -webkit-box-sizing: border-box; box-sizing: border-box;text-align: center;background-color: #279ffb;color: #fff;border-radius: 3px;}
+.button_group .again{display:block; margin:50px auto; text-align: center;margin-top: 20px;border-radius: 3px; width: 158px;padding:12px 0;border:1px solid #279ffb;color: #279ffb}

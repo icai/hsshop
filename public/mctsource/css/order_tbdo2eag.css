@@ -1,0 +1,27 @@
+
+/*分销采购单头部*/
+.widget-app-board {
+    padding: 20px;
+    background: #f8f8f8;
+    zoom: 1;
+}
+.ui-box {
+    margin-bottom: 15px;
+}
+.widget-app-board-info {
+    float: left;
+    width: 80%;
+}
+.widget-app-board-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.widget-app-board-info p {
+    line-height: 20px;
+}
+.widget-app-board:after {
+    content: "";
+    display: table;
+    clear: both;
+}

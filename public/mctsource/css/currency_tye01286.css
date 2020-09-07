@@ -1,0 +1,11 @@
+.main .prompt{ width: auto; max-width: 1020px; height: 35px; line-height: 15px; background: #fff7cc; margin: 10px; padding: 10px; }
+.main .prompt a{color: cornflowerblue;}
+
+/*以选择的li样式*/
+.imgShow{ width: 100%; min-height: 100px; height: auto; margin-top: 20px; }
+.imgShow p{ display: inline-block; height: 20px; padding: 5px; font-size: 12px; color: #999;}
+.imgShow ul{display: flex; justify-content: flex-start; align-items: center; height: 45px; padding: 5px; border-bottom: 1px solid #E5E5E5; overflow: hidden; }
+.imgShow ul:hover{background: #F8F8F8;}
+.imgShow .title{background: #f8f8f8; font-size: 15px;}
+.imgShow ul li{ float: left; width: 25%; text-align: center;}
+.imgShow ul li a{color: dodgerblue;}

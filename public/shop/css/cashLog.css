@@ -1,0 +1,27 @@
+.container{
+    background-color: #fff;
+    position: relative;
+    font-weight: 500;
+}
+.earning-body-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #e5e5e5;
+}
+.timer-item {
+    line-height: 18px;
+}
+.money-item {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.status-light {
+    font-size: 15px;
+    color: #E5333A;
+}

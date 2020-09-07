@@ -1,0 +1,9 @@
+// 用来清除浮动的函数CSS
+
+clearfix() {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}

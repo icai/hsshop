@@ -1,0 +1,88 @@
+#previewModal .preview_info{font-size: 17px;font-weight: 600;}
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+.container_title{float: left;}
+.header{margin-bottom: 20px;}
+.header .help{float: right;}
+.header .help a{font-size: 12px;}
+.container_title .co_4b0{padding: 0 10px;border: 1px solid #4b0;color: #4b0;border-radius: 15px;margin-left: 10px;}
+.container_title .num_info{ margin-left: 65px; opacity: 0.6; font-size: 12px; }
+.container_title .num_info:hover{opacity: 1;}
+/*创建群发消息内容开始*/
+.right_container .set_message{ border: 1px solid #ccc; color: #ccc; }
+.set_message .set_message_title{ padding: 8px 15px; }
+.set_message_title li {display: inline-block;margin-right: 20px;cursor: pointer;}
+.set_message_title li:hover{color: #000;}
+.set_message_title li:hover .icon{opacity: 1;}
+.set_message_title .opacity{color: #000;}
+.set_message_title .opacity .icon{opacity: 1;}
+.set_message_title .icon{width: 20px;height: 20px;background:url(https://upx.cdn.huisou.cn/wscphp/xcx/images/xcxImg/zan/ico_editor_sprite_150608@1x.png) 0 3px no-repeat;display: inline-block;vertical-align: top;opacity: 0.4;}
+.set_message_title .icon_img{background-position: 0 -22px;}
+.set_message_title .icon_news{background-position: 0 -72px;}
+/*文本显示区开始*/
+.set_message .set_message_content{height: 200px;border-top: 1px solid #ccc;border-bottom:1px solid #ccc ;padding: 10px;}
+.set_message_content .editor_text,.editor_img,.editor_news{width: 100%;height: 100%;}
+.editor_text textarea{height: 100%;width: 100%;border: 0;color: #000;}
+.editor_img ,.editor_news{display: none;}
+.editor_img .select{cursor: pointer; border: 2px dashed #ccc;padding: 40px 30px;width: 100px;text-align: center;}
+.editor_img .select:hover{color: #999;border-color: #999;}
+.editor_img .message_img{display: none;}
+.editor_img .message_img img{width: 100px;height: 120px;display: inline; }
+.editor_img .message_img a{vertical-align: top;}
+/*底部表情和字数统计*/
+.set_message_footer{padding: 5px 10px;} 
+.set_message_footer .word_count{color: #ccc;font-size: 12px;}
+.set_message_footer .emotion{display: block;width: 20px;height: 20px;background: url(https://upx.cdn.huisou.cn/wscphp/xcx/images/xcxImg/zan/ico_editor_sprite_150608@1x.png) 0 -97px no-repeat;opacity: 0.5;}
+.set_message_footer .emotion:hover{opacity: 1;}
+/*图文模态框*/
+.list li{cursor: pointer;font-weight: bold;color: #38f;display: inline-block;border-right: 2px solid #000;padding: 0px 10px;}
+.list li:last-child{border-right: 0;}
+.list .list_active{color: #000;}
+.title{width: 444px;font-weight: 600;text-align: left;}
+.set_time{width: 88px;font-weight: 600;text-align: left;}
+.search input{width: 100px;border-radius: 5px 0 0 5px;padding: 6px 10px;vertical-align: middle;}
+.search button{margin-left: -6px;display: inline;border-radius: 0 5px 5px 0;}
+.tabel_info tr>.info{border: 1px solid #ccc;border-radius: 5px;width: 100%; height: 100px;text-align: center;line-height: 100px;margin-bottom: 100px;}
+.modal-dialog{width: 800px;}
+.modal-dialog tr td{text-align: left;}
+.modal-dialog tr td:last-child{text-align: center;}
+.modal-dialog td{font-size: 12px;}
+.modal-dialog .item{display: none;}
+.modal-dialog .js_manage{display: none;}
+.modal-dialog td img{width: 50px;height: 50px; display: inline-block;}
+.modal-dialog td a{vertical-align: top;display: inline-block;}
+.modal-footer span{font-size: 12px;}
+/*列表标题内容开始*/
+.modal-dialog .title_content{width: 250px;}
+.modal-dialog .title_content .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 5px 5px 0 0;}
+.modal-dialog .title_content .green{padding: 0 3px;background: #468847;color: #fff;border-radius: 3px;margin-right: 10px;}
+.modal-dialog .title_content .img_text a{font-size: 13px;}
+.modal-dialog .title_content .read_all{cursor: pointer; padding: 2px 10px;border: 1px solid #eee;border-radius: 0 0 5px 5px;margin-top: -1;font-size: 13px;color: #666;}
+/*图片模态框原生*/
+.imgs_list{height: 430px;}
+.imgs_list .img{position: relative; float: left; width: 20%;height: 33%;box-sizing: border-box;padding: 10px;overflow: hidden;}
+.imgs_list .img img{width: 100%;height: 85%;}
+.imgs_list .img .img_size{position: absolute;font-size: 12px;left: 10px;right: 10px; bottom: 28px;background: rgba(0,0,0,0.3);color: #fff; text-align: center;}
+.imgs_list .img .img_name{font-size: 12px;overflow: hidden;text-overflow: ellipsis;}
+.img_footer{line-height: 40px;}
+.img_footer button{padding: 3px 10px;}
+.img_footer div{font-size: 12px;}
+/*重置弹框内容高度*/
+.myModal-adv .height_auto{height: auto;}
+.content_second{display: none;}
+/*按钮组样式*/
+.btn_group{margin-top: 30px;position: relative;}
+.btn_group button{ padding: 3px 10px;font-size: 13px;margin-right: 10px;}
+.timer_cap{display: none; position: absolute;background: #fff;border: 1px solid #ccc;left: 265px;top: -10px; padding: 10px;border-radius: 5px;}
+.timer_cap::before{content: "";position: absolute;top: calc(50% - 5px);left: -7px; width: 10px;height: 10px;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;transform: rotate(45deg);background: #fff;}
+.timer_cap input{padding: 3px 10px; border-radius: 5px;}
+.timer_cap .btn_p{margin-left: 10px;}
+/*列表标题内容开始*/
+.co_blue{color: blue;}
+.co_blue:hover{color: blue;}
+.add_news .item{width: 250px;}
+.add_news .item .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 5px 5px 0 0;}
+.co_blue{display: inline-block; width: 150px;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: top;}
+.green{padding: 0 3px;background: #468847;color: #fff;border-radius: 3px;margin-right: 10px;}
+.add_news .item .img_text a{font-size: 13px;}
+.add_news .item .read_all{cursor: pointer; padding: 2px 10px;border: 1px solid #eee;border-radius: 0 0 5px 5px;margin-top: -1;font-size: 13px;color: #666;}

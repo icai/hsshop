@@ -1,0 +1,55 @@
+.flex_star{display: flex; justify-content: flex-start; align-items: center;}
+.flex_end{display: flex; justify-content: flex-end; align-items: center;}
+.flex_center{display: flex; justify-content: space-between; align-items: center;}
+.flex_around{display: flex; justify-content: space-around; align-items: center;}
+.flex_middle{display: flex; justify-content: center; align-items: center;}
+.rtv{position: relative;}
+.abt{position: absolute; top: 0;}
+.fix{position: fixed;}
+.a_active{color: dodgerblue;}
+.active{background: #3388FF; color: white;}
+
+.content{height: auto;}
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+.content label{font-weight: normal;}
+.content .content_top {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E5E5;}
+.content .content_top ul{margin-bottom: -1px;}
+.content .content_top ul li{padding: 5px 10px; background: white; border: 1px solid #E5E5E5; border-bottom-color: white; margin-bottom: -1px;}
+.content .content_top ul li:hover{cursor: pointer;}
+.content .content_top a span{display: inline-block; width: 15px; height: 15px; border-radius: 50%; text-align: center; line-height: 15px; background: #3c3; color: white;}
+
+/*管理页面样式*/
+.content .management_div .opt_section{padding: 10px 15px; margin-top: 10px; background: #f2f2f2; border: 1px solid #EEEEEE;}
+.content .management_div .opt_section .opt_line{padding-top: 15px; padding-left: 10px; width: 50%;}
+.content .management_div .opt_section .opt_line ul{padding-top: 15px;}
+.content .management_div .opt_section .opt_line ul li{width: 60px; text-align: right;}
+.content .management_div .opt_section .opt_line ul li:hover{cursor: pointer; color: dodgerblue;}
+.content .management_div .opt_section .opt_line ul li:nth-child(2){background: url(../../hsadmin/images/icons_statistics.png) 5px -94px no-repeat;}
+.content .management_div .opt_section .opt_line ul li:nth-child(3){background: url(../../hsadmin/images/icons_statistics.png) 5px -139px no-repeat;}
+.content .management_div .opt_section .opt_line ul li:nth-child(4){background: url(../../hsadmin/images/icons_statistics.png) 5px -224px no-repeat;}
+.content .management_div .opt_section .opt_line .opt_link{margin: 20px 0;}
+/*活动数据部分*/
+.content .management_div .opt_data_title{padding: 10px; margin: 20px 0; background: #f2f2f2; font-weight: bold;}
+.content .management_div .opt_data_title::before{content: ""; display: inline-block; height: 20px; border-left: 5px solid #f70;}
+.content .management_div .opt_active_data {}
+.content .management_div .opt_active_data .opt_active_content{padding: 20px; width: 100%; height: auto; border: 1px solid #f2f2f2;}
+.content .management_div .opt_active_data .opt_active_content .active_btn_list li{text-align: center; line-height: 30px; width: 80px; height: 30px; border: 1px solid #8D8D8D;}
+.content .management_div .opt_active_data .opt_active_content .active_btn_list li+li{border-left: none;}
+.content .management_div .opt_active_data .opt_active_content .active_btn_list li:hover{cursor: pointer;}
+.content .management_div .opt_active_data .opt_active_content .active_chart{margin: 20px 0; height: 400px;}
+
+/*中奖数据部分*/
+.content .management_div .opt_prize_data .opt_prize_content{padding: 20px; width: 100%; border: 1px solid #F2F2F2;}
+.content .management_div .opt_prize_data .opt_prize_content .hint p{display: inline-block; margin-left: 10px;}
+.content .management_div .opt_prize_data .opt_prize_content .prize_chart{margin: 20px 0; height: 400px;}
+
+/*删除模态框的设置*/
+#mydelModal .modal-body{text-align: center;}
+#mydelModal .modal-body .modal-body-img{margin: 40px auto;}
+#mydelModal .modal-body .modal-body-p{margin: 20px 0;}
+
+/*提示框的层级的重置*/
+.info_tip{z-index: 1040;}
+
+

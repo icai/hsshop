@@ -1,0 +1,8 @@
+<div class="control-group">
+    <div class='detaTime_con'>
+        <p class='detaTime_title'><em ng-if='editor.required'>*</em>{{editor.title}}</p>
+        <p class='detaTime_title_a' ng-if='editor.subtitle'>{{editor.subtitle}}</p>
+        <input ng-class="{'inp_c':editor.selectedSite.value == 0,'inp_b':editor.selectedSite.value == 1 ,'inp_a':editor.selectedSite.value == 2 }" disabled ng-if='editor.rule_text_height == 0' class='detaTime_box'>
+        <textarea ng-class="{'inp_c':editor.selectedSite.value == 0,'inp_b':editor.selectedSite.value == 1 ,'inp_a':editor.selectedSite.value == 2 }" ng-if='editor.rule_text_height == 1' class='text_textarea detaTime_box' name="" id="" disabled></textarea>
+    </div>
+</div>

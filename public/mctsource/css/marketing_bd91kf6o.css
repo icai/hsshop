@@ -1,0 +1,14 @@
+form{position:relative;}
+.group-list{
+	position:relative;
+	z-index:3;
+}
+.tip_show{
+	color:#999;
+	padding:0;
+	top: 11px;
+    right: 10px;
+	position:absolute;
+	z-index:2;
+}
+.switch_items{margin:40px 10px 0 300px;}

@@ -1,0 +1,179 @@
+.content{
+    font-size: 13px
+}
+.none{
+    display: none
+}
+.header-btn{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px
+}
+.header-btn .btn{
+    margin-right: 10px
+}
+.btn-buy{
+    border: 1px solid #BBBBBB;
+    color: #333;
+    padding: 5px 12px;
+}
+.header-btn p{
+    color: #999999
+}
+/* 打印机列表 */
+.table thead tr td{
+    padding: 13px 0;
+    border-bottom: 1px solid #E6E6E6 
+}
+.table tbody tr td{
+    padding: 13px 0;
+    border-bottom: 1px solid #E6E6E6 
+}
+.operate-item{
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #BBBBBB;
+    color: #333333;
+    border-radius: 2px;
+    margin: 0 5px
+}
+.operate-item.set{
+    color: #3197FA;
+    border-color: #3197FA
+}
+.operate-item.link{
+    color: #fff;
+    background: #3197FA;
+    border-color: #3197FA
+}
+/* 新建弹窗 */
+.modal-content{
+    font-size: 14px;
+    color: #999999;
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+.modal-content p{
+    padding: 20px 0 30px
+}
+.modal-content label{
+    color: #333
+}
+.modal-content label span{
+    color: #FF4343
+}
+.modal-content .input-item{
+    padding:0 0 30px 14px; 
+}
+.err-tip{
+    line-height: 30px;
+    padding-left: 90px;
+    display: none
+}
+.modal-content input[type="text"]{
+    width: 250px;
+    padding: 0 10px;
+    margin-left: 5px;
+    overflow: hidden;
+    height: 34px;
+}
+.modal-content input::placeholder{
+    font-size: 13px
+}
+.modal-content .page_num{
+    color: #999999;
+}
+input[type="radio"] + label::before {
+    content: ""; 
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #BBBBBB;
+    margin-top: -3px;
+    margin-right: 5px
+}
+input[type="radio"]:checked + label::before {
+    background: url(../images/radio2@2x.png) no-repeat;
+    background-size: 14px 14px;
+    border: 0
+}
+input[type="radio"] {
+    position: relative;
+    right: -13px;
+    opacity: 0;
+}
+body .layer-tskin .layui-layer-btn{
+    text-align: center !important
+}
+body .layer-tskin .layui-layer-btn a{
+    padding: 0 24px !important
+}
+/* 删除弹窗 */
+.delete-model{
+    width: 165px;
+    height: 78px;
+    position: absolute;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+    background: #fff;
+    padding: 10px
+}
+.delete-model::before{
+    content:'';
+    position: absolute;
+    top: -5px;
+    left: 75px;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5e5e5 transparent transparent #e5e5e5;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg)
+}
+.foot-btn{
+    text-align: right;
+    width: 100%;
+    margin-top: 15px
+}
+.delete-model a{
+    display: inline-block;
+    padding: 5px 6px;
+    border: 1px solid #BBBBBB;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 1;
+    border-radius: 2px
+}
+.delete-model .delete-btn{
+    color: #fff;
+    background-color: #3197FA;
+    border-color: #3197FA 
+}
+.explain_icon{
+    padding-left: 16px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+.glyphicon{
+    color: #49c800;
+    margin-right: 3px
+}
+.glyphicon::before{
+    content: '\e085'
+}
+.explain_icon a{
+    color: #3197FA
+}

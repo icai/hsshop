@@ -1,0 +1,61 @@
+<div class="editer-content">
+    <div class="js-meta-region">
+        <div class="control-group error">
+            <label class="control-label">
+                <span class="required">*</span>分类名：</label>
+            <div class="controls">
+                <input type="text" name="category_title" value="" class="form-control" ng-model="editors[0]['title']" required ng-maxlength="50">
+                <p class="help-block error-message" ng-show="editorForm.category_title.$dirty && editorForm.category_title.$error.required || iserror && editorForm.category_title.$invalid">分类名不能为空</p>
+                <p class="help-block error-message" ng-show="editorForm.category_title.$dirty && editorForm.category_title.$error.maxlength || iserror && editorForm.category_title.$invalid">最大长度不能超过50位</p>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">第一优先级：</label>
+            <div class="controls">
+                <select name="first_priority" class="form-control" ng-model="editors[index]['firstChoose']">
+                    <option value="0" ng-selected="editors[index]['firstChoose'] == 0">序号越大越靠前</option>
+                    <option value="3" ng-selected="editors[index]['firstChoose'] == 3">最热的排在前面</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">第二优先级：</label>
+            <div class="controls">
+                <select name="second_priority" class="form-control" ng-model="editors[index]['secondChoose']">
+                    <option value="1" ng-selected="editors[index]['secondChoose'] == 1">创建时间越晚越靠前</option>
+                    <option value="2" ng-selected="editors[index]['secondChoose'] == 2">创建时间越早越靠前</option>
+                    <option value="3" ng-selected="editors[index]['secondChoose'] == 3">最热的排在前面</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">显示方式：</label>
+            <div class="controls">
+                <label class="radio inline">
+                    <input type="radio" name="show_method" value="0" ng-model="editors[0]['showStyle']" ng-checked="editors[0]['showStyle']==0">仅显示杂志列表</label>
+                <label class="radio inline">
+                    <input type="radio" name="show_method" value="1" ng-model="editors[0]['showStyle']" ng-checked="editors[0]['showStyle']==1">用期刊方式展示
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <hr>
+        <div class="separate-line">
+            <p class="text-center">微页面分类简介</p>
+            <p class="text-center">v</p>
+        </div>
+    </div>
+    <textarea id="category_editor" style="width:100%;height:400px"></textarea>
+    <div class="js-collection-region">
+        <ul class="feature-list">
+            <li ng-repeat="list in editors[0]['pageList']">
+                {{list['title']}}
+                <div class="remove-item js-remove icon-remove icon-white" ng-click="removePage($index,list.id)">×</div>
+            </li>
+        </ul>
+    </div>
+    <div class="add_page">
+        <a href="javascript:void(0);" class="zent-btn zent-btn-primary js-add-feature" ng-click="addPage()">添加微页面</a>
+    </div>
+</div>

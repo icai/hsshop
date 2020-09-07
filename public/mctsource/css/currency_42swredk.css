@@ -1,0 +1,32 @@
+.flex_star{display: flex; justify-content: flex-start; align-items: center;}
+.flex_between{display: flex; justify-content: space-between;}
+
+.main .content{ padding-top: 20px; padding-left: 20px; }
+
+/*以选择的li样式*/
+.imgShow{ width: 100%; height: auto; margin-top: 20px; padding: 5px; }
+.imgShow ul{height: 45px; border-bottom: 1px solid #E4E4E4;}
+.imgShow ul li{text-align: center; overflow: hidden;}
+.imgShow ul li:nth-child(1){width: 35%;}
+.imgShow ul li:nth-child(2){width: 20%;}
+.imgShow ul li:nth-child(3){width: 10%;}
+.imgShow ul li:nth-child(4){width: 15%;}
+.imgShow ul li:nth-child(5){width: 10%;}
+.imgShow ul li:nth-child(6){width: 10%;}
+.imgShow .imgShow_title{background: #F8F8F8; font-size: 15px;}
+.imgShow .imgShow_content:hover{background: #F8F8F8;}
+.imgShow .imgShow_content li:nth-child(6){cursor: pointer; color: dodgerblue;}
+
+/*协议详情*/
+.padding{padding: 10px;}
+.border{border: 1px solid #ccc; margin: 10px 0;}
+.creat_time{border-bottom: 1px solid #ccc;}
+.first_party{width: 50%; border-right: 1px solid #ccc;}
+/*.agteement_record ul, .serve_info ul {height: 20px;}*/
+.serve_info ul li:nth-child(1){width:50%;}
+.agteement_record ul li:nth-child(1){width:50%;}
+.agteement_record ul li:nth-child(2){width:30%;}
+.agteement_record ul li:nth-child(3){width:20%;}
+.ul_title{background: #f0f0f0;}
+.agreement{padding: 20px 30px; height: 400px; overflow-y: scroll;}
+

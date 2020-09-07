@@ -1,0 +1,21 @@
+<div class="control-group control-group-large">
+    <label class="control-label" style="width:auto;padding-left:10px">自定义页面模块：</label>
+    <div class="controls" ng-show="!editors[index]['modelName']">
+        <div class="control-action" style="padding-top:7px">
+            <a href="javascript:void(0);" class="js-add-component add-component" ng-click="showComponentModel()">+添加</a>
+        </div>
+    </div>
+    <div class="controls" ng-show="editors[index]['modelName']">
+        <div class="control-action">
+            <div class="pull-left link-to">
+                <a href="javascript:void(0);" class="new-window link-to-title">
+                    <span class="label label-success">
+                        自定义页面模块
+                        <em class="link-to-title-text" ng-bind="editors[index]['modelName']"></em>
+                    </span>
+                </a>
+            </div>
+            <a href="javascript:void(0);" class="js-add-component add-component" ng-click="showComponentModel()">修改</a>
+        </div>
+    </div>
+</div>

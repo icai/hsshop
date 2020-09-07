@@ -1,0 +1,13 @@
+<div class="control-group">
+    <ul class="custom-nav-4 clearfix">
+        <li ng-repeat="list in editor['images']">
+            <a href="javascript:void(0);" ng-if="list.thumbnail">
+                <span class="nav-img-wap">
+                    <img ng-src="{{list.thumbnail}}">
+                </span>
+                <span class="title" ng-bind="list.linkTitle"></span>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>

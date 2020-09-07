@@ -1,0 +1,71 @@
+.guding{
+	z-index: 999;
+	width: 104px;
+	height: auto;
+	position: fixed;
+	top: 50%;
+	right: 40px;
+	margin-top: -122px;
+}
+.connect-container {
+	position: relative;
+	width: 100%;
+	height: 364px;
+	background: url(../image/connect-methods-new.png) no-repeat center;
+}
+.zhankai {
+	width: 100%;
+	height: 68px;
+	background: url(../image/top.png) no-repeat center;
+	cursor: pointer;
+	display: none;
+}
+.weixin-erwei {
+	display: none;
+	position: absolute;
+	left: -133px;
+	top: 159px;
+}
+.phone-box {
+	display: none;
+	position: absolute;
+	left: -144px;
+	width: 145px;
+	height: 42px;
+	line-height: 42px;
+	background-color: #126CC3;
+	font-size: 14px;
+	text-align: center;
+}
+.xianshi-dianhua {
+	top: 208px;
+}
+.xianshi-tel {
+	top: 260px;
+}
+.connect-method {
+	position: absolute;
+	left: 0;
+	width: 104px;
+	height: 42px;
+	cursor: pointer;
+}
+.zaixian {
+	top: 104px;
+}
+.weixin {
+	top: 156px;
+}
+.lianxi {
+	top: 208px;
+}
+.slider_tel {
+	top: 260px;
+}
+.mianfei {
+	top: 312px;
+}
+.intro {
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+}

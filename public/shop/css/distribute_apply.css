@@ -1,0 +1,198 @@
+/*公告*/
+.js-scroll-notice{white-space:nowrap;}
+/*魔方功能*/
+.cube{
+    padding: 0 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+.cube .row{
+	position: relative;
+}
+[v-cloak]{display: none!important;}
+.cube .cube-row{
+	position: absolute;
+}
+.cube .cube-row a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50%;
+}
+.cube .cube-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,.4);
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 6px;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+/* 联系方式 */
+.mobile-wrap{
+    padding:10px
+}
+
+.mobile-title{
+    font:18px/45px '微软雅黑';
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#333;
+    border-bottom: 1px solid #D9D9D9
+}
+.mobile-content{
+    border:1px solid #e6e6e6;
+    border-radius: 4px;
+    margin:8px 0;
+}
+.mobile-content a{
+    padding:10px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.mobile-icon{
+    width:40px
+}
+.calling{
+    font-weight: bold;
+    font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
+    color:#666;
+    flex-grow: 1;
+    padding-left:8px
+}
+.mobile-arrow{
+    width:8px
+}
+/* 联系方式二期 */
+.mobile-wrap .default-mobile{
+    color: #666666;
+    font:18px/50px "Microsoft YaHei";
+    justify-content: space-between;
+    border-bottom: 1px solid #E6E6E6
+}
+.mobile-wrap .default-mobile img{
+    width:32px;
+    height:32px;
+    margin-top:9px
+}
+.mobile-wrap .userdefined{
+    display: block;
+    position: relative;
+    margin-top:10px
+}
+.mobile-wrap .userdefined img{
+    width:100%;
+}
+/* 富文本 */
+.rich_text_html p {
+    margin: 10px 0;
+    font-size: 14px
+}
+/* 分割线 */
+.line{
+    padding: 0 10px
+}
+.line_title{
+    display: block;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333
+}
+.line_subtitle{
+    line-height: 1.6;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 3px;
+    color: #8c8c8c
+}
+.custom-title.wx_template .title{
+    font-size: 16px
+}
+.dotted{
+    border-bottom: 1px dotted #999999
+}
+.dashed{
+    border-bottom: 1px dashed #999999
+}
+.solid{
+    border-bottom: 1px solid #999999
+}
+.double{
+    border-bottom: 1px double #999999
+}
+/* 提交申请 */
+.btn_apply{
+    background-color: #F72F37;
+    color: #fff;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+.result_model{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.result_model .result_content{
+    width: 70%;
+    /* min-height: 50px; */
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 4px;
+    min-height: 180px;
+    padding: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box 
+}
+.result_content img{
+    width: 55px;
+    height: 55px;
+}
+.result_content p{
+    margin-top: 20px;
+    line-height: 24px
+}
+.custom-title{
+    margin-bottom: 0
+}
+.image_ad{
+    padding: 0 10px
+}
+.mobile-wrap .image-shadow {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    text-indent: 9px;
+    font: 15px/30px 微软雅黑;
+}

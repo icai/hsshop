@@ -1,0 +1,67 @@
+.clearfix {  *zoom: 1; } 
+.clearfix:before, .clearfix:after {  display: table; line-height: 0; content: ""; } 
+.clearfix:after { clear: both; } 
+.co_38f{color: #3197FA;}
+.co_38f:hover{color: #187dde;}
+.co_000{color: #000;}
+.co_000:hover{color: #000;}
+.co_blue{color: #3197FA;}
+.co_blue:hover{color: #187dde;}
+.co_bbb{background: #bbb;color: #fff;}
+.co_bbb:hover{background: #bbb;color: #fff;}
+.close_circle{color: #fff !important;}
+.close_circle:hover{color: #fff !important;}
+.main .content {padding: 0;border:1px solid #e5e5e5;min-height: 800px;}
+/*主体左侧列表开始*/
+.left_title .left_nav{min-height: 500px;}
+/*.left_title .left_nav li{margin-bottom:16px;}*/
+/*.left_title .left_nav li a{display: block;padding: 8px 15px;margin: 10px;color: #666;}*/
+.left_title .left_nav a:hover{color: #187dde;}
+/*.left_title .left_nav .active a{background-color: #eee;color: #333;border-radius: 2px;}*/
+.left_title .left_nav .line{border-top: 1px solid #e5e5e5;}
+/*右侧主题开始*/
+.right_container{display: -webkit-flex;-webkit-box-flex: 1;padding:15px;}
+.right_container .login{-webkit-flex: 1;}
+.right_container .code{width: 150px;height: 150px;}
+.right_container .code img{width: 100%;height: 100%;}
+.login .control-group{margin-bottom: 10px;}
+.login .control-group .control-label{width: 160px;text-align: right;float: left;}
+.login .control-group .controls{margin-left: 180px;padding-top: 7px;}
+.controls .controls_action{display: inline-block;vertical-align: baseline;}
+.controls .ctl_opts{margin-left: 15px;font-size: 12px;}
+.controls .line{display: inline-block;margin: 0 10px;width: 1px;height: 12px; background: #000;}
+.controls .help_icon{display: inline-block;position: relative;margin-left: 10px;}
+.controls .help_icon i{color: #ccc;}
+.controls .help_icon i:hover{color: #4b0;}
+.controls .help_icon:hover .help_info{display: block;}
+.controls .help_info{position: absolute;top: 30px; left: -135px;background: #fff;z-index: 5; font-size: 12px; border: 1px solid #ccc;-webkit-box-shadow:0 0 10px 1px #ccc;box-shadow: 0 0 10px 1px #ccc; width: 250px;padding: 15px;border-radius: 2px;text-align: center;display: none;}
+.controls .help_info::before{content: "";position: absolute;top: -7px;left: calc(50% - 5px);width: 10px;height: 10px;border-left: 1px solid #ccc;border-top: 1px solid #ccc;transform: rotate(45deg);background: #fff;}
+.controls .help_icon .help_info p:first-child{padding-bottom: 20px; margin-bottom: 20px;border-bottom: 1px solid #ccc;}
+.control-group .hint{border: 1px solid #ccc;width: 400px;padding: 15px;font-size: 12px;font-weight: 500;}
+.control-group .hint p:first-child{margin-bottom: 5px;}
+.btn_group{background: #FFFEDC;padding: 10px;}
+.btn_group .btn{padding: 5px 10px;margin-left: 170px;}
+.modal-dialog{width: 400px;}
+.modal-dialog h4{font-size: 14px;}
+.modal-dialog .modal-body{font-size: 12px;}
+#myModal .modal-dialog .modal-body p{color: red;margin-bottom: 20px;}
+#myModal .modal-dialog .modal-body label input{vertical-align: top;width: 23px;}
+#myModal1 ol{list-style: disc;margin-left: 15px;color: #f30;}
+form{width: 100%;margin-top: 50px;}
+.js_inline .no{display: none;}
+.img_small{width: 100px;height: 120px;display: inline-block;}
+/*重置弹框内容高度*/
+.myModal-adv .height_auto{height: auto;}
+.content_second{display: none;}
+/*图标库弹出层*/
+.content_third{border-bottom: 1px solid #C0C0C0; display: none;background: #fff;}
+.content_third #iconStyleSelect{padding: 0 20px;font-size: 14px; color: #8C8C8C;}
+.content_third #iconStyleSelect li{margin: 20px 0;}	
+#iconStyleSelect li a{font-size: 12px; display: inline-block; margin: 0 10px; color: #06F;}
+#iconStyleSelect li .selected{color: black; font-weight: bold;font-size: 14px;}
+.content_third #iconImgShow{padding: 0 20px; height: 270px; overflow: hidden;position: relative;}
+.content_third #iconImgShow #iconImgSelect{position: absolute;top: 0;display: flex;flex-wrap: wrap;align-content: flex-start;}
+.content_third #iconImgSelect li{height: 80px; width: 80px; margin: 3px;position: relative;background: #ccc;}
+#iconImgSelect li:hover{cursor: pointer;}
+#iconImgSelect li img{width: 100%;height: 100%;}
+.content_third #pageNum{font-size: 12px; height: 50px;padding-right: 30px;display: flex;justify-content: flex-end;align-items: center;}

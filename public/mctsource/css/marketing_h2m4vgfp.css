@@ -1,0 +1,134 @@
+
+.form-group{margin:0;}
+label{margin:0;}
+.reduce_input{margin:0 10px;}
+/*表格*/
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {vertical-align: middle;}
+.table>tbody{border:1px solid #ddd;}
+.discount_table tfoot{border:1px solid #ddd;border-top:0;}
+td.text_left{text-align:left}
+/*面板*/
+.active_module .panel-heading{
+	padding:0;
+}
+.active_module .panel-body{
+	padding:0;
+}
+/*商品导航*/
+.goods_nav{}
+.goods_nav:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.goods_nav li{
+	width: 120px;
+	font-size:14px;
+	padding: 8px 20px;
+	float:left;
+	text-align:center;
+	border-right: 1px solid #ddd;
+	margin-bottom:-1px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.goods_nav li.hover{
+	background-color:#fff;
+	border-bottom:2px solid #f60;
+}
+/*筛选*/
+.screen_module{
+	background-color:#fff;
+	border:0;
+	padding:10px 20px;
+}
+.screen_module select{
+	width:186px;
+	padding: 4px 6px;
+	font-size: 14px;
+	color: #555;
+	margin-right:10px;
+}
+.screen_module input{
+	width:186px;
+	padding: 5px 6px;
+	font-size:12px;
+	margin-right:10px;
+}
+.screen_module .js_search{
+	padding: 4px 10px;
+}
+/*活动表格*/
+.active_table>tbody{
+	border:0;
+}
+.active_table.table>thead>tr>th, 
+.active_table.table>tbody>tr>th,
+.active_table.table>tfoot>tr>th,
+.active_table.table>tbody>tr>td,
+.active_table.table>tfoot>tr>td{
+	border-top:0;
+	border-bottom:1px dashed #ddd;
+}
+.active_table.table>thead{
+	border:1px solid #ddd;
+	background:#f8f8f8;
+	border-left:0;
+	border-right:0;
+}
+.active_table.table>thead>tr>td{
+	line-height:21px;
+}
+.active_table td.text_left{padding-left:35px;}
+.goods_content{
+	width:450px;
+	text-align:left;
+	display:block;
+}
+/*全选&分页*/
+.select_page{padding:0 10px;}
+.select_page:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+/*全选*/
+.select_page .search_module{
+	float:left;
+}
+.select_page .search_module .btn{
+	height: 26px;
+    line-height: 26px;
+	margin-left:10px;
+	padding:0 12px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;   
+}
+input.all_check{
+	margin:0;
+	top:1px;
+	margin-right:4px;
+	position:relative;
+}
+/*分页*/
+.select_page .pagging{
+	float:right;
+}
+.save_module{
+	padding:15px 10px;
+    background-color: #ffc;
+    border-top: none;
+    margin: 0;
+    bottom:0;
+    left:210px;
+    right:210px;
+    position:fixed;
+    z-index:100;
+}
+/*屏幕小于1200px时*/
+@media only screen and (max-width: 1200px){
+    .save_module{
+        right:10px;
+    }
+}

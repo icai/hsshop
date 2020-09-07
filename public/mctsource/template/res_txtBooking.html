@@ -1,0 +1,21 @@
+<div class="control-group">
+    <div class='detaTime_con'>
+        <p class='detaTime_title'><em ng-if='editor.required'>*</em>{{editor.title}}</p>
+        <p class='detaTime_title_a' ng-if='editor.subtitle'>{{editor.subtitle}}</p>
+        <!--下拉框-->
+        <div ng-if='editor.rule_appoint_type == 1'>
+            <select disabled class='res_select' ng-init="editor.selectedSite = editor['sub_rules'][editor.default_num]" ng-model="editor.selectedSite" ng-options="x.title for x in editor['sub_rules']">
+            </select>
+        </div>
+        <!--单选框-->
+        <div class="choices" ng-if='editor.rule_appoint_type == 0 || editor.rule_appoint_type == 2'>
+            <ul>
+                <li class='vote_option' ng-repeat='item in editor.sub_rules' ng-if='$index != 0'>
+                    <input ng-show='item.type != "other"' ng-if='editor.rule_appoint_type == 0' type="radio" disabled>
+                    <input ng-show='item.type != "other"' ng-if='editor.rule_appoint_type == 2' type="checkbox" disabled>
+                    <span >{{item.title}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

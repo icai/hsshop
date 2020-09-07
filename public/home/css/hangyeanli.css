@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #3197FA
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+/* 顶部图片 */
+.banner {
+	width: 100%;
+	height: 500px;
+	min-width: 1200px;
+	background: url('../image/home-case-bannber-20200810.png') no-repeat center center;
+}
+
+.banner img {
+	width: 100%;
+}
+
+/* 当前位置 */
+.breadcrumb_nav {
+	width: 1200px;
+	line-height: 50px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #666666
+}
+
+.breadcrumb_nav img {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-top: -3px
+}
+
+.breadcrumb_nav a:hover {
+	color: #3197FA
+}
+
+/* 案例类型切换 */
+.cases_content {
+	width: 100%;
+	background: #F5F5F7;
+	padding-top: 60px
+}
+
+.cases_nav,
+.cases_menu,
+.cases_list {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center
+}
+
+.cases_nav ul {
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.cases_nav ul li {
+	float: left;
+	background: #E6E6E6;
+	font-size: 16px;
+	color: #666666;
+	text-align: center;
+	line-height: 50px;
+	width: 160px;
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+.cases_nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.cases_nav ul li a:hover {
+	background: #3197FA;
+	color: #fff
+}
+
+.cases_nav .active {
+	background: #3197FA;
+}
+
+.cases_nav .active a {
+	color: #fff
+}
+
+/* 案例内容分类 */
+.cases_menu {
+	border: 1px solid #E6E6E6;
+	height: 60px;
+	background: #fff;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.cases_menu .cases_menu_select {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.cases_menu .cases_menu_select img {
+	height: 20px;
+	width: 20px
+}
+
+.cases_type {
+	width: 100px;
+	float: left;
+	background: #F0F0F0;
+	line-height: 58px;
+}
+
+.type_list {
+	float: left;
+	height: 60px;
+	margin-left: 20px;
+	max-width: 1030px;
+	overflow: hidden;
+}
+
+.type_list ul {
+	overflow: hidden;
+	padding: 19px 0;
+	margin-bottom: 0px;
+}
+
+.type_list ul li {
+	float: left;
+	padding: 0 10px;
+	line-height: 22px;
+	cursor: pointer;
+	margin: 0 5px
+}
+
+.type_list ul li:not(.active) a:hover {
+	color: #3197FA
+}
+
+.type_list .active {
+	background: #3197FA;
+}
+
+.type_list .active a {
+	color: #fff
+}
+
+/* 案例展示下拉框 */
+.more_case_box {
+	width: 1200px;
+	background: #fff;
+	position: absolute;
+	top: 60px;
+	z-index: 1;
+	border: 1px solid #E6E6E6;
+}
+
+.more_case_box ul {
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	padding-left: 95px;
+}
+
+.more_case_box ul li {
+	float: left;
+	padding: 0 10px;
+	line-height: 22px;
+	cursor: pointer;
+	margin: 15px 5px;
+}
+
+.more_case_box ul li:not(.active) a:hover {
+	color: #3197FA
+}
+
+.more_case_box .active {
+	background: #3197FA;
+}
+
+.more_case_box .active a {
+	color: #fff
+}
+
+/* 案例内容列表 */
+.cases_list {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 14px
+}
+
+/* 显示二维码 */
+.cases_list .code {
+	width: 270px;
+	overflow: hidden;
+	height: 0;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: height .2s;
+	-moz-transition: height .2s;
+	-webkit-transition: height .2s;
+	-o-transition: height .2s;
+}
+
+.cases_list .code-show {
+	height: 330px;
+}
+
+.cases_list .code>p {
+	line-height: 60px;
+	margin: 24px 0 0
+}
+
+.cases_list .code .code-pic {
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	margin: 30px 0 28px
+}
+
+.code-pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.cases_list .code .seeDetail {
+	color: #3197FA;
+	position: relative;
+	line-height: 12px;
+}
+
+.code a {
+	color: #3197FA
+}
+
+.seeDetail .left_line,
+.seeDetail .right_line {
+	width: 50px;
+	height: 1px;
+	background: #D9D9D9;
+	position: absolute;
+	top: 50%
+}
+
+.seeDetail .left_line {
+	left: 42px;
+}
+
+.seeDetail .right_line {
+	right: 42px;
+}
+
+
+.cases_list ul li {
+	float: left;
+	width: 270px;
+	height: 330px;
+	background: #fff;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	position: relative
+}
+
+.cases_list ul li:nth-child(4n+4) {
+	margin-right: 0
+}
+
+.cases_list ul li a p {
+	margin-top: 24px
+}
+
+.cases_list ul li a .pic {
+	width: 270px;
+	height: 270px;
+}
+
+.cases_list ul li a .pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.cases_list .active .code {
+	display: block;
+}
+
+/* 页数 */
+.page-bottom {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.page-bottom .active span {
+	background-color: #3197FA !important;
+	border-color: #3197FA !important;
+}

@@ -1,0 +1,42 @@
+<div class="control-group">
+    <ul class="custom-nav clearfix">
+        <li ng-show="!editor['content'].length">
+            <a class="clearfix" href="javascript:void(0);">
+                <span class="custom-nav-title">点此编辑『秒杀模块』</span>
+                <i class="pull-right right-code"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="active" ng-show="editor['content'].length" style="position:relative;">
+        <div class="ump-seckill">
+            <div class="thumb-wrap">
+                <img class="thumb" ng-src="{{host}}{{editor['content'][0]['product']['img']}}">
+            </div>
+            <div class="goods-activity">
+                <div class="activity-info clearfix">
+                    <div class="activity-price current-price">
+                    <span class="price-title">秒杀</span>￥<i class="js-goods-price price">X</i>
+                    </div>
+                    <div class="original-price">
+                       ￥Y
+                    </div>
+                    <div class="overview-countdown">
+                        <div class="countdown-title">距秒杀结束还剩余</div>
+                        <div class="js-time-count-down countdown">
+                           <span class="js-day">D</span> :
+                           <span class="js-hour">H</span> :
+                           <span class="js-min">M</span> :
+                           <span class="js-sec">S</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title ellipsis">{{editor['content'][0]['product']['title']}}</h3>
+                <a href="javascript:void(0);" class="tag tag-red tag-activity">立即抢购</a>
+                <span class="activity-tips">剩余Z件</span>
+            </div>
+        </div>
+        <div ng-if="editor['content'][0]['productStatus']" style="position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,0.3);">
+            <img style="position:absolute;width:120px;height:120px;top:calc(50% - 60px);left:calc(50% - 60px);transform:rotate(-30deg);" ng-src="{{host}}{{editor['content'][0]['productStatusSrc']}}"/>
+        </div>
+    </div>
+</div>

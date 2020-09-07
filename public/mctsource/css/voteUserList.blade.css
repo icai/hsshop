@@ -1,0 +1,21 @@
+#header{padding-top:15px;background:#F0F0F0}
+
+#t_top{height: 50px;background: #F0F0F0;}
+#t_top label{margin-left: 30px;}
+label{margin-left: 43px;font-weight: normal;}
+#t_top input{width: 150px; height: 35px; padding: 2px 5px; border: 1px solid #CCCCCC; border-radius: 5px;}
+#t_select{background: #F0F0F0;margin-bottom: 5px;}
+#t_select select{width: 150px; height: 35px; padding: 2px 5px; border: 1px solid #CCCCCC; border-radius: 5px;}
+
+#t_set{width: 154px;}
+
+#t_top span:last-child{display: inline-block;width:40px ;height:20px ;background: dodgerblue;text-align: center;margin-left: 30px;}
+
+.t_content_header{display: flex;justify-content: space-around;align-items: center;background: #C1C3C6;height: 60px;}
+
+.t_content_con{display: flex;justify-content: space-around;align-items: center;background: #F0F0F0;height: 80px;}
+
+#t_content li{display: block;width: 125px;text-align: center;}
+#t_content li:first-child{text-align: left;}
+.t_content_con img{width: 60%;height: 100%;}
+.t_content_con li:nth-of-type(2){height: 40px;}

@@ -1,0 +1,20 @@
+/*页面导航*/
+.sale_nav{
+	margin-bottom: 8px;
+    background: #f8f8f8;
+}
+.sale_nav:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.sale_nav li{
+	min-width:80px;
+	float: left;
+	border-bottom: 2px solid transparent;
+}
+.sale_nav li a{display:block;text-align:center;line-height:36px;}
+.sale_nav li.active{
+	border-color:#07d;
+}
+.switch_items{margin:40px 10px 0 300px;}

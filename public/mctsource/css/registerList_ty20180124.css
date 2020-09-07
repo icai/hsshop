@@ -1,0 +1,26 @@
+.content .search {margin-top: 20px; padding: 10px; background: #f0f0f0;}
+.content .search .form-group{margin-left: 10px;}
+.content .search .form-group a{color: dodgerblue;}
+.content .search .btns{margin-top: 20px; margin-left: 60px;}
+
+.table {margin-top: 30px;}
+.table ul{overflow: hidden; padding: 10px; border-bottom: 1px solid #f1f1f1;}
+.table ul:hover{background: #f1f1f1;}
+.table ul li{float: left; text-align: center; height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.table ul li:nth-child(1){width: 5%;}
+.table ul li:nth-child(2){width: 10%;}
+.table ul li:nth-child(3){width: 7%;}
+.table ul li:nth-child(4){width: 7%;}
+.table ul li:nth-child(5){width: 10%;}
+.table ul li:nth-child(6){width: 12%;}
+.table ul li:nth-child(7){width: 8%;}
+.table ul li:nth-child(8){width: 6%;}
+.table ul li:nth-child(9){width: 6%;}
+.table ul li:nth-child(10){width: 6%;}
+.table ul li:nth-child(11){width: 15%;}
+.table ul li a{color: dodgerblue;}
+.table .table_header{background: #f1f1f1;}
+.table .noData{text-align: center; padding: 20px 0;}
+
+.bottom_fun{margin-left: 60px;}
+.bottom_fun .checkbox{display: inline-block; margin-right: 10px;}

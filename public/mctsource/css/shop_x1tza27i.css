@@ -1,0 +1,65 @@
+* {-webkit-box-sizing:initial;-moz-box-sizing:initial;box-sizing:initial;}
+*:before,*:after{-webkit-box-sizing:initial;-moz-box-sizing:initial;box-sizing:initial;}
+/*内容开始*/
+.select_nav{
+	margin-left: 20px;
+}
+.select_nav .project{
+	display: inline-block;
+	width: 370px;
+	vertical-align: top;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+.select_nav>span{
+	width: 100px;
+}
+.select_nav .project li{
+	float: left;
+	padding: 2px;
+	margin: 0 20px 5px 0;
+	height: 16px;
+	border: 1px solid #fff;
+}
+.select_nav .project li span:nth-child(1){
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.select_nav .project li span:nth-child(2){
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.select_nav .project li span:nth-child(3){
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: rgb(255, 255, 255);
+	border: 1px solid rgb(234, 234, 234);
+}
+/*配色方案选择样式*/
+.active{
+	border: 1px solid #0080F9 !important;
+}
+/*当前风格示例*/
+.view{
+	display: -webkit-flex;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.view span{
+	width: 100px;
+}
+.view .view_img{
+	flex: 1;
+	margin-left: 5px;
+}
+.view .view_img img{
+	width: 100%;
+}
+/*按钮样式*/
+.btn_group{
+	margin-left: 125px;
+	margin-top: 20px;
+}

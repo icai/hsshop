@@ -1,0 +1,60 @@
+.split_line{margin:20px 10px;}
+.panel-body{padding:0;}
+/*导航盒子*/
+.bulletin_nav{padding-top:10px;background:#f8f8f8;border-bottom:1px solid #ddd;}
+.bulletin_nav>.tab_nav{margin-bottom:-1px;}
+/*公告栏*/
+.bulletin_board{
+    width: 300px;
+    padding: 15px 15px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.bulletin_board .more_bulletin{margin-top:5px;padding-top:8px;border-top:1px solid #ccc;display:block;position:relative;}
+.bulletin_board .more_bulletin:after{
+	content:"";
+	width:10px;
+	height:10px;
+	border-top:1px solid #999;
+	border-right:1px solid #999;
+	transform: rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	display:block;
+	right: 0;
+	top:14px;
+	position: absolute;
+}
+/*设置按钮*/
+/*按钮*/
+.switch_items{
+	width: 80px;
+	height: 30px;
+	margin:0;
+	position: relative;
+}
+.switch_items label:before{
+	width: 26px;
+    height: 26px;
+}
+.switch_items label:after {
+    line-height:30px;
+}
+.switch_items input:checked~label:before{
+	line-height:30px;
+}
+.switch_items input:checked~label:after {
+    width: 26px;
+    height: 26px;
+}
+.switch_items input:checked ~ label.loadding:before{
+	border-width:15px;
+}
+.switch_items label.loadding:after{
+	border-width:15px;
+}
+.img_wrap{width:250px;height:250px;}

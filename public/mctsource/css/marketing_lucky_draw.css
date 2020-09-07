@@ -1,0 +1,138 @@
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+.content label{font-weight: normal;}
+.content font{height: 30px; line-height: 30px; padding-left: 15px;}
+.flex_star{display: flex; justify-content: flex-start; align-items: center;}
+.flex_center{display: flex; justify-content: space-between; align-items: center;}
+.flex_middle{display: flex; justify-content: center; align-items: center;}
+
+.rtv{position: relative;}
+.abt{position: absolute; top: 0; left: 0;}
+.fix{position: fixed; bottom: 0;}
+
+.float_left{float: left;}
+.float_right{float: right;}
+.cleac_float{overflow: hidden;}
+
+.content{height: auto;}
+.content .content_top {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E5E5;}
+.content .content_top ul{margin-bottom: -1px;}
+.content .content_top ul li{padding: 5px 10px; background: #F8F8F8; border: 1px solid #E5E5E5;}
+.content .content_top ul li:hover{cursor: pointer;}
+.content .content_top a span{display: inline-block; width: 15px; height: 15px; border-radius: 50%; text-align: center; line-height: 15px; background: #3c3; color: white;}
+
+.content .content_center .step{display: flex; justify-content: space-between; align-items: center; margin: 20px 0;}
+.content .content_center .step li{position: relative; width: 25%; height: 30px; line-height: 30px; text-align: center; background: #bdcee6;}
+.content .content_center .step li::after{position: absolute; right: -10px; top: 4px; z-index: 10; content: ""; height: calc(30px/1.35); width: calc(30px/1.35); transform: rotate(45deg); border: 2px solid white; border-left-color: transparent;border-bottom-color: transparent;background: inherit;}
+.content .content_center .step li:last-child::after{background: transparent; border-color: transparent;}
+.content .content_center .step .active{background: #5494ec; color: white;}
+
+.content .content_center .center_main{width: 720px; height: auto; margin: 0 auto;}
+
+.content .content_center .center_main .center_left{width: 320px; height: auto;}
+.content .content_center .center_main .center_left img{width: 100%;}
+.content .content_center .center_main .center_left .lucky_board{background: #6e368e; padding: 20px 0;}
+.content .content_center .center_main .center_left .lucky_board table{margin: 0 auto; border-color: #6e368e;}
+.content .content_center .center_main .center_left .lucky_board table td{padding: 0; height: 25%; width: 70px;}
+.content .content_center .center_main .center_left .lucky_board table .prize img{display: block; margin: 0 auto; width: 70%; height: 70%;}
+.content .content_center .center_main .center_left .lucky_board table .prize img:hover{cursor: pointer;}
+.content .content_center .center_main .center_left .lucky_board a{display: block; text-align: right; padding-right: 20px; color: #ffc73d;}
+.content .content_center .center_main .center_left .lucky_board .activity{font-size: 12px; color: #dbbfd2; padding-left: 20px;}
+.content .content_center .center_main .center_left .lucky_board .activity #beginTime, #issuer_name{padding-left: 30px;}
+
+.content .content_center .center_main .center_right{width: 350px; padding: 20px; margin:60px auto; border:1px solid #CCCCCC; border-radius: 5px; background: #f2f2f2;}
+.content .content_center .center_main .center_right::before{position: absolute; left: -10px; content: ""; height: 20px; width: 20px; background: inherit; border: 1px solid #CCCCCC; border-right-color: transparent; border-top-color: transparent; transform: rotate(45deg);}
+.content .content_center .center_main .center_right i{color: #fc5380; display: inline-block;}
+.content .content_center .center_main .center_right textarea{resize: vertical; padding: 5px; border-color: #CCCCCC; border-radius: 5px;}
+
+.content .content_center .center_main .center_right .step_2 div:nth-child(3) div label{display: inline-block; font-size: 12px; padding-top: 5px;} 
+
+.content .content_center .center_main .center_right .step_3 .line{width: 100%; margin: 40px 0; border-top: 1px solid #C3C3C3;}
+.content .content_center .center_main .center_right .step_3 .line p{text-align: center; padding: 0 10px; top: -13px; left: 120px; color: #999; background: #f2f2f2;}
+.content .content_center .center_main .center_right .step_3 .win_rate input{width: 70px; margin: 0 10px;}
+.content .content_center .center_main .center_right .step_3 .win_rate a{display: inline-block; margin: 0 5px; width: 15px; height: 15px; text-align: center; line-height: 15px; border-radius: 50%; color: white; background: #ccc;}
+.content .content_center .center_main .center_right .step_3 .win_rate a:hover{background: #3c3;}
+.content .content_center .center_main .center_right .step_3 .setPrize_hint{font-size: 12px;}
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv{margin-top: 10px; background: white; border: 1px solid #CCCCCC;}
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv .prize_list li{float: left; width: 25%; height: 40px; line-height: 40px; text-align: center;border-bottom: 1px solid #CCCCCC; background: #f2f2f2;}
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv .prize_list li:hover{cursor: pointer;}
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv .prize_list .selected{background: white; border-bottom-color: transparent;}
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv .prize_list li+li{border-left: 1px solid #ccc;}
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv .prizeDiv{padding: 10px; }
+.content .content_center .center_main .center_right .step_3 .set_prizeDiv .prizeDiv .hint{font-size: 12px; color: #595959;}
+
+.content .content_center .center_main .center_right .step_4 .hint{font-size: 12px; color: #595959;}
+
+.content .content_center .center_main .center_right .functionBtn{display: flex; align-items: center; justify-content: center; z-index: 120; left: 210px; height:50px; width: calc(100% - 420px); background: #ffc;}
+.content .content_center .center_main .center_right .functionBtn .btn{margin: 0 5px;}
+.content .content_center .center_main .center_right .functionBtn a{color: white;}
+.content .content_center .center_main .center_right .functionBtn .btn-default{color:black;}
+
+/*复制成功动画*/
+.successPromrt { position: fixed; z-index:100 ; top: 30px; left: calc(50% - 250px); width: 500px; height: 40px; line-height: 40px; text-align: center; color: white; background: #45b182; border-radius: 5px; }
+
+
+/*蒙板样式处理*/
+#maskDiv{ display: none; position: fixed; top: 0; left: 0; background: rgba(95,95,95,.8); z-index: 130; }
+/*蒙板弹出层(弹出层的头部都是一致，都写在这里)**************/
+#maskDiv #layer, #uploadImgLayer, #iconLibraryLayer{ width: 860px; height: auto; margin: 60px auto; background: #fff; border: 1px solid #C0C0C0; }
+/*弹出层头部*/
+#maskDiv .layerTop{ height: 50px; padding: 5px 10px; margin-right: 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #C0C0C0; }
+/********************************************************/
+
+#maskDiv a{color: #333;}
+#layer .layerTop a{ font-weight: 400; font-size: 15px; }
+.layerTop .layerTop_right{ position: relative; }
+.layerTop .layerTop_right input{ height: 30px; width: 100px; padding-left: 20px; }
+.layerTop .layerTop_right .searchImg, .closeImg{ height: 13px; width: 13px; position: relative; position: absolute; overflow: hidden; /*border: 1px solid black;*/ }
+.searchImg{left: 2px;top: 7px;}
+.closeImg{display: block; right: -30px;top: 7px;}
+.searchImg img{position: absolute;left: -33px;top: -23px;}
+.closeImg img{position: absolute;left: -40px;top: 2px;}
+.closeImg img:hover{top: -9px;}
+
+/*弹出层主要内容*/
+#layerContent {border-bottom: 1px solid #C3C3C3;}
+#layerContent #layerContent_left{ width: 160px; height: 530px; float: left; background: #f2f2f2; }
+#layerContent_left a{ display: block; height:30px; padding: 5px; margin-top: 10px; background: white; display: flex; align-items: center; justify-content: space-between; }
+#layerContent #layerContent_right{ height: 530px; width: 695px; float: right; }
+#layerContent_right a{ display: block; margin: 0 auto; margin-top: 180px; margin-bottom: 20px; height: 100px; width: 100px; font-size: 18px; text-align: center; line-height: 100px; border: 3px dashed #C0C0C0; }
+#layerContent_right p{text-align: center;}
+
+/*弹出层底部*/
+#layerBottom, #uploadLayerBottom{ height: 60px; display: flex; align-items: center; justify-content: space-around; }
+#layerBottom button, #uploadLayerBottom button{ height: 40px; width: 100px; background: #f0f0f0; border: 1px solid #C0C0C0; border-radius: 5px; }
+
+
+/*我的图片》上传图片弹出层*/
+#uploadLayerContent{ height: 350px; margin: 0 20px; }
+#uploadLayerContent_top, #uploadLayerContent_botm{ width: calc(100% - 100px); padding: 35px 50px; margin: 0 auto; border-bottom: 1px solid #ccc; }
+#uploadLayerContent_top{ height: 50px; display: flex; align-items: center; }
+#uploadLayerContent_top input{width: 300px;}
+#uploadLayerContent_botm{min-height: 240px; height: auto;}
+
+/*上传图片的添加本地图片样式*/
+.imgbox1{ float: left; margin-right: 20px; margin-top: 20px; position: relative; width: 100px; height: 100px; overflow: hidden; }
+.imgnum{ left: 0px; top: 0px; margin: 0px; padding: 0px; }
+.imgnum input,.imgnum1 input { position: absolute; width: 182px; height: 142px; opacity: 0; }
+.imgnum img,.imgnum1 img { width: 100%; height: 100%; }
+.close, .close1 { color: red; position: absolute; left: 85px; top: -40px; display: none; }
+
+/*图标库弹出层*/
+#iconLibraryContent{padding: 20px; border-bottom: 1px solid #C0C0C0;}
+#iconLibraryContent #iconStyleSelect{font-size: 14px; color: #8C8C8C;}
+#iconLibraryContent #iconStyleSelect li{margin: 10px 0;}	
+#iconStyleSelect li a{display: inline-block; margin: 0 10px; color: #06f;}
+#iconStyleSelect li .selected{color: black; font-weight: bold;}
+#iconLibraryContent #iconImgShow{ height: 259px; overflow: hidden; position: relative;}
+#iconLibraryContent #iconImgShow #iconImgSelect{ position: absolute; top: 0; display: flex; flex-wrap: wrap; align-content: flex-start; }
+#iconLibraryContent #iconImgSelect li{ height: 80px; width: 80px; margin: 3px; border: 2px solid #ccc; }
+#iconImgSelect li:hover{cursor: pointer;}
+#iconImgSelect li img{width: 100%;height: 100%;}
+
+#iconLibraryContent #pageNum{ height: 50px; padding-right: 30px; display: flex; justify-content: flex-end; align-items: center; }
+#iconLibraryContent #iconLibraryLayerBtn{display: flex; justify-content: center;}
+
+
+
+

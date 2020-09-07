@@ -1,0 +1,18 @@
+.main .main_content {padding: 10px 30px;}
+label{font-weight: normal;}
+.fom-lab{font-weight: normal; width: 110px; text-align: right;}
+form{font-size: 16px; margin-top: 20px; display: inline-block;}
+.save-a a{font-size: 16px; cursor: pointer;}
+.form-div{margin-bottom: 20px;}
+.save-int{width: 365px; height: 30px;}
+.form-subm{width: 480px; text-align: center;}
+.form-subm input{margin-right: 40px;}
+.upfil{position: relative; cursor: pointer;}
+.save-img{position: absolute; left: 0; top: 0;opacity:0;}
+.imgDiv{float: left;}
+.imgGroup{position: relative;}
+.imgDiv .imgGroup .littleImg{float: left;}
+.imgDiv .filepath{top: 0; left: 5px; height: 34px; opacity: 0; width: 80px;border: 1px solid red;}
+.absolute{margin-right: 30px; margin-bottom: 30px; margin-top: 10px}
+.delImg{position: absolute;right: -10px;top: -10px; cursor: pointer;}
+.flt .fom-lab{float: left;}

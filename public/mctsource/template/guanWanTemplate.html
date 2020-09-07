@@ -1,0 +1,224 @@
+<div>
+    <div class="control-group">
+        <label class="control-label">
+            <em class="required">*</em>背景图片：</label>
+        <div class="controls bg_image">
+            <img ng-src="{{editors[index]['bg_image']}}" width="100" height="100" class="thumb-image">
+            <a class="control-action js-trigger-image" href="javascript: void(0);" ng-click="changeBg()">修改</a>
+            <p class="help-desc">建议尺寸：640 x 1080 像素</p>
+        </div>
+    </div>
+    <div class="control-group js-background-link">
+        <label class="control-label">背景链接：</label>
+        <div class="controls" name="link_url" ng-if="!editors[index]['linkUrl']">
+            <div class="dropdown hover">
+                <a class="js-dropdown-toggle dropdown-toggle control-action" href="javascript:void(0);" id="guanwang">设置链接到的页面地址
+                    <i class="caret"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="js-modal-magazine" href="javascript:void(0);" ng-click="choosePageLink($index,6)">微页面及分类</a>
+                    </li>
+                    <li>
+                        <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseShop($index,6)">商品及分类</a>
+                    </li>
+                    <li>
+                        <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,6,store_url,3)">店铺主页</a>
+                    </li>
+                    <li>
+                        <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,6,member_url,4)">会员主页</a>
+                    </li>
+                    <li>
+                        <a class="js-modal-links" data-type="links" href="javascript:void(0);" ng-click="customLink($event,$index,7)">自定义外链</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="controls" name="link_url" ng-if=" editors[index]['linkUrl']">
+            <div class="control-action clearfix">
+                <div class="pull-left js-link-to link-to">
+                    <a href="{{editors[index]['linkUrl']}}" target="_blank" class="new-window link-to-title" id="guanwang">
+                        <span class="label label-success">
+                        链接
+                            <em class="link-to-title-text">{{editors[index]['linkName']}}</em>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown hover pull-right" ng-show="editors[index]['dropDown']">
+                    <a class="dropdown-toggle" href="javascript:void(0);">修改
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="js-modal-magazine" href="javascript:void(0);" ng-click="choosePageLink($index,6)">微页面及分类</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseShop($index,6)">商品及分类</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,6,store_url,3)">店铺主页</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,6,member_url,4)">会员主页</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-links" data-type="links" href="javascript:void(0);" ng-click="customLink($event,$index,7)">自定义外链</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown hover pull-right" ng-show="!editors[index]['dropDown']">
+                    <a class="dropdown-toggle" href="javascript:void(0);">修改
+                        <i class="caret"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="js-modal-magazine" href="javascript:void(0);" ng-click="choosePageLink($index,6)">微页面及分类</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseShop($index,6)">商品及分类</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,6,store_url,3)">店铺主页</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,6, member_url,4)">会员主页</a>
+                        </li>
+                        <li>
+                            <a class="js-modal-links" data-type="links" href="javascript:void(0);" ng-click="customLink($event,$index,7)">自定义外链</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="separate-line-wrap">
+        <hr>
+        <div class="separate-line">
+            <p class="text-center">导航链接</p>
+            <p class="text-center">v</p></div>
+    </div>
+    <div class="control-group js-collection-region">
+        <ul class="choices ui-sortable">
+            <li class="choice" ng-repeat="list in editors[index]['lists']">
+                <div class="control-group">
+                    <label class="control-label">
+                        <em class="required">*</em>小标题：
+                    </label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="small_title_{{$index}}" value="" ng-model="list.title" required>
+                        <p class="help-block error-message" ng-show="editorForm.small_title_{{$index}}.$dirty && editorForm.small_title_{{$index}}.$error.required || iserror && editorForm.small_title_{{$index}}.$invalid">请填写标题</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        <em class="required">*</em>链接到：
+                    </label>
+                    <div class="controls" name="link_url">
+                        <div class="control-action clearfix">
+                            <div class="pull-left js-link-to link-to" id="guanwang_level_{{$index}}">
+                                <a ng-href="{{list.linkUrl}}" target="_blank" class="new-window link-to-title">
+                                    <span class="label label-success">
+                                        <em class="link-to-title-text" style="border: none; padding-left:0">{{list.linkName.length > 0 ? list.linkName : '请选择链接'}}</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="dropdown hover pull-right" ng-show="list.dropDown">
+                                <a class="dropdown-toggle" href="javascript:void(0);">修改
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="js-modal-magazine" href="javascript:void(0);" ng-click="chooseSubPageLink($index,7)">微页面及分类</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseSubShop($index,7)">商品及分类</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,7, store_url,3)">店铺主页</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,7, member_url,4)">会员主页</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-links" data-type="links" href="javascript:void(0);" ng-click="customLink($event,$index,8)">自定义外链</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown hover pull-right" ng-show="!list.dropDown">
+                                <a class="dropdown-toggle" href="javascript:void(0);">修改
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="js-modal-magazine" href="javascript:void(0);" ng-click="chooseSubPageLink($index,7)">微页面及分类</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseSubShop($index,7)">商品及分类</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,7, store_url,3)">店铺主页</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,7,member_url,4)">会员主页</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-links" data-type="links" href="javascript:void(0);" ng-click="customLink($event,$index,8)">自定义外链</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">小图标：</label>
+                    <div class="controls" ng-show="list.icon">
+                        <div class="icon">
+                            <img ng-src="{{list.icon}}" width="30" height="30" class="thumb-image">
+                        </div>
+                        <a class="control-action js-icon-image" href="javascript: void(0);" ng-click="changeIcon($index)">修改</a>
+                        <span>|</span>
+                        <a href="javascript:;" class="control-action js-trigger-delete-icon" ng-click="deleteIcon($index)">删除</a>
+                        <p class="help-desc">建议尺寸：60 x 60 像素</p>
+                    </div>
+                    <div class="controls" ng-show="!list.icon">
+                        <a class="control-action js-icon-image" href="javascript: void(0);" ng-click="changeIcon($index)">选择图片</a>
+                        <p class="help-desc">建议尺寸：60 x 60 像素</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">简介：</label>
+                    <div class="controls">
+                        <input type="text" name="text" value="" class="form-control" ng-model="list.desc"></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">背景图：</label>
+                    <div class="controls" ng-show="!list.bg_image">
+                        <a class="control-action js-bg-image" href="javascript: void(0);" ng-click="changeSmallBg($index)">选择图片</a>
+                        <p class="help-desc">建议尺寸：85 x 188 像素</p>
+                    </div>
+                    <div class="controls" ng-show="list.bg_image">
+                        <img ng-src="{{list.bg_image}}" width="100" height="100" class="thumb-image">
+                        <a class="control-action js-bg-image" href="javascript: void(0);" ng-click="changeSmallBg($index)">修改</a>
+                        <span>|</span>
+                        <a href="javascript:;" class="control-action js-trigger-delete-bg" ng-click="deleteSmallBg($index)">删除</a>
+                        <p class="help-desc">建议尺寸：85 x 188 像素</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">标签：</label>
+                    <div class="controls">
+                        <input type="text" name="tag" value="" class="form-control" ng-model="list.tag">
+                    </div>
+                </div>
+                <div class="actions">
+                    <span class="action delete close-modal" title="删除" ng-click="deleteSmallList($index)">×</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="control-group options" style="display: block;">
+        <a class="add-option js-add-option" href="javascript:void(0);" ng-click="addSmallList()">
+            <i class="icon-add"></i>添加一个导航链接
+        </a>
+    </div>
+</div>

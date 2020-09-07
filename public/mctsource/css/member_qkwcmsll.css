@@ -1,0 +1,18 @@
+.content_header{
+    margin-bottom:20px;
+}
+.content table tr th{
+    font-weight: normal;
+    background:#f8f8f8;
+}
+.content table tbody tr:last-child{
+    border-bottom:1px solid #ddd;
+}
+.content .page:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.content .page span{
+    float:right;
+}

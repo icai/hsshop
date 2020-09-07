@@ -1,0 +1,49 @@
+<div class="control-group" ng-show="editor['advsListStyle']==1 || editor['images'].length==0">
+    <div class="custom-image-swiper">
+        <div class="swiper-container" style="height: 80px">
+            <div class="swiper-wrapper">
+                <img style="max-height: 80px; display: block;" src="https://upx.cdn.huisou.cn/wscphp/xcx/images/xcxImg/xcxadv.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="component-border"></div>
+</div>
+
+<div class="control-group adv_images" ng-show="editor['advsListStyle']==2 && editor['images'].length!=0">
+    <div class="custom-image-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="image in editor['images'] track by $index">
+                    <a href="javascript: void(0);">
+                        <h3 class="title" ng-show="image['title']">{{image['title']}}</h3>
+                        <img ng-src="{{image['FileInfo']['path']}}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination">
+        <span class="swiper-pagination-switch {{image['pagagtionClass']}}" ng-repeat="image in editor['images'] track by $index"></span>
+    </div>
+    <div class="component-border"></div>
+</div>
+
+<div class="control-group" ng-show="editor['advsListStyle']==3 && editor['advSize']==1 && editor['images'].length!=0">
+    <ul class="custom-image clearfix">
+        <li ng-repeat="image in editor['images'] track by $index">
+            <h3 class="title" ng-show="image['title']">{{image['title']}}</h3>
+            <img ng-src="{{image['FileInfo']['path']}}">
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+
+<div class="control-group" ng-show="editor['advsListStyle']==3 && editor['advSize']==2 && editor['images'].length!=0">
+    <ul class="custom-image clearfix">
+        <li class="custom-image-small" ng-repeat="image in editor['images'] track by $index">
+            <h3 class="title" ng-show="image['title']">{{image['title']}}</h3>
+            <img ng-src="{{image['FileInfo']['path']}}">
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>

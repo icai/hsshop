@@ -1,0 +1,36 @@
+<div class="editer-content">
+    <div>
+        <form class="form-horizontal edit-custom-coupon" novalidate="" onsubmit="return false">
+            <div class="control-group" >
+                <label class="control-label">会员卡：</label>
+                <div class="controls">
+                    <ul class="coupon-list" ng-show="editors[index]['cardList'].length">
+                        <li ng-repeat="card in editors[index]['cardList']">
+                            <div class="coupon-list-content">
+                                <div class="coupon-list-summary">
+                                    <span class="label label-success">会员卡</span>
+                                    <!-- <span -bind="card.name"></span> -->
+                                    <span class="c-gray">（{{card.name}}）</span>
+                                </div>
+                            </div>
+                            <div class="coupon-list-opts">
+                                <a href="javascript:void(0);" class="js-remove-coupon" ng-click="deleteCard($index)">删除</a>
+                            </div>
+                            <div class="coupon-list-img-box">
+                                <div class="coupon-list-img-add" ng-if="card.card_img == ''" ng-click="addCouponImg($index)">
+                                    <span class="coupon-list-img-add-text">+添加图片</span>
+                                </div>
+                                <div class="coupon-list-img" ng-if="card.card_img != ''">
+                                    <img ng-src="{{card.card_img}}" alt="">
+                                    <p class="card-img-upload" ng-click="addCouponImg($index)">重新上传</p>
+                                </div>
+                                <span class="coupon-list-img-size">推荐尺寸700x380px</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="control-action js-add-coupon" ng-click="showCardModel()" ng-hide="editors[index]['cardList'].length==3">添加会员卡</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

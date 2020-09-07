@@ -1,0 +1,45 @@
+<div class="control-group">
+    <div class="custom-title text-left">
+        <h2 class="title" ng-bind="editor['title']"></h2>
+    </div>
+    <div class="custom-richtext" ng-show="editor['desc']">
+        <p class="page_desc"></p>
+    </div>
+    <div class="js-collection-region" ng-show="editor['showStyle']==0">
+        <ul class="custom-nav custom-nav-noicon clearfix">
+            <li ng-repeat = "list in editor['pageList']">
+                <a class="clearfix" href="javascript:void(0);">
+                    <span class="custom-nav-title" ng-bind="list.title"></span>
+                    <i class="pull-right right-arrow"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="js-collection-region" ng-show="editor['showStyle']==1">
+        <div class="">
+            <div class="custom-messages single"  ng-repeat = "list in editor['pageList']">
+                <a href="javascript:void(0);" class="clearfix">
+                    <div class="custom-messages-image">
+                        <div class="image">
+                            <!-- updateby 黄新琴   有赞图片注释 -->
+                            <img src="">
+                        </div>
+                    </div>
+                    <div class="custom-messages-content">
+                        <div class="title">
+                            <h4>这是您的第一篇微杂志</h4>
+                        </div>
+                        <div class="summary"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="custom-paginations-container" ng-show="editor['showStyle']==1">
+        <div class="js-custom-paginations custom-paginations clearfix">
+            <a href="javascript:void(0);" class="custom-paginations-list">目录</a>
+            <a href="javascript:void(0);" class="custom-paginations-page disabled">上一页</a>
+            <a href="javascript:void(0);" class="custom-paginations-page custom-paginations-last">下一页</a>
+        </div>
+    </div>
+</div>  

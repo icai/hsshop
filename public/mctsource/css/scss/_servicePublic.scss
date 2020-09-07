@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "public";
+// 进度栏
+/**
+* creater 华亢 2018/07/09
+*/
+.top-wrap{
+    .top{
+        font-size: $grid*2;
+        ul{
+            text-align: center;
+            width:80%;
+            margin:auto;
+            padding-bottom:$grid*2;
+            border-bottom:1px solid #e6e6e6;
+            li{
+                display: inline-block;
+                padding:0 $grid;
+            }
+            .schedule{
+                cursor: pointer;
+            }
+            .checked{
+                font-weight: bold;
+                color:#3197FA
+            }
+        }
+    }
+}
+.article-wrap{
+    width: 80%;
+    margin:0 auto;
+}

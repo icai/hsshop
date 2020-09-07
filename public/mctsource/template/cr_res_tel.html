@@ -1,0 +1,23 @@
+<div>
+    <div class="control-group">
+        <label class="control-label">
+            <!--<em class="required">*</em>电话标题：-->
+            <em class="required">*</em>标题：
+        </label>
+        <div class="controls page_title">
+            <input class="form-control" type="text" name="title" ng-model="editors[index].title" required>
+        </div>
+        <label class="control-label res_time">电话号码：</label>
+        <div class="controls page_title res_time">
+            <div class="controls mobile_box">
+                <input type="text" class="form-control min_mobile" placeholder="区号" ng-model="editors[index].min_mobile" maxlength="4"/>
+                <span>-</span>
+                <input type="text" class="form-control mobile" placeholder="手机号或固话" ng-model="editors[index].mobile" maxlength="11"/>
+            </div>
+        </div>
+        <!--<label class="control-label res_time">是否必填：</label>-->
+        <!--<div class="controls res_time" style="padding-top: 2px">-->
+            <!--<input style='vertical-align: middle' class="ng-pristine ng-valid ng-touched" ng-model="editors[index]['required']" ng-checked="editors[index]['required']" type="checkbox" name="title" value=""><span style='vertical-align: middle;margin-left: 5px' >必须填写</span>-->
+        <!--</div>-->
+    </div>
+</div> 

@@ -1,0 +1,19 @@
+.hide{display: none;}
+label{font-weight: normal; display: block;}
+.verLine{margin: 0 5px;}
+
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: 50px; line-height: 50px; font-size: 16px;}
+.main .main_content .permission_div .show_hide{padding: 30px; border: 1px solid #ccc;}
+.main .main_content .permission_div .show_hide label{margin: 10px 0;}
+.main .main_content .permission_div .show_hide .del{margin-top: 20px;}
+.main .main_content .permission_div .add_permission input{margin-top: 15px;}
+.main .main_content .permission_div .add_permission textarea{width: 300px; height: 100px; padding: 10px; margin-top: 15px; border: 1px solid #ccc; border-radius: 5px;}
+
+
+
+
+
+
+
+

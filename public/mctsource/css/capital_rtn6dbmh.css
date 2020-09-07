@@ -1,0 +1,48 @@
+/*公共样式*/
+.img_wrap{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.img_wrap img{max-width:100px;max-height:100%;display:block;}
+.items_title,.items_num{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.c_gray{color:#999;}
+.f12{font-size:12px;}
+.fon20{font-size:20px;}
+.blue_38f{color:#38f;} 
+.blue_38f:hover{color:#27f;}
+a.blue_38f:focus{color:#38f;text-decoration:none;}
+.blue_00f{color:#00f;}
+.gray_999{color:#999;}
+.mgb15{margin-bottom:15px;}
+.mgt30{margin-top:30px;}
+.main{overflow-x:visible;}
+.w50{width:50px;}
+.empty_items{font-size:12px;text-align:center;line-height:150px;border:1px solid #dcdcdc;}
+.chart_items{min-height:300px;border:1px solid #e4e4e4;}
+/*结算规则*/
+.settlement_items{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;padding:14px;background:#f8f8f8;font-size:12px;}
+.settlement_items .items_title{-webkit-box-flex:1;}
+/*规则弹框*/
+.rule_list{margin-top:20px;}
+.rule_list .rule_name{font-size:14px;line-height:30px;}
+.rule_list .rule_des{margin-bottom:5px;padding-left:20px;}
+/*导航*/
+.screen_nav{}
+.screen_nav li{}
+.screen_nav .times_select{width:230px;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.screen_nav .times_select select{max-width:100px;display:block;text-align:center;-webkit-box-flex:1;margin:0 5px;padding:5px;border:1px solid #dcdcdc;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+.note_tip{position:relative;}
+.note_tip .bottom{width:415px;}
+/*表单*/
+.fomdata{margin-bottom: 10px;}
+.col-sm-3{padding-left: 0; margin-bottom: 15px;}
+.data-content{overflow: hidden; margin-top: 65px;}
+/*结算方式*/
+.help-td{width: 18px; height: 18px; display: inline-block; background: rgb(184, 184, 184); color: #fff; border-radius: 9px; margin-left: 5px;}
+.tooltip-inner{color: #999; background-color: #fff; box-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+.popover-title{background-color: #fff; border-bottom: 0px ;}
+.popover{max-width: 467px; color:#666666; font-size: 12px;}
+.porel{position: relative;}
+.poabl{position: absolute; left: 68px; top: 220px;}
+.help-td:hover .poabl{display: block;}
+
+.green_f04{color:#06bf04; font-weight: bold;}
+.red_f00 {color:#f00; font-weight: bold;}
+.nosp{text-align: center; border: 1px solid #eee; padding: 39px 0; display: block;}

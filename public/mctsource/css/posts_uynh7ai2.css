@@ -1,0 +1,36 @@
+/*flex布局*/
+.flex_between{display: flex; justify-content: space-between;}
+.flex_around{display: flex; justify-content: space-around; align-items: center;}
+/*头部筛选部分*/
+.content label{font-weight: normal;} 
+.content .filter_conditions{padding: 10px 20px; background: #F2F2F2;}
+.content .filter_conditions ul{padding: 5px 10px;}
+.content .filter_conditions ul li{padding: 5px; text-align: right;}
+.content .filter_conditions ul li a{margin-right: 10px;}
+.content .filter_conditions ul li input,select{width: 150px; height: 35px; padding: 2px 5px; border: 1px solid #CCCCCC; border-radius: 5px;}
+.content .filter_conditions ul li .clear_conditions{color: cornflowerblue;}
+.content .filter_conditions ul li .clear_conditions:hover{color: dodgerblue;}
+
+/*添加客户*/
+.content #add_posts{margin: 10px 0;}
+
+/*主要内容*/
+.content .main_content ul{height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 10px; border-bottom:1px solid #CCCCCC; }
+.content .main_content ul li{height: 25px; overflow: hidden;}
+.content .main_content ul li:nth-child(1){width: 5%;}
+.content .main_content ul li:nth-child(2){width: 5%;}
+.content .main_content ul li:nth-child(3){width: 10%;}
+.content .main_content ul li:nth-child(4){width: 20%;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+.content .main_content ul li:nth-child(5){width: 10%;}
+.content .main_content ul li:nth-child(6){width: 15%;}
+.content .main_content ul li:nth-child(7){width: 5%;}
+.content .main_content ul li:nth-child(8){width: 5%;text-align: center;}
+.content .main_content ul li:nth-child(9){width: 25%;text-align: center;}
+.content .main_content .main_content_title{background: #F2F2F2;}
+.content .main_content ul a{color: dodgerblue;}
+.content .main_content ul:not(.main_content_title):hover{background: #F8F8F8;}
+
+/*分页器*/
+.content .pageNum{ height: 50px; padding-right: 30px; display: flex; justify-content: flex-end; align-items: center; }
+/*去除分页器中的第一页 和 最后一页*/
+.content .pageNum .pagination .first, .content .pageNum .pagination .last{display: none;}

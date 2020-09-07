@@ -1,0 +1,30 @@
+.exm-top{display: flex;}
+#edui1,#edui1_iframeholder{width: auto;}
+.exm-lef{flex: 1;}
+#keywords{
+    height: 15px; 
+    width: 15px; 
+    padding: 5px;
+    /*float: left;*/ 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.del-img{
+	position: absolute;
+    top: -10px;
+    left: 90px;
+}
+.img_itemb{
+	position: relative;
+}
+.del-imga{
+	position: absolute;
+	top: -10px;
+    left: 90px;
+}
+.delImgc{
+    position: absolute;
+    top: -10px;
+    left: 90px;
+}

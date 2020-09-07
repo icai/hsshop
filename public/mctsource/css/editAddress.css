@@ -1,0 +1,443 @@
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.app {
+    width: 100%;
+    float: left;
+}
+.page-content, .app__content {
+    width: 850px;
+    min-height: 420px;
+    zoom: 1;
+}
+.location-add h3 {
+    font-size: 16px;
+}
+.location-add-form {
+    width: 494px;
+    margin-top: 30px;
+}
+.zent-form {
+    margin-bottom: 30px;
+    width: auto;
+}
+.location-add-form .zent-form__control-group {
+    margin-bottom: 10px;
+}
+.zent-form--horizontal .zent-form__control-label {
+    display: inline-block;
+    width: 120px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;
+    vertical-align: top;
+}	
+.zent-form--horizontal .zent-form__control-label+.zent-form__controls {
+    margin-left: 10px;
+}
+.zent-form--horizontal .zent-form__controls {
+    display: inline-block;
+    word-break: break-all;
+    vertical-align: top;
+}
+.zent-input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    position: relative;
+    height: 30px;
+    max-height: 36px;
+    line-height: 28px;
+}
+.location-add-form .zent-input[name=contact_name], .location-add-form .zent-input[name=address] {
+    width: 368px;
+}
+.zent-input{
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-width: 80px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid #bbb;
+    color: #333;
+    font-size: 12px;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+.location-add-form .zent-form__control-group {
+    margin-bottom: 10px;
+}
+.location-add-form .areacode {
+    width: 108px;
+    vertical-align: middle;
+}
+.zent-select {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-right: 10px;
+    outline: none;
+    position: relative;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 160px;
+    vertical-align: middle;
+}
+.location-add-form .areacode .zent-select-text {
+    white-space: nowrap;
+}
+.zent-select-input, .zent-select-text, .zent-select-tags {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 30px;
+    max-height: 76px;
+    outline: none;
+    padding: 5px 10px;
+    -webkit-transition: border-color .25s;
+    -moz-transition: border-color .25s;
+    transition: border-color .25s;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.location-add-form .areacode .zent-select-popup {
+    width: 220px;
+}
+.zent-select-popup {
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    height: 0;
+    left: 0;
+    opacity: 0;
+    outline: none;
+    overflow-y: auto;
+    position: absolute;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+    width: 100%;
+    z-index: 1;
+    margin-top: 2px;
+    background-color: #fff;
+    max-height: 224px;
+}
+.zent-select-popup .zent-select-search {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.zent-select-popup .zent-select-option.active {
+    color: #38f;
+}
+.zent-select-popup .zent-select-option, .zent-select-popup .zent-select-filter, .zent-select-popup .zent-select-empty {
+    background-color: #fff;
+    display: block;
+    outline: none;
+    padding: 5px 10px;
+}
+.zent-select-popup .zent-select-option{
+    background-color: #fff;
+    display: block;
+    outline: none;
+    padding: 5px 10px;
+}
+.location-add-form .phone-num {
+    display: inline-block;
+    vertical-align: middle;
+}
+.zent-input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    position: relative;
+    height: 30px;
+    max-height: 36px;
+    line-height: 28px;
+}
+.location-add-form .phone-num input {
+    width: 246px;
+}
+.location-add-form .areacode {
+    width: 108px;
+    vertical-align: middle;
+}
+.zent-select-text{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 30px;
+    max-height: 76px;
+    outline: none;
+    padding: 5px 10px;
+    -webkit-transition: border-color .25s;
+    -moz-transition: border-color .25s;
+    transition: border-color .25s;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.location-add-form .regions-select {
+    width: 246px;
+}
+.zent-region-select-wrap {
+    display: inline-block;
+}
+.location-add-form .regions-select .zent-region-select {
+    width: 100%;
+}
+.zent-region-select {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-right: 10px;
+    outline: none;
+    position: relative;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 260px;
+    vertical-align: middle;
+}
+.zent-region-select__text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 30px;
+    max-height: 76px;
+    outline: none;
+    padding: 5px 10px;
+    -webkit-transition: border-color .25s;
+    -moz-transition: border-color .25s;
+    transition: border-color .25s;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.zent-input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    position: relative;
+    height: 30px;
+    max-height: 36px;
+    line-height: 28px;
+}
+.location-add-form .zent-input[name=address], .location-add-form .zent-input[name=zip_code] { width: 368px; }
+.zent-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: middle;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.zent-checkbox-disabled .zent-checkbox-inner {
+    opacity: .4;
+}
+.zent-checkbox-checked .zent-checkbox-inner {
+    border-color: #2277FF;
+    background: #3388FF;
+}
+.zent-checkbox-inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 1px solid #BBB;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.zent-checkbox input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.zent-checkbox-wrap {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.zent-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: middle;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.zent-checkbox+span {
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 16px;
+}
+.location-add-form .zent-checkbox-wrap {
+    display: block;
+    margin-top: 8px;
+}
+.zent-form--horizontal .zent-form__form-actions {
+    padding: 0 0 0 130px;
+    margin: 25px 0 10px;
+    background: none;
+    border: none;
+}
+.location-add-form .regions-select .zent-region-select {
+    width: 100%;
+}
+.zent-region-select {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-right: 10px;
+    outline: none;
+    position: relative;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 260px;
+    vertical-align: middle;
+}
+.zent-region-select__text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    display: inline-block;
+    min-height: 30px;
+    max-height: 76px;
+    outline: none;
+    padding: 5px 10px;
+    -webkit-transition: border-color .25s;
+    -moz-transition: border-color .25s;
+    transition: border-color .25s;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.zent-form--horizontal .zent-form__form-actions {
+    padding: 0 0 0 130px;
+    margin: 25px 0 10px;
+    background: none;
+    border: none;
+}
+.ui-btn {
+    display: inline-block;
+    border-radius: 2px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 12px;
+    cursor: pointer;
+    color: #333;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.ui-btn-primary {
+    color: #fff;
+    background: #07d;
+    border-color: #006cc9;
+}
+/*选择地址样式*/
+.area-layout{
+	overflow: hidden;
+    margin-left: 10px;
+    display: inline-block;
+    word-break: break-all;
+    vertical-align: top;
+}
+.area-layout span{
+	float: left;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 30px;
+    max-height: 36px;
+    line-height: 28px;
+}
+.marl-15{
+	margin-left: 15px;
+}
+.area-layout span select{
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-width: 80px;
+    width: 113px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid #bbb;
+    color: #333;
+    font-size: 12px;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+}

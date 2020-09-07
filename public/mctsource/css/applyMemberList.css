@@ -1,0 +1,154 @@
+ /* 输入框input类型为number时，去掉上下箭头 */
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+ }
+ input[type="number"]{
+     -moz-appearance: textfield;
+ }
+ .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+ .clearfloat{*zoom:1}
+ select {
+     width: 180px !important;
+ }
+ .mt20 {
+     margin-top: 20px;
+ }
+ .member_list .list_item li:nth-child(7){
+     width: 15%;
+     min-width: 190px;
+ }
+ .screen .btns_clean {
+     margin-top: 20px;
+     margin-left: 64px;
+ }
+ .switcher-wraper {
+     margin-top: 10px;
+     margin-bottom: 20px;
+     height: 50px;
+     background-color: #F4F4F4;
+     padding-left: 9px;
+     display: flex;
+     align-items: center;
+     color: #666;
+     font-size: 14px;
+ }
+ .switcher-wraper label {
+     margin-left: 20px;
+     margin-bottom: 0;
+ }
+ .switch-small{display: flex;align-items: center;}
+ .switch-small .ui-switcher-on {background: #4b0;}
+ .switch-small .ui-switcher-on:hover {background: #d00;}
+ .switch-small .ui-switcher-off {background: #666;}
+ .switch-small .ui-switcher-off:hover {background: #333;}
+ .switch-small .ui-switcher {position: relative;display: inline-block;width: 80px;height: 30px;padding: 2px;font-size: 12px;color: #fff;vertical-align: middle;border: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;outline: none;cursor: pointer;border-radius: 20px;}
+ .switch-small .ui-switcher-on::before {top: 2px;display: inline-block;width: auto;line-height: 25px;text-align: center;vertical-align: top;content: '\5DF2\542F\7528';padding-left: 8px;}
+ .switch-small .ui-switcher::before {position: absolute;left: 2px;}
+ .switch-small .ui-switcher-on::after {top: 2px;display: inline-block;content: '';width: 25px;height: 25px;background: #fff;border-radius: 18px;-webkit-transition: rotate 100s;-moz-transition: rotate 100s;transition: rotate 100s;}
+ .switch-small .ui-switcher::after {position: absolute;right: 2px;}
+ .switch-small .ui-switcher-off::before {top: 2px;display: inline-block;content: '';width: 25px;height: 25px;background: #fff;border-radius: 50%;-webkit-transition: rotate 100s;-moz-transition: rotate 100s;transition: rotate 100s;}
+ .switch-small .ui-switcher-off::after {top: 2px;display: inline-block;width: auto;line-height: 25px;text-align: center;vertical-align: top;content: '\672A\542F\7528';padding-right: 8px;}
+ .switch-small .ui-switcher-off:hover::after {content: '\542F\7528';}
+ .switch-small .ui-switcher-on:hover::before {content: '\7981\7528';} 
+ /* 弹窗开始 */
+.popup {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6)
+}
+.popup-wraper {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.close-wraper{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #B3B3B3;
+    font-size: 16px;
+    cursor: pointer;
+}
+.popup-title{
+    padding: 46px 0 41px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.popup-desc-title {
+    padding-left: 29px;
+    color: #333;
+    font-size: 14px;
+}
+.popup-desc-title span {
+    color: #FF4343;
+}
+.reason {
+    margin-top: 18px;
+    margin-left: 40px;
+    width: 320px;
+    height: 60px;
+}
+.popup-btns {
+    text-align: center;
+    margin-top: 29px;
+}
+.clear-btn {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.cancle-btn {
+    background-color: #3197FA;
+    color: #fff;
+}
+.sure-btn {
+    background-color: #E6E6E6;
+    color: #666;
+    margin-left: 40px;
+}
+/* 弹窗结束 */
+.help {
+    position: relative;
+    margin-left: 10px;
+}
+.f14 {
+    font-size: 14px;
+}
+.tips-content {
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: -66px;
+    width: 260px;
+    border: 1px solid #e5e5e5;
+    padding: 6px 10px;
+    background: #fff;
+    z-index: 100;
+    font-weight: 400;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+}
+.tips-content:after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 15px;
+    border-width: 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}

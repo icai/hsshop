@@ -1,0 +1,158 @@
+.lite_p{font-size: 18px;}
+.lite_div{margin-top: 30px; padding-left: 75px;}
+.lite_div p{margin-bottom: 10px;}
+.lite_div a{margin-top: 10px;}
+.lite_div .lite_btn{border: 1px solid #38f; color: #38f;}
+/*小程序设置*/
+.lite_con{padding-left: 30px; margin-top: 50px;}
+#form{padding-left: 30px;  margin-top: 50px;}
+.lite_con p{margin-bottom: 10px;}
+.lite_flx{display: -webkit-box;display: -ms-flexbox;display: flex;position: relative;}
+form .lite_flx{margin-bottom: 20px;}
+.title_p{text-align: right; width: 170px; margin-right: 10px;}
+form .title_p{line-height: 30px;}
+.ml110{margin-left: 90px;}
+.form-control{width: 300px; height: 30px; padding: 0; padding-left: 12px;}
+.form_but{padding: 5px 12px; color: #fff; background: #38f; border: 0; border-radius: 5px;}
+.form_close{background: #C6C6C6;}
+.fex_p{margin-left: 90px;color: #666; font-size: 12px; margin-top: -15px; margin-bottom: 15px;}
+.title_a{margin-left: 20px; color: #3197FA; cursor: pointer;} 
+.modal-dialog {margin: 200px auto;}
+.red{color: red;}
+.mto20{margin-top: 20px;}
+.btn-jiec{color: #fff;background-color: #337ab7;}
+.btn-jiec:hover{color: #fff;background-color: #337ab7;}
+.form_remov{background: #C6C6C6; border: 0; color: #fff;}
+.form_remov:hover{background: #C6C6C6; color: #fff;}
+.form_remov:active{background: #C6C6C6; color: #fff;}
+.form_remov:focus{background: #C6C6C6; color: #fff;}
+/*小程序配置信息*/
+.lite_top {background: #f2f2f2; padding: 5px; margin-top: 30px;}
+.lite_top p{ margin: 0 12px 0 0; padding: 0 0 0 10px;border-left: 4px solid #f70; font-size: 14px; font-weight: 700; line-height: 20px;}
+.ml90{margin-left: 105px;}
+.lite-con{padding-left: 30px; margin-top: 30px;}
+.lite-con p{margin-bottom: 10px;}
+.disabled{padding-left: 13px; border: 0; background: #fff;width: 350px;}
+.save-mod{display: none;}
+.f70{color: #f70; margin-top: 20px;}
+.text-left{text-align: left;}
+.btn-d{border:1px solid #ccc;padding:5px 8px;border-radius: 5px;margin-left: 149px;}
+/*自动更新样式开始*/
+.fr{float: right;}
+.switch-auto{border:1px solid #e5e5e5;padding:20px 10px 20px 30px;margin-top: 15px;display: -webkit-box;display: -ms-flexbox;display: flex; }
+.switch-auto div{display: inline-block;}
+.switch-auto .auto-update{-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+.update_form{margin-top: 20px;margin-left: 30px;}
+.point{font-size: 12px;position: absolute;left: 180px;top: 30px;}
+.checkbox{padding-left: 130px;}
+.checkbox p{font-size: 12px;font-weight: 600;}
+.asterisk{color: red;}
+.switch{
+	width: 35px;
+	height: 20px;
+	position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: #999;
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    transition: all .3s cubic-bezier(.78,.14,.15,.86);
+}
+.switch::after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: 1px;
+    border-radius: 100%;
+    background-color: #fff;
+    content: " ";
+    cursor: pointer;
+    -webkit-transition: left .3s cubic-bezier(.78,.14,.15,.86);
+    transition: left .3s cubic-bezier(.78,.14,.15,.86);
+}
+.switch.actived{
+	border-color: #4b0;
+    background-color: #4b0;
+}
+.switch.actived::after{
+	left: 16px;
+}
+.audit_failure{
+
+}
+.audit_title{
+    padding-top: 5px;
+}
+.audit_reason{
+    display: flex;
+    margin-top: 10px;
+}
+.audit_reason_p{
+    width: 70px;
+}
+.audit_reason_div{
+    line-height: 26px;
+}
+/*add by 韩瑜 date 2018-7-23*/
+.uploadForm{
+	padding: 30px 0 0 30px;
+}
+.certSubBtn{
+	margin-top: 10px;
+}
+
+.loadding{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 9999;
+}
+.load-box{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    text-align: center;
+    color: #ffffff;
+}
+.load-gif{
+    width: 30px;
+    height: 30px;
+    background: url("../images/updata.gif") no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/*流量主配置信息*/
+#form_unit{
+    padding-left: 30px;
+    margin-top: 50px;
+}
+form_unit .lite_flx{
+    margin-bottom: 20px;
+}
+form_unit .title_p{
+    line-height: 30px;
+}
+.save-mod-unit{
+    display: none;
+}
+.modify_unit{
+    width: 87px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}

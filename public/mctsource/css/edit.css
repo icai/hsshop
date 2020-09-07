@@ -1,0 +1,465 @@
+.content {
+    color: #333;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+.discount-title {
+    height: 44px;
+    line-height: 44px;
+    padding-left: 10px;
+    background-color: #F4F4F4;
+}
+.discount-container {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+}
+.discount-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.info-title {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-right: 2px solid #fff;
+    border-bottom: 5px solid #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 32px;
+}
+.info-content {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    -moz-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+    border-bottom: 5px solid #fff;
+    font-size: 13px;
+    padding: 32px 20px 36px;
+}
+.infor-group {
+    margin-bottom: 20px;
+}
+.info-label {
+    float: left;
+    width: 130px;
+    text-align: right;
+    padding-top: 7px;
+}
+.info-desc {
+    margin-left: 150px;
+}
+.name-input {
+    width: 260px;
+    height: 34px;
+}
+.time-label {
+    padding: 7px 0 0 21px;
+    font-weight: 400 !important;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.time-radio {
+    margin-left: -16px !important;
+    padding-top: 6px !important;
+}
+.choose-control {
+    margin-top: 12px;
+}
+.time-choose {
+    display: inline-block;
+    position: relative;
+}
+.time-choose-input {
+    width: 200px;
+    height: 34px;
+
+}
+.date-icon {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/discount-date-icon.png);
+}
+.time-sep {
+    margin: 0 13px;
+}
+.suggest {
+    position: relative;
+    margin-left: 106px;
+    padding-left: 20px;
+    background: url(../images/suggest-icon.png) no-repeat left;
+    cursor: pointer;
+}
+.suggest-desc {
+    display: none;
+    position: absolute;
+    left: 120px;
+    top: -70px;
+    z-index: 1000;
+    width: 520px;
+    background-color: #fff;
+    border-radius:4px;
+    box-shadow:0px 1px 4px 0px rgba(0,0,0,0.1);
+    padding: 16px 18px;
+    font-size: 12px;
+}
+.suggest-desc:before{
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 70px;
+    border: 7px solid transparent;
+    border-right-color: #fff;
+}
+.suggest-desc>p{
+    margin-bottom: 17px;
+}
+.suggest-desc>p:last-child{
+    margin-bottom: 0;
+}
+.profit-wraper {
+    margin-top: 28px;
+}
+.profit-item {
+    margin-bottom: 20px;
+}
+.profit-input{
+    width: 60px;
+    height: 34px;
+    margin: 0 8px;
+}
+.item-box {
+    display: inline-block;
+    margin-right: 67px;
+}
+.item-box:nth-child(2){
+    margin-right: 35px;
+}
+.item-del {
+    color: #3197FA;
+    cursor: pointer;
+}
+.profit-add {
+    margin-top: 17px;
+    color: #3197FA;
+    cursor: pointer;
+}
+.tips {
+    margin-left: -24px;
+    color: #999;
+}
+.profit-tips {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #FF4343;
+}
+.product-wraper{
+    display: none;
+    margin-top: 15px;
+}
+.product-list {
+    width: 460px;
+    border: 1px solid #E6E6E6;
+}
+.product-item {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.product-thead {
+    background-color: #F0F0F0;
+}
+.product-thead .product-action{
+    color: #333;
+}
+.product-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.product-info>img{
+    width: 40px;
+    height: 40px;
+}
+.product-action {
+    margin-right: 24px;
+    color: #3197FA;
+    cursor: pointer;
+}
+.product-desc {
+    margin-left: 10px;
+    /* padding-top: 4px; */
+}
+.product-price {
+    margin-top: 5px;
+    color: #FF4343;
+}
+.look-more {
+    height: 50px;
+    line-height: 50px;
+    color: #3197FA;
+    text-align: center;
+    cursor: pointer;
+}
+.save-box {
+    position: fixed;
+    bottom: 0;
+    left: 230px;
+    right: 230px;
+    height: 56px;
+    line-height: 56px;
+    background-color: #FFFFCC;
+    text-align: center;
+    z-index: 100;
+}
+#laydate_ys {
+    overflow: hidden;
+}
+.laydate_body .laydate_bottom {
+    height: 32px !important;
+}
+.modal-dialog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+}
+.modal-content {
+    min-width: 600px;
+}
+.module-nav {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: baseline;
+    font-size: 0;
+    line-height: 0;
+    font-weight: bold;
+}
+.module-nav>li {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.module-nav>li>a {
+    margin-right: 5px;
+}
+.modal-body {
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.ui-table.ui-table-list {
+    border: none;
+}
+.ui-table {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 0;
+    border: 1px solid #e5e5e5;
+}
+.table th>.td-cont {
+    padding: 7px 0 3px 10px;
+}
+.table .td-cont {
+    line-height: 16px;
+}
+.input-append {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.ui-table .form-control {
+    display: inline-block;
+    width: 104px;
+    height: 30px;
+    padding: 6px 12px;
+    border-radius: 0;
+}
+.ui-table .js-modal-search {
+    font-size: 12px;
+    height: 30px;
+    line-height: 19px;
+    position: relative;
+    background-color: #3197fa;
+    color: white;
+}
+.ui-table .information {
+    width: 140px;
+}
+.table thead tr>th {
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+}
+.table td.title {
+    text-align: left;
+    max-width: 240px;
+}
+.table .td-cont {
+    line-height: 16px;
+}
+.ui-table .js-choose {
+    border: 1px solid;
+    border-color: rgb(169, 169, 169);
+    padding: 2px 12px;
+}
+.pagination {
+    margin: 0;
+}
+.del-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background-color: rgba(0,0,0,0.6)
+}
+.del-wraper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 360px;
+    height: 220px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.del-tips {
+    text-align: center;
+    margin-top: 67px;
+    color: #333;
+    font-size: 18px;
+}
+.btn-wraper {
+    text-align: center;
+    margin-top: 61px;
+}
+.action-btn {
+    width: 120px;
+    height: 36px;
+    background-color: #E6E6E6;
+    text-align: center;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+.cancel-btn {
+    margin-right: 20px;
+}
+.del-btn {
+    background-color: #3197FA;
+    color: #fff;
+}
+.close-icon {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: #B3B3B3;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tab-pro {
+    cursor: pointer;
+    color: #333;
+}
+.tab-pro:hover{
+    color: #3197FA;
+}
+.header-tab{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header-tab.active{
+    border-bottom: 1px solid #3197fa;
+}
+.header-tab.active .tab-pro{
+    color: #3197fa;
+}
+.special-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.table td.image {
+    padding: 10px 0 10px 8px;
+}
+.table td.image .td-cont {
+    padding: 0px;
+}
+.td-cont img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.modal-dialog tr td {
+    vertical-align: middle !important;
+}
+.closeSp {
+    margin-top: 15px !important;
+}
+.discount-flag {
+    width: 48px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #FFE6D1;
+    color: #FF7F2A;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.price-more {
+    color: #FF4343;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.more-opts {
+    text-align: right;
+    padding-right: 18px !important;
+}
+.more-body tr td:first-child{
+    width: 15%;
+}
+.more-body tr td:nth-child(2){
+    width: 40%;
+}

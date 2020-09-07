@@ -1,0 +1,25 @@
+/*公共样式*/
+.img_wrap{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.img_wrap img{max-width:100px;max-height:100%;display:block;}
+.items_title,.items_num{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.c_gray{color:#999;}
+.f12{font-size:12px;}
+.fon20{font-size:20px;}
+.blue_38f{color:#38f;} 
+.blue_38f:hover{color:#27f;}
+a.blue_38f:focus{color:#38f;text-decoration:none;}
+.blue_00f{color:#00f;}
+a.blue_00f:hover{color:#00f;}
+a.blue_00f:focus{color:#00f;}
+.red{color:#f00;}
+a{cursor:pointer;}
+.gray_999{color:#999;}
+.mgb15{margin-bottom:15px;}
+.mgb30{margin-bottom:30px;}
+.mgl15{margin-left:15px;}
+.main{overflow-x:visible;}
+.w50{width:50px;}
+.empty_items{font-size:12px;text-align:center;line-height:150px;border:1px solid #dcdcdc;}
+.chart_items{min-height:300px;border:1px solid #e4e4e4;}
+.section_common{background: #fff7cc;border: 1px solid #fdeeb2;color: #333;padding:10px;}
+.section_common span{padding:0 5px;}

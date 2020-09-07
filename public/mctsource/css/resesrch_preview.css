@@ -1,0 +1,138 @@
+/* create by 赵彬 2018-8-7 */
+.content-body{
+    background-color: #fff;
+    padding: 0 10px 20px;
+}
+.detaTime_title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500
+}
+.detaTime_title_a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px
+}
+input[type='text']{
+    outline: none;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding: 0 10px
+}
+.vote_option,.w_radio{
+    line-height: 35px
+}
+.fileinput-button{
+    width: 60px;
+    height: 60px;
+    border: 2px dashed  #999999;
+    position: relative
+}
+.fileinput-button-icon{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #ccc
+}
+.imgBox .delete{
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    font-size: 24px;
+    cursor:pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgba(153, 153, 153, 0.5)
+}
+.imgBox{
+    width: 100%;
+    position: relative;
+}
+.line-subtitle{
+    white-space: pre;
+    line-height: 30px
+}
+.solid{border-bottom: 1px solid #999999;}
+.dotted{border-bottom: 1px dotted #999999;}
+.dashed{border-bottom: 1px dashed #999999;}
+.double{border-bottom: 4px double #999999;}
+.right{
+    text-align: right
+}
+.img_box{
+    min-height: 60px;
+    position: relative;
+    margin-top: 10px
+}
+.img_box .detaTime_title{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.res_select{
+    width: 100%;
+}
+.choices_div{
+    overflow: hidden;
+}
+.mini.gallery{
+    width: 50%;
+    float: left;
+    padding: 0 0 10px 5px;
+    box-sizing: border-box
+}
+.gallery.mini:nth-of-type(2n+1) {
+    clear: both;
+}
+.content{
+    position: relative
+}
+.content-sidebar{
+    position: fixed;
+    top: 0;
+    width: 180px;
+    height: 50px;
+    margin-top: 300px
+}
+.qrcode-info{
+    border: 1px solid #e4e4e4;
+    border-radius: 4px
+}
+.content-sidebar .shop-detail{
+    font-size: 12px;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+    margin: 0 10px
+}
+.text-center{
+    text-align: center
+}
+.weixin-title{
+    font-size: 12px;
+    padding: 5px 0;
+}
+.qr-code{
+    min-height: 160px
+}
+.time_box{
+    position: relative
+}
+
+.drop_box{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -11px;
+    width: 150px;
+}

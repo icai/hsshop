@@ -1,0 +1,59 @@
+.banner {
+    position: relative;
+    width: 100%;
+    /* height: 6rem; */
+}
+.app-bg {
+    width: 100%;
+    height: 100%;
+}
+.app-intro {
+    position: absolute;
+    bottom: .52rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.app-t1 {
+    font-size: .6rem;
+}
+.app-t2 {
+    font-size: .26rem;
+    margin-top: .39rem;
+}
+.app-content {
+    padding: .71rem .3rem 1.26rem;
+    background-color: #fff;
+}
+.app-tips {
+    font-size: .36rem;
+    color: #333;
+    font-weight: 700;
+}
+.app-desc {
+    color: #4D4D4D;
+    font-size: .3rem;
+    margin-top: .56rem;;
+    line-height: .55rem;
+}
+.app-slider {
+    position: relative;
+    margin-top: .72rem;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-pagination {
+    width: 100%;
+    text-align: center;
+}
+.swiper-pagination-bullet {
+    width: .5rem;
+    height: .04rem;
+    border-radius: .02rem;
+    background-color: #ccc;
+    margin-right: .2rem;
+}
+.swiper-pagination-bullet-active {
+    background-color: #3197FA;
+}

@@ -1,0 +1,12 @@
+.message_notice_warning{padding: 12px 35px 12px 15px;color: #333;background-color: #fff5cb;border-color: #fdeeb2;border-radius: 0;margin-bottom:20px;}
+/*选择方式*/
+.bank_wrap{margin-bottom:15px;}
+.bank_wrap>li{float:left; margin-right:15px;position:relative;}
+.bank_wrap>li .bank_list{padding: 15px;border: 1px solid #e5e5e5;background: #fff;font-weight: normal;cursor: pointer;margin: 0;position:relative;}
+.bank_wrap>li >input{display:block;position:absolute;height:100%;width:100%;top:0;left:0;z-index:3;opacity:0;}
+.bank_wrap>li input[type='radio']:checked ~.bank_list{margin-left: -1px;margin-top: -1px;background-color: #fff9f1;border: 2px solid #f60;cursor: default;position:relative;}
+.bank_wrap>li input[type='radio']:checked ~.bank_list:after{content:"";position: absolute;bottom: -28px;left: 50%;margin-left: -10px;border: 10px solid transparent;z-index: 100;border-bottom-color: #f8f8f8;bottom: -33px;}
+.faceplate_module{padding: 30px 70px;background-color: #f8f8f8;border-top: 1px solid #e5e5e5;}
+.no{display:none;}
+em{color:#f00;margin-right:5px;}
+.red_f60{color:#f60;}

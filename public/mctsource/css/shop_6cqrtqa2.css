@@ -1,0 +1,50 @@
+ .content_header{
+    margin-bottom:20px;
+    position:relative;
+}
+.content_header:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.content_header .btn_grounp{
+    float:left;
+}
+.content_header .btn_grounp a{
+    background:#4B0;
+    color:#fff;
+}
+.content_header .btn_grounp .teach_setting{
+    background: none;
+    color: blue;
+    margin-left:20px;
+}
+.content_header .search{
+    float:right;
+}
+
+.content table tr th{
+    font-weight: normal;
+    background:#f8f8f8;
+}
+.content table tbody tr:last-child{
+    border-bottom:1px solid #ddd;
+}
+.content_list table .action a{
+    color:#3197FA;
+}
+.content .page:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.content .page span{
+    float:right;
+}
+.popover{max-width:500px !important;}
+
+/*改名弹窗*/
+.change_input{background: #fff;overflow: visible;height: 56px;width: 300px;position: absolute;}
+
+.table>thead>tr>th{border-bottom: 1px solid #E5E5E5;}
+.table>tbody>tr>td{border-bottom: 1px solid #E5E5E5;padding: 12px;}

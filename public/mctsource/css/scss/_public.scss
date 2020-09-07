@@ -1,0 +1,41 @@
+@charset "utf-8";
+/**
+* creater 华亢 2018/07/09
+*/
+// 固定定位
+%absolute{
+    position: absolute
+}
+// 居中
+%autoMargin{
+    margin: auto;
+}
+// 水平居中
+%absolute_center{
+    @extend %absolute;
+    left:0;
+    right:0;
+    @extend %autoMargin;
+}
+// 垂直居中
+%absolute_middle{
+    @extend %absolute;
+    top:0;bottom:0;
+    @extend %autoMargin;
+}
+/* 采用grid 8 进行布局 */
+$grid:8px;
+
+.red{
+    color:red
+}
+.hide{
+    display: none
+}
+.noData{
+    font:48px/64px '微软雅黑';
+    font-weight:bold;
+    color:#f2f2f2;
+    margin:24px 0;
+    text-align:center
+}

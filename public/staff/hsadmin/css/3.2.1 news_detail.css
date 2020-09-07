@@ -1,0 +1,18 @@
+label{font-weight: normal;}
+.hide{display: none;}
+
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: auto; min-height: 60px; padding: 10px;}
+.main .main_content .sorts p:nth-child(1){font-size: 18px; font-weight: bold;}
+.main .main_content .artical .subtitle{margin: 20px 0; font-size: 16px; color: #C0C0C0;}
+.main .main_content .artical .essay{text-indent: 20px; font-size: 16px; margin-bottom: 30px;}
+.main .main_content .artical .btns button:nth-child(1){margin-right: 70%;}
+.main .content .recommend{position: relative; margin: 40px 0; padding: 20px; border: 1px solid #ccc; border-radius: 5px;}
+.main .content .recommend::before{content: ""; position: absolute; top: -20px; left: 40px; transform: rotate(45deg); width: 40px; height: 40px; background: white; border: 1px solid #ccc; border-bottom-color: transparent; border-right-color: transparent;}
+.main .content .recommend .row{margin: 20px 0;}
+.main .content .recommend .left_title{text-align: right;}
+.main .content .recommend button{margin-left: 80%;}
+
+
+
+

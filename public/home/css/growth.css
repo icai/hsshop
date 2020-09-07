@@ -1,0 +1,31 @@
+.content .strengths{margin-top: 40px; font-family: "微软雅黑";position: relative;overflow: hidden;}
+.strengths .left,.strengths .center{float: left;}
+.left,.right{width: 500px;height: 1732px;}
+.strengths .right{float: right}
+.content .strengths .graphic{z-index: 5; width: 100%;}
+
+.content .strengths .left .graphic{padding-right: 20px}
+.content .strengths .left .graphic h3{text-align: right; color: #3197FA;margin-top: 0;}
+.content .strengths .right .graphic h3{text-align: left; color: #3197FA;}
+.content .strengths .center #noEnd{text-align: center; font-size: 14px; color: #8E8E8E;}
+.content .strengths .D1{top: 3px;}
+.content .strengths .D2{top: 226px;}
+.content .strengths .D3{top: 685px;}
+.content .strengths .D4{top: 78px;}
+.content .strengths .D5{top: 536px;}
+.content .strengths .D6{top: 765px;}
+.content .strengths .D7{top: 1050px;}
+.content .strengths .D8 {
+  top: 1126px;
+}
+.content .strengths .D9{top: 1417px;}
+.content .strengths p{line-height: 25px; font-size: 16px;margin-bottom: 10px}
+.content .strengths .D5 .im2014{position: absolute; top: 74px; left: 93px;}
+
+
+
+
+.grow_target{position: relative;width: 1200px;margin: 0 auto;padding: 0 30px;}
+.grow_target p{margin-bottom: 40px;text-indent: 30px}
+.core_advantage{background: #F5F5F7;margin-top: 93px}
+.advantage_content{width: 1200px;margin: 0 auto;position: relative;padding-bottom: 50px}

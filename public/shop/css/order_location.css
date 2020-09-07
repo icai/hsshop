@@ -1,0 +1,28 @@
+.destination-contaiuner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+.go-destination {
+    position: absolute;
+    left: 50%;
+    top: 421px;
+    transform: translateX(-50%);
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    width: 165px;
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 4px;
+    
+}
+.map-img {
+    position: absolute;
+    top: 115px;
+    width:100%;
+    height:204px;
+    background: url(../images/map-bg.png) no-repeat center;
+    background-size: contain;
+}

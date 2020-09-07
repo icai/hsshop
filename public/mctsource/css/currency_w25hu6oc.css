@@ -1,0 +1,99 @@
+.hide{display: none;}
+
+.content .content_top{width: calc(100% - 40px);height: auto;margin-bottom: 20px;display: flex;justify-content: space-between;padding: 30px 20px;background: #f8f8f8;}
+.top_left p{ font-size: 13px; line-height: 25px; margin-top: 5px;}
+
+.modelShow{position: relative; margin: 10px 0;font-size: 12px;}
+.modelShow .modelDiv{margin-bottom:10px;}
+.modelShow .modelTitle{cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 10px 10px; background: #F6F6F6; border: 1px solid #e6e6e6;}
+.modelShow .confirm{position: absolute; z-index: 130; right: 5%; display: flex; align-items: center; height: 30px; width: 240px; padding: 10px; background: white; border: 1px solid #e6e6e6; border-radius: 5px; }
+.modelShow .confirm button{margin: 5px;}
+.modelShow .angle{ position: absolute; right: -5px; width: 10px; height: 10px; -webkit-transform: rotate(45deg); border-top: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6; background: white; }
+
+.modelShow .modelTitle i{display: inline-block; font-size: 13px; color: #999;padding-right:30px}
+.modelShow .modelTitle a{color: #3197fa;}
+
+
+.del_popover{box-sizing: content-box;}
+
+.arrow{
+	position: relative;
+	display: inline-block; 
+    text-decoration: none;
+    border-top-color: #07d;
+    border-bottom-color: transparent;
+
+}
+.arrow-up{
+	width: 0;
+    height: 0;
+    border-top: 6px solid #07d; 
+    border-right: 6px solid transparent; 
+    border-left: 6px solid transparent;
+}
+.arrow-down{
+	width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #07d;
+    border-left: 6px solid transparent;
+}
+
+
+.show-address-wrap {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    padding: 12px !important;
+    justify-content: flex-start !important;
+}
+.fs-12{
+	font-size:12px !important;
+}
+
+.c-333 {
+    color: #333;
+}
+
+.c-666 {
+    color: #666;
+}
+
+.c-999 {
+    color: #999;
+}
+
+.table {
+    border-collapse: collapse; 
+    border: 1px solid #e6e6e6; 
+    font-size:12px;
+}
+
+.table,
+.table tbody th,
+.table tbody td { 
+    text-align: center;
+    vertical-align: middle !important;
+    border-top:none;
+}
+.text-left{
+	text-align: left !important;
+}
+.text-right{
+	text-align: right !important;
+}
+.text-center{
+	text-align: center !important;
+}
+.td-w380{
+    width:380px;
+}
+.table tfoot td a,.c-07d{
+    color:#07d !important;
+}
+
+
+
+
+
+
+

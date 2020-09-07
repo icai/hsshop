@@ -1,0 +1,21 @@
+/*flex布局*/
+.flex_between{display: flex; justify-content: space-between;}
+.flex_around{display: flex; justify-content: space-around; align-items: center;}
+.position_rel{position: relative;}
+.position_abs{position: absolute;}
+
+.content #defaultForm{margin-top: 30px;}
+.content #defaultForm label{font-weight: normal;}
+.content #defaultForm select{width: 200px; height: 30px; padding: 2px 5px; border-radius: 5px;}
+.content #defaultForm .footer{height: 50px; line-height: 50px; background: #F8F8F8;}
+.content #defaultForm .hint{font-size: 12px; color: #999999;}
+.content #defaultForm a{color: dodgerblue;}
+
+/*上传文件部分*/
+.files{position:relative;}
+/*.files .add_file{display:none;}*/
+.files .file_name{color:#38f;}
+.fileName{display:none;}
+input[type='file']{top: 0; opacity: 0;z-index: 10; height: 30px; width: 200px; position:absolute;}
+.file_board{height: 30px; line-height: 30px; width: 200px;}
+

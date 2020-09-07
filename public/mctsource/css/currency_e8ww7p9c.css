@@ -1,0 +1,25 @@
+/*------------------------------添加管理员页面；---------------------------------*/
+.limit input{
+    position:relative;
+    top:2px;
+}
+/*上部字段样式*/
+.content_2 .content_top_2 span{ display: inline-block; width: calc(100% - 10px); line-height: 30px; background: #fff5cb; border: 1px solid #fdeeb2; padding: 5px; }
+
+/*中部信息样式*/
+.content_center_2{height: auto; padding: 30px;}
+.content_center_2 label{font-size: 14px; font-weight: normal;}
+.content_center_2 .account i{display: inline-block; color: #b94a48;}
+.content_center_2 .account input{ display: inline-block; width: 150px; height: 35px;}
+.content_center_2 ._msg{ width: calc(100% - 105px); height: auto; padding: 10px; margin: 20px 0 20px 85px; line-height: 25px; border: 1px solid #FC6; background: #ffc; /*display: none;*/ }
+.content_center_2 ._msg{display: none;}
+.content_center_2 .showed{display: block;}
+.content_center_2 ._msg a{color: #27F;}
+.content_center_2 button{margin-left: 85px;}
+
+/*下部表格样式*/
+.content_bottom_2 table{ width: 100%; border: 1px solid #C0C0C0; margin-bottom: 50px;}
+.content_bottom_2 table th{padding-left: 10px;text-align: left;background: #f2f2f2;}
+.content_bottom_2 table td{padding-left: 10px;text-align: left}
+.content_bottom_2 table i{display: inline-block; color: #C0C0C0;}
+

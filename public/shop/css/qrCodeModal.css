@@ -1,0 +1,578 @@
+.block.block-list {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	list-style: none;
+	font-size: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.block.block-list.margin-top-normal {
+	margin-top: 20px
+}
+
+.block-list.wf {
+	padding-left: 0
+}
+
+.block-list.wf .b-list {
+	padding-left: 10px;
+	background-color: #fff
+}
+
+.block-list>.block-item {
+	padding: 10px 10px 10px 0
+}
+
+.block-list>.block-item:first-child {
+	border-top: 0px none
+}
+
+.block.block-list+.block.block-list {
+	margin-top: 12px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.block.block-list li span.clear {
+		background: url("../images/icon_clear@2x.png") center center no-repeat;
+		background-size: 100%
+	}
+}
+
+.btn-1-1,
+.btn-2-1,
+.btn-3-1 {
+	display: inline-block;
+	padding: 0 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.btn-1-1 .tag,
+.btn-1-1 .btn,
+.btn-2-1 .tag,
+.btn-2-1 .btn,
+.btn-3-1 .tag,
+.btn-3-1 .btn {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.btn-1-1 {
+	width: 100%;
+	padding-left: 0
+}
+
+.btn-1-1 .tag,
+.btn-1-1 .btn {
+	/* width: 50% !important */
+}
+
+.btn-2-1 {
+	width: 49.5%
+}
+
+.btn-3-1 {
+	width: 33.3%
+}
+
+.bottom-fix {
+	display: block;
+	z-index: 100;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 6px 7px;
+	-webkit-border-image: url("../images/border-line-bbb.png") 2 stretch;
+	-moz-border-image: url("../images/border-line-bbb.png") 2 stretch;
+	border-image: url("../images/border-line-bbb.png") 2 stretch;
+	border-top: 2px solid #e5e5e5;
+	background-color: #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.bottom-fix {
+		border-top-width: 1px
+	}
+}
+
+.bottom-fix .btn {
+	font-size: 14px
+}
+
+html {
+	background-color: #f8f8f8
+}
+
+.content {
+	padding-bottom: 30px
+}
+
+.card-region {
+	background-color: #ccc;
+	padding: 20px;
+	margin: 10px;
+	color: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover
+}
+
+.card-region .card-header {
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden
+}
+
+.card-region .shop-logo {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: top;
+	background-size: 30px;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+.card-region .shop-name {
+	float: left;
+	background-size: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 0;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+.card-region .qr-code {
+	float: right;
+	width: 30px;
+	height: 30px;
+	min-height: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-image: url("../images/qc_code.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.card-region .qr-code {
+		background-image: url("../images/qc_code@2x.png")
+	}
+}
+
+.card-region .member-type {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+.card-region .card-content {
+	font-size: 14px;
+	overflow: hidden;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+.card-region .expiry-date {
+	float: left
+}
+
+.card-region .card-state {
+	float: right;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+.membership-region .membership-header {
+	padding: 10px 0;
+	margin-left: 10px;
+	line-height: 22px;
+	-webkit-border-image: url("../images/border-line.png") 2 stretch;
+	-moz-border-image: url("../images/border-line.png") 2 stretch;
+	border-image: url("../images/border-line.png") 2 stretch;
+	border-bottom: 2px solid #e5e5e5
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.membership-region .membership-header {
+		border-bottom-width: 1px
+	}
+}
+
+.membership-region .membership {
+	font-size: 0;
+	padding: 0 10px
+}
+
+.membership-region .membership-item {
+	width: 24%;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center
+}
+
+.membership-region .block-sub-desc {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	line-height: 22px;
+	padding-left: 20px
+}
+
+.membership-region .item-name {
+	width: 60px;
+	margin: 10px auto;
+	padding-top: 70px;
+	background-size: 100%;
+	background-repeat: no-repeat
+}
+
+.membership-region .free-shipping {
+	background-image: url("../images/icon_baoyou.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.membership-region .free-shipping {
+		background-image: url("../images/icon_baoyou@2x.png")
+	}
+}
+
+.membership-region .discount {
+	background-image: url("../images/icon_zhekou.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.membership-region .discount {
+		background-image: url("../images/icon_zhekou@2x.png")
+	}
+}
+
+.membership-region .coupon {
+	background-image: url("../images/icon_youhuiquan.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.membership-region .coupon {
+		background-image: url("../images/icon_youhuiquan@2x.png")
+	}
+}
+
+.membership-region .score {
+	background-image: url("../images/icon_jifen.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.membership-region .score {
+		background-image: url("../images/icon_jifen@2x.png")
+	}
+}
+
+.user-area {
+	padding: 10px;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative
+}
+
+.user-area .logo {
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	float: left
+}
+
+.user-area h3 {
+	font-size: 15px;
+	line-height: 18px
+}
+
+.user-area h3,
+.user-area h4 {
+	padding-left: 70px;
+	font-size: 14px;
+	line-height: 25px
+}
+
+.delete-card {
+	text-align: center
+}
+
+.single-block {
+	padding: 10px;
+	line-height: 22px
+}
+
+.default-card {
+	width: 48px;
+	height: 22px;
+	background-color: #9acf93;
+	font-size: 12px;
+	padding: 0 3px;
+	line-height: 24px;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 24px
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
+	background-size: 25px 150px;
+	background-image: url("../images/icon_list.png");
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.icon {
+		background-image: url("../images/icon_list@2x.png")
+	}
+}
+
+.icon.icon-member {
+	background-position: 0 0
+}
+
+.icon.icon-description {
+	background-position: 0 -25px
+}
+
+.icon.icon-tel {
+	background-position: 0 -50px
+}
+
+.icon.icon-cert {
+	background-position: 2px 0;
+	background-size: 20px;
+	background-image: url("../images/icon_pingzhen.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.icon.icon-cert {
+		background-image: url("../images/icon_pingzhen@2x.png")
+	}
+}
+
+.icon.icon-homepage {
+	background-position: 0 -75px
+}
+
+.arrow-right {
+	position: relative
+}
+
+.down-arrow-right::after {
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
+	-webkit-transition: all linear 0.1s;
+	-moz-transition: all linear 0.1s;
+	transition: all linear 0.1s
+}
+
+.block-sub-desc {
+	padding-top: 10px;
+	word-wrap: break-word;
+	color: #999;
+	font-size: 12px
+}
+
+.wx-qccode-area {
+	text-align: center;
+	margin: 10px 0
+}
+
+.wx-qccode-area img {
+	display: inline-block;
+	width: 60%
+}
+
+.wx-qccode-area p {
+	color: #999;
+	font-size: 14px
+}
+
+.delete-confrim p {
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 3px
+}
+
+.delete-confrim p:first-child {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.delete-confrim .action-container {
+	font-size: 0;
+	margin-top: 10px
+}
+
+#card-data {
+	display: none
+}
+
+.member-popout .popout-header {
+	line-height: 35px;
+	font-size: 16px;
+	height: 80px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px 10px 0 0
+}
+
+.member-popout .logo {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+	/* background-size: 40px;
+	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat */
+}
+
+.member-popout .title {
+	float: left;
+	/* background-size: 30px;
+	height: 30px;
+	line-height: 30px; */
+	margin-left: 15px;
+	margin-top: 20px;
+	color: #fff;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+.member-popout .close {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	float: right;
+	margin-top: 8px;
+	margin-right: 10px;
+	font-size: 23px
+}
+
+.member-popout .card-name {
+	margin-left: 20px;
+	color: #fff;
+	font-size: 20px;
+	float: left
+}
+
+.member-popout .card-discount {
+	float: right;
+	font-size: 20px;
+	line-height: 22px;
+	color: #fff;
+	margin-right: 20px
+}
+
+.member-popout .card-region-popout {
+	margin-top: 15px
+}
+
+.member-popout .qrcode {
+	width: 100%;
+	padding: 10px 0
+}
+
+.member-popout .qrcode img {
+	width: 60%
+}
+
+.member-popout .barcode img {
+	width: 70%
+}
+
+.member-popout .popout-main {
+	background-color: #fff;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+
+.member-popout .code {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #666
+}
+
+.member-popout .term-popout {
+	background-color: #f7f7f7;
+	height: 20px;
+	line-height: 20px;
+	font-size: 10px;
+	color: #999;
+	border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+
+.member-popout .tip {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 8px;
+	color: #fff
+}
+
+body.body-fixed-bottom {
+	padding-bottom: 40px
+}

@@ -1,0 +1,19 @@
+/*添加客户*/
+.content #add_posts{margin: 10px 0;}
+
+/*主要内容*/
+.content .main_content ul{height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 10px; border-bottom:1px solid #CCCCCC; }
+.content .main_content ul li{height: 25px; overflow: hidden;}
+.content .main_content ul li:nth-child(1){width: 5%;}
+.content .main_content ul li:nth-child(2){width: 5%;}
+.content .main_content ul li:nth-child(3){width: 40%;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+.content .main_content ul li:nth-child(4){width: 25%;}
+.content .main_content ul li:nth-child(5){width: 25%;text-align: center;}
+.content .main_content .main_content_title{background: #F2F2F2;}
+.content .main_content ul a{color: dodgerblue;}
+.content .main_content ul:not(.main_content_title):hover{background: #F8F8F8;}
+
+/*分页器*/
+.content .pageNum{ height: 50px; padding-right: 30px; display: flex; justify-content: flex-end; align-items: center; }
+/*去除分页器中的第一页 和 最后一页*/
+.content .pageNum .pagination .first, .content .pageNum .pagination .last{display: none;}

@@ -1,0 +1,24 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group">
+            <label class="control-label">选择商品：</label>
+            <div class="controls">
+                <ul class="module-goods-list clearfix ui-sortable" name="goods">
+                    <li class="sort" ng-show="editors[index]['activitys'].length" ng-repeat="image in editors[index]['activitys'] track by $index" ng-mouseover="showShareDelete($index)" ng-mouseout="hideShareDelete($index)"  ng-drop="true" ng-drop-success="onDropShareComplete($index, $data,$event)">
+                        <div ng-drag="true" ng-drag-data="image" class="goods" style="height:100%;width:100%">
+                            <a href="javascript:void(0);">
+                                <img ng-src="{{image['thumbnail']}}" alt="商品图" width="50" height="50">
+                            </a>
+                            <a class="close-modal js-delete-goods small" data-id="" title="删除" ng-show="image['deleteBtn']" ng-click="deleteLiGood($index)">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="js-add-goods add-goods" ng-click="showLiModel($index)">
+                            <i class="icon-add"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group crmobile" style="display: block;">
+           <div class="component-title">
+               <span class="component-title_name">添加联系方式</span>
+           </div>
+            <!-- 选择模板 -->
+            <div class="control-group select-template">
+                <div class="control-group" ng-show="editors[index]['mobileStyle']">
+                    <label class="control-label" >
+                        选择样式：
+                    </label>
+                    <div class="controls controls-title">
+                        <label>
+                            <input type="radio" name="phoneType" value="2" ng-model="editors[index]['mobileStyle']" ng-checked="editors[index]['mobileStyle']==2"/>
+                            通用
+                        </label>
+                        <label>
+                            <input type="radio" name="phoneType" value="1" ng-model="editors[index]['mobileStyle']" ng-checked="editors[index]['mobileStyle']==1"/>
+                            自定义
+                        </label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        <em class="required">*</em>标题名称：</label>
+                    <div class="controls">
+                        <input type="text" name="mobile_title" placeholder="非必填项" ng-model="editors[index]['title']" class="form-control mobile_input" ng-model="editors[index]['titleName']"/>
+                    </div>
+                </div>
+                <div ng-show="editors[index]['mobileStyle']==2">
+                    <div class="control-group mobile-group" ng-repeat="mobile in editors[index]['lists']" ng-mouseover="hoverMobile(mobile)" ng-mouseout="outMobile(mobile)">
+                        <label class="control-label">
+                            号码：
+                        </label>
+                        <div class="controls">
+                            <input type="text" value="" class="form-control min_mobile" placeholder="区号" ng-model="mobile.area_code" maxlength="4"/>
+                            <span>-</span>
+                            <input type="text" name="" value=""  class="form-control mobile" placeholder="手机号或固话" ng-model="mobile.mobile" maxlength="11"/>
+                            <span class="action delete close-modal" title="删除" ng-click="deleteMobileRow($index)" ng-show="mobile.close">×</span>
+                        </div>
+
+                        <label class="control-label margin20">
+                            <em class="required">*</em>电话图标：
+                        </label>
+                        <div class="controls margin20 clearfix">
+                            <div class="phone-logo pull-left">
+                                <img ng-src="{{mobile.icon}}" alt="">
+                            </div>
+                            <div class="pull-left">
+                                <a href="javascript:;" ng-click="choosePhoneImage(2)">更改图标</a>
+                                <p class="ft-grey tip">建议图片上传尺寸为64*64px</p>
+                            </div>
+                            <!-- <input type="button" value="11111" ng-click="choosePhoneImage()"/> -->
+                        </div>
+                    </div>
+                </div>
+                <div ng-show="editors[index]['mobileStyle']==1">
+                    <div class="control-group mobile-group" ng-repeat="mobile in editors[index]['lists']" ng-mouseover="hoverMobile(mobile)" ng-mouseout="outMobile(mobile)">
+                        <label class="control-label">
+                            <em class="required">*</em>封面图：
+                        </label>
+                        <div class="controls clearfix">
+                            <span class="action delete close-modal" title="删除" ng-click="deleteMobileRow($index)" ng-show="mobile.close">×</span>
+                            <div class=" pull-left">
+                                <img ng-src="{{mobile.image}}" class="cover">
+                                <p class="ft-grey tip">建议图片上传尺寸为 640*320px</p>
+                            </div>
+                            <div class="pull-left">
+                                <a href="javascript:;" ng-click="choosePhoneImage(1)">重新上传</a>
+                            </div>
+                        </div>
+                        <label class="control-label">
+                            号码：
+                        </label>
+                        <div class="controls">
+                            <input type="text" value="" class="form-control min_mobile" placeholder="区号" ng-model="mobile.area_code" maxlength="4"/>
+                            <span>-</span>
+                            <input type="text" name="" value=""  class="form-control mobile" placeholder="手机号或固话" ng-model="mobile.mobile" maxlength="11"/>
+                        </div>
+                        <label class="control-label">
+                            号码显示：
+                        </label>
+                        <div class="controls image-comtrol">
+                            <label>
+                                <input type="radio" ng-name="imageShowType" value="1"  ng-model="mobile.imageShadowShow" ng-checked="mobile.imageShadowShow==1"/>
+                                显示
+                            </label>
+                            <label>
+                                <input type="radio" ng-name="imageShowType" value="0"  ng-model="mobile.imageShadowShow" ng-checked="mobile.imageShadowShow==0"/>
+                                不显示
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div ng-show="!editors[index]['mobileStyle']">
+                    <div class="control-group mobile-group" ng-repeat="mobile in editors[index]['lists']" ng-mouseover="hoverMobile(mobile)" ng-mouseout="outMobile(mobile)">
+                        <label class="control-label">
+                            号码：
+                        </label>
+                        <div class="controls">
+                            <input type="text" value="" class="form-control min_mobile" placeholder="区号" ng-model="mobile.area_code" maxlength="4"/>
+                            <span>-</span>
+                            <input type="text" name="" value=""  class="form-control mobile" placeholder="手机号或固话" ng-model="mobile.mobile" maxlength="11"/>
+                            <span class="action delete close-modal" title="删除" ng-click="deleteMobileRow($index)" ng-show="mobile.close">×</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_action">
+                    <span ng-click="addMobileRow()">+添加联系方式</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

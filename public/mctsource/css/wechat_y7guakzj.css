@@ -1,0 +1,129 @@
+.header a .green{color: green;background: #fff;}
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*搜索设置*/
+.search{float: right;}
+.search input{box-sizing: content-box; width: 50px;padding: 3px 20px;background: white url(../../static/images/ico-search.png) 4px center no-repeat;border-radius: 5px;border: 1px solid #ccc;transition: width 0.5s;}
+.search input:focus{width:200px;border-color:rgba(82,168,236,.8);outline:0;outline:dotted thin\9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);}
+/*未命名规则弹框*/
+.new_cap{position: absolute;top: 40px; padding: 10px 20px;background: #fff;z-index: 1;border: 1px solid#ccc;-webkit-box-shadow: 0 0 10px 1px #ccc;-webkit-border-radius: 5px;display: none;}
+.new_cap::after{content: "";position: absolute;width: 10px;height: 10px;background: #fff;top: -5px;transform: rotate(45deg);border-top: 1px solid #ccc;border-left: 1px solid #ccc;}
+.new_cap input{padding: 8px;height: 14px; border-radius: 2px;border: 1px solid#ccc;}
+.new_cap input:focus{border-color:rgba(82,168,236,.8);outline:0;outline:dotted thin\9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);}
+.new_cap .btn{margin-left: 5px;}
+/*中间内容开始*/
+.handle .new_hint{text-align: center;line-height: 100px; height: 100px;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 20px;}
+.handle_title{margin: 15px 0;position: relative;}
+/*规则内容开始*/
+.handle_content{border: 2px solid #ccc;margin-bottom: 20px;border-radius: 5px;} 
+.handle_content:hover{border: 2px solid #000;}
+.handle_content .rule_meta h5{font-weight: 900;position: relative;padding: 13px;border-bottom: 1px solid #ccc;}
+.handle_content .rule_meta h5 .new_cap{left: 145px;font-weight: 400;}
+.handle_content .rule_meta h5 .new_cap::after{left: 50%;}
+.handle_content .rule_meta .rule_opts{position: absolute;left: 300px;top: 11px;}
+.rule_opts a,.rule_opts span{color: #ddd;font-size: 12px;} 
+.rule_opts:hover a{color: #07d;}
+.rule_body {position: relative;}
+.rule_body .line{border-bottom:1px dashed #ccc ; position: absolute; top: 40px;width: 100%;}
+.rule_body .rule_left{float: left;width: 40%;padding: 10px;-webkit-box-sizing: border-box;border-right:1px solid #ccc ;}
+.rule_body .rule_right{float: left;width: 60%;padding: 10px;-webkit-box-sizing: border-box;border-left:1px solid #ccc ;margin-left: -1px;}
+.rule_body .rule_left .rule_keywords{padding: 0px 0 8px;font-weight: 600;}
+.rule_body .rule_left .left_info{padding: 10px 0;border-bottom: 1px dashed #ccc;color: #999;}
+.rule_body .rule_left .keywords_list{padding: 10px 0;border-bottom: 1px dotted #ccc;}
+.rule_body .rule_left .keywords{position: relative;margin: 10px;display: inline-block;cursor:pointer;}
+.rule_body .rule_left .value{padding: 7px 8px;background: #fff;font-size: 12px;border-bottom-left-radius: 5px;border-top-left-radius: 5px;border: 1px solid #ccc;}
+.rule_body .rule_left .add{padding: 7px;background: #eee;font-size: 12px;border-bottom-right-radius: 5px;border-top-right-radius: 5px;border: 1px solid #ccc;margin-left: -1px;}
+.rule_body .rule_left .keywords:hover .close_circle{display: block;}
+.rule_body .rule_left .keywords img{display: inline;}
+.rule_body .rule_left .rule_add_keywords a{font-size: 12px;}
+/*添加关键词弹框*/
+.rule_add_keywords{position: relative;}
+.rule_add_cap{position: absolute;left: -150px;top: 30px; padding: 10px;border: 3px solid #000;background: #fff;border-radius: 5px;z-index: 10;}
+.rule_add_cap::after{content: "";position: absolute; width: 10px;height: 10px;background: #fff;top: -7px;left: 50%;transform: rotate(45deg);border-top: 1px solid #000;border-left: 1px solid #666;}
+.rule_add_cap label{font-weight: 400;}
+.rule_add_cap .control_label{width: 70px;text-align: right;}
+.rule_add_cap .cap_keywords input{padding: 4px 8px;border-radius: 2px;margin-left: 10px;font-size: 12px;width: 200px;}
+.rule_add_cap .cap_keywords{position: relative;margin-bottom: 20px;}
+.rule_add_cap .cap_keywords span{position: absolute;width: 20px;height: 20px;background: url(../images/1.gif) center center no-repeat;right: 4px;top: 4px;border: 1px solid #ccc;border-radius: 2px;background-size: 90% 90%;}
+.rule_add_cap .cap_rule input{margin-left:10px ;}
+.rule_add_cap .btn_group{margin-left: 80px;display: inline-block;margin-top: 10px;}
+.rule_add_cap .btn_group button{margin-right: 10px;}
+/*规则右侧开始*/
+.rule_body .rule_right .right_info{padding: 10px 0;border-bottom: 1px dashed #ccc;color: #999;}
+.rule_body .rule_right .reply_list{list-style: decimal;}
+.rule_body .rule_right .rule_reply{padding: 0 0 8px;font-weight: 600;}
+.rule_body .rule_right .rule_reply span{font-size: 12px;}
+.rule_body .rule_right .reply{padding: 10px;margin-left: 20px;width: 100%;position: relative;}
+.rule_body .rule_right .reply:after{content: "";position: absolute;bottom: 0;left: -20px;right: 0; border-bottom: 1px dashed #ccc;width: 98%;font-size: 12px;}
+.rule_body .rule_right .reply_type{background: #468847;border-radius: 5px;color: white;padding: 3px 5px;font-size: 10px;}
+.rule_body .rule_right .rule_add_reply a{font-size: 12px;}
+.reply_opts{position: absolute; right: 50px;top: 10px;font-size: 0;}
+.reply_opts .reply_cap{ top:-103px;left: -430px;}
+.reply_opts .reply_cap::after{left: 410px; transform: rotate(135deg);}
+.reply_opts a,.reply_opts span{color: #ddd;font-size: 12px;} 
+.reply_opts:hover a{color: #38f;}
+.reply_text img{display: inline;}
+.link_li{position: relative;z-index: 10;}
+.link_li .link{position: absolute;top: -50px; box-sizing: border-box;width: 310px;padding: 10px;border: 2px solid #000;border-radius: 5px;background: #fff;display: none;}
+.link_li .link input{padding: 5px 10px;height: 20px;border-radius: 3px;width: 190px;margin-right: 15px;vertical-align: middle;}
+/*回复弹框开始*/
+.rule_add_reply{position: relative;}
+.reply_cap{z-index: 10; position: absolute;top: -105px;left: 90px; width: 420px; border: 3px solid #000;border-radius: 5px;padding: 15px;background: #fff;font-size: 12px;-webkit-box-sizing: border-box;}
+.reply_cap:hover>a{display: block;}
+.reply_cap .close_circle{color: white;}
+.reply_cap::after{position: absolute;content: "";width: 10px;height: 10px;border-top: 1px solid #000;border-left: 1px solid #000;background: #fff; transform: rotate(-45deg);top: 50%;left: -7px;}
+.reply_cap .reply_ctl_cap{border: 1px solid #000;border-radius: 5px;}
+.reply_cap .reply_cap_nav{display: -webkit-box;padding: 10px;}
+.reply_cap .reply_cap_nav>li{margin-right: 10px;}
+.reply_cap .reply_cap_nav span{color: #38f;cursor: pointer;}
+.reply_cap .reply_cap_nav .dropdown p{border-radius: 0;margin-top: -2px;border: 1px solid #e5e5e5;padding: 6px 16px;font-size: 14px;}
+.reply_cap .reply_cap_nav .dropdown ul{min-width: 120px;border-radius: 0;-webkit-box-shadow: 0 0 10px 1px #ccc;}
+.reply_cap .reply_cap_nav.dropdown li{width: 120px;height: 30px;border: none;}
+.reply_cap .reply_cap_nav .dropdown li :hover{background: #07c;color: #fff;}
+.reply_cap .reply_cap_text{padding: 10px; border-width: 0;width: 100%;-webkit-box-sizing: border-box;background: #fff;}
+.reply_cap .reply_cap_btn{border-top: 1px solid #000;padding: 10px;position: relative;}
+.reply_cap .reply_cap_btn span{position: absolute;right: 10px;color: #ccc;}
+/*底部开始*/
+/*选择图文模态框*/
+.modal-dialog .list li{cursor: pointer;font-weight: bold;color: #38f;display: inline-block;border-right: 2px solid #000;padding: 0px 10px;}
+.modal-dialog .list li:last-child{border-right: 0;}
+.modal-dialog .list .list_active{color: #000;}
+.modal-dialog .title{width: 444px;font-weight: 600;text-align: left;}
+.modal-dialog .set_time{width: 88px;font-weight: 600;text-align: left;}
+.modal-dialog .search input{width: 80px;border-radius: 5px 0 0 5px;padding: 6px 20px;vertical-align: middle;}
+.modal-dialog .search button{margin-left: -6px;display: inline;border-radius: 0 5px 5px 0;}
+.modal-dialog .info{border: 1px solid #ccc;border-radius: 5px;width: 100%; height: 100px;text-align: center;line-height: 100px;margin-bottom: 100px;}
+.modal-dialog{width: 800px;}
+.modal-dialog tr td{text-align: left;}
+.modal-dialog tr td:last-child{text-align: center;}
+.modal-dialog td{font-size: 12px;}
+.modal-dialog .item{display: none;}
+.modal-dialog .list .js_manage{display: none;}
+.modal-dialog td img{width: 50px;height: 50px; display: inline-block;}
+.modal-dialog td a{vertical-align: top;display: inline-block;width: 340px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.modal-footer span{font-size: 12px;}
+.table>thead>tr>th{border-bottom:0 ;}
+/*列表标题内容开始*/
+.modal-dialog .title_content{width: 250px;}
+.modal-dialog .title_content .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 5px 5px 0 0;}
+.modal-dialog .title_content .green{padding: 0 3px;background: #468847;color: #fff;border-radius: 3px;margin-right: 10px;}
+.modal-dialog .title_content .img_text a{font-size: 13px;display: inline-block;vertical-align: middle; width: 170px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.modal-dialog .title_content .read_all{cursor: pointer; padding: 2px 10px;border: 1px solid #eee;border-radius: 0 0 5px 5px;margin-top: -1;font-size: 13px;color: #666;}
+.modal-dialog .title_content .read_all a{font-size: 13px;display: inline-block;vertical-align: middle; width: 170px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.modal-dialog .title_content .read_all .jump{width: 100%;height: 100%;}
+.modal-dialog .title_content .read_all .jump:hover{color: #666;}
+/*新添加样式*/
+.ctts {border-top: 1px solid #ccc;height: 100px;}
+.ctts .imgs span{vertical-align: top;margin-left: 5px;cursor: pointer;}
+.ctts .add_news{display: none; padding: 10px;}
+/*列表标题内容开始*/
+.co_blue{color: blue;}
+.co_blue:hover{color: blue;}
+.add_news .item{width: 250px;}
+.add_news .item .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 5px 5px 0 0;}
+.co_blue{display: inline-block; width: 150px;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: top;}
+.green{padding: 0 3px;background: #468847;color: #fff;border-radius: 3px;}
+.add_news .item .img_text a{font-size: 13px;}
+.add_news .item .read_all{cursor: pointer; padding: 2px 10px;border: 1px solid #eee;border-radius: 0 0 5px 5px;margin-top: -1;font-size: 13px;color: #666;}
+
+

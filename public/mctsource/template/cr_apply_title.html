@@ -1,0 +1,67 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group">
+            <label class="control-label">
+                <em class="required">*</em>标题名：</label>
+            <div class="controls">
+                <input type="text" name="module_title" value="" class="form-control" ng-maxlength="100" ng-model="editors[index]['titleName']" required>
+                <p class="help-block error-message" ng-show="editorForm.module_title.$dirty && editorForm.module_title.$error.required || iserror && editorForm.module_title.$invalid">此字段为必填字段</p>
+                <p class="help-block error-message" ng-show="editorForm.module_title.$dirty && editorForm.module_title.$error.maxlength || iserror && editorForm.module_title.$invalid">最大长度不能超过100位</p>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">标题模版：</label>
+            <div class="controls">
+                <label class="radio inline">
+                    <input type="radio" name="title_template" value="1" ng-model="editors[index]['titleStyle']">传统样式</label>
+                <label class="radio inline">
+                    <input type="radio" name="title_template" value="2" ng-model="editors[index]['titleStyle']">模仿微信图文页样式</label>
+            </div>
+        </div>
+        <div ng-show="editors[index]['titleStyle']==1">
+            <div class="control-group">
+                <label class="control-label">副标题：</label>
+                <div class="controls">
+                    <input type="hidden" class="js-time-holder hasDatepicker">
+                    <input type="text" class="form-control" name="sub_title" value="" ng-model="editors[index]['subTitle']">
+                    <a href="javascript: void(0);" class="js-time"></a></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">显示：</label>
+                <div class="controls">
+                    <label class="radio inline">
+                        <input type="radio" name="show_method" value="1" ng-model="editors[index]['showPosition']" ng-checked="editors[index]['showPosition']==1">居左显示</label>
+                    <label class="radio inline">
+                        <input type="radio" name="show_method" value="2" ng-model="editors[index]['showPosition']" ng-checked="editors[index]['showPosition']==2">居中显示</label>
+                    <label class="radio inline">
+                        <input type="radio" name="show_method" value="3" ng-model="editors[index]['showPosition']" ng-checked="editors[index]['showPosition']==3">居右显示</label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">背景颜色：</label>
+                <div class="controls">
+                    <input type="color" class="form-control" name="color" ng-model="editors[index]['bgColor']">
+                    <!--add by 韩瑜 2018-9-5 添加16进制颜色输入框-->
+			        <input class="form-control color_input" maxlength="7" type="text" value="#f8f8f8" ng-model="editors[index]['bgColor']" >
+			        <!--end-->
+                </div>
+            </div>
+           
+            
+        </div>
+        <div ng-show="editors[index]['titleStyle']==2">
+            <div class="control-group">
+                <label class="control-label">日期：</label>
+                <div class="controls">
+                    <input type="text" name="wx_title_date" value="2016-11-22" maxlength="100" class="form-control" ng-model="editors[index]['date']" id="date" ng-click="bindDate()"></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">作者：</label>
+                <div class="controls">
+                    <input type="text" name="wx_title_date" value="2016-11-22" maxlength="100" class="form-control" ng-model="editors[index]['author']">
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>

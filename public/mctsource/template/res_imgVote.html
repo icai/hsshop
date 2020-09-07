@@ -1,0 +1,60 @@
+<div class="control-group">
+    <div class='detaTime_con'>
+        <p class='detaTime_title'><em ng-if='editor.required'>*</em>{{editor.title}}</p>
+        <p class='detaTime_title_a' ng-if='editor.subtitle'>{{editor.subtitle}}</p>
+        <!--图片单列-->
+        <div class="choices choices_div" ng-if='editor.rule_image_type == 0'>
+            <div class="gallery" ng-repeat='item in editor.sub_rules'>
+                <div class="pic_wrapper">
+                    <div class="picture">
+                        <a class="cover" href="javascript:;">
+                            <img ng-if='!item.imgflag' ng-src="{{item.image}}" style="width: 50%">
+                            <img ng-if='item.imgflag' ng-src="{{item.image}}" style="width: 100%">
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caption">
+                    <label>
+                        <input ng-if='editor.multiple == 0' type="radio" disabled>
+                        <input ng-if='editor.multiple == 1' type="checkbox" disabled>
+                        <span ng-if='item.title'>{{item.title}}</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--图片多列-->
+        <div class="choices choices_div" ng-if='editor.rule_image_type == 1'>
+            <div class="mini gallery" ng-repeat='item in editor.sub_rules'>
+                <div class="pic_wrapper">
+                    <div class="picture">
+                        <a class="cover" href="javascript:;">
+                            <img ng-if='!item.imgflag' ng-src="{{item.image}}" style="width: 50%;">
+                            <img ng-if='item.imgflag' ng-src="{{item.image}}" style="width: auto">
+                        </a>
+                        <!-- <div class="opts">
+                            <div class="inner">
+                                <label class="w_radio">
+                                    <input ng-if='editor.multiple == 0' type="radio" disabled checked>
+                                    <input ng-if='editor.multiple == 1' type="checkbox" disabled>
+                                    <span>选这个</span>
+                                </label>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="caption">
+                    <label>
+                        <input ng-if='editor.multiple == 0' type="radio" disabled>
+                        <input ng-if='editor.multiple == 1' type="checkbox" disabled>
+                        <span ng-if='item.title'>{{item.title}}</span>
+                    </label>
+                </div>
+                
+                <!-- <p class="caption" ng-if='item.title'>
+                    <span class="inner">{{item.title}}</span>
+                </p> -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+.mgb15{margin-bottom:15px;}
+.main{overflow-x:visible;}
+.w50{width:50px;}
+.chart_items{min-height:300px;border:1px solid #e4e4e4;}
+/*个人中心*/
+.personal_center{border:1px solid #e5e5e5;}
+/*个人信息*/
+.personal_items{padding:20px;background:#f8f8f8;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.personal_items .img_wrap{width:80px;height: 80px;margin-right: 20px;}
+.personal_items .img_wrap img{width:80px;height:80px;}
+.personal_items .personal_content{-webkit-box-flex:1;margin-left:10px;}
+.personal_items .personal_content .info_list{font-size:14px;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.personal_items .personal_content .info_list .info_name{width:73px;color:#999;display:block;}
+.personal_items .personal_content .info_list .items_title{-webkit-box-flex:1;}
+.personal_items .personal_content .info_list .items_title span{display:inline-block;vertical-align:middle;padding:0 5px;color:#999;}
+.personal_items .personal_content .info_list .items_title a{}
+/*个人资金*/
+.money_items{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;font-size:12px;padding:10px 0;border-top: 1px solid #e5e5e5;}
+.money_items li{-webkit-box-flex:1;display:block;padding:0 15px;border-right:1px solid #e5e5e5 }
+.money_items li:last-child{border-right:0;}
+.money_items li .items_title{margin-bottom:10px;}
+.money_items li .money_bottom{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:justify;}
+.money_items li .money_bottom .bottom_left{-webkit-box-flex:1;text-align:left;}
+.money_items li .money_bottom .bottom_left .money_num{font-size: 25px;color: #f60;}
+.money_items li .money_bottom .bottom_right{-webkit-box-flex:1;display:block;text-align:right;}
+/*表格*/
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+	border: 0px;
+    border-top: 1px solid #ddd;
+	}
+.table-bordered{border-left: 0px; border-right: 0px;}
+.table-striped>tbody>tr:nth-of-type(odd) {background-color: #fff;}
+.help-td{width: 18px; height: 18px; display: inline-block; background: rgb(184, 184, 184); color: #fff; border-radius: 9px; margin-left: 5px;}
+.tooltip-inner{color: #999; background-color: #fff; box-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+.popover-title{background-color: #fff; border-bottom: 0px ;}
+.popover{max-width: 467px; color:#666666; font-size: 12px;}
+.porel{position: relative;}
+.poabl{position: absolute; left: 48px; top: 335px;}
+.help-td:hover .poabl{display: block;}
+.green_f04{color:#06bf04; font-weight: bold;}
+.red_f00 {color:#f00; font-weight: bold;}

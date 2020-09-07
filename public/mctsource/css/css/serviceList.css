@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/**
+* creater 华亢 2018/07/09
+*/
+.service-item .item-top .item-type {
+  position: absolute; }
+
+/* 采用grid 8 进行布局 */
+.red {
+  color: red; }
+
+.hide {
+  display: none; }
+
+.noData {
+  font: 48px/64px '微软雅黑';
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 24px 0;
+  text-align: center; }
+
+/**
+* creater 华亢 2018/07/09
+*/
+.top-wrap .top {
+  font-size: 16px; }
+.top-wrap .top ul {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6; }
+.top-wrap .top ul li {
+  display: inline-block;
+  padding: 0 8px; }
+.top-wrap .top ul .schedule {
+  cursor: pointer; }
+.top-wrap .top ul .checked {
+  font-weight: bold;
+  color: #3197FA; }
+
+.article-wrap {
+  width: 80%;
+  margin: 0 auto; }
+
+.service-comtent .service-item {
+  width: 30%;
+  margin: 16px 14px 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+.service-comtent .first-item .item-top {
+  border-top: 2px solid #d0821d;
+  background-color: #ffeacf; }
+.service-comtent .first-item .item-top .item-type {
+  background: #d0821d; }
+.service-comtent .second-item .item-top {
+  border-top: 2px solid #e3ac2e;
+  background-color: #fef6e3; }
+.service-comtent .second-item .item-top .item-type {
+  background: #e3ac2e; }
+.service-comtent .third-item .item-top {
+  border-top: 2px solid #b9b91d;
+  background-color: #f9f8f3; }
+.service-comtent .third-item .item-top .item-type {
+  background: #b9b91d; }
+
+.service-item {
+  position: relative; }
+.service-item .item-top {
+  text-align: center;
+  position: relative;
+  padding: 32px 0; }
+.service-item .item-top p {
+  font: 24px/32px '微软雅黑';
+  margin-bottom: 8px; }
+.service-item .item-top .item-type {
+  right: 48px;
+  top: 24px;
+  padding: 2px 4px;
+  border-radius: 16px;
+  color: white; }
+.service-item .item-top .num {
+  font-size: 32px; }
+.service-item .item-content {
+  padding: 0 24px 24px; }
+.service-item .item-content dl dt {
+  margin-top: 24px; }
+.service-item .item-content dl dd {
+  margin-top: 8px;
+  line-height: 24px;
+  color: #666; }
+.service-item .item-footer {
+  width: 100%;
+  text-align: center;
+  padding: 16px 0; }
+.service-item .item-footer p {
+  color: #e0883c;
+  margin-bottom: 8px; }
+.service-item .item-footer p button {
+  color: white;
+  background: #ff4343;
+  border: 0;
+  outline: 0;
+  width: 48%;
+  line-height: 40px;
+  border-radius: 24px; }
+
+/*# sourceMappingURL=serviceList.css.map */

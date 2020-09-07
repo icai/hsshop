@@ -1,0 +1,214 @@
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+.clearfix:before,.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/*顶部搜索区域*/
+.help_top{
+	width: 100%;
+	height: 300px;
+	min-width: 1200px;
+	background: url("../image/help_banner.jpg") no-repeat center center;
+}
+.help_top_content{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+.help_top_left{
+	padding-top: 5px;
+	font-size: 36px;
+	color: #FFFFFF;
+	padding-left: 130px;
+}
+.help_top_right{
+
+}
+.help_top_right .right_inp{
+	width:630px;
+	height:44px;
+	background:rgba(255,255,255,1);
+	border-radius:4px 0 0 4px;
+	outline:none;
+	padding: 0;
+	border-width:0;
+	font-size: 14px;
+	padding-left: 10px;
+	line-height: 44px;
+}
+.help_top_right .right_btn{
+	width:80px;
+	height:44px;
+	background:rgba(49,151,250,1);
+	border-radius:0px 4px 4px 0px;
+	position: relative;
+	cursor: pointer;
+}
+.help_top_right .right_btn span{
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	background: url("../image/help_search.png") no-repeat;
+	background-size: cover;
+	top: 50%;
+	left: 50%;
+	margin: -12px 0 0 -12px;
+}
+.help_top_right_tip{
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 11px 10px;
+}
+.help_top_right_tip span{
+	margin-right: 28px;
+}
+
+/*帮助中心 内容导航*/
+.help_nav{
+	width: 100%;
+	padding-top: 21px;
+	background-color: #F0F0F0;
+	box-shadow:1px 0px 0px rgba(240,240,240,1);
+}
+.help_nav_content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.help_nav_content a{
+	color: #4D4D4D;
+	font-size: 16px;
+	display: inline-block;
+	margin-right: 56px;
+	padding-bottom: 17px;
+}
+
+.help_nav_content a.nav_active{
+	border-bottom: 2px solid #3197FA;
+	color: #3197FA;
+}
+
+/*帮助中心 常见问题*/
+.help_details{
+	width: 1200px;
+	margin: 0 auto;
+}
+.help_details_title{
+	font-size: 22px;
+	color: #333333;
+	padding-top: 64px;
+}
+.help_details_content {
+	padding-top: 49px;
+}
+.help_details_content li{
+	float: left;
+	width: 33.333%;
+	height: 220px;
+	border-top: 1px solid #E6E6E6;
+	border-left: 1px solid #E6E6E6;
+	box-sizing: border-box;
+}
+.help_details_content li.border_bottom{
+	border-bottom: 1px solid #E6E6E6;
+}
+.help_details_content li.border_right{
+	border-right: 1px solid #E6E6E6;
+}
+.help_details_content li h4{
+	font-size: 16px;
+	color: #333333;
+	padding: 32px 0 24px 20px;
+	padding-right: 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.help_details_content li div{
+	display: block;
+	margin-bottom: 15px;
+	color: #3197FA;
+	font-size: 14px;
+	margin-left: 20px;
+	max-width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.help_details_content li div span{
+	display: inline-block;
+	cursor: pointer;
+	height: 15px;
+	box-sizing: border-box;
+	color: #3197FA;
+}
+.help_details_content li div:hover span{
+	border-bottom: 1px solid #3197FA;
+}
+
+/*帮助中心 热门专题*/
+.help_hot_special{
+	width: 1200px;
+	margin: 0 auto;
+}
+.help_hot_special_title{
+	font-size: 22px;
+	color: #333333;
+	padding: 60px 0 53px 0;
+}
+
+.help_hot_special_content{
+	padding-bottom: 75px;
+}
+.help_hot_special_content li{
+	float: left;
+	width: 285px;
+	height: 170px;
+	border: 1px solid #E6E6E6;
+	margin: 0 20px 20px 0;
+	box-sizing: border-box;
+	line-height: 170px;
+}
+.help_hot_special_content li.hot_li{
+	margin-right: 0;
+}
+.help_hot_special_content li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.help_hot_special_content li img{
+	width: 80px;
+	height: 80px;
+	padding: 0 28px 0 55px;
+}
+.help_hot_special_content li span{
+	color: #333333;
+	font-size: 18px;
+}
+.help_nav_content a:hover{
+	color:#3197FA;
+}

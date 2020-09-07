@@ -1,0 +1,180 @@
+	[v-cloak]{
+		display: none;
+	}
+	.addressManagement{
+		font-size: 15px;
+	}
+	.flex_between{
+	    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+	    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+	    justify-content: space-between;
+	    -moz-justify-content: space-between;
+	    -ms-justify-content: space-between;
+	    -webkit-justify-content: space-between;
+	    align-items: center;
+	    -webkit-align-items: center;
+	    -moz--align-items:center;
+  	}
+  	.flex_around{
+	    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+	    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+	    justify-content: space-around;
+	    -moz-justify-content: space-around;
+	    -ms-justify-content: space-around;
+	    -webkit-justify-content: space-around;
+	    align-items: center;
+	    -webkit-align-items: center;
+	    -moz--align-items:center;
+	}
+	 .flex_star{
+	    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+	    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+	    justify-content: flex-start;
+	    -moz-justify-content: flex-start;
+	    -ms-justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	    align-items: center;
+	    -webkit-align-items: center;
+	    -moz--align-items:center;
+	}
+  	/*地址列表*/
+  	.address_list{
+  	}
+  	.address_list .address_detail{
+	    padding: 10px 20px;
+	    border-bottom: 1px solid #ececec;
+  	}
+  	.address_list .address_detail .address_title{
+    	height:35px;
+    	line-height: 35px;
+  	}
+  	.address_list_sort{
+    	border-bottom: 10px solid #ececec;
+    	background: #fff;
+  	}
+  	.address_desc{
+  		line-height:25px
+  	}
+  	.address_desc span{
+  		margin-right: 5px;
+  	}
+  	.operation{
+	    padding: 0 20px;
+	    height: 40px;
+	    color: #999;
+	}
+
+  	.operation img{
+	    width:20px;
+	    height:20px;
+	}
+	.slecect_img img{
+	    margin-right: 5px;
+	}
+	.editor_address {
+	    margin-right: 10px;
+	}
+	.editor_address img{
+	    margin-right: 3px;
+	}
+	    /*底部地址添加*/
+	.footer_add_address{
+	    position: fixed;
+	    bottom: 2px;
+	    left: 0;
+	    width: 100%;
+	}
+	.footer_add_address div{
+	    width: 50%;
+	    text-align: center;
+	}
+	.footer_add_address div img{
+	    width:auto;
+	    border-radius: 5px;
+	    height: 40px;
+	}
+	body{
+		background: #fff;
+	}
+	.mask{
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background: rgb(0,0,0);
+		opacity: 0.7;
+		z-index:100;
+		
+	}
+	.mask_content{
+		position: fixed;
+		top:45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		background: #fff;
+		z-index: 101;
+		width:270px;
+		height: 125px;
+		border-radius: 4px;
+	}
+	.mask_content div:nth-child(1){
+		line-height: 80px;
+		height: 80px;
+		text-align: center;
+		color: #000;
+		position: relative;
+	}
+	.mask_content div:nth-child(1):after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: #DCDCDC;
+		bottom: 0;
+		left: 0;
+		-webkit-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	.mask_content div:nth-child(2){
+		height: 45px;
+		line-height: 45px;
+		display: flex;
+	}
+	.mask_content div:nth-child(2) span{
+		flex-grow:1;
+		text-align: center;
+		color: #666666;
+		position: relative;
+		font-size: 16px;
+	}
+	.mask_content div:nth-child(2) span:nth-child(2):after{
+		content: '';
+		position: absolute;
+		width: 1px;
+		height: 100%;
+		background-color: #DCDCDC;
+		top: 0;
+		left: 0;
+		-webkit-transform: scaleX(0.5);
+		transform: scaleX(0.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	.mask_content div:nth-child(2) span:nth-child(2){
+		color: #F72F37;
+	}

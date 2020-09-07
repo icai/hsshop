@@ -1,0 +1,11 @@
+<div class="control-group">
+    <div class="custom-notice" ng-style="{'background':editor.colorBg,'color':editor.txtBg}">
+        <div class="custom-notice-inner">
+            <div class="custom-notice-scroll">
+                <!--许立 2018年08月27日 微页面公告前增加公告二字-->
+                <span ng-show="!editor.content.length">请填写内容，如果过长，将会在手机上滚动显示</span>
+                <span ng-show="editor.content.length">公告：{{editor.content}}</span>
+            </div>
+        </div>
+    </div>
+</div>

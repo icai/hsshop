@@ -1,0 +1,67 @@
+@extends('staff.base.head')
+@section('head.css')
+    <link rel="stylesheet" href="{{ config('app.source_url') }}staff/hsadmin/css/7 bannerlist.css" />
+@endsection
+@section('slidebar')
+    @include('staff.base.slidebar');
+@endsection
+@section('content')
+    <div class="main">
+        <div class="content">
+        	<div class="content_top">
+                <button type="button" class="btn btn-primary">当前位置</button>
+                <span>Banner列表</span>
+                <a href="/staff/banner/sellerappadAdd" type="submit" class="btn btn-primary btn-right">新建</a>
+            </div>
+            <div class="main_content">          	          
+            	<ul class="sheet table_title flex-between">
+                    <li>
+                        <label><input type="checkbox" name="" class="allSel" />全选</label>
+                    </li>
+                    <li>广告名称</li>
+                    <li>广告图片</li>
+                    <li>广告连接</li>
+                    <li>显示时间</li>
+                    <li>是否开启</li>
+                    <li>创建时间</li>
+                    <li class="fun">操作</li>
+                </ul>
+                @forelse($data[0]['data'] as $val)
+                <ul data-id="{{ $val['id'] }}" class="sheet table_body flex-between">
+                    <li class="fun"><label><input data-id="{{ $val['id'] }}" type="checkbox" name='' class="ulradio" value="" /></label></li>
+                    <li>{{ $val['title']}}</li>
+                    <li>
+                    	<div class="sheet-img">                    		
+	                    	<img src="{{ imgUrl() }}{{ $val['img'] }}"/>
+                    	</div>
+                    </li>
+                    <li>{{ $val['url']}}</li>
+                    <li>{{ $val['sec']}}</li>
+                    <li>@if($val['is_open']==1)是 @else 否 @endif</li>
+                    <li>{{ $val['created_at'] }}</li>
+                    <li class="fun">
+                        <a href="/staff/banner/sellerappadAdd?id={{ $val['id'] }}" class="modify1">编辑</a>
+                        <a href="##" data-id="{{ $val['id'] }}" data-con="del" class="del butta">删除</a>
+                        @if($val['is_open'] == 0)
+                           <a href="##" data-id="{{ $val['id'] }}" data-status="1" class="open butta">启用</a>
+                        @else
+                            <a href="##" data-id="{{ $val['id'] }}" data-status="0"  class="open butta">关闭</a>
+                        @endif
+                    </li>
+                </ul>
+                @empty
+                暂无数据
+                @endforelse
+                <div class="flex-left">
+                	<a class="btn btn-primary del_bom">删除</a>
+                </div>
+                <div class="main_bottom flex_end">
+                    {!! $data[1] !!}
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+@section('foot.js')
+    <script src="{{ config('app.source_url') }}staff/hsadmin/js/selleradlist.js" type="text/javascript" charset="utf-8"></script>
+@endsection

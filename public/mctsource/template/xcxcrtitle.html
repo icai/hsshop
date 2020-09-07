@@ -1,0 +1,229 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group">
+            <label class="control-label">
+                <em class="required">*</em>标题名：</label>
+            <div class="controls">
+                <input type="text" name="module_title" value="" class="form-control" ng-maxlength="100" ng-model="editors[index]['titleName']" required>
+                <p class="help-block error-message" ng-show="editorForm.module_title.$dirty && editorForm.module_title.$error.required || iserror && editorForm.module_title.$invalid">此字段为必填字段</p>
+                <p class="help-block error-message" ng-show="editorForm.module_title.$dirty && editorForm.module_title.$error.maxlength || iserror && editorForm.module_title.$invalid">最大长度不能超过100位</p>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">标题模版：</label>
+            <div class="controls">
+                <label class="radio inline">
+                    <input type="radio" name="title_template" value="1" ng-model="editors[index]['titleStyle']">传统样式</label>
+                <label class="radio inline">
+                    <input type="radio" name="title_template" value="2" ng-model="editors[index]['titleStyle']">模仿微信图文页样式</label>
+            </div>
+        </div>
+        <div ng-show="editors[index]['titleStyle']==1">
+            <div class="control-group">
+                <label class="control-label">副标题：</label>
+                <div class="controls">
+                    <input type="hidden" class="js-time-holder hasDatepicker">
+                    <input type="text" class="form-control" name="sub_title" value="" ng-model="editors[index]['subTitle']">
+                    <a href="javascript: void(0);" class="js-time"></a></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">显示：</label>
+                <div class="controls">
+                    <label class="radio inline">
+                        <input type="radio" name="show_method" value="1" ng-model="editors[index]['showPosition']" ng-checked="editors[index]['showPosition']==1">居左显示</label>
+                    <label class="radio inline">
+                        <input type="radio" name="show_method" value="2" ng-model="editors[index]['showPosition']" ng-checked="editors[index]['showPosition']==2">居中显示</label>
+                    <label class="radio inline">
+                        <input type="radio" name="show_method" value="3" ng-model="editors[index]['showPosition']" ng-checked="editors[index]['showPosition']==3">居右显示</label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">背景颜色：</label>
+                <div class="controls">
+                    <input type="color" class="form-control" name="color" ng-model="editors[index]['bgColor']">
+                    <!--add by 韩瑜 2018-9-5 添加16进制颜色输入框-->
+			        <input class="form-control color_input" maxlength="7" type="text" value="#f8f8f8" ng-model="editors[index]['bgColor']" >
+			        <!--end-->
+                </div>
+            </div>
+            <div class="control-group js-collection-region" ng-if="editors[index]['addLink']">
+                <ul class="choices">
+                    <li class="choice">
+                        <div class="control-group error">
+                            <label class="control-label">
+                                <em class="required">*</em>名称：</label>
+                            <div class="controls">
+                                <input type="text" name="titlec67" value="" ng-model="editors[index]['linkTitle']" class="form-control" required>
+                                <p class="help-block error-message" ng-show="editorForm.titlec67.$dirty && editorForm.titlec67.$error.required || iserror && editorForm.titlec67.$invalid">导航名称不能为空。</p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">
+                                <em class="required">*</em>链接：</label>
+                            <div class="controls">
+                                <div class="dropdown hover" ng-show="!editors[index]['chooseLink']">
+                                    <a class="js-dropdown-toggle dropdown-toggle control-action" id="setlink_{{index}}" href="javascript:void(0);">设置链接到的页面地址
+                                        <i class="caret"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,2)">微页面及分类</a></li>
+                                        <li>
+                                            <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,2)">商品及分类</a></li>
+                                        <li>
+                                            <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,2)">营销活动</a></li>
+                                        <li>
+                                            <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/index/index',3)">店铺主页</a></li>
+                                        <li>
+                                            <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/member/index/index',4)">会员主页</a>
+                                        </li>
+                                        <li>
+                                            <a ng-if="wai_setting" data-type="community" href="javascript:void(0);" ng-click="changeWaiLink($index,1,$event)">小程序路径</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,group_url,4)">拼团</a></li>
+                                        <li>
+                                            <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,community_url,4)">微社区</a></li> -->
+                                    </ul>
+                                </div>
+                                <div class="linkTo control-action clearfix" ng-show="editors[index]['chooseLink']">
+                                    <div class="pull-left js-link-to link-to">
+                                        <a href="javascript:void(0);" class="new-window link-to-title">
+                                            <span class="label label-success" id="link_name_{{index}}">{{editors[index]['linkName']}}</span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="js-delete-link link-to-title close-modal" title="删除" ng-click="removeLink($index,2)">×</a></div>
+                                    <div class="dropdown hover pull-right">
+                                        <a class="dropdown-toggle" href="javascript:void(0);" ng-mouseover="showDown($index,2)" id="change_link_{{index}}">修改
+                                            <i class="caret"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" ng-show="editors[index]['dropDown']">
+                                            <li>
+                                                <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,2)">微页面及分类</a></li>
+                                            <li>
+                                                <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,2)">商品及分类</a></li>
+                                            <li>
+                                                <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,2)">营销活动</a></li>
+                                            <li>
+                                                <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/index/index',3)">店铺主页</a></li>
+                                            <li>
+                                                <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/member/index/index',4)">会员主页</a></li>
+                                            <li>
+                                                <a ng-if="wai_setting" data-type="community" href="javascript:void(0);" ng-click="changeWaiLink($index,1,$event)">小程序路径</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,group_url,4)">拼团</a></li>
+                                            <li>
+                                                <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,community_url,4)">微社区</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <span class="action delete close-modal" title="删除" ng-click="deleteLinkWb()">×</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="control-group options" ng-show="!editors[index]['addLink']" ng-click="addLink()">
+                <a href="javascript:void(0);" class="add-option js-add-option">
+                    <i class="icon-add"></i>
+                    <span>添加一个文本导航</span>
+                </a>
+            </div>
+        </div>
+        <div ng-show="editors[index]['titleStyle']==2">
+            <div class="control-group">
+                <label class="control-label">日期：</label>
+                <div class="controls">
+                    <input type="text" name="wx_title_date" value="2016-11-22" maxlength="100" class="form-control" ng-model="editors[index]['date']" id="date" ng-click="bindDate()"></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">作者：</label>
+                <div class="controls">
+                    <input type="text" name="wx_title_date" value="2016-11-22" maxlength="100" class="form-control" ng-model="editors[index]['author']">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">链接标题：</label>
+                <div class="controls">
+                    <input type="text" name="wx_title_date" value="2016-11-22" maxlength="100" class="form-control" ng-model="editors[index]['wlinkTitle']">
+                </div>
+            </div>
+            <!--  <div class="control-group">
+                 <label class="control-label">链接地址：</label>
+                 <div class="controls">
+                     <label class="radio">
+                         <input type="radio" name="wx_title_link_type" value="0" ng-model="editors[index]['wlinkUrlChoose']">引导关注
+                         <a href="/v2/setting/weixin" target="_blank" style="margin-left:20px" class="new-window">设置快速关注链接</a>
+                     </label>
+                 </div>
+             </div> -->
+            <div class="control-group">
+                <label class="control-label">链接地址：</label>
+                <div class="controls js-wx-link">
+                    <label class="radio wx-template-radio" style="display:flex;align-items:center">
+                        <input type="radio" class="wx_title_link_type" name="wx_title_link_type" value="1" ng-model="editors[index]['wlinkUrlChoose']">
+                        <span class="other_link">其它链接</span>
+                        <input type="hidden" name="wx_link_url">
+                        <div class="dropdown hover" ng-show="!editors[index]['chooseLink']">
+                            <a class="js-dropdown-toggle dropdown-toggle control-action" href="javascript:void(0);" id="stlink_{{index}}">设置链接到的页面地址
+                                <i class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,2)">微页面及分类</a>
+                                </li>
+                                <li>
+                                    <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,2)">商品及分类</a>
+                                </li>
+                                <li>
+                                    <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/index/index',3)">店铺主页</a>
+                                </li>
+                                <li>
+                                    <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/member/index/index',4)">会员主页</a></li>
+                                <li>
+                                    <a ng-if="wai_setting" data-type="community" href="javascript:void(0);" ng-click="changeWaiLink($index,1,$event)">小程序路径</a>
+                                </li>
+                              <!--   <li>
+                                    <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,group_url,4)">拼团</a></li>
+                                <li>
+                                    <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,community_url,4)">微社区</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="linkTo control-action clearfix" ng-show="editors[index]['chooseLink']">
+                            <div class="pull-left js-link-to link-to">
+                                <a href="javascript:void(0);" class="new-window link-to-title">
+                                    <span class="label label-success" id="link_{{index}}">{{editors[index]['linkName']}}</span>
+                                </a>
+                                <a href="javascript:void(0);" class="js-delete-link link-to-title close-modal" title="删除" ng-click="removeLink($index,2)">×</a></div>
+                            <div class="dropdown hover pull-right">
+                                <a class="dropdown-toggle" href="javascript:void(0);" ng-mouseover="showDown($index,2)" id="cgLink_{{index}}">修改
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu" ng-show="editors[index]['dropDown']">
+                                    <li>
+                                        <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="choosePageLink($index,2)">微页面及分类</a></li>
+                                    <li>
+                                        <a class="js-modal-goods" data-type="goods" href="javascript:void(0);" ng-click="chooseShop($index,2)">商品及分类</a></li>
+                                    <li>
+                                        <a class="js-modal-homepage" data-type="homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/index/index',3)">店铺主页</a></li>
+                                    <li>
+                                        <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,'/pages/member/index/index',4)">会员主页</a></li>
+                                    <li>
+                                        <a ng-if="wai_setting" data-type="community" href="javascript:void(0);" ng-click="changeWaiLink($index,1,$event)">小程序路径</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a class="js-modal-usercenter" data-type="usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,group_url,4)">拼团</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-usercenter" data-type="community" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,2,community_url,4)">微社区</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

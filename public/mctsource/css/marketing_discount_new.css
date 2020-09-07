@@ -1,0 +1,98 @@
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+.content label{font-weight: normal;}
+.content font{height: 30px; line-height: 30px; padding-left: 15px;}
+.flex_star{display: flex; justify-content: flex-start; align-items: center;}
+.flex_center{display: flex; justify-content: space-between; align-items: center;}
+
+.rtv{position: relative;}
+.abt{position: absolute; top: 0; left: 0;}
+
+.float_left{float: left;}
+.float_right{float: right;}
+.cleac_float{overflow: hidden;}
+
+
+.content .content_top {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E5E5E5;}
+.content .content_top ul{overflow: hidden; margin-bottom: -1px;}
+.content .content_top ul .active{background: white; border-bottom-color: white;}
+.content .content_top ul li{float: left; padding: 5px 10px; background: #F8F8F8; border: 1px solid #E5E5E5; border-right: none;}
+.content .content_top ul li:nth-child(4){border-right: 1px solid #E5E5E5;}
+.content .content_top ul li:hover{cursor: pointer;}
+.content .content_top a span{display: inline-block; width: 15px; height: 15px; border-radius: 50%; text-align: center; line-height: 15px; background: #3c3; color: white;}
+
+.content .content_center .setDiscount{display: block; width: 100%; padding: 10px; margin: 10px 0; background: #F2F2F2;}
+.content .content_center form b{display: block; margin: 20px 0 10px 30px; font-size: 15px;}
+.content .content_center form i{display: inline-block; color: #ff0057;}
+.content .content_center form .Gp{display: flex; justify-content: flex-start; align-items: center; padding: 10px 0; border-bottom: 1px dashed #CCCCCC;}
+.content .content_center form .BCtime{border-bottom: none;}
+.content .content_center form .date{padding-left: 16px;}
+.content .content_center form .cycleRepet{padding: 10px; border: 1px solid #CCCCCC;}
+.content .content_center form .cycleRepet .month select{width: 115px; height: 32px; margin-left: 16px; border-radius: 5px; border-color: #CCCCCC;}
+.content .content_center form .cycleRepet .weekDiv{display: inline-block; /*display: flex;*/ overflow: hidden;}
+.content .content_center form .cycleRepet .weekDiv .week{ position: relative; float: left; height: 40px; width: 40px; line-height: 40px; text-align: center; margin-right: 5px; color: #CCCCCC; border: 1px solid #CCCCCC; }
+.content .content_center form .cycleRepet .weekDiv .week:hover{cursor: pointer;}
+.content .content_center form .cycleRepet .weekDiv .week .weekBoard{ display: none; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: #CCCCCC; opacity: .7; }
+.content .content_center form .cycleRepet .weekDiv .weekSelect{border: 1px solid #00A0F8; box-shadow: 0 0 8px #00A0F8 inset;} 
+.content .content_center form .hint{font-size: 12px; color: #999;}
+.content .content_center form .discountSelect{display: flex; justify-content: flex-start; align-items: center;}
+.content .content_center form .discountSelect label{padding-right: 20px;}
+.content .content_center form .discountSelect input[type='text']{display: inline-block; width: 50px; height: 30px;}
+
+.content .content_center form  .selectGoods{border: 1px solid #CCCCCC;}
+.content .content_center form  .selectGoods .selectGoods_top{background: #f2f2f2; border-bottom: 1px solid #CCCCCC;}
+.content .content_center form  .selectGoods .selectGoods_top ul{display: flex; justify-content: flex-start; align-items: center; margin-bottom: -1px;}
+.content .content_center form  .selectGoods .selectGoods_top ul li{padding: 10px 20px; font-size: 15px; font-weight: 500; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; background: #F8F8F8;}
+.content .content_center form  .selectGoods .selectGoods_top ul .li_active{background: white; border-bottom: 2px solid #FF6600;}
+.content .content_center form  .selectGoods .selectGoods_top ul li:hover{cursor: pointer;}
+
+.content .content_center form  .selectGoods .change_show_1 .goodsGroup{height: 50px; display: flex; justify-content: flex-start; align-items: center; padding-left: 20px; border-bottom: 1px solid #CCCCCC;} 
+.content .content_center form  .selectGoods .change_show_1 .goodsGroup select{height: 34px; width: 150px; margin: 0 10px; border-radius: 5px;}
+.content .content_center form  .selectGoods .change_show_1 .goodsGroup input{ width: 150px; margin: 0 10px;}
+
+.content .content_center form  .selectGoods .change_show_1 .goodsMsg{min-height: 300px; height: auto;}
+.content .content_center form  .selectGoods .change_show_1 .msgTitle{height: 50px; padding: 0 20px;}
+.content .content_center form  .selectGoods .change_show_1 .msgTitle li{padding: 0 20px;}
+.content .content_center form  .selectGoods .change_show_1 .msgTitle li:nth-child(1){width: 70%;}
+.content .content_center form  .selectGoods .change_show_1 .msgTitle li:nth-child(2){width: 15%;}
+.content .content_center form  .selectGoods .change_show_1 .msgTitle li:nth-child(3){width: 15%;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent{height: 50px; padding: 0 20px; border-bottom: 1px dashed #CCCCCC;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent:hover{background: #F8F8F8;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent li span p{color: #ff6683; font-weight: 600;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent li:nth-child(1){width: 70%; font-size: 13px;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent li:nth-child(2){width: 15%; padding: 0 0 0 20px;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent li:nth-child(3){width: 15%;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent .goodsImg{width: 40px; height: 40px;}
+.content .content_center form  .selectGoods .change_show_1 .msgContent .ulMsgContent .goodsImg img{width: 100%; height: 100%;}
+.content .content_center form  .selectGoods .change_show_1 .selectGoods_bottom{padding:10px;}
+
+.content .content_center form  .selectGoods .change_show_2{min-height: 300px;}
+.content .content_center form  .selectGoods .change_show_2 p{text-align: center; padding-top: 140px;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_title{padding: 10px; border-bottom: 1px solid #CCCCCC;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_title .explain{display: inline-block; width: 15px; height: 15px; text-align: center; line-height: 15px; border-radius: 50%; color: white; background: #CCCCCC;} 
+.content .content_center form  .selectGoods .change_show_2 .bulk_title .explain:hover{cursor: pointer; background: #3c3;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_title .title_left{display: inline-block; width: 55%; padding-left: 250px;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_title .title_left input{width: 50px;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_title .title_left .bulk_discount, .bulk_sale{width: 120px;}
+
+.content .content_center form  .selectGoods .change_show_2 .bulk_content{min-height: 300px; height: auto;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul{padding: 10px; border-bottom: 1px dashed #ccc;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul:hover{background: #F8F8F8;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li{padding: 10px; display: flex; justify-content: space-around; align-items: center; width: 20%;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li .form-group{width: 150px; margin-left: 0; margin-right: 0;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li .titleGp{display: inline-block; width: 45%; font-size: 12px;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li .titleGp a{display: inline-block; height: 40px; overflow: hidden;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li .titleGp .price{color: #FF6600; font-weight: bold;} 
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li .goods_img{width: 40px; height: 40px; display: inline-block;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li .goods_img img{width: 100%; height: 100%;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li p{display: inline-block; padding-top: 0;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_content ul li input[type='text']{width: 60px;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_bottom{padding: 10px;}
+.content .content_center form  .selectGoods .change_show_2 .bulk_bottom .bulk_bottom_right p{display: inline-block; padding-top: 0;}
+
+.content .content_center form  .content_bottom{position: fixed; left: 210px; bottom: 0; z-index: 120; text-align: center; line-height: 50px; height: 50px; width: calc(100% - 420px); background: #ffc;}
+
+.hoverImg{top: 20px; z-index: 100; box-shadow: 0 0 10px #CCCCCC;}
+
+/*popover的样式覆盖*/
+.popover-content{border:2px solid black; border-radius: 5px;}

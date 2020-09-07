@@ -1,0 +1,102 @@
+.clearfix:after {content: ""; display: block;clear: both;}  
+.phone-call{display: none;}
+.content{
+    position: relative;
+}
+.content .banner{
+    width: 100%;
+    height: 100%;
+}
+.case-main-program{
+    padding-bottom: 20px;
+}
+.case-main-micromall{
+    padding-top: 20px;
+}
+.case-main-program span{
+    display: block;
+    padding: 5px 0px 5px 0px;
+    font-size:16px;
+}
+.case-main-micromall span{
+    display: block;
+    padding: 5px 0px 5px 0px;
+    font-size:16px;
+}
+.case-main .case-main-program .case-main-program-top{
+    width: 100%;
+}
+.case-main .case-main-program .case-main-program-top img{
+    width: 100%;
+}
+.case-main-program-bottom{
+    min-height: 200px;
+}
+.case-main .case-main-program .case-main-program-bottom .case-main-program-bottom-ul{
+    text-align: center;
+}
+.case-main .case-main-micromall .case-main-micromall-bottom .case-main-micromall-bottom-ul{
+    text-align: center;
+}
+
+.case-main .case-main-program .case-main-program-bottom li{
+    display: inline-block;
+    width: 40%;
+    margin: 10px 10px 10px 10px;
+}
+.case-main .case-main-micromall .case-main-micromall-bottom li img{
+    width: 100%;
+}
+.case-main .case-main-micromall .case-main-micromall-bottom li{
+    display: inline-block;
+    width: 40%;
+    margin: 10px 10px 10px 10px;
+}
+.case-main-program-ul{
+    width: 100%;
+    text-align: center
+}
+.case-main-program-ul li{
+    vertical-align:top;
+}
+.case-main-program-ul img{
+    height: 100px;
+    width:100px;
+}
+.case-main-program-nocase{
+    min-height: 400px; 
+    text-align: center;
+    line-height: 400px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* 点击放大图片 */
+.amp-img{
+    position: fixed;
+    z-index: 1000;
+    margin-left: -80px;
+    margin-top:-80px;
+    top:50%;
+    left: 50%;
+    height: 160px;
+    width: 160px;
+}
+.amp-img img{
+    height: 160px;
+    width: 160px;
+}
+.amp-img-close{
+    position: fixed;
+    z-index: 1000;
+    margin-left: -18px;
+    margin-top:-18px;
+    top:70%;
+    left: 50%;
+    height: 36px;
+    width: 36px;
+}
+.amp-img-close img{
+    display: none;
+    height: 36px;
+    width: 36px;
+    }

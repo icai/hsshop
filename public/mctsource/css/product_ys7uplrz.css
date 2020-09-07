@@ -1,0 +1,439 @@
+table .cell-40 {
+    width: 40%;
+}
+.js-list-filter-region {
+    position:relative;
+}
+.common-helps-entry {
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.clearfix::after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.common-helps-entry .help-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    line-height: 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #fff;
+    background: #3c3;
+    text-align: center;
+}
+.common-helps-entry .help-icon:after {
+    content: "?";
+}
+
+/*列表*/
+/*没有数据*/
+.no-result {
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 39px 0;
+}
+
+/*导入商品素材弹窗*/
+ .form-horizontal .control-group {
+     margin-bottom: 10px;
+ }
+ 
+ .form-horizontal .control-label {
+     width: 120px;
+     font-size: 14px;
+     line-height: 18px;
+     float: left;
+ }
+ 
+ .form-horizontal .controls {
+     margin-left: 130px;
+     word-break: break-all;
+ }
+ 
+ .form-horizontal .control-action {
+     padding-top: 5px;
+     display: inline-block;
+     font-size: 14px;
+     line-height: 18px;
+ }
+ 
+ .file-select-button {
+     position: relative;
+     overflow: hidden;
+     width: 80px;
+     background: none;
+     padding: 0;
+ }
+ 
+ .form-horizontal .control-action {
+     padding-top: 5px;
+     display: inline-block;
+     font-size: 14px;
+     line-height: 18px;
+ }
+ 
+ .file-select-button input {
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin: 0;
+     opacity: 0;
+     filter: alpha(opacity=0);
+     font-size: 23px;
+     direction: ltr;
+     cursor: pointer;
+     width: 80px;
+ }
+ 
+ .form-horizontal .help-block,
+ .form-horizontal .help-desc {
+     opacity: 0.6;
+     line-height: 14px;
+     font-size: 12px;
+     margin-top: 6px;
+     margin-bottom: 10px;
+ }
+ 
+ .upload-modal .help-section {
+     margin-top: 10px;
+ }
+ 
+ .choose {
+     color: #3197FA;
+ }
+ 
+ .down_load {
+     color: #3197FA;
+ }
+ 
+ .name_container {
+     display: none;
+ }
+ 
+ .size_container {
+     display: none;
+ }
+ 
+ .js-notice {
+     display: none;
+ }
+a:hover{color: #187dde;}
+
+
+/*分页*/
+.page{
+	text-align:right;
+}
+/*tip*/
+.tip {
+        height: 44px;
+        width: 450px;
+        background: red;
+        color: #fff;
+        text-align: center;
+        line-height: 44px;
+        font-size: 20px;
+        position: fixed;
+        top: 35px;
+        left: 50%;
+        margin-left: -225px;
+        display: none;
+    }
+.table-hover>tbody>tr:hover{background-color: #F8F8F8;}
+.table>tbody>tr>td{padding:12px 0;border-top: 0;border-bottom: 1px solid #E5E5E5;}
+.table>thead>tr>th{border-bottom: 1px solid #E5E5E5;}
+/*推广商品*/
+/*updata by 黄新琴 2018-8-27 推广弹窗样式*/
+label {
+    font-weight: 400;
+}
+.hs-btn, .input-append, .t-pop-header, .widget-promotion-main .qrcode-links, .xiazai {
+    text-align: center;
+}
+.widget-promotion {
+    position: absolute;
+    z-index: 100;
+    width: 360px;
+    height: 420px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.widget-promotion::after,.widget-promotion::before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    right: -19px;
+    border: 10px solid transparent;
+    border-left-color: white
+}
+
+.widget-promotion::before {
+    right: -21px;
+    border-left-color: #ccc
+}
+.widget-promotion-tab{
+    border-bottom: #CCCCCC 1px solid;
+}
+.widget-promotion-tab li {
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background: #f2f2f2;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.widget-promotion-tab li:first-child {
+    border-top-left-radius: 9px
+}
+
+.widget-promotion-tab li:last-child {
+    border-top-right-radius: 9px
+}
+.widget-promotion-tab li{
+    background: #fff;
+}
+.widget-promotion-tab li.active {
+    border-bottom: #3b9cf9 2px solid;
+}
+.widget-promotion-main {
+    min-height: 200px;
+    padding: 10px 15px 20px
+}
+
+.widget-promotion-main label {
+    padding:0 0 15px 20px;
+    font-size: 12px;
+    line-height: 12px
+}
+.widget-promotion-main .label-b{
+    padding:15px 0 0 20px;
+}
+.widget-promotion-main input[type="text"] {
+    width: 230px;
+    background-color: #f1f2f6;
+    border: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.widget-promotion-main .btn{
+    color: #fff;
+    background-color: #38f;
+    margin-left: -6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.widget-promotion-main button.btn {
+    width: 55px
+}
+
+.widget-promotion-main select {
+    width: 166px
+}
+
+.widget-promotion-main .widget-promotion-content {
+    margin-top: 15px;
+}
+.widget-promotion-content a{
+    color:#38f;
+}
+.qrcode{
+    width: 100%;
+}
+.widget-promotion-main .qrcode-right-sidebar {
+    background-color: #FFF;
+    width: 100%;
+    min-height: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+.widget-promotion-main .qrcode-popover.popover,.popover-fare {
+    z-index: 1000
+}
+
+.widget-promotion-main .qrcode-popover.popover .arrow,.popover-fare .arrow {
+    top: 33px
+}
+
+.widget-promotion-main .qrcode-popover .popover-inner {
+    width: 365px
+}
+
+.widget-promotion-main .qrcode-popover .popover-content {
+    padding: 0
+}
+
+.widget-promotion-main .qrcode-popover.loading .qrcode-content {
+    visibility: hidden
+}
+
+.widget-promotion-main .qrcode-header {
+    padding: 10px;
+    border-bottom: 1px solid #E4E4E4
+}
+
+.widget-promotion-main .qrcode-header .close {
+    margin-top: -3px
+}
+
+.widget-promotion-main .qrcode-title {
+    font-size: 16px
+}
+
+.widget-promotion-main .qrcode-content {
+    background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+}
+
+.widget-promotion-main .qrcode-content.hide {
+    display: none
+}
+
+.widget-promotion-main .qrcode-left-sidebar {
+    height: 200px;
+    overflow: auto;
+    width: 164px;
+    text-align: right
+}
+
+.widget-promotion-main .qrcode-left-sidebar .btn-delete-qrcode {
+    display: none
+}
+
+.widget-promotion-main .qrcode-left-sidebar li {
+    padding: 10px 20px 10px 10px;
+    border-bottom: 1px solid #E4E4E4;
+    cursor: pointer
+}
+
+.widget-promotion-main .qrcode-left-sidebar li.active {
+    position: relative;
+    background-color: #FFF
+}
+
+.widget-promotion-main .qrcode-left-sidebar li.active .btn-delete-qrcode {
+    display: inline-block
+}
+
+.widget-promotion-main .qrcode-left-sidebar li.active::after {
+    position: absolute;
+    top: 14px;
+    right: 1px;
+    content: "";
+    border: 4px solid transparent;
+    border-left: 6px solid #F60
+}
+
+.widget-promotion-main .qrcode-left-sidebar li:hover .btn-delete-qrcode {
+    display: inline-block
+}
+.widget-promotion-main .qrcode-right-sidebar img {
+    padding-top: 10px;
+    width: 150px;
+    margin: -10px -10px 0 0
+}
+.widget-promotion-main .qrcode-right-sidebar .qr_img {
+    text-align: center;
+}
+.widget-promotion-main .qrcode-right-sidebar .qr_img_xcx {
+    margin: 0 auto;
+    padding: 10px 0 0 25px;
+    width:200px;
+    height:200px;
+}
+
+.widget-promotion-main .qrcode-links{
+    text-align: center;
+}
+
+.widget-promotion-main .qrcode-create-button {
+    padding: 10px 20px 10px 10px;
+    display: block;
+    color: #38f;
+}
+
+.widget-promotion-main .qrcode-text {
+    color: #F60;
+    margin-top: 5px
+}
+
+.widget-promotion-main .qrcode-form-create {
+    margin: 20px 0 0;
+    background-color: #FFF;
+    overflow: hidden;
+    padding: 0 10px
+}
+
+.widget-promotion-main .btn-create-qrcode {
+    margin-right: 10px
+}
+
+.widget-promotion-main .qrcode-help {
+    margin-right: -20px;
+    font-size: 12px
+}
+
+.widget-promotion-main .form-horizontal .control-label {
+    margin-top: 0;
+    width: 100px;
+    float:left;
+}
+
+.widget-promotion-main .form-horizontal .control-group {
+    margin-bottom: 10px
+}
+
+.widget-promotion-main .form-horizontal .controls {
+    margin-left: 110px
+}
+
+.widget-promotion-main .form-horizontal label.radio.inline {
+    margin-top: 0
+}
+
+.widget-promotion-main .form-horizontal .input-append input[type=text],.widget-promotion-main .form-horizontal .input-prepend input[type=text] {
+    width: 120px
+}
+
+.widget-promotion-main .input-prepend .add-on,.widget-promotion-main .input-append .add-on {
+    width: 25px;
+    line-height:28px;
+}
+.alert {
+    padding: 10px 35px 10px 15px;
+    color: #333;
+    background-color: #FFF5CB;
+    border-color: #FDEEB2;
+    border-radius: 0;
+}
+.widget-promotion .alert {
+    margin-bottom: 10px;
+}
+.widget-promotion-main .qrcode-help {
+    margin-right: -20px;
+    font-size: 12px;
+}
+.qrcode-info{
+    display:none;
+}

@@ -1,0 +1,102 @@
+.pull-right {
+    float: right;
+}
+.tuan-list .title {
+    padding: 10px 0 10px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.img-outner{
+    width:100%;
+    max-height:200px;
+    overflow: hidden;
+}
+.img-outner img{
+    visibility:hidden;
+}
+.block:first-child {
+    margin-top: 0;
+}
+
+.block {
+    -webkit-border-image: url("../images/border-line-2.png") 2 stretch;
+    -moz-border-image: url("../images/border-line-2.png") 2 stretch;
+    border-image: url("../images/border-line-2.png") 2 stretch;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    overflow: hidden;
+    margin: 10px 0;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    font-size: 14px;
+}
+
+.name-card-vertical .thumb {
+    width: 100%;
+}
+
+.name-card-vertical .detail {
+    padding: 15px;
+}
+
+.name-card-vertical .goods-name {
+    margin-bottom: 15px;
+    max-height: 36px;
+    line-height: 18px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.name-card-vertical .groupon-info {
+    position: relative;
+    padding-left: 45px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0 30px 30px 0;
+    background-color: #444;
+    color: #fff;
+    font-size: 12px;
+}
+
+.name-card-vertical .groupon-info::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 43px;
+    height: 43px;
+    background: url("../images/badge.png") no-repeat;
+    background-size: 43px 43px;
+}
+.name-card-vertical .groupon-info>span {
+    vertical-align: middle;
+}
+.name-card-vertical .groupon-info .join-num {
+    margin-right: 10px;
+}
+
+.name-card-vertical .groupon-info .price {
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.name-card-vertical .groupon-info .join-text {
+    position: relative;
+    padding-left: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 0 30px 30px 0;
+    background-color: #ed5050;
+    overflow: hidden;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all
+.block {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}

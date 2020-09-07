@@ -1,0 +1,12 @@
+.flex_star{display: flex;display: -webkit-flex;display: -ms-flex; justify-content: flex-start;-webkit-justify-content: flex-start;-ms-justify-content: flex-start;}
+
+.block-list ul li{padding: 10px;}
+.block-list ul li .goodsNews{margin-left: 10px; width: 75%;}
+.block-list ul li .goodsNews .introduce{height: 40px; line-height: 20px; font-size: 16px; color: #949494; overflow: hidden;}
+.block-list ul li .goodsNews .price{margin-top: 10px; color: #e8505b;}
+
+
+
+
+
+

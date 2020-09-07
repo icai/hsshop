@@ -1,0 +1,77 @@
+.app{
+    #back{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 50px;
+        z-index: 11;
+        .backFun{
+            position: absolute;
+            left: 20px;
+            top: 17px;
+            width: 12px;
+            height: 12px;
+            border: 2px solid white;
+            transform: rotate(45deg);
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+    }
+    .title{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        background: #ff4552;
+        font-family: "微软雅黑";
+        font-size: .8rem;
+        z-index: 10;
+    }
+    .content{
+        margin-top: 50px;
+//      margin-bottom: 60px;
+        .createImg{
+            padding-bottom: 20px;
+            border-bottom: 10px solid #f0f0f0;
+            img{
+                padding: 10px 0;
+                margin-left: 10%;
+                width: 80%;
+            }
+            #saveImg{
+                display: block;
+                text-decoration: none;
+                margin-left: 15%;
+                width: 70%;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                color: white;
+                background: #ff4552;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .wordsDiv{
+            padding: 10px;
+            .words{
+                padding: 10px;
+                margin-top: 10px;
+                line-height: 25px;
+                border-radius: 5px;
+                background: #f0f0f0;
+                text-align: justify;
+            }
+        }
+        .copy{
+            margin-right: 20px;
+            text-align: right;
+            color: dodgerblue;
+        }
+    }
+}

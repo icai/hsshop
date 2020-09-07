@@ -1,0 +1,50 @@
+.content .contentTxt{padding: 20px; background: #f8f8f8; zoom: 1; margin-bottom: 15px;}
+.content .contentTxt p{margin-top: 10px; line-height: 20px; font-size: 12px;}
+.content .message-waring{background: #ffc; border-color: #fc6; padding: 7px 15px; margin-bottom: 15px; color: #f30; border: 1px solid #e5e5e5; line-height: 24px; font-size: 12px;}
+.content .message-waring a{color: #38f; text-decoration: none;}
+.showData .hasData  table{width: 100%; margin-top: 20px;}
+.showData .hasData  table tr:nth-child(1){background: #f2f2f2;}
+.showData .hasData  table tr th:nth-child(1){width: 20%;}
+.showData .hasData  table tr th:nth-child(2){width: 20%;}
+.showData .hasData  table tr th:nth-child(3){width: 15%;}
+.showData .hasData  table tr th:nth-child(4){width: 20%;}
+
+.showData .hasData  table tr td:nth-child(1){width: 20%;}
+.showData .hasData  table tr td:nth-child(2){width: 20%;}
+.showData .hasData  table tr td:nth-child(3){width: 15%;}
+.showData .hasData  table tr td:nth-child(4){width: 20%;}
+
+.showData .hasData  table tr td:nth-child(5) a{margin: 0 5px; color: dodgerblue;}
+.showData .hasData  table tr td{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+/*.showData .historyNews{display: none;}*/
+.showData .historyNews table tr th:nth-child(5){width: 13%;}
+.showData .historyNews table tr th:nth-child(6){width: 12%;}
+.showData .historyNews table tr td:nth-child(5){width: 13%;}
+.showData .historyNews table tr td:nth-child(6){width: 12%;}
+.showData .historyNews table tr td:nth-child(6) a{margin: 0 5px; color: dodgerblue;}
+.showData .noData{width: 100%;}
+.showData .noData p{text-align: center; margin-top: 20px; padding: 10px 0;}
+
+
+/*模版消息选择*/
+#myModal ul{overflow: hidden; display: none;}
+#myModal ul li{float: left; position: relative; width: 30%; margin: 20px 1.5%;}
+#myModal .xcx li .styleTitle{position: absolute; top: 20px; left: calc(50% - 60px); display: inline-block; width: 120px; text-align: center; color: white;}
+#myModal .xcx li img{width: 100%;}
+#myModal .xcx li .style_hint{background: #f1f1f1;}
+#myModal .xcx li .style_hint p{height: 118px; font-weight: bold; padding: 20px 20px 30px;}
+#myModal .xcx li .style_hint .button{display: inline-block; padding: 5px 10px; border: 1px solid dodgerblue; color: dodgerblue; border-radius: 5px; margin-left: calc(50% - 39px); margin-bottom: 10px;}
+#myModal .xcx li .style_hint .button:hover{cursor: pointer;}
+
+#myModal .gzh li{background: #F1F1F1; padding: 10px; border-radius: 5px;}
+#myModal .gzh li:hover{cursor: pointer;}
+#myModal .gzh li p:nth-child(1){font-size: 17px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#myModal .gzh li p:nth-child(2){color: dodgerblue;}
+/*ADD BY 韩瑜 2018-10-22*/
+/*模板消息发送历史样式*/
+.sentdHistory{
+	float: right; 
+	background-color: #f7f7f7; 
+	border: 1px solid #dcdcdc;
+	color: #333;
+}

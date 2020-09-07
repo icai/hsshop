@@ -1,0 +1,72 @@
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*main*/
+h2 img{display: inline-block;}
+h2{font-size: 24px;margin: 20px 0;}
+.red{color:#f00;margin: 0 5px 0;}
+i{display: inline-block;}
+label{width:150px ;height:34px ;background:#f8f8f8 ;text-align: center;line-height: 34px;color: #333;}
+.inpt{width:240px ;height: 32px;padding: 0 5px;}
+/*上传图片*/
+.bs_fengmian{width: 400px;height: 100px;border: 1px solid #ccc;margin: 20px 0;}
+.bs_fengmian p{width: 100px;height: 20px;position: relative;top: -12px;left: 24px;background: #fff;text-align: center;}
+.bs_fengmian a{display: inline-block;width: 120px;height: 30px;background: #3197FA;text-align: center;line-height: 30px;color: #fff;margin: 0 10px;}
+
+.bs_fengmianlook{width: 400px;height: 200px;border: 1px solid #ccc;margin: 20px 0;}
+.bs_fengmianlook p{width: 100px;height: 20px;position: relative;top: -12px;left: 24px;background: #fff;text-align: center;}
+
+.bs_fengmianlookf{width: 400px;height: 200px;border: 1px solid #ccc;margin: 20px 0;}
+.bs_fengmianlookf p{width: 100px;height: 20px;position: relative;top: -12px;left: 24px;background: #fff;text-align: center;}
+
+.control-group{display: flex;}
+.col-sm-9{width: 100%;}
+.form-group{margin-bottom: 0;}
+.uploadImg{margin-top: 6px;}
+.uploadImg .setImg{width: 100px;height: 100px;line-height: 100px;display: block;text-align: center;font-size: 50px;color: #3388FF;}
+.uploadImg .setImg:hover .clear_img{display: block;}
+ .uploadImg .set_bg{height: 140px; line-height: 140px; background: url(../../hsadmin/images/hitEggBg.png) 0 0 no-repeat; background-size: cover;}
+ .uploadImg .setImg .clear_img{display: none; position: absolute; top: -6px; left: 90px; z-index: 50; width: 15px; height: 15px; line-height: 15px; text-align: center; color: white; background: #3388FF; font-size: 15px; border-radius: 50%;}
+.uploadImg .setImg input[type='file']{z-index: 10; width: 100%; height: 100%; opacity: 0;}
+.rtv{position: relative;}
+.abt{position: absolute; top: 20px;left: 20px;}
+/*预约详情*/
+.bs_details{width: 500px;height: 300px;border: 1px solid #ccc;margin: 20px 0;}
+.bs_details p{width: 100px;height: 20px;position: relative;top: -12px;left: 24px;background: #fff;text-align: center;}
+.bs_details div{width:450px;height: 250px;margin: 0 auto;}
+/*预约接受数量*/
+.bs_num{width: 750px;height: 200px;border: 1px solid #ccc;}
+.bs_num .bs_nums{width: 100px;height: 20px;position: relative;top: -12px;left: 24px;background: #fff;text-align: center;}
+
+.bs_numsallnormal{display: flex;margin-right: 10px;}
+.bs_numsallnormaldiv{width: 100px;height: 50px;text-align: center;line-height: 50px;color: #444;background: #dfdfdf;}
+.bs_numsallnormalp{width: 50px;height: 48px;background: #fff;border: 1px solid #dfdfdf}
+.bs_numsallnormalspan{background: #fff;}
+
+.bs_numsall{display: flex;margin-right: 10px;}
+.bs_numsalldiv{width: 100px;height: 50px;text-align: center;line-height: 50px;color: #fff;background: #ff6a13;}
+.bs_numsallp{width: 50px;height: 48px;background: #fff;border: 1px solid #ff6a13;text-align: center;line-height: 57px;}
+.bs_numsallspan{display: inline-block;width: 20px;height: 20px;background: #ff6a13;border-radius: 50%;}
+
+
+.bs_numtimelabel{height: 50px;line-height: 50px;}
+.bs_numtimest{display: flex;margin-top: 15px;}
+.bs_numtimest label{width: 200px;height: 42px;line-height: 42px;}
+.bs_numtimest .form-control{width: 35%;height: 28px;}
+.bs_numDailyamount{margin-top: 15px;}
+.bs_numDailyamount label{width: 200px;height: 42px;line-height: 42px;display: inline-block;}
+.bs_numDailyamount .form-control{width: 35%;height: 28px;display: inline-block;}
+.bs_numTotalamount{margin-top: 15px;}
+.bs_numTotalamount label{width: 200px;height: 42px;line-height: 42px;display: inline-block;}
+.bs_numTotalamount .form-control{width: 35%;height: 28px;display: inline-block;}
+/*订单内容设置*/
+.bs_content{min-height: 450px;_height:450px;border: 1px solid #ccc;margin-top: 20px;}
+.bs_content p{width: 100px;height: 20px;position: relative;top: -12px;left: 24px;background: #fff;text-align: center;}
+.bs_content ul{display: flex;height: 50px;border-bottom:1px solid #ccc ;align-items: center;}
+.bs_content ul li{width: 24%;padding-left: 1%;}
+.bs_content ul li span{margin-right:10px ;}
+.bs_content ul li input{width: 90%;height: 32px;padding-left: 2%;}
+.bs_content ul li:nth-of-type(4){display: flex;justify-content: flex-start;align-items: center;}
+.bs_content ul li:nth-of-type(4) input{width: 6%;height: 14px;}
+
+/*提交按钮*/
+.book_btn{width: 100px;height: 34px;border: 0;border: 1px solid #3197FA;background: #3197FA;text-align: center;color: #fff;margin-top: 20px;border-radius: 2px;}

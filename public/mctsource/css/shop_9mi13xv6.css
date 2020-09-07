@@ -1,0 +1,65 @@
+/*公共样式*/
+.img_wrap{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.img_wrap img{max-width:100%;max-height:100%;display:block;}
+.items_title,.items_num{overflow:visible}
+.c_gray{color:#999;}
+.f12{font-size:12px;}
+.fon20{font-size:20px;}
+.blue_38f{color:#38f;} 
+.blue_38f:hover{color:#27f;}
+a.blue_38f:focus{color:#38f;text-decoration:none;}
+.blue_00f{color:#00f;}
+.gray_999{color:#999;}
+.mgb15{margin-bottom:15px;}
+.main{overflow-x:visible;}
+.w50{width:50px;}
+.chart_items{min-height:300px;border:1px solid #e4e4e4;}
+/*区域标题 链接覆写*/
+.common_top .common_title{margin-right:0;}
+.common_link a{padding-left:10px}
+/*区域标题右侧复写*/
+.common_right{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;font-size:12px;}
+.common_right .category_search{-webkit-box-flex:1;display:-webkit-box;display:none;-webkit-box-align:center;-webkit-box-pack:center;}
+.common_right .search_items{margin:0 0 0 5px;}
+.common_right .search_items input{width:90px;font-size:12px;margin:0;border:1px solid #ddd;border-radius:2px;padding:5px 5px 5px 20px;background:#fff url('../images/ico-search.png') 4px center no-repeat;background-image:-webkit-image-set(url('../images/ico-search.png') 1x, url('../images/ico-search@2x.png') 2x);}
+.common_right .search_items input:focus{border-color:rgba(82,168,236,.8);outline:0;outline:dotted thin\9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6)}
+.common_right .times_items{margin:0 5px;-webkit-box-flex:1;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.common_right .notime_control{-webkit-box-flex:1;display:none;font-size:12px;}
+.common_right .notime_control a{display:inline-block;padding:0 5px;font-size:12px;}
+.common_right .time_control{-webkit-box-flex:1;display:-webkit-box;display:none;-webkit-box-align:center;-webkit-box-pack:center;}
+.common_right .time_control .time_wrap{width:72px;display:block;-webkit-box-flex:1;font-size:12px;}
+.common_right .time_control .time_wrap.laydate-icon{padding:0 0 0 28px;background-position:3px center;}
+.common_right .time_control .layer_idefine{width:230px;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+/*时间选择下拉框*/
+.common_right .chosen-container-single .chosen-search{display:none;}
+/*交易概况*/
+.trade_items{position:relative;}
+.trade_items .trade_table{margin-right:294px;}
+.trade_items .trade_table table{font-size:12px;}
+.trade_items .trade_table table>tbody tr:first-child td{border-top:0;;}
+.trade_items .trade_pic{width:346px;height:246px;font-size:12px;color:#666;background-image:url('../images/funnel.png');background-repeat:no-repeat;background-position:left;top:3px;right:0;position:absolute;}
+.trade_items .trade_pic .transaction_data{width:70px;right:25px;font-weight:bold;position:absolute;}
+.trade_items .trade_pic .transaction_data:first-child{top:60px;right:75px}
+.trade_items .trade_pic .transaction_data:nth-child(2){top:115px;right:0}
+.trade_items .trade_pic .transaction_data:last-child{top:170px;right:100px;}
+/*交易构成*/
+.constitute_items{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.constitute_items #constitute_chart{width:400px;}
+.constitute_items .constitute_table{-webkit-box-flex:1;padding:10px;}
+/*地域分布*/
+.infernal_items{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.infernal_items #infernal_chart{width:400px;}
+.infernal_items .infernal_table{-webkit-box-flex:1;padding:10px;}
+
+
+/* 时间筛选 */
+.flow_input_time{
+    margin-left:15px
+}
+.time_select{height:26px}
+
+.custom-selected{
+    font:16px/20px '微软雅黑';
+    font-weight:bold;
+    padding-top:20px
+}

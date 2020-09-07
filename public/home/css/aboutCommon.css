@@ -1,0 +1,37 @@
+*{padding: 0; margin: 0;font-family: "微软雅黑"}
+ul li{list-style: none;}
+a:link{text-decoration: none;}
+.relative{position: relative}
+.absolute{position: absolute}
+.flex_star{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start;}
+.flex_center{display: -webkit-box;display: -ms-flexbox;display: flex; /*justify-content: space-between;*/ }
+/*顶部图片*/
+.top_bg{width: 100%;height: 500px;background: url("../image/about_banner.png") no-repeat;background-size: 100% 100%;text-align: center; color: #ffffff;}
+.top_bg h2{padding-top: 220px;font-size: 56px;font-weight: bold;margin-top: 0px;}
+.top_bg p{padding-top: 60px;font-size: 24px;}
+/*内容导航样式*/
+.content_nav{width: 100%; height: 90px; min-width: 1200px; background: #F2F2F5;}
+.content_nav ul{width: 1200px; height: 90px; margin: 0 auto; }
+.content_nav ul li{width: 20%; height: 90px;  text-align: center; cursor: pointer; float: left;position: relative;}
+.content_nav ul li a{width: 100%;height: 100%;display: inline-block;}
+.content_nav ul li img{position: absolute;top: 25px;left: 25px;}
+.content_nav ul li .nav_name{margin-left: 84px;margin-top: 26px;text-align: left}
+.content_nav ul li .nav_name h5{font-size: 16px;color: #333333;}
+.content_nav ul li .nav_name p{font-size: 12px;color: #666666;}
+.content_nav ul .have .nav_name h5,.content_nav ul .have .nav_name p{color: #fff;}
+.have{background: #3197FA}
+.main_part{width: 100%; text-align: center;margin-top: 20px;}
+.main_part h2{display: inline-block; color: #333333;font-weight: 600; padding: 20px; margin: 80px 0;}
+.main_part h4{text-align: left; color: #fff; margin-bottom: 25px;}
+.main_part p{font-size: 15px; line-height: 30px; text-align: left; margin: 0;}
+.order_num{position: absolute;top: 58px;left: 50%;transform: translate(-50%)}
+
+
+.main_part p img, .main_part p video{width: 80%; display: block; margin: 20px auto;}
+
+
+
+
+
+
+

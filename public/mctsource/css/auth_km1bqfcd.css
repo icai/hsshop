@@ -1,0 +1,36 @@
+* {-webkit-box-sizing:initial;-moz-box-sizing:initial;box-sizing:initial;}
+*:before,*:after{-webkit-box-sizing:initial;-moz-box-sizing:initial;box-sizing:initial;}
+.clearfix {  *zoom: 1; } 
+.clearfix:before, .clearfix:after {  display: table; line-height: 0; content: ""; } 
+.clearfix:after { clear: both; }
+.co_d00{color: #d00;}
+.captcha_img{width: 100px;height: 38px;display: inline-block;}
+/*主题开始*/
+.container{width: 600px;margin: 0 auto;position: relative;}
+/*头部开始*/
+.header{width: 100%;margin: 50px 0 30px 0;padding-bottom: 15px;border-bottom: 1px solid #e5e5e5;}
+.header .header_logo{display: block;float: left;width: 85px;height: 30px;margin-top: 10px;}
+.header .header_title{font-size: 16px;margin-left: 121px;margin-top: 20px;border-left: 2px solid #ebebeb; color: #333;padding-left: 10px;}
+.header .header_login{float: right;margin-top: 23px;}
+.header .header_login a{color: #07d;}
+.get_code{margin-left: -10px;}
+/*内容开始*/
+.main{margin-top: 40px;padding-bottom: 40px;border-bottom: 1px solid #e5e5e5;}
+.main .main_left {width: 400px;float: left;}
+.main .main_left >div{margin-bottom: 20px;}
+.main .main_left input{width: 219px;padding: 8px 10px;height: 20px;}
+.main .main_left .btn-primary{background-color: #0080ed;position: relative;left: 137px;}
+.main .main_left .get_note{width: 115px;}
+.main .main_left .note_p{position: relative;}
+.main .main_left .note_p button{padding: 8px 10px;border-radius: 0 5px 5px 0;}
+
+.main_right{float: right;text-align: center;}
+.main_right .attention{width: 200px;margin-top: 30px;}
+.main_right .attention img{width: 160px;margin: 0 auto;}
+.main_right p{margin-top: 10px; color: #666;font-size: 12px;}
+/*底部开始*/
+.footer{text-align: center;}
+.footer p{font-size: 12px;color: #999;margin-top: 20px;} 
+
+/*注册提示*/
+.register_info{position: absolute;top: 20px;width: 100%;text-align: center;}

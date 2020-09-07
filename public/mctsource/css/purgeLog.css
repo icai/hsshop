@@ -1,0 +1,95 @@
+  /* 输入框input类型为number时，去掉上下箭头 */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+  input[type="number"]{
+      -moz-appearance: textfield;
+  }
+  .member_list .list_item {
+      padding: 0 10px 0 10px;
+  }
+  .member_list .list_item li{
+      height: 50px;
+      line-height: 50px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  .tips-content {
+      display: none;
+      position: absolute;
+      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      max-width: 260px;
+      max-height: 300px;
+      overflow: auto;
+      border: 1px solid #e5e5e5;
+      padding: 6px 10px;
+      background: #fff;
+      z-index: 1000;
+      font-weight: 400;
+      box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+  }
+  .tips-content:after{
+      content: "";
+      position: absolute;
+      top: -12px;
+      right: 12px;
+      border-width: 6px 6px;
+      border-style: solid;
+      border-color:  transparent transparent #fff transparent ;
+  }
+  .pure-reason {
+      position: relative;
+      overflow: visible !important;
+  }
+  .pure-reason:hover .note-show-box,.pure-reason:hover .note-show-box-arrow{
+      display: block;
+  }
+  .pure-reason .reason-content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  /* 清退移入显示整体清退理由 */
+  .note-show-box {
+      display: none;
+      position: absolute;
+      padding: 10px 20px;
+      width: 160px;
+      border: 1px solid #EBEBEB;
+      left: 50%;
+      top: 45px;
+      background: #fff;
+      max-height: 300px;
+      overflow: scroll;
+      color: #333 !important;
+      z-index: 1000;
+      word-wrap: break-word;
+      word-break: break-all;
+      white-space: normal;
+      text-align: left;
+      box-shadow: 0px 1px 6px rgba(240,240,240,1);
+      line-height: 18px;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%)
+  }
+  .note-show-box-arrow {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 39px;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-width: 1px 0 0 1px;
+      transform: translateX(-50%) rotate(45deg);
+      -webkit-transform: translateX(-50%) rotate(45deg);
+      border-style: solid;
+      border-color: rgba(240,240,240,1);
+      background-color: #fff;
+      z-index: 1000;
+  }

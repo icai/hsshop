@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import "public";
+
+/* 协议弹窗 */
+.layui-layer{
+    border-radius: 5px;
+    .layui-layer-title{
+        font-size:24px;
+        line-height:64px;
+        background:white;
+        text-align:center;
+        height:64px;
+    }
+    .layui-layer-title{
+        padding:0
+    }
+    .layui-layer-close{
+        margin-right:8px;
+        &::before{
+            content: 'x';
+            font-size:16px;
+            width: 24px;
+            height:24px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            background: rgba(0,0,0,.5);
+            border-radius: 50%;
+            color:white
+        }
+    }
+    .layui-layer-ico{
+        background: none
+    }
+}
+#pop{
+    padding:8px 64px;
+    position: relative;
+    p{
+       line-height:24px
+    }
+    .final{
+        text-align: right;
+        font:16px/32px '';
+        padding-bottom: 32px;
+    }
+    .marginBottom{
+        margin-bottom: 8px
+    }
+    .marginBottom2{
+        margin-bottom: 16px
+    }
+    .title{
+        font-weight:bold;
+        margin-right:48px;
+        line-height: 36px
+    }
+    .detail{
+        p{
+            line-height: 36px
+        }
+    }
+}
+#remark{
+    margin-left:32px;
+    width: 260px;
+    vertical-align: top;
+}
+.remark{
+
+    .remarktip{
+        font-weight: bold;
+        vertical-align: top;
+    }
+}
+
+/*! 自定义input radio*/
+input[type="radio"] + span:before {
+    content: "\a0";
+    box-sizing:border-box;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #B8B8B8;
+    text-indent: .15em;
+    margin-top: -4px
+  }
+  input[type="radio"]:checked + span:before {
+    box-sizing:border-box;
+    background-size: 100% 100%;
+    border:5px solid #3197FA;
+    font-size:14px;
+    width: 1em;
+    height: 1em;
+    margin-top: -4px
+  }
+  input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+//   修改的确定按钮
+.submit{
+    text-align: center;
+    width: 100%;
+    margin:16px 0 0;
+    button{
+        border:1px solid #3197FA;
+        background: #3197FA;
+        width: 128px;
+        color:white
+    }
+}

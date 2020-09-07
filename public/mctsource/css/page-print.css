@@ -1,0 +1,480 @@
+/* 按钮 */
+.btn{line-height:normal;padding:8px 20px;color:#0085d7;background:#fff;border:1px solid #0085d7;margin-left:6px;}
+.btn:hover{color:#fff;background:#0085d7;border:1px solid #0085d7;}
+/* 下拉框 */
+select{width:248px;height:32px;line-height:32px;}
+/* 分销基本信息 */
+tr td{padding:8px 0;}
+.select_delivery{width:248px;height:32px;outline:none;border:1px solid #dcdcdc;}
+.input_text_200,.input_text_100{width:240px;height:30px;padding:0 3px;border:1px solid #dcdcdc;}
+.input_text_150{height:30px;border:1px solid #dcdcdc;padding:0 3px;border:1px solid #dcdcdc;}
+input.formText{width:240px;height:30px;padding:0 3px;border:1px solid #dcdcdc;}
+.laydate_icon{height:30px;line-height:30px;border:1px solid #dcdcdc;}
+/* 商品规格 */
+.box_arr table tr{background:#fff;}
+/* 编辑规格 */
+.add_btn{background:none;}
+.box_arr .table_btn{width:200px;height:34px;}
+.box_arr .table_btn a{width:auto;height:auto;line-height:normal;color:#fff;border:none;background:#0085d7;}
+.box_arr .table_btn a.disable_spec{background:#0085d7;}
+.add_spec .delete_btn{margin-left:18px;}
+.add_spec .add{background-position:32px -1164px;}
+.add_spec .add a{text-decoration:none;color:#0085d7;}
+.btn_wrap .btn{border:1px solid #0085d7;background:#0085d7;color:#fff;font-weight:400;}
+/* 添加图片区域 */
+.table.dataTable{margin-top:6px;}
+.input .inputTable tr th{background:#f7f7f7;text-align:center;}
+.table tr th, .table tr td{text-align:center;}
+/* 商品分类列表 */
+.form-label{text-align:right;}
+/* 商品导入模块上传文件按钮 */
+.files{width:66px;text-align:center;padding:8px 0;overflow:hidden;display:inline-block;position:relative;color:#fff;background:#0085d7;text-decoration:none;border-radius:5px;}
+.files input{width:66px;height:30px;display:block;position:absolute;top:0;left:0;opacity:0;filter:alpha(opacity=0);}
+/* 返回按钮 */
+.goback{width:auto;height:auto;line-height:normal;}
+/* 打印按钮 */
+.controls-command .controls-btn{border:none; width:auto;height:auto;line-height:normal;color:#fff;background:#0085d7;padding:10px 30px;border-radius:5px;}
+
+/* a标签删除 */
+.del{color:#0085d7;text-decoration:none;}
+.del:hover{text-decoration:underline;}
+/* 复选框、单选框 */
+.listBar input[type="checkbox"]{width:16px;height:16px;position:relative;top:-2px;}
+.listBar input[type="checkbox"] + label{font-size:14px;}
+input[type="radio"]{width:16px;height:16px;position:relative;top:-2px;}
+input[type="radio"] + label{font-size:14px;}
+/* 底部 */
+.buttonArea{margin:10px 0;}
+.add_spec .padding3 span{display:inline-block;padding:2px;cursor:pointer;vertical-align:middle;}
+.add_spec .padding3 span.delete_btn{float:none;margin-left:2px;}
+
+.shipper-info {
+    position: relative;
+    width: 660px;
+    margin-left: 90px;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.shipper-info .control-group {
+    float: left;
+    width: 280px;
+    margin-bottom: 15px;
+}
+
+.control-group .control-label {
+    float: left;
+    width: 60px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.control-group .controls {
+    width: 180px;
+    min-height: 24px;
+    padding: 0 2px;
+    line-height: 24px;
+    border: 1px solid #dcdcdc;
+}
+
+
+.control-group .readonly {
+    background: #f6f6f6;
+}
+
+.control-group .placeholder-input {
+    height: 24px;
+}
+
+.shipper-info .controls-command {
+    position: absolute;
+    bottom: 17px;
+    right: 20px;
+} 
+
+.print-paper {
+    position: relative;
+    width: 23cm;
+    height: 12.6cm;
+    margin: 0 auto;
+    font-size: 15px;
+    page-break-after:always; 
+}
+
+
+
+.express-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.express-bill-img {
+    max-width: 1000px;
+}
+
+#express-bill-field-container {
+    position: relative;
+}
+
+.express-bill-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 150px;
+} 
+
+/* 天天开始 */ 
+.express-tiantian .shipper-name {
+    top: 32mm;
+    left: 30mm;
+}
+.express-tiantian .shipper-city {
+    top: 32mm;
+    left: 85mm;
+}
+
+.express-tiantian .shipper-phone { 
+    top: 65mm;
+    left: 30mm;
+}
+
+.express-tiantian .shipper-company {
+    top: 40mm;
+    left: 35mm;
+    width: 60mm;
+}
+
+.express-tiantian .shipper-address {
+    top: 50mm;
+    left: 20mm;
+    width: 80mm;
+    line-height: 25px;
+}
+.express-tiantian .shipper-time{
+    top:110mm;
+    left:30mm;
+    font-size: 14px;
+}
+
+.express-tiantian .consignee-name {
+    top: 32mm;
+    left: 125mm;
+}
+.express-tiantian .consignee-city {
+    top: 32mm;
+    left: 175mm;
+}
+
+.express-tiantian .consignee-phone {
+    top: 65mm;
+    left: 125mm;
+}
+
+.express-tiantian .consignee-address {
+    top: 50mm;
+    left: 120mm;
+    width: 75mm;
+    line-height: 25px;
+}
+
+/* 天天结束 */
+
+/*中国邮政开始*/
+ 
+.express-ems .shipper-name {
+    top: 26mm;
+    left: 12mm;
+}
+
+.express-ems .shipper-phone {
+    top: 26mm;
+    left: 55mm;
+}
+
+.express-ems .shipper-company {
+    top: 35mm;
+    left: 15mm;
+    width: 60mm;
+}
+
+.express-ems .shipper-address {
+    top: 45mm;
+    left: 10mm;
+    width: 90mm;
+}
+
+.express-ems .consignee-name {
+    top: 57mm;
+    left: 12mm;
+}
+
+.express-ems .consignee-phone {
+    top: 57mm;
+    left: 55mm;
+}
+
+.express-ems .consignee-address {
+    top: 67mm;
+    left: 10mm;
+    width: 90mm;
+}
+
+/*中国邮政结束*/
+
+/*中通快递开始*/  
+.express-zhongtong .shipper-name {
+    top: 28mm;
+    left: 17mm;
+}
+
+.express-zhongtong .shipper-phone {
+    top: 65mm;
+    left: 20mm;
+}
+
+.express-zhongtong .shipper-company {
+    top: 58mm;
+    left: 15mm;
+    width: 60mm;
+}
+
+.express-zhongtong .shipper-address {
+    top: 40mm;
+    left: 17mm;
+    width: 90mm;
+}
+
+.express-zhongtong .consignee-name {
+    top: 28mm;
+    left: 120mm;
+}
+
+.express-zhongtong .consignee-phone {
+    top: 65mm;
+    left: 120mm;
+}
+
+.express-zhongtong .consignee-address {
+    top: 40mm;
+    left: 120mm;
+    width: 90mm;
+} 
+/*中通快递结束*/
+
+/*申通快递开始*/  
+.express-shentong .shipper-name {
+    top: 27mm;
+    left: 17mm;
+}
+
+.express-shentong .shipper-phone {
+    top: 70mm;
+    left: 30mm;
+}
+
+.express-shentong .shipper-company {
+    top: 40mm;
+    left: 17mm;
+    width: 60mm;
+}
+
+.express-shentong .shipper-address {
+    top: 50mm;
+    left: 17mm;
+    width: 90mm;
+}
+
+.express-shentong .consignee-name {
+    top: 27mm;
+    left: 130mm;
+}
+
+.express-shentong .consignee-phone {
+    top: 70mm;
+    left: 150mm;
+}
+
+.express-shentong  .consignee-address {
+    top: 50mm;
+    left: 120mm;
+    width: 90mm;
+} 
+/*申通快递结束*/
+
+
+/*顺丰快递开始*/  
+.express-shunfeng .shipper-name {
+    top: 33mm;
+    left: 95mm;
+}
+
+.express-shunfeng .shipper-phone {
+    top: 50mm;
+    left: 35mm;
+}
+
+.express-shunfeng .shipper-company {
+    top: 33mm;
+    left: 45mm;
+    width: 60mm;
+}
+
+.express-shunfeng .shipper-address {
+    top: 40mm;
+    left: 32mm;
+    width: 90mm;
+}
+
+.express-shunfeng .consignee-name {
+    top: 58mm;
+    left: 95mm;
+}
+
+.express-shunfeng .consignee-phone {
+    top: 85mm;
+    left: 35mm;
+}
+
+.express-shunfeng  .consignee-address {
+    top: 68mm;
+    left: 32mm;
+    width: 90mm;
+} 
+/*顺丰快递结束*/
+
+
+/*圆通快递开始*/  
+.express-yuantong .shipper-name {
+    top: 25mm;
+    left: 12mm;
+}
+
+.express-yuantong .shipper-phone {
+    top: 58mm;
+    left: 23mm;
+}
+
+.express-yuantong .shipper-company {
+    top: 25mm;
+    left: 45mm;
+    width: 60mm;
+}
+
+.express-yuantong .shipper-address {
+    top: 44mm;
+    left: 12mm;
+    width: 90mm;
+}
+
+.express-yuantong .consignee-name {
+    top: 25mm;
+    left: 110mm;
+}
+
+.express-yuantong .consignee-phone {
+    top: 58mm;
+    left: 125mm;
+}
+
+.express-yuantong  .consignee-address {
+    top: 40mm;
+    left: 110mm;
+    width: 90mm;
+} 
+/*圆通快递结束*/
+
+/* 韵达开始 */ 
+.express-yunda .shipper-name {
+    top: 32mm;
+    left: 35mm;
+}
+
+.express-yunda .shipper-phone { 
+    top: 70mm;
+    left: 40mm;
+}
+
+.express-yunda .shipper-company {
+    top: 42mm;
+    left: 42mm;
+    width: 60mm;
+}
+
+.express-yunda .shipper-address {
+    top: 50mm;
+    left: 35mm;
+    width: 75mm;
+}
+
+.express-yunda .consignee-name {
+    top: 32mm;
+    left: 145mm;
+}
+
+.express-yunda .consignee-phone {
+    top: 70mm;
+    left: 145mm;
+}
+
+.express-yunda .consignee-address {
+    top: 50mm;
+    left: 145mm;
+    width: 85mm;
+}
+
+/* 韵达结束 */
+
+/* 汇通开始 */ 
+.express-huitong .shipper-name {
+    top: 32mm;
+    left: 35mm;
+}
+
+.express-huitong .shipper-phone { 
+    top: 70mm;
+    left: 40mm;
+}
+
+.express-huitong .shipper-company {
+    top: 42mm;
+    left: 42mm;
+    width: 60mm;
+}
+
+.express-huitong .shipper-address {
+    top: 50mm;
+    left: 35mm;
+    width: 75mm;
+}
+
+.express-huitong .consignee-name {
+    top: 32mm;
+    left: 145mm;
+}
+
+.express-huitong .consignee-phone {
+    top: 70mm;
+    left: 145mm;
+}
+
+.express-huitong .consignee-address {
+    top: 50mm;
+    left: 145mm;
+    width: 85mm;
+}
+
+/* 汇通结束 */
+
+@media print{
+    /*.not-print{display: none;}*/
+    .print-paper{font-size:15px;page-break-after:always;margin-top:-5mm;}
+}

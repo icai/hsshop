@@ -1,0 +1,21 @@
+/*公用样式*/
+.red{color: #f30;}
+.co_38f{margin-left: 5px;color: #38f;}
+/*主体样式开始*/
+.main .content{padding:50px;}
+.main .content .open_wethat {display: flex;display: -moz-flex;display: -webkit-flex;padding-bottom: 50px;border-bottom: 1px solid #eee;}
+.open_wethat .open_left{flex: 1;}
+.open_wethat .open_left p{line-height: 30px;color: #666;}
+.open_wethat .open_left .co_4b0{color: #4b0;font-size: 16px;}
+.open_wethat .open_left .btn{padding: 15px 20px 15px 60px;margin-top: 10px;background: #4b0 url("../images/weixin_icon.png") 10px center no-repeat;}
+.open_wethat .open_right{width: 350px;padding-left: 30px;border-left: 1px solid #eee;color: #666;font-size: 12px;}
+.open_wethat .open_right ul{padding-left: 20px;list-style-type: disc;}
+.open_wethat .open_right ul li{line-height: 20px;}
+.content .role_info{margin:30px 0 20px;}
+.content .table tr{height: 60px;}
+.content .table th{line-height: 60px;border-bottom-width: 1px;}
+.content .table td{color: #4b0;line-height: 60px;}
+.content .table .co_000{color: #000;}
+.content .btn-default{margin :20px auto;display: block;width: 180px;}
+.modal .modal-dialog{width: 500px;}
+.modal .modal-footer{text-align: center;}

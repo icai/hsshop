@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/**
+* creater 华亢 2018/07/09
+*/
+/* 采用grid 8 进行布局 */
+.red {
+  color: red; }
+
+.hide {
+  display: none; }
+
+.noData {
+  font: 48px/64px '微软雅黑';
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 24px 0;
+  text-align: center; }
+
+.table {
+  font: 16px/48px '微软雅黑';
+  text-align: center; }
+.table .table-head {
+  background: #f2f2f2; }
+.table ul {
+  border-bottom: 1px solid #e6e6e6; }
+.table ul li {
+  float: left;
+  width: 10%;
+  white-space: nowrap; }
+.table ul li:nth-of-type(1) {
+  width: 16%; }
+.table ul li:nth-of-type(2) {
+  width: 16%; }
+.table ul li:nth-of-type(5) {
+  width: 12%; }
+.table ul li:nth-of-type(3) {
+  width: 16%; }
+.table ul .delete {
+  color: red; }
+.table .table-body ul:hover {
+  background: #E6E6E6; }
+.table .noData {
+  font: 48px/64px '微软雅黑';
+  color: #e6e6e6; }
+.table .waitPay {
+  cursor: pointer;
+  color: #FCAE6F; }
+.table .waitPay:hover {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=orderList.css.map */

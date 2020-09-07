@@ -1,0 +1,8 @@
+.main form { padding-top: 20px; padding-left: 20px; }
+.main form label{font-weight: normal;}
+.main form .linkage input { display: inline-block; width: 210px; height: 35px; padding: 5px; }
+.main form .linkage #showIf { width: auto; height: auto; }
+.main form .linkage select { height: 30px; width: 100px; margin-bottom: 10px; border: 1px solid #8C8C8C; border-radius: 5px; }
+.main form .hint{display: inline-block; color: #999; font-size: 12px;}
+.main form  #save{ width: calc(100% - 40px); height: 40px; padding-top: 10px; background: #fffedc; }
+.main form  #save button{margin-left: 20.5%;}

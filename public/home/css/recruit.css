@@ -1,0 +1,31 @@
+/*招聘*/
+.recruit{width: 100%;text-align: center;position: relative}
+.recruit p{text-align: center}
+.recruit_nav{overflow: hidden;margin: 0 auto;width: 920px;margin-top: 70px;height: 120px;}
+.recruit_nav li{width: 200px;position: relative;line-height: 60px;background: #3197FA;float: left;margin: 0 15px;text-align: center;font-size: 18px;color: #fff}
+.recruit_info{width: 100%;background: #F5F5F7;padding: 80px 0 130px;}
+.recruit .arrow{position: absolute;top: 101px;left: 50%;transform: translate(-50%);border-left:15px solid transparent;border-right:15px solid transparent;border-bottom:20px solid #F5F5F7;}
+.recruit_nav .active{background: #1E7EDB;}
+.recruit_type{width: 1200px;margin: 0 auto;overflow: hidden;}
+.recruit_item{width: 500px;background: #fff;padding: 30px;float: left;margin-left: 200px;margin-bottom: 50px}
+.recruit_item:nth-child(odd){margin-left: 0}
+.recruit_item h4{color: #333333;text-align: center;margin-bottom: 35px;}
+.recruit_nav .arrow{display: none}
+.recruit_nav .active .arrow{display: block}
+.recruit_type{display: none;}
+
+
+.job_info{overflow: hidden;margin-bottom: 15px}
+.job_info p,.job_title p{font-size: 16px}
+.job_info .job_type{float: left;} 
+.job_info .job_addr{float: right;}
+
+
+
+.job_title{position: relative;}
+.job_title .left_line,.job_title .right_line{height: 1px;width: 175px;background: #3197FA;position: absolute;}
+.job_title .right_line{top: 50%;right: 0;}
+.job_title .left_line{top: 50%;left: 0;}
+.job_title p{text-align: center}
+.job_desc{margin-top: 35px;}
+.job_ability p:first-child{margin-top: 35px;margin-bottom: 10px}

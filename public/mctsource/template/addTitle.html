@@ -1,0 +1,41 @@
+<div class="control-group" ng-show="editor['titleStyle']==1">
+    <div class="custom-title-noline" style="background-color: {{editor['bgColor']}}">
+        <div class="custom-title" ng-class="{1:'text-left',2:'text-center',3:'text-right'}[editor['showPosition']]">
+            <h2 class="title" ng-show="editor['titleName']">
+                {{editor['titleName']}}
+                <span class="custom-title-link-container" ng-show="editor['linkName']">
+                    <span class="custom-title-link">
+                        <span class="gray">-</span>
+                        <a>{{editor['linkTitle']}}</a>
+                    </span>
+                </span>
+            </h2>
+            <h2 class="title" ng-show="!editor['titleName']">点击编辑『标题』
+                <span class="custom-title-link-container" ng-show="editor['linkName']">
+                    <span class="custom-title-link">
+                        <span class="gray">-</span>
+                        <a>{{editor['linkTitle']}}</a>
+                    </span>
+                </span>
+            </h2>
+            <p class="sub_title" ng-show="editor['subTitle']">{{editor['subTitle']}}</p>
+            <p class="sub_title" ng-show="!editor['subTitle']"></p>
+        </div>
+    </div>
+    <div class="component-border"></div>
+</div>
+
+<div class="control-group" ng-show="editor['titleStyle']==2">
+    <div>
+        <div class="custom-title text-left">
+            <h2 class="title" class="title" ng-show="editor['titleName']">{{editor['titleName']}}</h2>
+            <h2 class="title" ng-show="!editor['titleName']">点击编辑『标题』</h2>
+            <p class="sub_title">
+                <span class="sub_title_date">{{editor['date']}}</span>
+                <span class="sub_title_author">{{editor['author']}}</span>
+                <a class="sub_title_link" href="javascript:void(0);">{{editor['wlinkTitle']}}</a>
+            </p>
+        </div>
+    </div>
+    <div class="component-border"></div>
+</div>

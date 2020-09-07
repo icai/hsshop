@@ -1,0 +1,20 @@
+<div class="control-group">
+    <div class="tpl-shop">
+        <div class="tpl-shop-header" ng-style="editor['bg_image'] ? {backgroundImage: 'url(' + editor['bg_image'] +')'} : {backgroundColor: editor['bg_color']};">
+            <div class="tpl-shop-title" ng-bind="editor['store_name']"></div>
+            <div class="tpl-shop-avatar">
+                <img ng-src="{{editor['logo']}}" alt="">
+            </div>
+        </div>
+        <div class="tpl-shop-content">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:void(0);">
+                        <span class="count user"></span>
+                        <span class="text">我的订单</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

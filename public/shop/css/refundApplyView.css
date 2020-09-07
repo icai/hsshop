@@ -1,0 +1,220 @@
+body .header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+[v-cloak]{display: none;}
+.contents {
+  margin-top: 38px;
+  font-size: 15px;
+}
+.contents .order_msg{
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	background: white;
+}
+.contents .order_msg p {
+	line-height: 25px;
+}
+.contents #group {
+	padding: 5px 10px;
+	background: white;
+}
+.contents #group p{
+	width: 100%;
+	line-height: 40px;
+	border-bottom: 1px solid #EDEDED;
+}
+.contents #group p span{
+	display: inline-block;
+}
+.contents #group p span:nth-child(2){
+	width: calc(100% - 80px);
+}
+.contents #group p span:nth-child(2) select, 
+.contents #group p span:nth-child(2) input{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	border: none;
+	background: white;
+}
+.contents #group #text-area{
+	line-height: 20px;
+}
+.contents #group #text-area textarea{
+	margin-top: 5px;
+	width: 100%;
+	border: none;
+	resize: none;
+}
+.contents #group #text-area span{
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	line-height: 16px;
+	font-size: 13px;
+	color: #8D8D8D;
+}
+.contents #group p .line_row{
+	position: relative;
+}
+.contents #group p .line_row::after{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: 12px;
+	right: 5px;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.contents #group_2{
+	margin-top: 10px;
+	padding: 5px 10px;
+	background: white;
+}
+.contents #group_2 p{
+	width: 100%;
+	line-height: 40px;
+	border-bottom: 1px solid #EDEDED;
+}
+.submitDiv {
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 20px);
+  width:-webkit-calc(100% - 20px);
+  width:-moz-calc(100% - 20px);
+  width:-o-calc(100% - 20px);
+  background: white;
+  border-top: 1px solid #DFDFDF;
+  z-index: 10;
+}
+.submitDiv button {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #E5333A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.contents #group_2 .imgs{
+	margin-top: 10px;
+}
+.contents #group_2 .imgs .imgs_item{
+	display: inline-block;
+	position: relative;
+	margin: 5px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #DFDFDF;
+}
+.contents #group_2 .imgs .imgs_item img{
+	width: 100%;
+	height: 100%;
+}
+.contents #group_2 .imgs .imgs_item .delImg{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	color: white;
+	border-radius: 50%;
+	background: rgba(0,0,0,.5);
+}
+.contents #group_2 .imgs .imgs_up{
+	position: relative;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	border: 1px solid #DFDFDF;
+}
+.contents #group_2 .imgs .imgs_up img{
+	margin-top: 15px;
+	width: 50px;
+	height: 40px;
+}
+.contents #group_2 .imgs .imgs_up form{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 100%;
+	z-index: 10;
+}
+.contents #group_2 .imgs .imgs_up form input{
+	width: 100%;
+	height: 100%;
+}
+
+/*toast样式*/
+.toast{
+	position: fixed;
+	top: 50%;
+	width: 200px;
+	padding: 10px;
+	left: calc(50% - 110px);
+	background: rgba(0,0,0,.6);
+	text-align: center;
+	line-height: 25px;
+	color: white;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+/*插件图片上传样式*/
+#group_2 .upload_images{
+	margin-top: 10px;
+}
+#group_2 .upload_images .uploaderDiv{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin: 2px;
+}
+#group_2 .upload_images .uploaderDiv input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	z-index: 10;
+	opacity: 0;
+}
+#group_2 .upload_images .imgs_item{
+	display: inline-block;
+	position: relative;
+	margin: 5px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #DFDFDF;
+}
+#group_2 .upload_images .imgs_item img{
+	width: 100%;
+	height: 100%;
+}
+#group_2 .upload_images .imgs_item .delImg{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	color: white;
+	border-radius: 50%;
+	background: rgba(0,0,0,.5);
+}

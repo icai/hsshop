@@ -1,0 +1,36 @@
+.header a .green{color: green;background: #fff;}
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*操作内容开始*/
+.handle .handle_title{display: -webkit-flex;margin-top: 30px;}
+.handle_title .tails{-webkit-flex: 1;margin-left: 30px;}
+.handle_title .tails p{font-weight: bold;font-size: 16px;line-height: 30px;}
+.handle_title .tails span{line-height: 30px;font-size: 12px;font-weight: bold;}
+.handle_title .btn1 button{width: 110px;height: 40px;background: #4b0;font-size: 16px;position: relative;color: #fff;border: 0;border-radius: 20px;}
+.handle_title .btn1 button:hover{background: red;}
+.handle_title .btn1 button:hover::before{content: "禁用";}
+.handle_title .btn1 button::before{content: "已启用";position: absolute;top: 10px;left: 20px;}
+.handle_title .btn1 button::after{content: '';background: #fff;width: 36px;height: 36px;border-radius: 50%;position: absolute;top: 2px;right: 2px;}
+.handle_title .btn1 .active{width: 110px;height: 40px;background: #666;font-size: 16px;position: relative;color: #fff;border: 0;border-radius: 20px;}
+.handle_title .btn1 .active:hover{background: #333;}
+.handle_title .btn1 .active:hover::before{content: "启用";}
+.handle_title .btn1 .active::before{content: "未启用";position: absolute;top: 10px;right: 0px;}
+.handle_title .btn1 .active::after{content: '';background: #fff;width: 36px;height: 36px;border-radius: 50%;position: absolute;top: 2px;left: 2px;}
+/*内容开始*/
+.ctl{display: none;}
+.handle_content {margin-top: 30px;}
+.handle_content .handle_content_left{width: 120px;font-size: 14px;line-height: 18px;text-align: right;margin-top: 10px;}
+.handle_content .handle_content_right{border: 1px solid #ccc;width: 500px;border-radius: 5px;}
+.handle_content .content_right_title{height: 30px;line-height: 30px;position: relative;}
+.handle_content .content_right_title span{width: 20px;height: 20px;position: absolute;top: 10px;left: 10px;transform: rotate(45deg);cursor: pointer;}
+.handle_content textarea{color: #2B99FF; height: 200px;width: 100%;border-left: 0;border-right: 0;box-sizing: border-box;padding: 10px;}
+.handle_content .content_right_footer{height:20px;line-height: 20px;padding-right: 20px;}
+.handle_content .content_right_footer span{color: #ccc;font-size: 12px;}
+/*底部按钮*/
+.right_container .btn_group{margin-top: 20px;margin-left: 120px;}
+.right_container .btn_p{border-radius: 3px;}
+/*模态框样式*/
+.modal-dialog{width: 450px;}
+.modal-body label{color: #06c;}
+.modal-body input{color: #666;padding: 3px 10px;width:330px;border-radius: 5px;box-sizing: border-box;}
+.error_info{color: #f60;font-size: 14px;margin-left: 70px;display: none;}

@@ -1,0 +1,62 @@
+<div class="editer-content">
+    <div>
+        <form class="form-horizontal edit-custom-coupon" novalidate="" onsubmit="return false">
+            <div class="control-group" >
+                <label class="control-label">优惠券：</label>
+                <div class="controls">
+                    <ul class="coupon-list" ng-show="editors[index]['couponList'].length">
+                        <li ng-repeat="coupon in editors[index]['couponList']">
+                            <div class="coupon-list-content">
+                                <div class="coupon-list-summary">
+                                    <span class="label label-success">优惠券</span>
+                                    <span v-bind="coupon.name"></span>
+                                    <span class="c-gray">（{{coupon.limit_desc}}）</span>
+                                </div>
+                            </div>
+                            <div class="coupon-list-opts">
+                                <a href="javascript:void(0);" class="js-remove-coupon" ng-click="deleteCoupon($index)">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="control-action js-add-coupon" ng-click="showCouponModel()" ng-hide="editors[index]['couponList'].length==3">添加优惠券</a>
+                    <input type="hidden" name="coupon">
+                    
+                    <div style="margin: 10px 0 0 0;" >
+                        <div>样式：</div>
+                        <label class="radio inline" style=" margin-left: 20px;">
+                            <input type="radio" name="coupon_btn_type" ng-model="editors[index]['couponStyle']" ng-checked="editors[index]['couponStyle']==1" value="1">样式1</label>
+                        <label class="radio inline">
+                            <input type="radio" name="coupon_btn_type" ng-model="editors[index]['couponStyle']" ng-checked="editors[index]['couponStyle']==2" value="2">样式2</label>
+                        <label class="radio inline">
+                            <input type="radio" name="coupon_btn_type" ng-model="editors[index]['couponStyle']" ng-checked="editors[index]['couponStyle']==3" value="3">样式3</label>
+                        <label class="radio inline">
+                            <input type="radio" name="coupon_btn_type" ng-model="editors[index]['couponStyle']" ng-checked="editors[index]['couponStyle']==4" value="4">样式4</label>
+                    </div>
+                    <div style="margin: 10px 0 0 0;" >
+                        <div>颜色：</div>
+                        <div class="theme-item" style=" margin-left: 20px;" ng-class="{'active':editors[index]['couponColor']==1}">
+                            <span class="theme-coupon-color theme-coupon-color1"></span>
+                            <input class="theme-coupon-color-radio" type="radio" name="coupon_btn_color" ng-model="editors[index]['couponColor']" ng-checked="editors[index]['couponColor']==1" value="1">
+                        </div>
+                        <div class="theme-item" ng-class="{'active':editors[index]['couponColor']==2}">
+                            <span class="theme-coupon-color theme-coupon-color2"></span>
+                            <input class="theme-coupon-color-radio" type="radio" name="coupon_btn_color" ng-model="editors[index]['couponColor']" ng-checked="editors[index]['couponColor']==2" value="2">
+                        </div>
+                        <div class="theme-item" ng-class="{'active':editors[index]['couponColor']==3}">
+                            <span class="theme-coupon-color theme-coupon-color3"></span>
+                            <input class="theme-coupon-color-radio" type="radio" name="coupon_btn_color" ng-model="editors[index]['couponColor']" ng-checked="editors[index]['couponColor']==3" value="3">
+                        </div>
+                        <div class="theme-item" ng-class="{'active':editors[index]['couponColor']==4}">
+                            <span class="theme-coupon-color theme-coupon-color4"></span>
+                            <input class="theme-coupon-color-radio" type="radio" name="coupon_btn_color" ng-model="editors[index]['couponColor']" ng-checked="editors[index]['couponColor']==4" value="4">
+                        </div>
+                        <div class="theme-item" ng-class="{'active':editors[index]['couponColor']==5}">
+                            <span class="theme-coupon-color theme-coupon-color5"></span>
+                            <input class="theme-coupon-color-radio" type="radio" name="coupon_btn_color" ng-model="editors[index]['couponColor']" ng-checked="editors[index]['couponColor']==5" value="5">
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

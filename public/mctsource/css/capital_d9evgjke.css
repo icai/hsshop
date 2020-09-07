@@ -1,0 +1,25 @@
+/*������ʽ*/
+.green_3c3{color:#3c3;font-weight:bold;}
+.red_f00{color:#f00;font-weight:bold; }
+.green_f04{color:#06bf04;font-weight:bold; }
+.main{overflow-x:visible;}
+.glyphicon-triangle-bottom{width:14px;height:14px;position:relative;}
+.glyphicon-triangle-bottom:before {
+    content: "";
+    width:0;
+    height:0;
+    display:block;
+    border:5px solid transparent;
+    border-top-color:#000;
+    top:5px;
+    position:relative;
+}
+.note_tips{cursor:pointer;}
+.red_block{color:#ff4343;border:1px solid #ff4343;padding:2px 8px;margin-top:5px;display:inline-block;}
+.popover-title{background-color: #fff; border-bottom: 0px ;}
+.popover{max-width: 467px; color:#666666; font-size: 12px;}
+.porel{position: relative;}
+.poabl{position: absolute; left: -6px; top: 260px;}
+.porel:hover .poabl{display: block;}
+.fomser{margin-left: 179px;}
+.fomser input[type='submit']{background: #337ab7;}

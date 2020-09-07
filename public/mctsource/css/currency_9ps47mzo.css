@@ -1,0 +1,44 @@
+.main .content { padding-top: 15px; padding-left: 70px; }
+.main .content ul li { padding: 10px 0; }
+.main .content ul li p { display: inline-block; }
+.main .content ul li a { color: #22A1FF; margin-left: 5px; }
+.main .content ul li input { height: 35px; width: 220px; display: inline-block;border:1px solid #ccc; }
+.main .content ul li .disabled{border:none}
+.main .content ul #main_msg::before { content: ""; display: inline-block; width: 14px; height: 14px; background-repeat: no-repeat; background-image: url(../images/cert-fail.png); }
+
+
+/*？号样式*/
+.main .content ul #remove { display: inline-block; width: 16px; height: 16px; text-align: center; line-height: 17px; border-radius: 50%; color: white; background: #C0C0C0; }
+.main .content ul #remove:hover { background: #4b0; }
+
+/*保存按钮样式*/
+.main .content #save { width: calc(100% - 100px); height: 40px; padding-top: 10px; padding-left: 100px; margin-top: -20px; background: #fffedc; }
+/*修改上传样式*/
+#logoChange{position:relative;}
+#logoChange input{position:absolute;bottom: 0;top:0;right:0;left:0;opacity:0}
+#uploadForm{display:inline-block;}
+
+/* 按钮样式*/
+.box .location-btn{
+    border:none
+}
+
+.middle .main .content ul li:nth-of-type(5){
+    padding-left:72px;
+}
+#logoImgDiv{
+    border:1px solid #e6e6e6;
+    margin:0 20px 15px 0;
+    
+}
+#logoImgDiv img{
+    height: 40px;
+    width: 40px;
+}
+.css_input span{
+    float:left
+}
+#files{
+    width: 30px;
+    height: 30px;
+}

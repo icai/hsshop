@@ -1,0 +1,316 @@
+	[v-cloak]{
+		display: none;
+	}
+	.newsAddress{
+		font-size: 15px;
+	}
+	.flex_center{
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		display: -moz-flex;
+		display: -webkit-flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-justify-content:center;
+		-moz-justify-content:center;
+		-ms-justify-content:center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		margin: 25px auto 0;
+		width:160px
+	}
+	.flex_center img{
+		width: 18px;
+		height: 18px;
+		margin-right: 10px;
+	}
+	.area{
+		
+		padding: 0 5px;
+	}
+	.area select{
+		width: 33%;
+		margin: 0 10px;
+		height: 25px;
+		outline: none;
+		border: none;
+		text-align: center;
+		font-size: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.area select option{
+		width: 100%;
+		text-align: center;
+	}
+	.area,.name,.address_detail,.phone{
+		height: 50px;
+		border-bottom: 1px solid #ECECEC;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		display: -moz-flex;
+		display: -webkit-flex;
+		align-items: center;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+	}
+	.newsAddress input{
+		height: 45px;
+		width: 100%;
+		border: none;
+		padding: 0 10px;
+		outline: none;
+		font-size: 15px;
+	}
+	.confirm_agree div{
+		height: 45px;
+		line-height: 45px;
+		width: 90%;
+		margin: 150px auto 20px;
+		background: #B1292D;
+		text-align: center;
+		color: #fff;
+		border-radius: 5px;
+	}
+	.newsAddress{
+		margin-top: -1px;
+	}
+	body{
+		background: #fff;
+	}
+	.hint{
+		color: #eee;
+		background: #000;
+		position: fixed;
+		top:50%;
+		left: 50%;
+		opacity: 0.8;
+		z-index: 101;
+		-ms-transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%); 	/* IE 9 */
+		-moz-transform:translate(-50%,-50%); 	/* Firefox */
+		-webkit-transform:translate(-50%,-50%); /* Safari 和 Chrome */
+		-o-transform:translate(-50%,-50%); 	/* Opera */
+		height: 35px;
+		line-height: 35px;
+		border-radius: 15px/50%;
+		width: 180px;
+		text-align: center;
+	}
+	.area{
+		position: relative;
+	}
+	.area div:nth-child(1){
+		position: absolute;
+		top:0px;
+		left: 0;
+		
+	}
+	.area div:nth-child(2){
+		position: absolute;
+		top:0px;
+		left: 33.3%;
+	}
+	.area div:nth-child(3){
+		position: absolute;
+		top:0px;
+		left: 66.6%;
+	}
+	.area div{
+		width: 33.3%;
+	}
+	.area div span{
+		display: inline-block;
+		width: calc(100% - 10px);
+		width: -moz-calc(100% - 10px);
+		width: -webkit-calc(100% - 10px);
+		height: 50px;
+		line-height: 50px;
+		padding-left: 10px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: 14px;
+	}
+	.area ul li{
+		width: calc(100% - 10px);
+		width: -moz-calc(100% - 10px);
+		width: -webkit-calc(100% - 10px);
+		height: 35px;
+		line-height: 35px;
+		padding-left: 10px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.area ul{
+		background: #fff;
+		height: calc(300px - 1px);
+		height: -moz-calc(300px - 1px);
+		height: -webkit-calc(300px - 1px);
+		overflow: auto;
+		width:calc(100% - 1px);
+		width:-moz-calc(100% - 1px);
+		width:-webkit-calc(100% - 1px);
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		box-shadow: 0 0 10px #ccc;
+	}
+	.area ul[name="area_id"]{
+		border-right:none;
+		width: 100%;
+	}
+	.red{
+		color:red;
+	}
+	input::-webkit-input-placeholder {
+		/* placeholder颜色  */
+		color: #CCCCCC;
+	}
+	.address_city{
+		padding: 0 0.2rem;
+		color: #CCCCCC;
+	}
+	.address_city div{
+		width: 100%;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		box-sizing: border-box;
+	}
+	.select_address{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.4);
+		display: flex;
+		flex-direction:column-reverse;
+		z-index: 222;
+	}
+	.address{
+		width: 100%;
+		height: 7rem;
+		background-color: #ffffff;
+		box-sizing: border-box;
+	}
+	.address_title{
+		height: 1.07rem;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 0.2rem;
+		line-height: 1.2rem;
+		box-sizing: border-box;
+		font-size: 0.3rem;
+		color: #333333;
+	}
+	.address_title:after{
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		background-color: #CCCCCC;
+		width: 100%;
+		height: 1px;
+		-webkit-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	.address_title>div:first-child span{
+		margin-right: 0.2rem;
+		display: inline-block;
+		width: 1.2rem;
+		height: 100%;
+		overflow: hidden;
+		text-align: center;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+	}
+	.active_span{
+		position: relative;
+	}
+	.active_span:after{
+		position: absolute;
+		content: '';
+		background-color: #F72F37;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		-webkit-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	.address_sel_list{
+		height: calc(7rem - 1.2rem);
+		height: -moz-calc(7rem - 1.2rem);
+		height: -webkit-calc(7rem - 1.2rem);
+	}
+	.address_sel_list div{
+		padding: 0.08rem 0.2rem 0 0.2rem;
+		height: 100%;
+		overflow: auto;
+		box-sizing: border-box;
+		-webkit-overflow-scrolling: touch;
+	}
+	.address_sel_list li{
+		padding: 0.35rem 0;
+	}
+
+	.confirm_btn{
+		display: flex;
+		position: absolute;
+		height: 1rem;
+		bottom: 0;
+		width: 100%;
+		z-index: 110;
+	}
+	.confirm_btn:after{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		background-color: #CCCCCC;
+		width: 100%;
+		height: 1px;
+		-webkit-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	.confirm_btn div{
+		margin: 0;
+		border-radius:0;
+		background-color: #F72F37;
+		font-size: 0.3rem;
+		height: 100%;
+		line-height: 1rem;
+	}
+	.confirm_btn div:first-child a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		color: #666666;
+	}
+	.footer_box{
+		position: absolute;
+		bottom: 0.6rem;
+		width: 100%;
+	}

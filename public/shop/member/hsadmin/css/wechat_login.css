@@ -1,0 +1,11 @@
+.block{padding: 20px; width: calc(100% - 40px);}
+.block .logo{padding: 40px; text-align: center; border-bottom: 1px solid #ccc;}
+.block .logo img{border-radius: 5px; margin-bottom: 10px;}
+.block .logo h3{font-size: 20px;}
+.block .detail_info{padding: 20px; font-size: 15px;} 
+.block .detail_info b{ color: #000;}
+.block .detail_info ul{list-style: disc; margin: 20px; color: #a5a5a5;}
+.block button{width: 100%; margin: 5% auto; padding: 10px; border-radius: 4px; color: #fff; background-color: #06bf04; border: none; border-color: #03b401;}
+
+
+

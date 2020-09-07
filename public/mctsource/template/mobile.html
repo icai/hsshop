@@ -1,0 +1,27 @@
+<div class="control-group left_mobile">
+    <p class="mobile_title border-d3">{{editor.title}}</p>
+    <!-- 通用设置 -->
+    <div class="mobile_warp flex-box border-d3"  ng-repeat = "mobile in editor['lists']" ng-show="editor['mobileStyle']==2">
+        <div class="default">
+            <img ng-src="{{mobile.icon}}"/>
+        </div>
+        <p><span class="num">{{mobile.area_code}}<span ng-show="mobile.area_code">-</span>{{mobile.mobile}}</span></p>
+    </div>
+
+    <!-- 自定义设置 -->
+    <div class="mobile_warp" ng-show="editor['mobileStyle']==1">
+        <div class="userdefined" ng-repeat = "mobile in editor['lists']" style="position:relative">
+            <img src="{{mobile.image}}" />
+            <p class="image-shadow" ng-show="mobile.imageShadowShow==1"><span class="num">{{mobile.area_code}}<span ng-show="mobile.area_code">-</span>{{mobile.mobile}}</span></p>
+        </div>
+    </div>
+
+    <!-- 旧数据 -->
+    <div class="mobile_warp" ng-show="!editor['mobileStyle']">
+        <div class="mobile_num" ng-repeat = "mobile in editor['lists']">
+            <img ng-src="{{editor.icon}}" class="phone-logo"/>
+            <span class="num">{{mobile.area_code}}<span ng-show="mobile.area_code">-</span>{{mobile.mobile}}</span>
+            <img class="phone-arrow" src="https://upx.cdn.huisou.cn/wscphp/xcx/images/xcxImg/callPhone.png"/>
+        </div>
+    </div>
+</div>

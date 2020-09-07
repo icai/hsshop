@@ -1,0 +1,50 @@
+.mid-btn{
+    margin:16px 0
+}
+
+.mid-btn .btn{
+    display: inline-block;
+    width:144px;
+    text-align: center;
+    color:white;
+    background-color:#3197fa;
+    font:14px/24px '微软雅黑';
+    border-radius: 3px 
+}
+
+table tr td:nth-of-type(3) div,table tr td:nth-of-type(3) div{
+    width:240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    display: inline-block
+}
+#pop{
+    padding:16px
+}
+#pop>p{
+    color:#666666;
+    padding:16px 0
+}
+#pop .clearfix{
+    margin-top: 8px 
+}
+#pop textarea{
+    overflow: hidden;
+    resize: none;
+    overflow: scroll;
+    padding:8px
+}
+.red{
+    color:red
+}
+
+.layui-layer .layui-layer-close{
+    background: white;
+}
+.layui-layer .layui-layer-close::before{
+    content: '×';
+    color:#B3B3B3;
+    font-size:18px
+}

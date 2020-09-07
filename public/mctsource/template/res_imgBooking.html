@@ -1,0 +1,55 @@
+<div class="control-group">
+    <div class='detaTime_con'>
+        <p class='detaTime_title'><em ng-if='editor.required'>*</em>{{editor.title}}</p>
+        <p class='detaTime_title_a' ng-if='editor.subtitle'>{{editor.subtitle}}</p>
+        <!--图片单列-->
+        <div class="choices choices_div">
+            <div class="gallery" ng-repeat='item in editor.sub_rules'>
+                <div class="pic_wrapper">
+                    <div class="picture">
+                        <a class="cover" href="javascript:;">
+                            <img ng-if='!item.imgflag' ng-src="{{item.image}}" style="width: 50%">
+                            <img ng-if='item.imgflag' ng-src="{{item.image}}" style="width: 100%">
+                        </a>
+                        <div class="opts">
+                            <div class="inner">
+                                <label class="w_radio">
+                                    <input type="radio" disabled>
+                                    <span>选这个</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="caption" ng-if='item.title'>
+                    <span class="inner">{{item.title}}</span>
+                </p>
+            </div>
+        </div>
+        <!--&lt;!&ndash;图片多列&ndash;&gt;-->
+        <!--<div class="choices choices_div" ng-if='editor.multiseriate == 2'>-->
+            <!--<div class="mini gallery" ng-repeat='item in editor.images'>-->
+                <!--<div class="pic_wrapper">-->
+                    <!--<div class="picture">-->
+                        <!--<a class="cover" href="javascript:;">-->
+                            <!--<img ng-if='!item.imgflag' ng-src="{{item.img}}" style="width: 50%;">-->
+                            <!--<img ng-if='item.imgflag' ng-src="{{item.img}}" style="width: auto">-->
+                        <!--</a>-->
+                        <!--<div class="opts">-->
+                            <!--<div class="inner">-->
+                                <!--<label class="w_radio">-->
+                                    <!--<input ng-if='editor.theRadio == 1' type="radio" disabled checked>-->
+                                    <!--<input ng-if='editor.theRadio == 2' type="checkbox" disabled>-->
+                                    <!--<span>选这个</span>-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<p class="caption" ng-if='item.title'>-->
+                    <!--<span class="inner">{{item.title}}</span>-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>

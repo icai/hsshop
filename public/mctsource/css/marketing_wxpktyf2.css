@@ -1,0 +1,73 @@
+.flex-end{display: flex; justify-content: flex-end; align-items: center;}
+
+.screen{background: #f5f5f5; padding: 20px 20px 0;}
+.screen .screen_wraper{height: 40px;}
+.screen .form-inline label{display: inline-block; font-weight: normal;}
+.shortHint{
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    font-size: 0;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+.order-btn{
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 13px;
+    border-radius: 2px;
+    color: #666;
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    cursor: pointer;
+}
+.order-btn.active {
+    color: #fff;
+    background-color: #3197FA;
+    border-color: #3197FA;
+    margin-right: -1px;
+}
+.member_list .list_item{padding: 10px; display: flex; justify-content: space-between; align-items: center; height: 50px; border-bottom: 1px solid #dfdfdf;}
+.member_list .list_header{background: #f5f5f5;}
+.member_list .list_item li{width: 12%; text-align: center; overflow: hidden;}
+.member_list .list_item li:nth-child(3){width: 27%;}
+.member_list .list_item li:nth-child(5){width: 25%;}
+
+.main_bottom{margin-top: 20px;}
+.main_bottom span a{padding: 0 5px; color: dodgerblue;}
+.all-wraper {
+    display: none;
+}
+.all-wraper .member_list .list_item li{width: 15%; text-align: center; overflow: hidden;}
+.all-wraper .member_list .list_item li:nth-child(1){width: 20%;}
+.all-wraper .member_list .list_item li:nth-child(2){width: 25%;}
+.all-wraper .member_list .list_item li:nth-child(5){width: 25%;}
+.timer-wraper {
+    display: none;
+    font-size: 13px;
+}
+.timer-select-title {
+    display: inline-block;
+    font-size: 15px;
+}
+.time_select {
+    width: 80px;
+    height: 33px;
+}
+.flow_input_time {
+    margin-left: 15px;
+}
+.flow_input_time input {
+    width: 160px;
+    height: 33px;
+    padding-left: 10px;
+}
+.common_link {
+    display: block;
+    vertical-align: baseline;
+    -webkit-box-flex: 1;
+}

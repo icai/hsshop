@@ -1,0 +1,18 @@
+
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+.w20{width: 20%;}
+.w10{width: 15%;}
+/*tabel*/
+.data_list img{display: inline;}
+.data_list tr th{text-align: left;font-weight: 100;}
+.data_list tr td{text-align: left; font-size: 12px;}
+.data_list tr .text_right{text-align: right;}
+/*标题样式*/
+.data_list .item{width: 250px;}
+.data_list .item .img_text{ border: 1px solid #eee;padding: 15px 10px;border-radius: 5px 5px 0 0;}
+.data_list .item .green{padding: 0 3px;background: #468847;color: #fff;border-radius: 3px;margin-right: 10px;}
+.data_list .item .img_text a{font-size: 13px;display: inline-block;vertical-align: middle; width: 180px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.data_list .item .img_text .text{width: 200px;font-size: 14px;vertical-align: middle; width: 180px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+/*页码*/
+.page_footer{margin-top: -20px; border-top: 2px solid #ccc;text-align: right;padding: 20px 0px;font-size: 12px;}

@@ -1,0 +1,9 @@
+.app{font-size: 15px;padding: 0 10px;}
+h2{font-size:18px ;line-height: 20px;margin: 10px 0;color: #333;}
+.top span{margin-right: 10px;}
+.top span:nth-of-type(3) a{color: #0077dd;}
+.tw_img img{width: 100%;height:200px;margin:20px auto 0;}
+.tw_read{margin-top: 20px;}
+.tw_read a{color: #607fa6;}
+img{max-width:100%;}
+

@@ -1,0 +1,25 @@
+<div class="control-group cube-left">
+    <div class="edit-cube" ng-if="!editor.isAddPic">点击编辑魔方</div>
+    <div class="cap-cube-wrap"  ng-if="editor.isAddPic">
+        <!-- 特例（一行显示） -->
+    	<div class="cap-cube-show" ng-if="editor.telType == 0 || editor.telType == 1 || editor.telType == 2 || editor.telType == 7" style="height:{{editor.aspectRatio == 0?(320-(editor.position.length+1)*editor.margin)/editor.position.length:(320-(editor.position.length+1)*editor.margin)/editor.position.length*editor.aspectRatio}}px;margin:0 {{editor.margin}}px">
+            <div class="img-wrap" ng-repeat="(key,item) in editor.position" style="width: {{(320-(editor.position.length+1)*editor.margin)/editor.position.length}}px;height: {{editor.aspectRatio == 0?(320-(editor.position.length+1)*editor.margin)/editor.position.length:(320-(editor.position.length+1)*editor.margin)/editor.position.length*editor.aspectRatio}}px;background-image: url({{editor.content[$index].img}});top: 0;left: {{item.left==0?0:item.left*(320-(editor.position.length+1)*editor.margin)/editor.position.length+item.left*editor.margin}}px">
+                <div class="cube-title" ng-if="editor.addTitle && editor.content[key].title">{{editor.content[key].title}}</div>
+            </div>
+        </div>
+        <!-- 普通 -->
+        <div class="cap-cube-show" ng-if="editor.telType != 0 && editor.telType != 1 && editor.telType != 2 && editor.telType != 7 &&editor.telType != 8" style="width: 320px;height: 320px;">  
+            <div class="img-wrap" ng-repeat="(key,item) in editor.position" style="width: {{item.width==4?320:item.width==2?(320-editor.margin)/4*2:(320-editor.margin)/4-editor.margin/2}}px;height: {{item.height==4?320:item.height==2?(320-editor.margin)/4*2:(320-editor.margin)/4-editor.margin/2}}px; background-image: url({{editor.content[$index].img}});top: {{item.top==0?0:item.top*(320-editor.margin)/4+item.top/2*editor.margin}}px;left: {{item.left==0?0:item.left*(320-editor.margin)/4+item.left/2*editor.margin}}px">
+                <!-- <img ng-src="{{editor.content[$index].img}}" ng-if="editor.content[$index].img" style="height:100%;"> -->
+                <div class="cube-title" ng-if="editor.addTitle && editor.content[key].title">{{editor.content[key].title}}</div>
+            </div>
+        </div>
+        <!-- 375*440 -->
+        <div class="cap-cube-show" ng-if="editor.telType == 8 " style="width: {{160-editor.margin*2}}px;height: {{160-editor.margin*2}}px;margin:0 {{editor.margin}}px">  
+            <div class="img-wrap" ng-repeat="(key,item) in editor.position" style="width: {{item.width==4?(320-editor.margin*2):item.width==2?(320-editor.margin*3)/4*2:(320-editor.margin*3)/4-editor.margin/2}}px;height: {{item.height==4?(320-editor.margin*2):item.height==2?(320-editor.margin*3)/4*2:(320-editor.margin*3)/4-editor.margin/2}}px; background-image: url({{editor.content[$index].img}});top: {{item.top==0?0:item.top*(320-editor.margin*3)/4+item.top/2*editor.margin}}px;left: {{item.left==0?0:item.left*(320-editor.margin*3)/4+item.left/2*editor.margin}}px">
+                <!-- <img ng-src="{{editor.content[$index].img}}" ng-if="editor.content[$index].img" style="height:100%;"> -->
+                <div class="cube-title" ng-if="editor.addTitle && editor.content[key].title">{{editor.content[key].title}}</div>
+            </div>
+        </div>
+    </div>
+</div>

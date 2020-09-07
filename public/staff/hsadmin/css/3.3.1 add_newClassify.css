@@ -1,0 +1,10 @@
+.hide{display: none;}
+label{font-weight: normal; display: block;}
+.verLine{margin: 0 5px;}
+
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: 50px; line-height: 50px; font-size: 16px;}
+.main .main_content form{margin-bottom: 270px;}
+select{margin-left: 15px}
+
+

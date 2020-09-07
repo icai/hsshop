@@ -1,0 +1,11 @@
+/*新增样式*/
+.wrapper{}
+.flex{display: flex;display:-webkit-flex;}
+.w300{width:300px;}
+.wrapper-group{display: -webkit-box; display: -moz-box; display:-webkit-flex;display: -ms-flexbox;display:flex;margin-top:20px;}
+.wrapper-group-title{-webkit-box-flex: 1;-webkit-flex: 1;-moz-box-flex: 1;-ms-flex: 1; flex: 1;background-color: #f8f8f8;  padding-top:5px; border-right: 2px solid #fff;border-bottom: 5px solid #fff;text-align: right;font-size: 14px;font-weight: bold;}
+.wrapper-group-cont{-webkit-box-flex: 7;-webkit-flex: 7;-moz-box-flex: 7;-ms-flex: 7; flex: 7;}
+.goods-info-group .group-inner {padding: 23px 20px 10px;}
+em.required {font-size: 16px;color: #f00;vertical-align: middle;}
+#head_img{width:50px;height:50px;margin-right:10px;}
+

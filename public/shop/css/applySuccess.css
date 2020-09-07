@@ -1,0 +1,38 @@
+body{
+	background-color: #fff;
+}
+.container{
+	padding:0 24px;
+	background-color: #fff;
+}
+.applySuccess{
+	padding-top: 90px;
+	font-size: 30px;
+	text-align: center;
+	color: #fe1212;
+}
+.notice{
+	margin:31px 0;
+	font-size: 17px;
+	color: #222;
+	text-indent: 34px;
+	line-height: 25px;
+}
+.info{
+	text-align: center;
+	font-size:17px;
+	color: #666;
+}
+.code_img{
+	text-align: center;
+	font-size:12px;
+	color: #666;
+	padding-top: 31px;
+}
+.code_img p{
+	line-height: 20px;
+}
+.code_img img{
+	width: 165px;
+	height: 165px;
+}

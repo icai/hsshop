@@ -1,0 +1,79 @@
+.content {
+    padding-bottom: 100px;
+}
+
+.honor {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px
+}
+
+.honor ul {
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.honor ul li {
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 0 10px
+}
+
+.honor img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 荣耀 */
+.honor-1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.honor-1 ul {
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.honor-1 ul li {
+    float: left;
+    width: 25%;
+    margin-bottom: 25px;
+    padding: 0 10px
+}
+
+.honor-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.grow_target {
+    position: relative;
+}
+
+.swiper-container {
+    width: 1200px;
+    font-size: 0;
+}
+
+.swiper-slide {
+    text-align: left;
+}
+
+.swiper-slide .img {
+    display: inline-block;
+    padding: 0 10px;
+    width: 25%;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url('../image/honor/arrow-left.png');
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: url('../image/honor/arrow-right.png');
+    right: 6px;
+}

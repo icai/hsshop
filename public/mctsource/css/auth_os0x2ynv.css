@@ -1,0 +1,48 @@
+﻿* {-webkit-box-sizing:initial;-moz-box-sizing:initial;box-sizing:initial;}
+*:before,*:after{-webkit-box-sizing:initial;-moz-box-sizing:initial;box-sizing:initial;}
+.clearfix {  *zoom: 1; } 
+.clearfix:before, .clearfix:after {  display: table; line-height: 0; content: ""; } 
+.clearfix:after { clear: both; }
+.co_d00{color: #d00;}
+.font12{font-size: 12px;color: #666;}
+a{display: block;}
+/*主题开始*/
+.container{width: 600px;margin: 0 auto;}
+/*头部开始*/
+.header .header_logo img{width:105px;/*margin-left: 8px;*/margin-top: 3px;}
+.header{width: 100%;margin: 50px 0 30px 0;padding-bottom: 15px;border-bottom: 1px solid #e5e5e5;}
+.header .header_logo{display: block;float: left;width: 85px;height: 30px;margin-top: 10px;}
+.header .header_title{font-size: 16px;margin-left: 128px;margin-top: 20px;border-left: 2px solid #ebebeb; color: #333;padding-left: 10px;}
+.header .header_login{float: right;margin-top: 23px;}
+.header .header_login a{color: #07d;}
+/*内容开始*/
+.main{margin-top: 40px;padding-bottom: 40px;border-bottom: 1px solid #e5e5e5;}
+.main .main_left {width: 400px;float: left;}
+.main .main_left >div{margin-bottom: 20px;}
+.main .main_left input{width: 200px;padding: 8px 10px;height: 20px;}
+.main .main_left .btn-primary{background-color: #0080ed;position: relative;left: 139px;}
+.main .main_left .test input{width: 85px;display: inline-block;}
+.main .main_left .test img{width: 90px;height: 35px;margin-left: 10px;display: inline-block;}
+.main .main_left .fl{float: right;margin-right: 45px;}
+.main .main_left .pad0{padding: 0;width: 13px;vertical-align: middle;display: inline-block;margin-top: -2px;}
+.main_right{float: right;text-align: center;}
+.main_right .attention{width: 200px;margin-top: 30px;}
+.main_right .attention img{width: 120px;margin: 0 auto;}
+.main_right .font14{font-size: 14px;margin-top: 10px;}
+.main_right p{ color: #666;font-size: 12px;padding-top: 5px;}
+.main_right .btn-success{background-color: #44bb00;margin-top: 5px;padding: 5px 35px;}
+.main_right .icon{width: 15px;height: 15px;display: inline-block;background: url("https://upx.cdn.huisou.cn/wscphp/xcx/images/xcxImg/zan/icon_download.png") no-repeat ;background-size: 80% 80%;vertical-align: middle;}
+.main_right .download{position: relative;}
+.main_right .download .more{position: absolute;width: 330px;box-sizing: border-box;left: -300px;top: -140px; background-color: white;border: 1px solid #e5e5e5;padding: 30px;border-radius: 5px;box-shadow: 0 0 10px 1px #666;display: none;}
+.main_right .download .more::before{content: "";display: block;position: absolute;width: 20px;height: 20px;background-color: white;right: -10px;top: 150px; transform: rotate(45deg);}
+.main_right .more h4{padding-bottom: 10px;border-bottom: 1px solid #e5e5e5;margin-bottom: 20px;font-size: 16px;line-height: 2em; font-weight: 800;}
+.main_right .more .more_left{float: left;width: 120px;text-align: center;}
+.main_right .more .more_right{float: right;width: 120px;}
+.main_right h5{margin: 10px;font-weight: 600;}
+.main_right a{font-size: 12px;}
+.main_right img{width: 120px;margin-bottom: 5px;}
+
+/*底部开始*/
+.footer{text-align: center;}
+.footer p{font-size: 12px;color: #999;margin-top: 20px;} 
+.footer p a {display: inline-block;}

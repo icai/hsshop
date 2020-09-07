@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.hide{display: none;}
+label{font-weight: normal;}
+
+.main .main_content{
+    padding: 10px 30px;
+    .sorts{
+        height: 50px; 
+        line-height: 50px; 
+        font-size: 16px;
+        .verLine{
+            margin: 0 5px;
+        }
+    }
+    .table_title{
+        background: #f0f0f0;
+    }
+    ul{
+        height: 50px; 
+        border-bottom: 1px solid #ccc;
+        li{
+            width: 23%;
+            height: 100%;
+            line-height: 49px; 
+            overflow: hidden;
+            text-align: center; 
+            font-size: 15px;
+            .del{
+                color: #f00;
+            }
+            &:nth-child(1){
+                width: 20%
+            }
+        }
+    }
+    .main_bottom{
+        margin-top: 20px;
+        span{
+            a{
+                margin: 0 5px;
+            }
+            input{
+                width: 60px; 
+                height: 34px; 
+                margin-left: 10px; 
+                padding: 5px; 
+                border: 1px solid #ccc; 
+                border-radius: 5px;
+            }
+            button{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/*弹框*/
+body #myModal select, body #myModal_1 select{width: 269px; height: 34px; padding: 2px 5px; border: 1px solid #ccc; border-radius: 5px;}
+body #myModal .modal-footer, body #myModal_1 .modal-footer{text-align: center;}
+
+#shop_form{
+    margin:24px 0
+}
+
+.red{
+    color:red
+}
+.noData{
+    text-align: center;
+    font:24px/64px '';
+    font-weight: bold;
+    color:#e6e6e6
+}
+textarea{
+    resize: none
+}

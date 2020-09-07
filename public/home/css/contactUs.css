@@ -1,0 +1,15 @@
+#content_5{position: relative}
+.content .mapDiv #mapShow{width: 1200px; height: 460px; border: 1px solid #ccc;margin: 0 auto;margin-bottom: 100px; }
+.content .linkUs{width: 1200px;margin: 0 auto;overflow: hidden;padding: 15px 0 75px;}
+.aboutUs{text-align: left}
+.aboutUs h6{font-size: 24px;color: #343434;margin: 0}
+.aboutUs>div{font-size: 16px;line-height: 18px;margin-top: 17px;}
+.aboutUs img{margin-right: 8px;display: inline-block}
+.linkUs>div{float: left;width: 400px;height: 210px;border-left: 1px solid #F0F0F0}
+.linkUs>div:first-child{border-left: 0;}
+.consult_tel{padding: 17px 0 0 71px;text-align: left;}
+.consult_tel div{font-size: 22px}
+.consult_tel p{font-size: 36px;color: #3197FA;margin-top: 35px}
+.code_left{float: left;padding: 59px 0;font-size: 16px;line-height: 27px}
+.weixin_code{padding: 25px 64px;}
+.weixin_code img{display: inline-block;width: 160px;height: 160px;}

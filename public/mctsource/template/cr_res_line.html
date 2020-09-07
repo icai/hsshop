@@ -1,0 +1,51 @@
+<div class="editer-content">
+        <div class="control-group">
+            <label class="control-label">
+                <em class="required">*</em>标题：
+            </label>
+            <div class="controls page_title">
+                <input class="form-control" type="text" name="title"  ng-model="editors[index].title" required>
+            </div>
+            <label class="control-label res_time">描述：</label>
+            <div class="controls page_title res_time">
+                <textarea class="form-control" type="text" name="title"  ng-model="editors[index].subtitle" value="" ></textarea>
+            </div>
+
+            <label class="control-label res_time">线型：</label>
+            <div class="controls page_title res_time line-box">
+                <ul>
+                    <li ng-class="{'active':editors[index].rule_line_idx==0}" ng-click="lineType(0)">
+                        <div class="line-type dotted"></div>
+                    </li>
+                    <li ng-class="{'active':editors[index].rule_line_idx==1}" ng-click="lineType(1)">
+                        <div class="line-type dashed"></div>
+                    </li>
+                    <li ng-class="{'active':editors[index].rule_line_idx==2}" ng-click="lineType(2)">
+                        <div class="line-type solid"></div>
+                    </li>
+                    <li ng-class="{'active':editors[index].rule_line_idx==3}" ng-click="lineType(3)">
+                        <div class="line-type double"></div>
+                    </li>
+                    <li ng-class="{'active':editors[index].rule_line_idx==4}" ng-click="lineType(4)">
+                        无
+                    </li>
+                </ul>
+            </div>
+            <label class="control-label res_time align-title">标题对齐方式：</label>
+            <div class="controls page_title res_time align-type">
+                <ul>
+                    <li ng-class="{'active':editors[index].rule_title_idx==0}" ng-click="alignType(0)">居左</li>
+                    <li ng-class="{'active':editors[index].rule_title_idx==1}" ng-click="alignType(1)">居中</li>
+                    <li ng-class="{'active':editors[index].rule_title_idx==2}" ng-click="alignType(2)">居右</li>
+                </ul>
+            </div>
+            <label class="control-label res_time align-title">描述对齐方式：</label>
+            <div class="controls page_title res_time align-type">
+                <ul>
+                    <li ng-class="{'active':editors[index].rule_desc_idx==0}" ng-click="contAlign(0)">居左</li>
+                    <li ng-class="{'active':editors[index].rule_desc_idx==1}" ng-click="contAlign(1)">居中</li>
+                    <li ng-class="{'active':editors[index].rule_desc_idx==2}" ng-click="contAlign(2)">居右</li>
+                </ul>
+            </div>
+        </div>
+    </div>

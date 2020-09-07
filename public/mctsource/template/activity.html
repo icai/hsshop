@@ -1,0 +1,49 @@
+<div class="modal" ng-show="closeModel">
+    <div class="mark"></div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()">×</button>
+                <ul class="list">
+                    <li class="js_small list_active" style="padding:0;">推荐到活动</li>
+                    <!-- <li class="js_manage" style="display:block;border-right:none;padding:0 0 0 14px;">
+                        <a class="co_38f" target="_blank" href="/merchants/product/create">新建商品</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="modal-body">
+                <table class="sel-goods-table">
+                    <thead>
+                        <tr>
+                            <th class="title">
+                                <span class="line30">活动名称</span>&nbsp;&nbsp;
+                                <!-- <a class="co_38f line30 refresh" href="javascript:void(0);">刷新</a> -->
+                            </th>
+                            <th class="search">
+                                <input type="text" ng-model="params.searchTitle">
+                                <button class="btn btn-default" ng-click="search()">搜</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="small" style="height: 386px;">
+                        <tr class="page1" ng-repeat="list in params.lists">
+                            <td>
+                                <a class="co_38f js-goods-title" href="http://192.168.63.28/shop/product/detail/419/1958?wid=419" target="_blank">{{list.title}}</a>
+                            </td>
+                            <td>
+                                <button class="btn btn-default js-btn-disabled" ng-if="list.isComment">已推荐</button>
+                                <button class="btn btn-default js-btn-default" ng-class="list.isActive ? 'btn-primary' : ''"  ng-if="!list.isComment" ng-click="recomment(list)">推荐</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="no_result" ng-if="!params.lists.length">暂无数据</div>
+            </div>
+            <div class="modal-footer clearfix" ng-show="params.lists.length || !noData">
+                <span class="use-btn" ng-class="params.chooseList.length ? 'inline_block' : ''" ng-click="chooseSure()">确定使用</span>
+                <div class="myModalPage">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

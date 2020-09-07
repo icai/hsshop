@@ -1,0 +1,15 @@
+.content{position: relative;}
+.content .content_top{min-height: 60px; height: auto; border: 1px solid #CCCCCC;}
+.content .content_top .top_left{display: flex; align-items: center; width: 110px; min-height: 58px; height: auto; padding: 0 10px; font-weight: normal; background: #F6F6F6; border-right:1px solid #CCCCCC ;}
+.content .content_top .top_right{padding: 15px 10px; height: auto;}
+.content .content_top .top_right i{color: #B94A48; font-size: 12px;}
+.content .content_top input{display: inline-block;width: 70px;}
+
+/*保存按钮部分*/
+.content .saveDiv{margin-top: 20px; height: 60px; display: flex; align-items: center; background: #FFFFCC;}
+.content .saveDiv button{margin-left: 135px;}
+
+/*保存成功提示面*/
+.content .successPromrt{position: absolute; top: -20px; left: calc(50% - 250px); width: 500px; height: 40px; line-height: 40px; text-align: center; color: white; background: #45b182; border-radius: 5px;}
+
+.opacityShow{opacity: 1;}

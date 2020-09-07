@@ -1,0 +1,9 @@
+.culture_content,.honor_content,.mien_content{width: 1200px;margin: 0 auto;padding: 0 30px;}
+.culture{height: 492px;position: relative;}
+#content_3 p{margin-bottom: 30px;}
+.honor{background: #F5F5F7;height: 550px;position: relative;}
+.team_mien{position: relative}
+.team_mien .thear{width: 1200px;margin: 0 auto;margin-top: 65px;}
+.team_mien .thear ul{overflow: hidden;}
+.team_mien .thear ul li{float: left;width: 490px;height: 368px;margin: 25px 55px;}
+.team_mien .thear ul li img{width: 100%;height: 100%;}

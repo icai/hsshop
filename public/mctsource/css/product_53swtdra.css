@@ -1,0 +1,39 @@
+
+.common-helps-entry {
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.clearfix::after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.common-helps-entry .help-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    line-height: 18px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #fff;
+    background: #3c3;
+    text-align: center;
+}
+.common-helps-entry .help-icon:after {
+    content: "?";
+}
+/*列表*/
+table thead th{
+	background: #f8f8f8;
+}
+
+/*分页*/
+.page{
+	text-align:right;
+}
+
+.table>thead>tr>th{border-bottom:1px solid #E5E5E5;}
+.table>tbody>tr>td{border-top:0;border-bottom: 1px solid #E5E5E5;padding: 10px;}

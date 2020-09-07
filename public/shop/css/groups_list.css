@@ -1,0 +1,201 @@
+.container{padding:0;}
+.gp-list-wrap{background-color:#fff; margin-top: 10px;}
+.gp-list-wrap .gp-list-title{text-align: center; font-size:30px;}
+.t-red{ color: #b1292d;}
+/*团购样式3  */
+.gp-list-wrap.list-3 .gp-list-box{ display: block; width:100%; margin-top:15px; position: relative;}
+.gp-list-wrap.list-3 .gp-list-item{padding:0 12px;}
+.gp-list-wrap.list-3 .gp-list-datu{width:100%; height:300px; margin-bottom: 10px;}
+.gp-list-wrap.list-3 .gp-list-item-label{position: absolute; left:30px; top:25px; color:#c3ad7e; border: 1px solid #c3ad7e; display: inline-block; padding:7px 10px; border-radius: 6px;}
+.gp-list-wrap.list-3 .gp-list-item-title{ font-size:30px; margin-top:15px;}
+.gp-list-wrap.list-3 .gp-list-item-explain{font-size:22px;color:#666;margin-top:15px; }
+.gp-list-wrap.list-3 .gp-list-price{ font-size:26px; color:#b1292d; margin-top: 8px;}
+.gp-list-wrap.list-3 .gp-list-people{position: absolute; top:0; right:190px; width: 100px; height:40px;} 
+.gp-list-wrap.list-3 .gp-list-people-img{width:40px;height:40px;position: absolute; top:10px; right: 0;}
+.gp-list-wrap.list-3 .gp-list-kaituan{ position: absolute;  top:0; right:0;} 
+.gp-list-wrap.list-3 .gp-list-btn-img {position: absolute;top:0;right:0;width:170px;  height:60px;}
+/*拼团人开始  */
+.gp-people-wrap {
+  padding: 30px 0 0;
+  background-color: #fff;
+
+}
+.gp-people-head {
+  padding: 0 24px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  text-align: center;
+}
+.gp-people-head-item {
+  position: relative;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 65px;
+  box-sizing: border-box;
+}
+.gp-people-head-item.nobody {
+  border: 1px dashed #999;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #999;
+}
+.gp-people-head-item .colonel {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #b1292d;
+  display: inline-block;
+  padding: 5px 10px; 
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.gp-people-head-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #b1292d;
+}
+.gp-people-tip {
+  margin-top: 30px;
+  text-align: center;
+}
+.gp-people-btn {
+  padding: 0px 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.gp-btn {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #b1292d;
+  font-size: 28px;
+  margin: 30px 0;
+  height: 90px;
+  line-height: 90px;
+  width: 100%;
+}
+/*拼团人结束  */
+.disfle{display: flex;display: -webkit-flex;display: -ms-flex; justify-content: space-between;justify-content: -webkit-space-between;justify-content: -ms-space-between;}
+.gp-list-sold{font-size: 12px;}
+.pad10{padding: 15px 0; text-align: center;}
+.colb08{color:#b0282c;}
+.participate{background: #b0282c; color:#fff;text-align: center; width: 90%;margin: auto; padding:8px 0;border-radius: 5px; display: block;}
+.posfix{position: fixed; bottom: 10%;right: 5%; text-align: center;}
+.posfix image{width: 80px; height: 80px;}
+.tipmod{width: 100%;height: 100%; position: fixed;top: 0;left: 0;background:rgba(0,0,0,.3);}
+.modimg{position: absolute; left: 50%;top: 50%;margin-top: -75px;margin-left: -75px; width: 150px; height: 150px;}
+
+
+/*拼团人员弹窗开始  */
+
+.group-people-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.group-people-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 430px;
+  margin-top: -190px;
+  margin-left: -45%;
+  background-color: #f5f5f5;
+  z-index: 101;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  overflow: auto;
+}
+
+.group-people-info {
+  padding-top: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.group-people-head {
+  border: 1px solid #b1292d;
+  text-align: center;
+  color: #999;
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.group-people-head .colonel {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #b1292d;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.group-people-head-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.group-people-username {
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.group-people-time {
+  color: #999;
+  text-align: center;
+  margin: 15px 0 0;
+  padding-bottom: 40px;
+}
+
+.group-people-btnwrap {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 15px;
+}
+
+.group-people-btn {
+  padding: 0 40px;
+}
+
+.group-people-people {
+  padding: 35px 24px 30px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.group-people-people-head {
+  width: 70px;
+  height: 70px;
+}
+.yao{
+	width: 80px;
+	height: 80px;
+}
+/*遮罩样式  */
+.t-mask{position: fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.3);}

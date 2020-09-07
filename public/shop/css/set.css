@@ -1,0 +1,275 @@
+/*option{font-size: 14px;}*/
+footer{
+	position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,0);
+}
+.share-mp-info {
+    position: relative;
+    background: #1e1d22;
+    color: #999;
+    font-size: 0;
+    line-height: 0;
+    padding: 1px 176px 1px 1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.share-mp-info .page-mp-info {
+    display: block;
+    padding: 4px 0 4px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+.share-mp-info .page-mp-info, .share-mp-info .links {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+.share-mp-info a {
+    color: #999;
+}
+.share-mp-info img.mp-image {
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+.share-mp-info i {
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.share-mp-info em, .share-mp-info i {
+    vertical-align: middle;
+    font-style: normal;
+}
+.share-mp-info .links {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: inline-block;
+}
+.share-mp-info .page-mp-info, .share-mp-info .links {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+.share-mp-info .mp-search {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 27px;
+}
+.share-mp-info .mp-search::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: url(../image/find.png) no-repeat;
+    background-size: 12px 12px;
+}
+.share-mp-info .links a:last-child {
+    margin-right: 0;
+}
+.share-mp-info .links .mp-homepage {
+    margin-left: 0;
+}
+.share-mp-info .links a {
+    margin-right: 8px;
+}
+.share-mp-info a {
+    color: #999;
+}
+.user-info {
+    margin: 10px 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all
+
+.weui-cells {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+.weui-cells {
+    margin-top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.weui-cell input[type='text']::-webkit-input-placeholder{
+    color: #e5e5e5;
+}
+.user-info .weui-cell {
+    /*padding: 10px 15px;*/
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all
+
+.weui-cell {
+    border-bottom-width: 1px;
+}
+.weui-cell {
+    padding: 12px 0;
+
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px
+}
+.weui-cells-form input, .weui-cells-form textarea, .weui-cells-form label[for] {
+    -webkit-tap-highlight-color: transparent;
+}
+.weui-label {
+    display: block;
+    width: 60px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-right: 5px;
+    text-align:left;
+
+}
+/* .weui-cell-hd{padding-left: 10px;} */
+.weui-cell-primary {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.weui-cells-form input, .weui-cells-form textarea, .weui-cells-form label[for] {
+    -webkit-tap-highlight-color: transparent;
+}
+.weui-input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    height: 1.4em;
+    line-height: 1.4;
+}
+.weui-cell-select .weui-select {
+    padding-right: 30px;
+}
+
+.weui-select {
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: inherit;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+}
+.weui-cell-select .weui-cell-bd:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+}
+.address-fm .area-layout {
+    overflow: hidden;
+}
+.address-fm .area-layout span {
+    float: left;
+    width: 31%;
+    overflow-x: hidden;
+}
+.address-fm .area-layout span select {
+    padding: 0;
+    width: 100%;
+}
+
+.address-fm .address-province, .address-fm .address-city, .address-fm .address-county, .address-fm .community-info {
+    color: #333;
+}
+
+.area-layout select {
+    outline: none;
+    background-color: #fff;
+    border: 0 none;
+}
+
+.address-fm input, .address-fm textarea, .address-fm select, .address-fm button, .address-fm label {
+    vertical-align: top;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.btn-block {
+    text-align: center;
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn.btn-block {
+    margin: 25px 0;
+    border: 0
+}
+.container .content:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.js-user-form .after:after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+}

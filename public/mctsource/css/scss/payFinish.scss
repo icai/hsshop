@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "servicePublic";
+
+/* 完成续费 */
+.payment-complete{
+    .complete-pay{
+        text-align: center;
+        .complete-top{
+            font:24px/48px '微软雅黑';
+            margin: 104px 0 64px;
+            img{
+                display: inline-block;
+                padding-right:8px;
+            }
+            .state2{
+                vertical-align: text-top;
+            }
+            .paytype-3{
+                color:#e0883c
+            }
+            .paytype-2{
+                color:#d0821d
+            }
+            .paytype-1{
+                color:#b9b91d
+            }
+        }
+        .complete-bottom{
+            color:#666;
+            .over-nav{
+                padding-top:24px;
+                a{
+                    display: inline-block;
+                    color:red;
+                    text-decoration: underline;
+                    padding:4px 16px
+                }
+            }
+        }
+    }
+}
+.complete-top-tip{
+    font-size:14px;
+    text-indent:116px;
+    margin-top:-32px;
+}

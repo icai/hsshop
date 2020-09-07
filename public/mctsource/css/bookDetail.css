@@ -1,0 +1,13 @@
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*main*/
+.bd_main{padding-left: 20px;}
+.bd_img img{display: inline-block;}
+.bd_img{border-bottom: 1px solid #e5e5e5;height: 40px;padding-left: 20px;font-size: 30px;}
+.bd_box{padding-left: 20px;}
+.bd_box div{line-height: 40px;height: 40px;}
+.bd_box div i{display: inline-block;width: 120px;}
+.bd_box div span{padding-left: 40px;}
+.bd_btn{width:40px ;height:30px ;line-height:30px ;background: #f9f9f9;border: 0;border:1px solid #e5e5e5;margin:20px  0  0 100px;}
+.bd_box div:nth-of-type(7) i{float: left;}
+.bd_box div:nth-of-type(7) span{float: left;width: 60%;}

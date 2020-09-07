@@ -1,0 +1,17 @@
+<div class="control-group">
+    <div class='detaTime_con'>
+        <p class='detaTime_title'><em ng-if='editor.required'>*</em>{{editor.title}}</p>
+        <p class='detaTime_title_a' ng-if='editor.subtitle'>{{editor.subtitle}}</p>
+        <div class="choices">
+            <ul>
+                <li class='vote_option' ng-repeat='item in editor.sub_rules'>
+                    <input ng-show='item.type != "other"' ng-if='editor.multiple == 0' type="radio" disabled>
+                    <input ng-show='item.type != "other"' ng-if='editor.multiple == 1' type="checkbox" disabled>
+                    <span ng-show='item.type != "other"'>{{item.title}}</span>
+                    <span ng-if='item.type == "other"'>其他:</span>
+                    <input ng-if='item.type == "other"' class='option_qita' type="text" disabled>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

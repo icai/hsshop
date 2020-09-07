@@ -1,0 +1,32 @@
+.w30{width: 30%;}
+.w10{width: 10%;}
+/*主体左侧列表开始*/
+.left_title .left_nav{min-height: 500px;border: 1px solid #e5e5e5;}
+.left_title .left_nav li{margin-bottom:16px;}
+.left_title .left_nav li a{display: block;padding: 8px 15px;margin: 10px;color: #666;}
+.left_title .left_nav a:hover{color: #38f;}
+.left_title .left_nav .active a{background-color: #eee;color: #333;border-radius: 2px;}
+.left_title .left_nav .line{border-top: 1px solid #e5e5e5;}
+/*右侧主题开始*/
+.right_container{-webkit-box-flex: 1;padding:15px;}
+/*中间内容开始*/
+/*弹框开始*/
+.modal-title{font-weight: 700;}
+.modal-body{padding: 10px;}
+.modal-body .cap_content{border: 1px solid #ccc;}
+.cap_content textarea{border: 0; width: 100%;height: 150px; padding: 10px;box-sizing: border-box;}
+.cap_content .cap_footer{border-top: 1px solid #ccc;padding: 8px 15px;font-size: 12px;}
+.cap_tool span{display: inline-block;margin-right: 10px;cursor: pointer;}
+/*链接*/
+.cap_tool{position: relative;}
+.cap_tool .link{position: absolute;top: 20px; box-sizing: border-box;width: 310px;padding: 10px;border: 1px solid #ccc;border-radius: 5px;background: #fff;display: none;}
+.cap_tool .link input{padding: 3px 10px;height: 25px;border-radius: 3px;width: 190px;margin-right: 15px;vertical-align: middle;}
+/*tabel*/
+.widget_list img{display: inline;}
+.widget_list tr th{text-align: left;font-weight: 100;}
+.widget_list tr td{text-align: left; font-size: 12px;}
+.widget_list tr .text_right{text-align: right;}
+/*页码*/
+.page_footer{margin-top: -20px; border-top: 2px solid #ccc;text-align: right;padding: 20px 0px;font-size: 12px;}
+
+

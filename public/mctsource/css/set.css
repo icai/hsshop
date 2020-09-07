@@ -1,0 +1,94 @@
+body {
+    min-width: 1000px;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-family: Helvetica, STHeiti, "Microsoft YaHei", Verdana, Arial, Tahoma, sans-serif;
+    background-color: #fff;
+    font-size: 12px;
+    background: #fff;
+}
+
+.contenter {
+    margin-right: auto;
+    margin-left: auto;
+    width: 940px;
+}
+
+a {
+    color: #07d;
+}
+
+.wrapper-app {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#header {
+    margin-top: 40px;
+    color: #666666;
+}
+
+#header .header-title-wrap {
+    padding-bottom: 22px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+#header .account {
+    float: right;
+    margin-top: 12px;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: right;
+}
+
+#header .header-title {
+    position: relative;
+    top: 12px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 10px;
+    margin: 0 300px 0 145px;
+    border-left: 2px solid #ebebeb;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+#header .header-logo {
+    float: left;
+    width: 105px;
+    height: 40px;
+    background: url(../../home/image/gupiaodaima.png) no-repeat;
+    position: relative;
+    top: 4px;
+    right: -29px;
+    background-size: 100% 100%;
+    background-position: 0;
+}
+/*内容开始*/
+.set{width: 500px;margin:50px auto;}
+.set .set_group{height: 50px;font-size: 15px;}
+.set .set_group>div{display: inline-block;}
+.set .set_group input{padding:5px;border-radius: 3px;border:1px solid #ccc;}
+.set .set_left{width: 120px;text-align: right;font-weight: bold;}
+.set .changePsd{margin-left: 45px;}
+.set .logo{width: 60px;height: 60px;display: inline-block;}
+.set form{display: inline-block;}
+.set .alter{margin-left: 10px;position: relative;}
+.set .alter input{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;}
+.btn_group{margin-top: 80px;}
+.btn_group .btn{margin-left: 120px;margin-right: 20px;}

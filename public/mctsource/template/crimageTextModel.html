@@ -1,0 +1,122 @@
+<div class="editer-content">
+    <div class="js-nav-region clearfix text_image">
+        <ul class="choices ui-sortable edit-shopnav">
+            <!-- ngRepeat: menu in menus['menu'] -->
+            <li class="choice ng-scope">
+                <div class="first-nav">
+                    <h3>轮播区</h3>
+                    <div class="js-first-nav-item-meta-region">
+                        <div class="text_sub_title">
+                            <!-- <div class="shopnav-item">
+                                <div class="shopnav-item-title">
+                                    <span class="js-edit-title ng-binding" ng-bind="menu['title']" id="menus_0" ng-click="changeTitle(menu,$index)">全部商品</span>
+                                </div>
+                                <div class="shopnav-item-link">
+                                    <span class="pull-left shopnav-item-split">|</span>
+                                    <span class="pull-left" ng-show="!menu['submenus'].length" id="menuLink_0">链接：</span>
+                                    <div class="pull-left" ng-show="!menu['submenus'].length">
+                                        <div class="dropdown hover ng-hide" ng-show="!menu['linkUrl']">
+                                            <a class="dropdown-toggle js-link-to" href="javascript:void(0);">选择链接页面</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="js_product" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseShop(outerIndex,3)">商品及分类</a></li>
+                                                <li class="js_smallPage" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="choosePageLink($index,3)">微页面及分类</a></li>
+                                                <li class="homepage js_shop" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseLinkUrl($index,menu,1)">店铺主页</a></li>
+                                                <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,2)"><a role="menuitem" href="javascript:void(0)">会员主页</a></li>
+                                                <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,3)"><a role="menuitem" href="javascript:void(0)">购物车</a></li>
+                                                <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,4)"><a role="menuitem" href="javascript:void(0)">拼团</a></li>
+                                                <li>
+                                                    <a class="js-modal-magazine" href="javascript:void(0);" ng-click="setLinkUrl($index,1)">自定义外链</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clearfix" ng-show="menu['linkUrl']">
+                                            <div class="pull-left js-link-to link-to">
+                                                <a href="javascript:void(0);" target="_blank" class="new-window link-to-title ng-binding" ng-bind="menu['linkUrlName']">全部商品</a>
+                                            </div>
+                                            <div class="dropdown hover pull-right" ng-show="menu.dropDown">
+                                                <a class="dropdown-toggle  shopnav-item-action" href="javascript:void(0);">修改</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="js_product" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseShop(outerIndex,3)">商品及分类</a></li>
+                                                    <li class="js_smallPage" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="choosePageLink($index,3)">微页面及分类</a></li>
+                                                    <li class="homepage js_shop" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseLinkUrl($index,menu,1)">店铺主页</a></li>
+                                                    <li class="homepage js_members" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseLinkUrl($index,menu,2)">会员主页</a></li>
+                                                    <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,3)"><a role="menuitem" href="javascript:void(0)">购物车</a></li>
+                                                    <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,4)"><a role="menuitem" href="javascript:void(0)">拼团</a></li>
+                                                    <li>
+                                                        <a class="js-modal-magazine" href="javascript:void(0);" ng-click="setLinkUrl($index,1)">自定义外链</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown hover pull-right ng-hide" ng-show="!menu.dropDown">
+                                                <a class="dropdown-toggle  shopnav-item-action" href="javascript:void(0);">修改</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="js_product" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseShop(outerIndex,3)">商品及分类</a></li>
+                                                    <li class="js_smallPage" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="choosePageLink($index,3)">微页面及分类</a></li>
+                                                    <li class="homepage js_shop" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseLinkUrl($index,menu,1)">店铺主页</a></li>
+                                                    <li class="homepage js_members" role="presentation"><a role="menuitem" href="javascript:void(0)" ng-click="chooseLinkUrl($index,menu,2)">会员主页</a></li>
+                                                    <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,3)"><a role="menuitem" href="javascript:void(0)">购物车</a></li>
+                                                    <li class="homepage js_members" role="presentation" ng-click="chooseLinkUrl($index,menu,4)"><a role="menuitem" href="javascript:void(0)">拼团</a></li>
+                                                    <li>
+                                                        <a class="js-modal-magazine" href="javascript:void(0);" ng-click="setLinkUrl($index,1)">自定义外链</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="pull-left c-gray ng-hide" ng-show="menu['submenus'].length">
+                                                                使用二级导航后主链接已失效。
+                                                            </span>
+                                </div>
+                            </div> -->
+                            图文素材：
+                        </div>
+                    </div>
+                </div>
+                <div class="second-nav" data-first-nav-index="0">
+                   <!--  <div class="actions">
+                        <span class="action delete close-modal" title="删除" ng-click="removemenus($index)">×</span>
+                    </div> -->
+                    <div class="js-second-nav-region">
+                        <ul class="choices ui-sortable">
+                            <li ng-repeat = "list in editors[index]['slideLists']">
+                                <a href="javascript:void(0);">{{$index + 1}}. <span>[微信图文]{{list.title}}</span></a>
+                                <div class="actions">
+                                    <span class="action delete close-modal" title="删除" ng-click="removeSlide($index)">×</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="add-shopnav add-second-shopnav js-add-second-nav" ng-click="addTextImageSlide()">+ 添加图文素材</p>
+                </div>
+            </li>
+            <!-- end ngRepeat: menu in menus['menu'] -->
+            <li class="choice ng-scope" ng-repeat="menu in editors[index]['lists']" ng-init="outerIndex = $index">
+                <div class="first-nav menu_list">
+                    <h3 id="menus_{{$index}}" ng-click="changeTiTitle(menu,$index)">{{menu.title}}</h3>
+                    <div class="js-first-nav-item-meta-region">
+                        <div class="text_sub_title">
+                            <span>图文素材：</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-nav" data-first-nav-index="0">
+                    <div class="actions">
+                        <span class="action delete close-modal" title="删除" ng-click="removemenus($index)">×</span>
+                    </div>
+                    <div class="js-second-nav-region">
+                        <ul class="choices ui-sortable">
+                            <li ng-repeat = "list in menu['lists']">
+                                <a href="javascript:void(0);">1. <span>[微信图文]{{list.title}}</span></a>
+                                <div class="actions">
+                                    <span class="action delete close-modal" title="删除" ng-click="removeTextImage($index,outerIndex)">×</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="add-shopnav add-second-shopnav js-add-second-nav" ng-click="addTextImage($index)">+ 添加图文素材</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <p class="add-shopnav js-add-nav" ng-click="addTextImageKind()" ng-show="editors[index]['lists'].length<=3">+ 添加图文素材分类</p>
+</div>

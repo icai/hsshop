@@ -1,0 +1,226 @@
+<div class="control-group" ng-show="editor.group_type == 1">
+    <div class="custom-tag-list clearfix">
+        <div class="custom-tag-list-menu-block js-collection-region" style="min-height: 323px;">
+            <ul class="custom-tag-list-side-menu">
+                <li ng-show="!editor['left_nav'].length">
+                    <a href="javascript:void(0);" class="current">商品分组</a>
+                    <a href="javascript:void(0);">商品分组</a>
+                    <a href="javascript:void(0);">商品分组</a>
+                </li>
+                <li ng-show="editor['left_nav'].length">
+                    <a href="javascript:void(0);" class="current" ng-repeat="list in editor['left_nav']" ng-bind="list.name"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="custom-tag-list-goods">
+            <ul class="custom-tag-list-goods-list">
+                <li class="custom-tag-list-single-goods clearfix">
+                    <div class="custom-tag-list-goods-img">
+                        <img src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/01.jpg" style="display: inline;">
+                    </div>
+                    <div class="custom-tag-list-goods-detail">
+                        <p class="custom-tag-list-goods-title">此处显示商品名称</p>
+                        <span class="custom-tag-list-goods-price">￥100.00</span>
+                        <a class="custom-tag-list-goods-buy" href="javascript:void(0)">
+                            <span></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="custom-tag-list-single-goods clearfix">
+                    <div class="custom-tag-list-goods-img">
+                        <img src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/02.jpg" style="display: inline;"></div>
+                    <div class="custom-tag-list-goods-detail">
+                        <p class="custom-tag-list-goods-title">此处显示商品名称</p>
+                        <span class="custom-tag-list-goods-price">￥100.00</span>
+                        <a class="custom-tag-list-goods-buy" href="javascript:void(0)">
+                            <span></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="custom-tag-list-single-goods clearfix">
+                    <div class="custom-tag-list-goods-img">
+                        <img src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/03.jpg" style="display: inline;"></div>
+                    <div class="custom-tag-list-goods-detail">
+                        <p class="custom-tag-list-goods-title">此处显示商品名称</p>
+                        <span class="custom-tag-list-goods-price">￥100.00</span>
+                        <a class="custom-tag-list-goods-buy" href="javascript:void(0)">
+                            <span></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="custom-tag-list-single-goods clearfix">
+                    <div class="custom-tag-list-goods-img">
+                        <img src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/04.jpg" style="display: inline;">
+                    </div>
+                    <div class="custom-tag-list-goods-detail">
+                        <p class="custom-tag-list-goods-title">此处显示商品名称</p>
+                        <span class="custom-tag-list-goods-price">￥100.00</span>
+                        <a class="custom-tag-list-goods-buy" href="javascript:void(0)">
+                            <span></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="control-group" ng-show="editor.group_type == 2">
+    <div class="custom-tags">
+        <div class="js-collection-region" ng-show="editor['top_nav'].length">
+            <ul class="tabber tabber-bottom red clearfix tabber-n2 ">
+                <a ng-class="$index==0 ? 'active':''" ng-repeat="list in editor['top_nav']" ng-bind="list.name" ng-style="{'width':editor.width + '%'}"></a>
+            </ul>
+        </div>
+        <div class="js-goods-style-region" ng-show="editor['listStyle'] == 0">
+            <div>
+                <ul class="sc-goods-list clearfix size-3 normal list">
+                    <!-- 大图 -->
+                    <!-- 列表 -->
+                    <li class="goods-card normal">
+                        <a href="javascript: void(0);" class="link js-goods clearfix">
+                            <div class="photo-block">
+                                <img class="goods-photo js-goods-lazy" src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/01.jpg">
+                            </div>
+                            <div class="info">
+                                <p class="goods-title">此处显示商品名称</p>
+                                <p class="goods-price">
+                                    <em>￥379.00</em></p>
+                                <p class="goods-price-taobao"></p>
+                                <div class="goods-buy btn1"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-card normal">
+                        <a href="javascript: void(0);" class="link js-goods clearfix">
+                            <div class="photo-block">
+                                <img class="goods-photo js-goods-lazy" src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/02.jpg">
+                            </div>
+                            <div class="info">
+                                <p class="goods-title">此处显示商品名称</p>
+                                <p class="goods-price">
+                                    <em>￥5.50</em></p>
+                                <p class="goods-price-taobao"></p>
+                                <div class="goods-buy btn1"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="goods-card normal">
+                        <a href="javascript: void(0);" class="link js-goods clearfix">
+                            <div class="photo-block">
+                                <img class="goods-photo js-goods-lazy" src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/03.jpg">
+                            </div>
+                            <div class="info">
+                                <p class="goods-title">此处显示商品名称</p>
+                                <p class="goods-price">
+                                    <em>￥60.00</em></p>
+                                <p class="goods-price-taobao"></p>
+                                <div class="goods-buy btn1"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="control-group" ng-show="editor['listStyle']==1">
+            <ul class="sc-goods-list clearfix size-1 cardshop pic">
+                <li class="goods-card small-pic cardshop">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/01.jpg"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title">此处显示商品名称</p>
+                            <p class="goods-price">
+                                <em>￥100.00</em>
+                            </p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                        <div class="goods-buy" ng-class="{0:'btn1',1:'btn2',2:'btn3',3:'btn4'}[editor['btnStyle']]"></div>
+                    </a>
+                </li>
+                <li class="goods-card small-pic cardshop">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/02.jpg"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title">此处显示商品名称</p>
+                            <p class="goods-price">
+                                <em>￥100.00</em>
+                            </p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                        <div class="goods-buy" ng-class="{0:'btn1',1:'btn2',2:'btn3',3:'btn4'}[editor['btnStyle']]"></div>
+                    </a>
+                </li>
+                <li class="goods-card small-pic cardshop">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" src="https://upx.cdn.huisou.cn/wscphp/public/mctsource/images/03.jpg"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title">此处显示商品名称</p>
+                            <p class="goods-price">
+                                <em>￥100.00</em>
+                            </p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                        <div class="goods-buy" ng-class="{0:'btn1',1:'btn2',2:'btn3',3:'btn4'}[editor['btnStyle']]"></div>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sc-goods-list clearfix size-1 waterfall pic" ng-show="editor['cardStyle']==2">
+                <li class="sc-waterfall-half clearfix" ng-repeat="good in editor['goods']">
+                    <ul class="clearfix">
+                        <li class="goods-card goods-list small-pic waterfall">
+                            <a href="javascript: void(0);" class="link js-goods clearfix">
+                                <div class="photo-block">
+                                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                                <div class="info clearfix ">
+                                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                                    <p class="goods-price" ng-show="editor['priceShow']">
+                                        <em>{{good['price']}}</em></p>
+                                    <p class="goods-price-taobao"></p>
+                                </div>
+                                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="sc-goods-list clearfix size-1 normal pic" ng-show="editor['cardStyle']==3">
+                <li class="goods-card small-pic normal" ng-repeat="good in editor['goods']">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                            <p class="goods-price" ng-show="editor['priceShow']">
+                                <em>{{good['price']}}</em></p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sc-goods-list clearfix size-1 promotion pic" ng-show="editor['cardStyle']==4">
+                <li class="goods-card small-pic promotion" ng-repeat="good in editor['goods']">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                            <p class="goods-price" ng-show="editor['priceShow']">
+                                <em>{{good['price']}}</em></p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                        <div class="goods-buy btn1">
+                            我要抢购
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="component-border"></div>
+        </div>
+    </div>
+    <div class="component-border"></div>
+</div>

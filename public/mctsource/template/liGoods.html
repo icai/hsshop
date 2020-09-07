@@ -1,0 +1,23 @@
+<div class="control-group" ng-if="editor['listStyle']==4 && editor['activitys'].length">
+    <ul class="sc-goods-list clearfix size-3 cardshop list" ng-show="editor['cardStyle']==1">
+        <li class="goods-card cardshop" ng-repeat="good in editor['activitys']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}">
+                    <p class="shareInfo" style="line-height:1;">共xxxx人正在参与</p>
+                </div>
+                <div class="info">
+                    <p class="goods-title" ng-show="good['title']">{{good['title']}}</p>
+                    <p class="goods-title" style="font-size: 12px;color: #999;" ng-show="good['subtitle']">{{good['subtitle']}}</p>
+                    <!--<p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>-->
+                    <p class="goods-price-taobao"></p>
+                    <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                    <div class="share_btn" ng-show="good['buttonTitle']">{{good['buttonTitle']}}</div>
+                    <!-- <div ng-show="good['subtitle']"></div> -->
+                </div>
+            </a>
+        </li> 
+    </ul>
+    <div class="component-border"></div>
+</div>

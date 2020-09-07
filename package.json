@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.2",
+    "bootstrap-sass": "^3.3.7",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^7.0.0",
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "path": "^0.12.7",
+    "style-loader": "^0.21.0",
+    "swiper": "^3.4.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3",
+    "zepto": "^1.2.0",
+    "zepto-webpack": "^1.2.1"
+  }
+}

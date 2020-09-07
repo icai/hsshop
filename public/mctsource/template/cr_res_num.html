@@ -1,0 +1,22 @@
+<div class="editer-content">
+    <div class="control-group">
+        <label class="control-label">
+            <em class="required">*</em>标题：
+        </label>
+        <div class="controls page_title">
+            <input class="form-control" type="text" name="title"  ng-model="editors[index].title" required>
+        </div>
+        <label class="control-label res_time">描述：</label>
+        <div class="controls page_title res_time">
+            <input class="form-control" type="text" name="title"  ng-model="editors[index].subtitle" value="" >
+        </div>
+        <label class="control-label res_time input_right">输入框右侧文字（单位）：</label>
+        <div class="controls res_time page_title input_rig" style="padding-top: 2px">
+            <input class="form-control" ng-model="editors[index].unit" type="text" name="input_type" required>
+        </div>
+        <label class="control-label res_time">是否必填：</label>
+        <div class="controls res_time" style="padding-top: 2px">
+            <input style='vertical-align: middle' ng-model="editors[index]['required']" ng-checked="editors[index]['required']"  class="ng-pristine ng-valid ng-touched" type="checkbox" name="title" value="" ><span style='vertical-align: middle;margin-left: 5px' >必须填写</span>
+        </div>
+    </div>
+</div>

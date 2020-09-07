@@ -1,0 +1,25 @@
+.hide{display: none;}
+
+.content .content_top{width: calc(100% - 40px);height: auto;margin-bottom: 20px;display: flex;justify-content: space-between;padding: 30px 20px;background: #f8f8f8;}
+.top_left p{ font-size: 13px; line-height: 25px; margin-top: 5px;}
+
+.modelShow{position: relative; margin: 10px 0;}
+.modelShow .modelTitle{display: flex; justify-content: space-between; align-items: center; padding: 10px 10px; background: #F6F6F6; border: 1px solid #CCCCCC;}
+.modelShow .confirm{position: absolute; z-index: 130; right: 5%; display: flex; align-items: center; height: 30px; width: 240px; padding: 10px; background: white; border: 1px solid #CCCCCC; border-radius: 5px; }
+.modelShow .confirm button{margin: 5px;}
+.modelShow .angle{ position: absolute; right: -5px; width: 10px; height: 10px; -webkit-transform: rotate(45deg); border-top: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; background: white; }
+
+.modelShow .modelTitle i{display: inline-block; font-size: 13px; color: #999;}
+.modelShow .modelTitle a{color: #2277FF;}
+.modelShow ul{overflow: hidden;}
+.modelShow ul.title{border: 1px solid #CCCCCC;  border-top-color: transparent;}
+.modelShow ul.ulContent, ul.ulSet{ min-height: 35px; height: auto;border: 1px solid #CCCCCC; border-top-color: transparent;}
+.modelShow ul li{float: left; width: 12%;line-height: 35px; padding: 5px 10px;}
+.modelShow ul li:nth-child(1){width: 35%;}
+
+
+
+
+
+
+

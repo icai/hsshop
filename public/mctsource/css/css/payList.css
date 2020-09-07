@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/**
+* creater 华亢 2018/07/09
+*/
+/* 采用grid 8 进行布局 */
+.red {
+  color: red; }
+
+.hide {
+  display: none; }
+
+.noData {
+  font: 48px/64px '微软雅黑';
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 24px 0;
+  text-align: center; }
+
+/**
+* creater 华亢 2018/07/09
+*/
+.top-wrap .top {
+  font-size: 16px; }
+.top-wrap .top ul {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6; }
+.top-wrap .top ul li {
+  display: inline-block;
+  padding: 0 8px; }
+.top-wrap .top ul .schedule {
+  cursor: pointer; }
+.top-wrap .top ul .checked {
+  font-weight: bold;
+  color: #3197FA; }
+
+.article-wrap {
+  width: 80%;
+  margin: 0 auto; }
+
+/* 续费服务支付 */
+.waitPay .waitPay-title, .waitPay .pay-way, .waitPay .pay-content .remit-form {
+  border-bottom: 1px solid #e6e6e6;
+  width: 60%;
+  margin-left: 10%;
+  font: 16px/32px '微软雅黑';
+  padding: 16px 0; }
+
+.waitPay {
+  position: relative;
+  color: #333; }
+.waitPay .waitPay-title {
+  font-weight: bold; }
+.waitPay .pay-way label {
+  font-weight: normal;
+  text-indent: 8px; }
+.waitPay .pay-way p:nth-of-type(2) > span {
+  color: red;
+  font-size: 24px; }
+.waitPay .pay-way p:nth-of-type(2) > span:before {
+  content: '￥';
+  color: red;
+  font-size: 20px; }
+.waitPay .pay-content {
+  margin: 32px 0; }
+.waitPay .pay-content .alipay-qrcode {
+  text-align: center; }
+.waitPay .pay-content .alipay-qrcode img {
+  display: inline-block; }
+.waitPay .pay-content .wechat-qrcode {
+  text-align: center; }
+.waitPay .pay-content .wechat-qrcode img {
+  display: inline-block; }
+.waitPay .pay-content .remit-form {
+  padding: 24px;
+  border: 1px solid #e6e6e6; }
+.waitPay .remit-CS {
+  position: fixed;
+  right: 28%;
+  top: 192px;
+  background: #f6f6f6;
+  padding: 24px;
+  text-align: center; }
+.waitPay .remit-CS img {
+  width: 100px; }
+.waitPay .remit-CS a {
+  display: inline-block;
+  color: white;
+  background: #3197FA;
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin-top: 12px;
+  font-size: 12px; }
+
+.remit-form .remit-tips {
+  font: 13px/24px '微软雅黑';
+  margin-bottom: 24px; }
+.remit-form .remit-tips .getPrice {
+  color: #FF4343;
+  font-size: 18px; }
+.remit-form .remit-tips .count {
+  color: red;
+  font-size: 24px; }
+.remit-form .remit-tips .count:after {
+  content: '元';
+  color: red;
+  font-size: 14px; }
+.remit-form .remit-content {
+  background: #f5f5f5;
+  padding: 8px 16px;
+  text-indent: 32px; }
+.remit-form .remit-content .fs-14 {
+  font-size: 14px; }
+.remit-form .remit-content p {
+  font: 16px/40px '微软雅黑'; }
+.remit-form .remit-content p:nth-of-type(1) {
+  font-weight: bold;
+  text-indent: 0px; }
+.remit-form .remit-content p:nth-of-type(5) span {
+  vertical-align: top; }
+.remit-form .remit-content p:nth-of-type(5) textarea {
+  resize: none;
+  padding: 4px 8px;
+  margin-top: 8px; }
+.remit-form .remit-content .remit-submit {
+  margin-top: 16px;
+  text-indent: 21%; }
+.remit-form .remit-content .remit-submit button {
+  border: 0;
+  outline: 0;
+  background: #3197FA;
+  color: white;
+  border-radius: 2px;
+  line-height: 34px;
+  width: 100px; }
+.remit-form .remit-content .allowance {
+  color: #f88824;
+  font: 12px/24px '微软雅黑';
+  margin: 40px 0 24px; }
+.remit-form .remit-content .allowance img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px; }
+.remit-form .remit-content .allowance span {
+  vertical-align: middle; }
+
+.fc-333 {
+  color: #333; }
+
+.fc-666 {
+  color: #666; }
+
+.inBlock {
+  display: inline-block; }
+
+.ml-8 {
+  margin-left: 8px; }
+
+/*! 自定义input radio*/
+input[type="radio"] + span:before {
+  content: "\a0";
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  border-radius: 50%;
+  border: 1px solid #B8B8B8;
+  text-indent: .15em;
+  margin-top: -4px; }
+
+input[type="radio"]:checked + span:before {
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  border: 5px solid #3197FA;
+  font-size: 14px;
+  width: 1em;
+  height: 1em;
+  margin-top: -4px; }
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+/*# sourceMappingURL=payList.css.map */

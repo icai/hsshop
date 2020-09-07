@@ -1,0 +1,16 @@
+/*右侧内容开始*/
+.right_container{-webkit-box-flex: 1;padding: 15px;}
+.right_container .right_header ul{display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: center;padding: 12px;background-color: #f8f8f8;margin-bottom: 15px;margin-top: 10px;}
+.right_container .right_header li{-webkit-box-flex: 1;display: block;border-left: 1px dotted #ccc;text-align: center;font-size: 12px;}
+.right_container .right_header li:first-child{border: 0;}
+.right_container .right_header li a{display: block;font-size: 22px;font-weight: 400;line-height: 18px;margin: 10px 0;}
+/* 带左边线公共区块 */
+.common_top{margin-bottom:15px;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;padding:10px;background:#f8f8f8;}
+.common_top .common_line{width:4px;height:15px;background:#f70;display:block;margin-left:10px ;}
+.common_top .common_title{-webkit-box-flex:1;margin:0 10px;}
+.common_top .common_title a{color:#38f; margin-left:5px;}
+.common_top a{color: #38f;font-size: 12px;}
+.data{height: 100px;border: 1px solid #e5e5e5;margin-left: 1px;margin-bottom: 30px;}
+.data p{margin-top:25px ;margin-left: 25px;}
+/*图表*/
+#echarts{height: 300px;border: 1px solid #e5e5e5;padding: 30px;margin-left: 15px;}

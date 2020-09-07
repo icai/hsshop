@@ -1,0 +1,76 @@
+/*公共样式*/
+.img_wrap{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.img_wrap img{max-width:100px;max-height:100%;display:block;}
+.gray_bbb{color:#bbb;}
+.f12{font-size:12px;}
+.fon20{font-size:20px;}
+.blue_38f{color:#38f;} 
+.blue_38f:hover{color:#27f;}
+a.blue_38f:focus{color:#38f;text-decoration:none;}
+.blue_00f{color:#00f;}
+.gray_999{color:#999;}
+.mgb15{margin-bottom:15px;}
+.main{overflow-x:visible;}
+.w50{width:50px;}
+.chart_items{height:300px;border:1px solid #e4e4e4;}
+/*三级导航*/
+.advanced_items{float:right;display:block;padding:0 20px;}
+.advanced_items i{color:#3c3;margin-right:5px;}
+/*筛选*/
+.screen_items{margin-left:0;margin-right:0;position: relative;font-size:14px;color:#333;padding:14px;background:#f8f8f8;padding-bottom:100px}
+/*浏览量*/
+.pageviews_items{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;padding:12px;background:#f8f8f8;margin-bottom:15px;}
+.pageviews_items a{-webkit-box-flex:1;display:block;border-left:1px dotted #ccc;text-align:center;font-size:12px;}
+.pageviews_items a:first-child{border:0;width:3px;font-size:18px;}
+.pageviews_items a:hover{color:#666;}
+.pageviews_items a span{display:block;font-size:22px;font-weight:400;line-height:18px;margin:10px 0;}
+.pageviews_items a.empty{color:#999;}
+/*页面类型&访问来源*/
+.type_source{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:justify;}
+.type_source .type_items{-webkit-box-flex:1;margin-right:10px}
+.type_source .source_items{-webkit-box-flex:1;margin-left:10px}
+/*暂无数据*/
+.empty_items{width:100%;height:150px;font-size:20px;text-align:center;color:#999;line-height:150px;}
+
+
+/* 筛选日期 */
+.font34{line-height:34px}
+#date_start_time,#date_end_time{width:200px;margin:0px 12px}
+#filter{position:absolute;top:100px;left:112px}
+.shop_timer{background:white;border-radius:0;margin-left:-2px}
+.shop_timer_input{border-right:none}
+.shop_top_title{padding:30px 0 100px 30px}
+.shop_timer_btn>input{background:white;color:#3098fb;border:1px solid #3098fb}
+.shop_timer_btn>input:nth-of-type(2){margin-left:10px}
+
+/* 按每天流量查看 */
+.table_item_title{display:inline-block;position: relative;}
+.table_item_title:hover .title_tips{display:block}
+.table_item_title:hover .note_tip{color:#3c3}
+.title_tips{position: absolute;left:28px;top:-94px;width:500px;padding:15px 25px;z-index:100;background-color: white;box-shadow:0 0 5px rgba(0,0,0,.5);font-weight:normal;display: none}
+.item_tips_mark{border:8px solid transparent;border-right-color:white;position: absolute;left:-16px;top:96px;}
+
+.thead{background:#f2f2f2}
+.table_body ul{
+    height: 45px;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.table_body ul>li{
+    width:25%;
+    text-align:center
+}
+.table_body .tatilMsg:hover{
+    background:#f7f7f7
+}
+.table_content .table_item_title .title_tips{top:-38px;text-align:left;width:400px}
+
+.table_content .table_item_title .item_tips_mark{left:-16px;top:38px}
+
+.thead li:nth-of-type(4) .title_tips{width:200px}
+.thead li:nth-of-type(5) .title_tips{top:-89px;left:-319px;}
+.thead li:nth-of-type(5) .title_tips .item_tips_mark{left:315px;top:72px;border-top-color:white;border-right-color: transparent}
+
+#app-footer{position: relative;}

@@ -1,0 +1,16 @@
+/*个人中心*/
+.personal_center{border:1px solid #e5e5e5;}
+/*个人信息*/
+.personal_items{padding:20px;background:#f8f8f8;}
+.personal_items .img_wrap{width:200px;}
+.personal_items .personal_content .info_list .info_name{width:60px;color:#999;display:block;}
+.personal_items .personal_content .info_list .items_title span{display:inline-block;vertical-align:middle;padding:0 5px;color:#999;}
+.personal_items .personal_content .info_list .items_title a{}
+/*个人资金*/
+.money_items{padding:10px 0;border-top:1px solid #dcdcdc;}
+.money_items li{-webkit-box-flex:1;display:block;padding:0 15px;border-right:1px solid #e5e5e5 }
+.money_items li:last-child{border-right:0;}
+.money_items li .items_title{margin-bottom:10px;}
+/*下载*/
+.down_items{text-align:center;}
+.down_items .down_content{width:300px;margin:0 auto;}

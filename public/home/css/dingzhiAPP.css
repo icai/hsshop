@@ -1,0 +1,255 @@
+*{ margin: 0; padding: 0;-webkit-box-sizing:border-box;box-sizing:border-box}
+a{text-decoration: none; color: #333; text-decoration: none;}
+html{height:100%;}
+body{position:relative;min-height:100%;}
+ul{list-style: none;}
+.app-fir{
+	width: 100%;
+	background-color: #f95164;
+}
+/*add by han*/
+.app-beijing{
+	width: 1200px;
+	height: 500px;
+	background: url("../image/APPdz-banner.png") no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	position: relative;
+}
+.app-beijing img{
+	width: 100%;
+}
+.order-btn {
+	position: absolute;
+	bottom: 19%;
+	left: 0;
+	padding: 0.8% 2%;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	color: #fff;
+	z-index: 1000;
+	font-size: 20px;
+	cursor: pointer;
+}
+.order-btn:hover {
+	color: #f95164;
+	background-color: #fff;
+}
+.app-qiang{
+	width: 1250px;
+	height: 1130px;
+	margin: 0 auto;
+	background: #fff;
+	
+}
+.qiang-ul{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 90px;
+	color: #4E5256;
+}
+.ys_wrap{
+	width: 100%;
+	height: auto;
+	margin-top:60px ;
+}
+.ys_item{
+	height: 250px;
+	width: 373px;
+	background: #F7F7FA;
+	float: left;
+	margin: 21px;
+	text-align: center;
+}
+.ys_item img{
+	width: 107px;
+	margin-top:25px ;
+}
+.ys_item h3{
+	color: #333333;
+	font-size: 20px;
+	padding-top: 40px;
+}
+.ys_item p{
+	color: #666666;
+	font-size: 14px;
+	padding-top: 25px;
+}
+.hy_item{
+	width: 110px;
+	height: 150px;
+	float: left;
+	text-align: center;
+	margin:0 23px 30px 23px;
+}
+.app-sy{
+	height: 1100px;
+	width: 1250px;
+	margin: 0 auto;
+	background: #FFFFFF;
+}
+.app-sy h3,.app-al h3,.app-lc h3{
+	text-align: center;
+	color: #4E5256;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 80px 0 60px 0;
+}
+.hy_item img{
+	height: 90px;
+	width: 90px;
+}
+.hy_item p{
+	font-size: 18px;
+	color: #333333;
+	padding-top: 15px;
+}
+.app-al-wrap{
+	width: 100%;
+	background: #EDEDF1;
+	text-align: center;
+}
+.app-al{
+	width: 1250px;
+	height: 855px;
+	margin: 0 auto;
+}
+.al_item{
+	float: left;
+	height: 270px;
+	width: 270px;
+	margin:0 21px 50px 21px;
+	position: relative;
+}
+.al_item_img{
+	width: 100%;
+}
+.al_code{
+	text-align: center;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.4);
+	display: none;
+	width: 100%;
+
+}
+.al_code img{
+	width: 180px;
+	height: 180px;
+	margin-top: 30px;
+}
+.al_code p{
+	padding-top: 13px;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	background: #F74A5E;
+	height: 40px;
+	margin-top: 20px;
+}
+
+.al_item:hover{
+	background: rgba(0, 0, 0, 0.4);
+}
+.al_item:hover .al_code{
+	display: block;
+}
+.app-yy{
+	background: url(../image/yuyue-bg.png) no-repeat center;
+	width: 100%;
+	height: 180px;
+	background-size:cover;
+	color: #fff;
+	text-align: center;
+	font-size: 28px;
+	padding-top: 37px;
+}
+.app-yy button{
+	outline: none;
+	color: #fff;
+	height: 42px;
+	width: 170px;
+	background: none;
+	border: #FFFFFF 1px solid;
+	border-radius: 2px;
+	font-size: 18px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.app-yy button:hover{
+	background: #fff;
+	color: #F74A5E;
+}
+button{
+	font-family: "Microsoft YaHei", "Arial", "黑体", sans-serif;
+}
+
+.al-btn button{
+	outline: none;
+	color: #F74A5E;
+	height: 48px;
+	width: 220px;
+	background: none;
+	border: #F74A5E 1px solid;
+	font-size: 14px;
+	margin: 0px 0 67px 0;
+	cursor: pointer;
+}
+.al-btn button:hover{
+	background-color: #F74A5E;
+	color: #ffffff;
+}
+
+.app-lc-wrap{
+	background: #F5F5F7;
+	width: 100%;
+}
+.app-lc{
+	height: 750px;
+	width: 1250px;
+	margin: 0 auto;
+}
+.lc-item{
+	text-align: center;
+	width: 253px;
+	height: 220px;
+}
+.lc-item img{
+	width: 107px;
+}
+.lc-item h4{
+	color: #333333;
+	font-size: 20px;
+	padding-top: 25px;
+}
+.lc-item p{
+	color: #666666;
+	font-size: 14px;
+	padding-top: 20px;
+	line-height: 20px;
+}
+.left{
+	float: left;
+}
+.lc-item-arr{
+	margin: 33px 3px 0 3px;
+}
+.lc-item-top{
+	width: 100%;
+	height: 240px;
+	margin-top: 10px;
+}
+.lc-item-mid{
+	width: 100%;
+	height: 50px;
+}
+.lc-item-mid img{
+	float: right;
+	margin-right: 140px;
+}
+.lc-item-bottom{
+	height: 250px;
+	margin-left: 160px;
+}

@@ -1,0 +1,107 @@
+
+/*card_right*/
+.editer-content .control-group {
+    padding:10px;
+}
+.editer-content .control-group:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.editer-content .control-label {
+    cursor: default;
+}
+.editer-content .control-label {
+    font-size: 14px;
+    line-height: 18px;
+}
+.controls label:first-child{
+    margin-left:0px;
+}
+.editer-content .btn, .editer-content .btn-mini {
+    font-size: 12px;
+}
+.editer-content .radio, .editer-content .checkbox {
+    padding-left: 16px;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:10px;
+}
+.editer-content .radio input[type="radio"], .editer-content .checkbox input[type="checkbox"] {
+    margin-left: -16px;
+    margin-top: 5px;
+}
+.editer-content .setting{
+    display:flex;
+    width:50%;
+}
+.editer-content .setting label{
+    font-weight: normal
+}
+.editer-content .input-append{
+    display:flex;
+}
+.btn {
+    display: inline-block;
+    padding: 2px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    border: 1px solid;
+    border-color: rgb(169, 169, 169);
+    border-left: none;
+}
+.checkbox input{
+    position:relative;
+    top:6px;
+}
+.checkbox{
+    position:relative;
+    top:-2px;
+}
+.richtext .checkbox input{
+    top:0;
+}
+/*新建商品分组右侧商品标签简介*/
+hr {
+    border-color: #DDD;
+    margin: 10px 0;
+    border-bottom: none;
+}
+.separate-line {
+    margin-top: -20px;
+}
+.separate-line p {
+    line-height: 1em;
+    width: 100px;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #999;
+}
+
+/*分页margin*/
+.pagination{
+    margin:0;
+}
+/*图片上传model*/
+.myModal-adv .modal-body{min-height:auto;}
+#container{border:none;}
+.myModal-adv .modal-body .category-list-region{min-height:auto;}
+
+.malef11{margin-left: 11px !important;}

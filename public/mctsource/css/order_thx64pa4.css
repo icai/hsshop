@@ -1,0 +1,62 @@
+.title_info{
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #F4F4F4;
+}
+/*.content .order_num{padding-left:20px;}*/
+.content .order_detail{padding-left:10px;}
+.content .order_detail div{padding:5px 0;}
+.content .order_detail h4{padding:10px 0;}
+.content .order_detail .order_info{background:#fffaeb;}
+.zent-btn-success:link, .zent-btn-success:visited, .zent-btn-success:focus {
+    color: #fff;
+}
+a:link {
+    text-decoration: none;
+}
+.zent-btn {
+    display: inline-block;
+    width: 80px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #bbb;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+.zent-btn-success {
+    color: #fff;
+    background: #06bf04;
+    border-color: #00ab00;
+}
+.order_info{display:flex;}
+.order_info span:first-child{min-width:80px;}
+.order_info .info_detail{word-wrap: break-word;white-space: normal;overflow: hidden;}
+/*用户信息*/
+.content .user_title{margin-top:20px;}
+.content .user_detail{padding-left:30px;}
+.content .user_detail .image{display: flex;align-items: center;}
+.content .user_detail .image img{width:40px;height:40px;border-radius:100%}
+
+.content .user_detail .phone{margin-top:20px;}
+
+/*订单信息*/
+.content .order_title{margin-top:20px;}
+.content .price-cell{text-align:center;}
+.border-bottom-none{border-bottom:none !important;}
+.border-top-none{border-top:none !important;}
+.content table tfoot .check_order{width: 200px;float: right;}
+.content table tfoot .check_order .price{float:right;}
+
+/*按钮*/
+.btn_group{padding:10px 0;text-align:right;}

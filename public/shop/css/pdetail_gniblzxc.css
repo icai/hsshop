@@ -1,0 +1,16 @@
+/*发帖子*/
+.container-full{font-size: 0.24rem;margin-bottom: 1rem;}
+.b-line{border-bottom:1px solid #E6E6E6;}
+.form-title,.form-content{border:none;width:100%;font-size:0.3rem;box-sizing:border-box;padding-left:0.2rem;padding-right:0.2rem;border-radius: 0;}
+.form-title{height:1rem;}
+.form-content{height:4.3rem;padding-top:0.2rem;padding-bottom:0.2rem;}
+.footer-btn-fabu{position:fixed;bottom:0;left:0;width:100%;height:1rem;color:#fff;font-size:0.3rem;font-weight: 600;background-color:#FB2E3D;border:none;}
+.content-explain{position: absolute;bottom: 10px;right: 10px;color: #AEAEAE;}
+.add-wrapper{padding:0.2rem 0;}
+.add-wrapper .add-img,.add-wrapper .add-emoji{width:0.3rem;height:0.3rem;margin-left:0.5rem;}
+.add-img-wrapper {margin:0 .2rem; display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;flex-wrap: wrap;-webkit-flex-wrap:wrap;}
+.add-img-wrapper .img-box{margin-right:0.2rem;margin-top:0.3rem;}
+.add-img-wrapper .img-box img{width:1.2rem;height:1.2rem;border-radius: 5px;}
+.add-img-wrapper .img-box .img-close{position: absolute;top:-5px;right:-5px; height:.3rem;width: .3rem;border-radius: 50%;background-color:#FB2E3D;}
+.add-img-wrapper .img-box .img-close::after{content: '';position: absolute;left:0.05rem;top:0.13rem;border:1px solid #fff;width:0.15rem;}
+.add-img-wrapper .img-box.tips{height:1.2rem;line-height: 1.2rem;}

@@ -1,0 +1,429 @@
+[v-cloak] {
+    display: none;
+}
+.content {
+    min-height: 0;
+}
+.swiper-slide{height: auto !important;}
+/*修改基础样式*/
+.swp .swp-page{height: 150px;}
+/*结束*/
+.signModule .container {
+    min-height: 100%;
+    background: transparent;
+}
+.signModule .container {
+    background-color: #f8f8f8;
+}
+
+.signModule .apps-game {
+    width: auto;
+    margin: 0;
+    min-height: initial;
+}
+.signModule .apps-game {
+    margin: 0 auto;
+    min-height: 500px;
+}
+.signModule .apps-checkin .apps-checkin-nav {
+    position: relative;
+    background-color: #c68674;
+    padding: 10px 20px;
+    height: 40px;
+    z-index: 150;
+}
+
+.signModule .apps-checkin .apps-checkin-nav .apps-checkin-avatar {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    background-color: #c68674;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0 0 0 3px #c68674;
+    box-shadow: 0 0 0 3px #c68674;
+    overflow: hidden;
+}
+
+.signModule .apps-checkin .apps-checkin-nav .apps-checkin-avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.signModule .apps-checkin .apps-checkin-nav .apps-checkin-nav-opt {
+    float: right;
+    margin-top: 21px;
+}
+
+.signModule .apps-checkin .btn.btn-opt {
+    padding: 3px 8px;
+    line-height: 12px;
+    font-size: 12px;
+    background-color: #e1a797;
+    color: #ba6f5a;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 8px;
+}
+.signModule .apps-checkin .btn {
+    padding: 0;
+    border: 0px none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px #a9a9a9;
+    box-shadow: 0 2px #a9a9a9;
+}
+.signModule .btn-opt {
+    min-width: 50px;
+}
+.signModule .btn1,.btn {
+    /*display: inline-block;*/
+    border-radius: 3px;
+    padding: 5px 4px;
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 1.5;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    color: #999;
+}
+
+.signModule .apps-checkin .apps-checkin-nav .apps-checkin-userinfo {
+    margin-left: 87px;
+    margin-right: 60px;
+    color: #fff;
+}
+/*.apps-checkin .apps-checkin-nav .apps-checkin-userinfo .apps-checkin-userinfo-row {
+    font-size: 14px;
+    line-height: 20px;
+}*/
+.signModule .apps-checkin .apps-checkin-nav .apps-checkin-userinfo .apps-checkin-userinfo-row.apps-checkin-userinfo-points {
+    display: inline-block;
+}
+.signModule .apps-checkin .apps-checkin-nav .apps-checkin-userinfo .apps-checkin-userinfo-row {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.signModule .apps-checkin .apps-checkin-content {
+    background-color: #34c79f;
+    background-size: 600px 352px;
+    background-position: center;
+    background-image: url(/shop/images/sign/checkin_bg.png);
+}
+
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-content {
+    position: relative;
+    overflow: hidden;
+    width: 380px;
+    height: 352px;
+    margin: 0 auto;
+    z-index: 100;
+    visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-block {
+    position: absolute;
+    width: 298px;
+    height: 230px;
+    background-image: url(/shop/images/sign/center_block.png);
+    left: 50%;
+    top: 45px;
+    margin-left: -70px;
+}
+
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-info {
+    margin-top: 37px;
+}
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-info-title {
+    margin-left: 35px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #9e3b14;
+}
+
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-info-row {
+    width: 148px;
+    text-align: center;
+    color: #fff;
+}
+
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-info-days {
+    display: inline-block;
+    min-width: 60px;
+    font-size: 54px;
+}
+
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-center-info-small {
+    font-size: 12px;
+}
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-history {
+    font-size: 12px;
+    color: #AB3812;
+    background-color: #FFAA92;
+    width: 60px;
+    padding: 2px 0;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+}
+.signModule .apps-checkin .apps-checkin-runway {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: -66px;
+    height: 36px;
+    padding-top: 13px;
+    color: #95614d;
+    list-style: none;
+}
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-progress.apps-checkin-progress-fromzero, .apps-checkin .apps-checkin-runway .apps-checkin-progress-filled-wrap.apps-checkin-progress-fromzero {
+    left: 12px;
+}
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-progress, .apps-checkin .apps-checkin-runway .apps-checkin-progress-filled-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #8c7777;
+}
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-progress-fromzero+.apps-checkin-progress-filled-wrap {
+    left: 12px;
+}
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-progress-filled-wrap {
+    overflow: hidden;
+    right: initial;
+    background: none;
+    -webkit-transition: 1s ease width;
+    -moz-transition: 1s ease width;
+    transition: 1s ease width;
+}
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-progress-filled-wrap .apps-checkin-progress-filled {
+    width: 380px;
+    height: 3px;
+    background: -webkit-repeating-linear-gradient(150deg, #e95014, #e95014 3px, #ee652f 3px, #ee652f 6px);
+    background: -moz-repeating-linear-gradient(150deg, #e95014, #e95014 3px, #ee652f 3px, #ee652f 6px);
+    background: repeating-linear-gradient(-60deg, #e95014, #e95014 3px, #ee652f 3px, #ee652f 6px);
+}
+
+.signModule .apps-checkin .apps-checkin-content .apps-checkin-prize-wrap {
+    position: absolute;
+    top: -40px;
+    background-color: #9c827a;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    -webkit-transition: .3s ease opacity;
+    -moz-transition: .3s ease opacity;
+    transition: .3s ease opacity;
+}
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-day:first-child {
+    margin-left: 0;
+}
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-day {
+    position: relative;
+    float: left;
+    width: 28px;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-day.apps-checkin-day-at::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    margin-left: -1px;
+    border: 3px solid transparent;
+    border-top: 4px solid #fde55d;
+}
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-day.apps-checkin-day-at::after {
+    top: -18px;
+    margin-left: -5px;
+    border: 4px solid #fde55d;
+}
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-day::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background-color: #fdfffe;
+    border: 1px solid #ee652f;
+}
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-day {
+    position: relative;
+    float: left;
+    width: 28px;
+    margin: 0 15px;
+    text-align: center;
+}
+
+
+.signModule .apps-checkin .apps-checkin-runway .apps-checkin-man {
+    transition: left 1s;
+    left: 10px;
+    position: absolute;
+    bottom: 0;
+    margin-left: -8px;
+    width: 33px;
+    height: 35px;
+    background-size: cover;
+    background-image: url(/shop/images/sign/man.png);
+}
+
+.signModule .apps-checkin .apps-checkin-footer {
+    background-color: #fde55d;
+    padding: 15px 0;
+    text-align: center;
+}
+.signModule .apps-checkin .btn1.btn-checkin {
+    height: 40px;
+    width: 150px;
+    font-size: 21px;
+    background-color: #409c7d;
+    color: #fde55d;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 4px #317e64;
+    box-shadow: 0 4px #317e64;
+    outline: none;
+}
+.signModule .apps-checkin .btn1 {
+    padding: 0;
+    border: 0px none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px #a9a9a9;
+    box-shadow: 0 2px #a9a9a9;
+}
+
+
+.signModule .apps-checkin .btn.btn-checkin::after {
+    position: relative;
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 18px;
+    left: 5px;
+    top: 1px;
+    background-size: 14px 18px;
+    background-image: url(/shop/images/sign/icon_pen.png);
+}
+.signModule .history-container {
+    display: none;
+    background-color: #35BF94;
+    padding: 0 5px;
+    min-height: 100%;
+}
+.signModule .history-container .history-title-back {
+    font-size: 12px;
+    color: #FFF;
+    background-color: #3E9C7A;
+    width: 60px;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin: 10px 0 10px 95px;
+    display: inline-block;
+    text-align: center;
+}
+.signModule .history-container .history-table {
+    width: 100%;
+}
+.signModule table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.signModule .history-container .history-table th:first-child {
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.signModule .history-container .history-table th {
+    background-color: #EBF9F4;
+    font-size: 12px;
+    padding: 16px 0;
+    text-align: left;
+}
+.signModule caption, th, td {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.signModule .history-container .history-table th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.signModule caption, th, td {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.signModule #wxcover {
+    display: none;
+    background-image: url(/shop/images/sign/checkin_cover_929.jpg);
+}
+/*签到成功弹框*/
+.signModule .bg-color{
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-size: 14px;
+}
+.signModule .bg-color .contetn{
+    
+    padding: 5px 0;
+}
+.signModule .sign-success{
+    background-color: #fff;
+    width: 200px;
+    height: 115px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  
+}
+.signModule .title{
+    font-weight: 700;
+    font-size: 16px;
+}
+.signModule .title,.know{
+    text-align: center;
+    margin: 5px 0;
+}
+.signModule .know{
+    padding-top: 10px;
+}
+.signModule .know span{
+    padding: 5px 15px;
+    background-color: #ff1111;
+    color: #fff;
+    border-radius: 5px;
+}
+/*签到新增样式*/

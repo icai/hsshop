@@ -1,0 +1,94 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group">
+            <label class="control-label">选择商品：</label>
+            <div class="controls">
+                <ul class="module-goods-list clearfix ui-sortable" name="goods">
+                    <li class="sort" ng-show="editors[index]['goods'].length" ng-repeat="image in editors[index]['goods']" ng-mouseover="showDelete($index)" ng-mouseout="hideDelete($index)" ng-drop="true" ng-drop-success="onDropShopComplete($index, $data,$event)">
+                        <div ng-drag="true" ng-drag-data="image" class="goods" style="height:100%;width:100%">
+                            <a href="javascript:void(0);">
+                                <img ng-src="{{image['thumbnail']}}" alt="商品图" width="50" height="50">
+                            </a>
+                            <a class="close-modal js-delete-goods small" data-id="" title="删除" ng-show="image['deleteBtn']" ng-click="delete($index)">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="js-add-goods add-goods" ng-click="showModel($index)">
+                            <i class="icon-add"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="js-goods-style-region">
+            <div>
+                <div class="control-group">
+                    <label class="control-label">列表样式：</label>
+                    <div class="controls">
+                        <label class="radio inline">
+                            <input type="radio" name="size" value="1" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==1">大图</label>
+                        <label class="radio inline">
+                            <input type="radio" name="size" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==2" value="2">小图</label>
+                        <label class="radio inline">
+                            <input type="radio" name="size" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==3" value="3">一大两小</label>
+                        <label class="radio inline">
+                            <input type="radio" name="size" ng-model="editors[index]['listStyle']" ng-checked="editors[index]['listStyle']==4" value="4">详细列表</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="controls-card">
+                            <div class="controls-card-tab">
+                                <label class="radio inline">
+                                    <input type="radio" name="size_type" ng-model="editors[index]['cardStyle']" ng-checked="editors[index]['cardStyle']==1" value="1">
+                                    卡片样式
+                                </label>
+                                <label class="radio inline">
+                                    <input type="radio" name="size_type" ng-model="editors[index]['cardStyle']" ng-checked="editors[index]['cardStyle']==3" value="3">
+                                    极简样式
+                                </label>
+                                <label class="radio inline" ng-show="editors[index]['listStyle']==2">
+                                    <input type="radio" name="size_type" ng-model="editors[index]['cardStyle']" ng-checked="editors[index]['cardStyle']==4" value="4">
+                                    促销
+                                </label>
+                            </div>
+                            <div class="controls-card-item" ng-hide="editors[index]['cardStyle']==3 && editors[index]['listStyle']!=4 || editors[index]['listStyle']==2 && editors[index]['cardStyle']==4">
+                                <div>
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" ng-model="editors[index]['showSell']" ng-checked="editors[index]['showSell']" name="buy_btn" value="true">显示购买按钮
+                                    </label>
+                                </div>
+                                <div style="margin: 10px 0 0 20px;" ng-show="editors[index]['showSell']">
+                                    <label class="radio inline">
+                                        <input type="radio" name="buy_btn_type" ng-model="editors[index]['btnStyle']" ng-checked="editors[index]['btnStyle']==1" value="1">样式1</label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="buy_btn_type" ng-model="editors[index]['btnStyle']" ng-checked="editors[index]['btnStyle']==2" value="2">样式2</label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="buy_btn_type" ng-model="editors[index]['btnStyle']" ng-checked="editors[index]['btnStyle']==3" value="3">样式3</label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="buy_btn_type" ng-model="editors[index]['btnStyle']" ng-checked="editors[index]['btnStyle']==4" value="4">样式4</label>
+                                </div>
+                            </div>
+                            <div class="controls-card-item" ng-hide="editors[index]['listStyle'] == 2 && editors[index]['cardStyle'] == 3 || editors[index]['cardStyle'] == 4 || editors[index]['listStyle'] == 4">
+                                <label class="checkbox inline">
+                                    <input type="checkbox" ng-model="editors[index]['goodName']" ng-checked="editors[index]['goodName']" value="0">
+                                    显示商品名
+                                </label>
+                            </div>
+                            <div class="controls-card-item" ng-hide="editors[index]['listStyle'] == 2 || editors[index]['listStyle'] == 3 || editors[index]['listStyle'] == 4">
+                                <label class="checkbox inline">
+                                    <input type="checkbox" name="show_sub_title" ng-model="editors[index]['goodInfo']" ng-checked="editors[index]['goodInfo']" value="0">
+                                    显示商品简介
+                                </label>
+                            </div>
+                            <div class="controls-card-item" ng-hide="editors[index]['listStyle'] == 2 && editors[index]['cardStyle'] == 4 || editors[index]['listStyle'] == 4">
+                                <label class="checkbox inline">
+                                    <input type="checkbox" ng-model="editors[index]['priceShow']" name="price" ng-checked="editors[index]['priceShow']" value="1">显示价格</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

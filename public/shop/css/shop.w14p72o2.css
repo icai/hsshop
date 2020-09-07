@@ -1,0 +1,889 @@
+.none{display: none;}
+.amap-container{cursor:url(https://webapi.amap.com/theme/v1.3/openhand.cur),default;}.amap-drag{cursor:url(https://webapi.amap.com/theme/v1.3/closedhand.cur),default;}
+/*导航*/
+.express-panel{display:block;}
+.empty-address-tip{display:block;}
+.share-mp-info {position: relative;background: #1e1d22;color: #999;font-size: 0;line-height: 0;padding: 1px 176px 1px 1px;display: -webkit-box;display: -webkit-flex;display: -moz-box;display: -ms-flexbox;display: flex;}
+.share-mp-info .page-mp-info {
+    display: block;
+    padding: 4px 0 4px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+.share-mp-info .page-mp-info, .share-mp-info .links {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+.share-mp-info a {
+    color: #999;
+}
+.share-mp-info img.mp-image {
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+.share-mp-info i {
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.share-mp-info em, .share-mp-info i {
+    vertical-align: middle;
+    font-style: normal;
+}
+
+.share-mp-info .links {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: inline-block;
+}
+.share-mp-info .page-mp-info, .share-mp-info .links {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+.share-mp-info .mp-search {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 27px;
+}
+.share-mp-info .mp-search::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: url(data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAANlBM…DD+5Jkn/gQ/Ce2qCN9ia12PyOyM/LQJJdHKDjEwKqLCF/tMQ6H98ej5gAAAABJRU5ErkJggg==) no-repeat;
+    background-size: 12px 12px;
+}
+.share-mp-info .links a:last-child {
+    margin-right: 0;
+}
+.share-mp-info .links .mp-homepage {
+    margin-left: 0;
+}
+.share-mp-info .links a {
+    margin-right: 8px;
+}
+.share-mp-info a {
+    color: #999;
+}
+/*买家流程新增*/
+.heig .step-title{color:#44DB5E;}
+.step .heig .step-line{background-color: #04f52e;}
+.cancel-img {cursor: pointer;}
+
+/*拼图新加样式*/
+.guide-container {
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+}
+
+.guide-container .guide-step {
+    padding: 20px 0;
+}
+.guide-container .guide-step {
+    position: relative;
+    float: left;
+    padding: 10px 0;
+    width: 33.33%;
+}
+.guide-container .guide-text {
+    position: relative;
+    padding-top: 38px;
+    font-size: 10px;
+    color: #666;
+}
+
+.guide-container .guide-step1::after, .guide-container .guide-step2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -12px;
+    margin: auto;
+    width: 6px;
+    height: 11px;
+    background: url("../images/arrow@2x.png") no-repeat;
+    background-size: 6px 11px;
+}
+.guide-container .guide-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.guide-container .guide-step1 .guide-text::before {
+    background-image: url("../images/step1_2@2x.png");
+}
+.guide-container .guide-step2 .guide-text::before {
+    background-image: url("../images/step2_2@2x.png");
+}
+.guide-container .guide-step3 .guide-text::before {
+    background-image: url("../images/step3_2@2x.png");
+}
+/*复制核销码*/
+.copy_hexiao_code{
+    display: inline-block; 
+}
+/*选择支付方式*/
+.sel-mask{position: fixed;top:0;left:0;height:100%;width:100%;z-index:1000;background:rgba(0,0,0,.7);cursor: pointer;}
+.sel-pay-wrap{position:fixed;bottom:0;left:0;width:100%;z-index:1001;background-color: #fff;}
+.sel-pay-wrap a{display:block;text-align: center;line-height: 60px;font-size:14px;border-top:1px solid #f2f2f2;}
+/*新优惠券弹框*/
+.text{
+    word-break: break-all;
+}
+.co_eee{
+    color: #999;
+    font-size: 12px;
+    line-height: 15px;
+}
+.couponsModel{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-color: #f8f8f8;
+    z-index: 1000;
+}
+.couponsModel .noUse{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    background-color: #fff;
+}
+.couponsModel .couponsList{
+    padding:12px;
+    padding-bottom: 50px;
+}
+.couponsModel .couponsList .couponItem{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.couponItem .itemLeft{
+    width: 130px;
+    min-width: 130px;
+    height: 100%;
+    padding:20px 5px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    word-break: break-all;
+}
+.couponsModel .select{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+}
+.couponItem .itemLeft.red{
+    background: url("../images/couponRed.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+.couponItem .itemLeft.gray{
+    background: url("../images/couponGray.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+.couponItem .itemLeft .price{
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -5px;
+}
+.couponItem .itemLeft p{
+    text-align: center;
+}
+.couponItem .itemLeft .big{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.couponItem .itemRight{
+    -webkit-flex: 1;
+    flex: 1;
+    line-height: 25px;
+    margin: 0 10px;
+}
+.couponItem .itemRight .title{
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+}
+.couponsList .line{
+    margin:20px auto;
+    width: 200px; 
+    background-color: #bbb;
+    height:1px;
+    position: relative;
+}
+.couponsList .line p{
+    position: absolute;
+    width: 100px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    color: #bbb;
+    text-align: center;
+    top: -5px;
+    left: 50px;
+}
+/*页面加载样式开始*/
+.pageLoading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f8f8;
+    z-index: 1000
+}
+.pageLoading img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    left:48%;
+    top:48%;
+}
+.nonne_logistics{
+	font-size: 14px;
+	color:#e5945a;
+	display: -webkit-flex;
+	display: flex;
+}
+.nonne_logistics img{
+	width: 18px;
+	height: 18px;	
+	margin-right: 5px;
+}
+.applyRefundBtn{cursor: pointer;}
+.wraper-arrow:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    -webkit-transform: translate3d(0, -55%, 0);
+    -moz-transform: translate3d(0, -55%, 0);
+    transform: translate3d(0, -55%, 0);
+    width: 6px;
+    height: 11px;
+    background-image: url(../static/images/arrow@2x.png);
+    background-size: 6px 11px;
+    background-repeat: no-repeat;
+}
+.placeh {
+    color: #666;
+}
+.invalid-tips {
+    padding: 15px 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.invalid-box {
+    position: relative;
+    padding: 10px 0 10px 7px;
+    background-color: #fff;
+}
+.invalid-imgs {
+    display: inline-block;
+}
+.invalid-imgs img{
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.invalid-num{
+    float: right;
+    font-size: 14px;
+    margin-right: 24px;
+    height: 90px;
+    line-height: 90px;
+}
+.invalid-num::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    -webkit-transform: translate3d(0, -55%, 0);
+    -moz-transform: translate3d(0, -55%, 0);
+    transform: translate3d(0, -55%, 0);
+    width: 6px;
+    height: 11px;
+    background-image: url(../static/images/arrow@2x.png);
+    background-size: 6px 11px;
+    background-repeat: no-repeat;
+}
+.invalid-item {
+    margin-bottom: 10px;
+    background:rgba(247,247,247,1);
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.item-img-box{
+    position: relative;
+    margin: 10px 15.5px 10px 12px;
+    width: 90px;
+    height: 90px;
+}
+.item-img {
+    width: 90px;
+    height: 90px;
+    vertical-align: bottom;
+}
+.invalid-icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background:rgba(0,0,0,1);
+    opacity:0.7;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+.item-desc-box {
+    width: 157px;
+    margin-top: 14px;
+}
+.invalid-title{
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.invalid-spec {
+    font-size: 12px;
+    color: #666;
+    line-height: 21px;
+    margin-top: 4px;
+}
+.invalid-reason {
+    font-size: 14px;
+    color: #f60;
+    line-height: 21px;
+}
+.item-price-box {
+    font-size: 14px;
+    margin-right: 14px;
+    margin-top: 16px;
+    text-align: right;
+}
+.item-price {
+    color: #333;
+}
+.item-count {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* 选择地址弹框样式 */
+.addr-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    transition: all 300ms ease;
+    width: 100%;
+    height: 100%;
+}
+.select-box select {
+    font-size: 14px;
+}
+.select-box option {
+    padding: 0 2px 1px 2px;
+}
+.addr-title {
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    padding: 8.5px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+}
+.select-box {
+    position: relative;
+    background-color: #fff;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    border-bottom: 1px solid #e5e5e5;
+}
+.addr-city {
+    width: 63px;
+    height: 39px;
+    outline: none;
+    border: none;
+    margin-left: 12px;
+}
+.addr-city::after {
+    content: '';
+    background-image: url('../images/down-arrow.png') no-repeat center;
+    width: 12px;
+    height: 6.5px;
+}
+.search-icon {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../images/search-btn.png') no-repeat center;
+    background-size: 100% 100%;
+    /* margin-right: 13px; */
+}
+.select-arrow {
+    position: absolute;
+    z-index: 1;
+    left: 63px;
+    top: 16.5px;
+    width: 12px;
+    height: 6.5px;
+    background: url('../images/down-arrow.png') no-repeat center;
+    background-size: 100% 100%;
+}
+.search-box {
+    display: none;
+    background-color: #fff;
+    padding: 10px 0 0 12px;
+}
+.search-input-box {
+    position: relative;
+}
+.search-input {
+    width: 80%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    font-size: 15px !important;
+    padding: 0 28px 0 31px;
+    outline: none;
+    box-sizing: border-box;
+}
+.search-text{
+    color: #ff354d;
+    font-size: 16px;
+    margin-left: 15px;
+}
+.search-input-icon {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 10px;
+    top: 10.5px;
+    background: url('../images//search-btn.png') no-repeat center;
+    background-size: 100% 100%;
+}
+.calcel-btn {
+    display: none;
+    position: absolute;
+    top: 11px;
+    right: 92px;
+    width: 14px;
+    height: 14px;
+    background-color: #999;
+    border-radius: 7px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+}
+.addr-container {
+    background-color: #fff;
+}
+.addr-item {
+    margin-left: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+.addr-item:last-child {
+    border-bottom: none;
+}
+.radio-btn {
+    display: inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid #999;
+    border-radius: 12px;
+    margin-right: 18px;
+    color: #fff;
+}
+.addr-wraper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
+}
+h4{
+    margin:0 ;
+}
+.active-radio {
+    border: none;
+    background: url('../images/addr-checked.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.addr-distance {
+    color: #333;
+    font-size: 14px;
+    max-width: 322px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+.addr-detail {
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+    max-width: 322px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+.ziti-container {
+
+}
+.ziti-item {
+    margin-left: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    font-size: 15px;
+}
+.ziti-item-left{
+   padding: 14px 0 15px 0;
+   
+}
+.ziti-item-right {
+    padding: 16px 10px 16px 0;
+    max-width: 238px;
+    text-align: right;
+}
+.ziti-phone {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #2770D6;
+    height: 44px;
+    line-height: 44px;
+}
+.ziti-phone-icon {
+    display: inline-block;
+    width: 15.5px;
+    height: 15.5px;
+    background: url(../images/lxth@2x.png) no-repeat center;
+    background-size: 100% 100%;
+    margin-right: 6px;
+    vertical-align: top;
+    margin-top: 14px;
+}
+
+/* 选择地址弹框样式结束 */
+
+/* 时间弹窗开始 */
+.week-box {
+    font-size: 0;
+}
+.week-item{
+    width: 56px;
+    height: 52px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+}
+.week-item-active {
+    border-bottom-color: #FF354D;
+    color: #FF354D;
+}
+.week-item-invalid {
+    border-bottom-color: transparent;
+    color: #999;
+}
+.week-day {
+    margin-top: 9px;
+}
+.week-date {
+    margin-top: 6px;
+}
+.datetimepicker-box {
+    position:relative;
+    top: 18px;
+    float:right;
+}
+.timer-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 30px; 
+    height:20px;
+}
+.bootstrap-datetimepicker-widget {
+    top: 30px !important;
+    display: block !important;
+}
+.date-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 19px;
+    height: 18px;
+    background: url(../images/rili@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.timer-box {
+    background-color: #f5f5f5;
+    padding: 15px 0 2px 12px;
+    font-size: 0;
+}
+.timer-item {
+    display: inline-block;
+    width: 28.3%;
+    height: 10%;
+    text-align: center;
+    line-height: 2.25rem;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin: 0 0 0.625rem 0.625rem;
+    font-size: 14px;
+    color: #666;
+    box-sizing: border-box;
+}
+.timer-item-invalid {
+    border-color: #e5e5e5;
+    color: #ccc;
+}
+.timer-item-active {
+    color: #fff;
+    background-color: #FF354D;
+    border-color: transparent;
+}
+.fetch-time-confirm {
+    color: #fff;
+    background-color: #FF354D;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* 时间弹窗开始结束 */
+.order_pay_title{
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #333333;
+}
+.pay_bottom{
+    position: relative;
+}
+.pay_bottom:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 1px;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+}
+.order_balance_pay{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #ffffff;
+}
+.order_balance_pay a{
+    line-height: 50px;
+    font-size: 15px;
+    color: #333333;
+    border-top: none;
+}
+.order_balance_pay a:visited{
+    text-decoration: none;
+}
+a:link{text-decoration:none; }
+a:visited{text-decoration:none; }
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+.order_balance_pay div{
+    display: flex;
+    align-items: center;
+}
+.ap-weixuan{
+    width: 18px;
+    height: 18px;
+    background: url("../images/ap-weixuan@2x.png") no-repeat;
+    background-size: cover;
+}
+.dui{
+    width: 18px;
+    height: 18px;
+    background: url("../images/dui@2x.png") no-repeat;
+    background-size: cover;
+}
+.balance_img{
+    width: 24px;
+    height: 24px;
+    background: url("../images/balance_pay.png") no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+}
+.weixin_img{
+    background: url("../images/weixin_pay.png") no-repeat;
+    background-size: cover;
+}
+.confirm_btn{
+    height: 74px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+.confirm_btn p{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #F72F37;
+    color: #ffffff;
+}
+.order_pay{
+    background-color: #F5F5F5;
+}
+.couponsModel .couponsList.coupon_ul{
+    padding: 10px;
+}
+.couponsModel .couponsList .couponItem.coupon_li{
+
+    box-shadow:1px 2px 4px 0px rgba(0,0,0,0.1);
+    border-radius: 0 0 0 8px;
+    height: 2rem;
+    position: relative;
+}
+.coupon_li_employ{
+    background: url("../images/coupon_bg01.png") no-repeat;
+    background-size: cover;
+}
+.coupon_li_coupon_overdue{
+    background: url("../images/coupon_bg02.png") no-repeat;
+    background-size: cover;
+}
+.couponItem .itemLeft.coupon_price{
+    color: #F72F37;
+    font-size: 0.24rem;
+    width: 2.1rem;
+    min-width: 2.1rem;
+    padding: 0;
+}
+.couponItem .itemLeft.coupon_price .price{
+    line-height: 2rem;
+    height: 2rem;
+    padding-left: 0.18rem;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+.couponItem .itemLeft.coupon_price .price .big{
+    font-size: 0.6rem;
+    margin-left: 0;
+}
+.couponItem .itemRight.coupon_detail{
+    padding: 0.1rem 0.2rem;
+    margin: 0;
+    height: 2rem;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.couponItem .itemRight.coupon_detail p{
+    margin: 0;
+}
+.couponItem .itemRight.coupon_detail .title{
+    font-weight: 500;
+    font-size: 0.32rem;
+}
+.couponItem .itemRight.coupon_detail .co_eee.coupon_flag{
+    font-size: 0.26rem;
+}
+
+.couponItem .itemRight.coupon_detail .co_eee{
+    font-size: 0.2rem;
+}
+.coupon_img_flag{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.39rem;
+}
+.coupon_employ{
+    background: url("../images/coupon_employ.png") no-repeat;
+    background-size: cover;
+}
+.coupon_overdue{
+    background: url("../images/coupon_overdue.png") no-repeat;
+    background-size: cover;
+}

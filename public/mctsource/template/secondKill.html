@@ -1,0 +1,284 @@
+<!-- 大 -->
+<div class="control-group big-size" ng-if="editor['listStyle']==1 && !editor['killList'].length">
+    <div ng-repeat="good in editor['thSecGoods']">
+    <div class="photo-block">
+        <img ng-src="{{good['thumbnail']}}" alt="product_picture"/>
+        <img ng-src="{{editor['headImage']}}" alt="nav" class="nav" ng-if="editor['showTimer']==true"/>
+        <div class="photo-tip clearfix" ng-if="editor['showTimer']==true">
+            <p class="pull-left">
+                秒杀
+            </p>
+            <p class="pull-right">
+               <span class="timer-tip">距结束仅剩</span>  
+               <span class="sec-timer">00</span>
+               :
+               <span class="sec-timer">00</span>
+               :
+               <span class="sec-timer">00</span>
+            </p>
+        </div>
+    </div>
+    <div class="text-content">
+        <p class="text-title" ng-if="editor['showTitle']==true">{{good['name']}}</p>
+        <p class="text-tip" ng-if="editor['showTitle']==true">
+        <span>立减{{good['tip']}}元</span>
+        </p>
+        <div class="text-bottom clearfix">
+            <div class="pull-left">
+                <p class="seckill-price red">
+                    秒杀价：￥<span class="ft-24">{{good['secPrice']}}</span>
+                </p>
+                <p class="oPrice">
+                    ￥{{good['oPrice']}}
+                </p>
+            </div>
+            <div class="pull-right">
+                <p class="btn-wrap" ng-if="editor['showBtn']==true">
+                    <button class="btn-raduis btn-red" ng-show="editor['btnStyle']==1">去抢购</button>
+                    <button class="btn-raduis btn-white" ng-show="editor['btnStyle']==2">去抢购</button>
+                    <button class="btn-no-raduis btn-red" ng-show="editor['btnStyle']==3">去抢购</button>
+                    <button class="btn-no-raduis btn-white" ng-show="editor['btnStyle']==4">去抢购</button>
+                </p>
+                <div class="surplus" ng-if="editor['remanent']==true">
+                    <p class="text-surplus" ng-if="editor['remanentStyle']==1">剩余<span class="red">{{good['seckill']['seckill_stock']}}</span>件</p>
+                    <span class="process-tip" ng-if="editor['remanentStyle']==2">已售20% </span>
+                    <div class="process-wrap" ng-if="editor['remanentStyle']==2">
+                        <p class="process-content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="control-group big-size" ng-if="editor['listStyle']==1 && editor['killList'].length">
+    <div ng-repeat="good in editor['killList']">
+    <div class="photo-block">
+        <img ng-src="{{host+good.product.img}}" alt="product_picture"/>
+        <img ng-src="{{editor['headImage']}}" alt="nav" class="nav" ng-if="editor['showTimer']==true"/>
+        <div class="photo-tip clearfix" ng-if="editor['showTimer']==true">
+            <p class="pull-left">
+                秒杀
+            </p>
+            <p class="pull-right">
+               <span class="timer-tip">距结束仅剩</span>  
+               <span class="sec-timer">00</span>
+               :
+               <span class="sec-timer">00</span>
+               :
+               <span class="sec-timer">00</span>
+            </p>
+        </div>
+    </div>
+    <div class="text-content">
+        <p class="text-title" ng-if="editor['showTitle']==true">{{good.product.title}}</p>
+        <p class="text-tip" ng-if="editor['showTitle']==true">
+        <span>立减{{good['seckill'].seckill_discount_price}}元</span>
+        </p>
+        <div class="text-bottom clearfix">
+            <div class="pull-left">
+                <p class="seckill-price red">
+                    秒杀价：￥<span class="ft-24">{{good['seckill_price']}}</span>
+                </p>
+                <p class="oPrice">
+                    ￥{{good['seckill_oprice']}}
+                </p>
+            </div>
+            <div class="pull-right">
+                <p class="btn-wrap" ng-if="editor['showBtn']==true">
+                    <button class="btn-raduis btn-red" ng-show="editor['btnStyle']==1">去抢购</button>
+                    <button class="btn-raduis btn-white" ng-show="editor['btnStyle']==2">去抢购</button>
+                    <button class="btn-no-raduis btn-red" ng-show="editor['btnStyle']==3">去抢购</button>
+                    <button class="btn-no-raduis btn-white" ng-show="editor['btnStyle']==4">去抢购</button>
+                </p>
+                <div class="surplus" ng-if="editor['remanent']==true">
+                    <p class="text-surplus" ng-if="editor['remanentStyle']==1">剩余<span class="red">{{good['seckill_stock']}}</span>件</p>
+                    <span class="process-tip" ng-if="editor['remanentStyle']==2">已售20% </span>
+                    <div class="process-wrap" ng-if="editor['remanentStyle']==2">
+                        <p class="process-content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- 小 -->
+<div class="control-group small-size clearfix" ng-if="editor['listStyle']==2 && !editor['killList'].length">
+    <div class="wrap pull-left" ng-repeat="good in editor['thSecGoods']">
+        <div class="photo-block">
+            <img ng-src="{{good['thumbnail']}}" alt="product_picture"/>
+            <div class="photo-tip" ng-show="editor['showTimer']==true">
+                <span class="timer-tip">距结束仅剩</span>  
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+            </div>
+        </div>
+        <div class="text-content">
+            <p class="text-title" ng-if="editor['showTitle']==true">{{good['name']}}</p>
+            <p class="text-tip" ng-if="editor['showTitle']==true">
+            <span>立减{{good['tip']}}元</span>
+            </p>
+            <div class="text-bottom">
+                <p class="seckill-price red">
+                    秒杀价：￥<span class="ft-18">{{good['secPrice']}}</span>
+                </p>
+                <p class="oPrice">
+                    活动结束价￥{{good['oPrice']}}
+                </p>
+                
+                <div class="small-bottom clearfix">
+                    <p class="btn-wrap pull-right" ng-if="editor['showBtn']==true">
+                        <button class="btn-raduis btn-red" ng-show="editor['btnStyle']==1">去抢购</button>
+                        <button class="btn-raduis btn-white" ng-show="editor['btnStyle']==2">去抢购</button>
+                        <button class="btn-no-raduis btn-red" ng-show="editor['btnStyle']==3">去抢购</button>
+                        <button class="btn-no-raduis btn-white" ng-show="editor['btnStyle']==4">去抢购</button>
+                    </p>
+                    <div class="surplus pull-left" ng-if="editor['remanent']==true">
+                        <p class="text-surplus" ng-if="editor['remanentStyle']==1">剩余<span class="red">{{good['remanentMount']}}</span>件</p>
+                        <span class="process-tip" ng-if="editor['remanentStyle']==2">已售20% </span>
+                        <div class="process-wrap" ng-if="editor['remanentStyle']==2">
+                            <p class="process-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="control-group small-size clearfix" ng-if="editor['listStyle']==2 && editor['killList'].length">
+    <div class="wrap pull-left" ng-repeat="good in editor['killList']">
+        <div class="photo-block">
+            <img ng-src="{{host+good.product.img}}" alt="product_picture"/>
+            <div class="photo-tip" ng-show="editor['showTimer']==true">
+                <span class="timer-tip">距结束仅剩</span>  
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+            </div>
+        </div>
+        <div class="text-content">
+            <p class="text-title" ng-if="editor['showTitle']==true">{{good.product.title}}</p>
+            <p class="text-tip" ng-if="editor['showTitle']==true">
+            <span>立减{{good['seckill_oprice']-good['seckill_price']}}元</span>
+            </p>
+            <div class="text-bottom">
+                <p class="seckill-price red">
+                    秒杀价：￥<span class="ft-18">{{good['seckill_price']}}</span>
+                </p>
+                <p class="oPrice">
+                    活动结束价￥{{good['seckill_oprice']}}
+                </p>
+                <div class="small-bottom clearfix">
+                    <p class="btn-wrap pull-right" ng-if="editor['showBtn']==true">
+                        <button class="btn-raduis btn-red" ng-show="editor['btnStyle']==1">去抢购</button>
+                        <button class="btn-raduis btn-white" ng-show="editor['btnStyle']==2">去抢购</button>
+                        <button class="btn-no-raduis btn-red" ng-show="editor['btnStyle']==3">去抢购</button>
+                        <button class="btn-no-raduis btn-white" ng-show="editor['btnStyle']==4">去抢购</button>
+                    </p>
+                    <div class="surplus pull-left" ng-if="editor['remanent']==true">
+                        <p class="text-surplus" ng-if="editor['remanentStyle']==1">剩余<span class="red">{{good['seckill_stock']}}</span>件</p>
+                        <span class="process-tip" ng-if="editor['remanentStyle']==2">已售20% </span>
+                        <div class="process-wrap" ng-if="editor['remanentStyle']==2">
+                            <p class="process-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 列表 -->
+<div class="control-group list-size" ng-if="editor['listStyle']==3 && !editor['killList'].length">
+    <div class="wrap clearfix" ng-repeat="good in editor['thSecGoods']">
+        <div class="photo-block pull-left">
+            <img ng-src="{{good['thumbnail']}}" alt="product_picture"/>
+            <div class="photo-tip" ng-show="editor['showTimer']==true">
+                <span class="timer-tip">仅剩</span>  
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+                
+            </div>
+        </div>
+        <div class="text-content pull-left">
+            <p class="text-title" ng-if="editor['showTitle']==true">{{good['name']}}</p>
+            <p class="text-tip" ng-if="editor['showTitle']==true">
+            <span>立减{{good['tip']}}元</span>
+            </p>
+            <div class="text-bottom">
+                
+                <div class="seckill-price red">
+                    秒杀价￥<span class="ft-18">{{good['secPrice']}}</span>
+                    <p class="btn-wrap" ng-if="editor['showBtn']==true">
+                        <button class="btn-raduis btn-red" ng-show="editor['btnStyle']==1">去抢购</button>
+                        <button class="btn-raduis btn-white" ng-show="editor['btnStyle']==2">去抢购</button>
+                        <button class="btn-no-raduis btn-red" ng-show="editor['btnStyle']==3">去抢购</button>
+                        <button class="btn-no-raduis btn-white" ng-show="editor['btnStyle']==4">去抢购</button>
+                    </p>
+                </div>
+                <div class="list-surplus">
+                    <span  class="oPrice">￥{{good['oPrice']}}</span>
+                    <div class="surplus pull-left" ng-if="editor['remanent']==true">
+                        <p class="text-surplus" ng-if="editor['remanentStyle']==1">剩余<span class="red">{{good['remanentMount']}}</span>件</p>
+                        <span class="process-tip" ng-if="editor['remanentStyle']==2">已售20% </span>
+                        <div class="process-wrap" ng-if="editor['remanentStyle']==2">
+                            <p class="process-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="control-group list-size" ng-if="editor['listStyle']==3 && editor['killList'].length">
+    <div class="wrap clearfix" ng-repeat="good in editor['killList']">
+        <div class="photo-block pull-left">
+            <img ng-src="{{host+good.product.img}}" alt="product_picture"/>
+            <div class="photo-tip" ng-show="editor['showTimer']==true">
+                <span class="timer-tip">仅剩</span>  
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+                :
+                <span class="sec-timer">00</span>
+                
+            </div>
+        </div>
+        <div class="text-content pull-left">
+            <p class="text-title" ng-if="editor['showTitle']==true">{{good.product.title}}</p>
+            <p class="text-tip" ng-if="editor['showTitle']==true">
+            <span>立减{{good['seckill_oprice']-good['seckill_price']}}元</span>
+            </p>
+            <div class="text-bottom">
+                
+                <div class="seckill-price red">
+                    秒杀价￥<span class="ft-18">{{good['seckill_price']}}</span>
+                    <p class="btn-wrap" ng-if="editor['showBtn']==true">
+                        <button class="btn-raduis btn-red" ng-show="editor['btnStyle']==1">去抢购</button>
+                        <button class="btn-raduis btn-white" ng-show="editor['btnStyle']==2">去抢购</button>
+                        <button class="btn-no-raduis btn-red" ng-show="editor['btnStyle']==3">去抢购</button>
+                        <button class="btn-no-raduis btn-white" ng-show="editor['btnStyle']==4">去抢购</button>
+                    </p>
+                </div>
+                <div class="list-surplus">
+                    <span  class="oPrice">￥{{good['seckill_oprice']}}</span>
+                    <div class="surplus pull-left" ng-if="editor['remanent']==true">
+                        <p class="text-surplus" ng-if="editor['remanentStyle']==1">剩余<span class="red">{{good['seckill_stock']}}</span>件</p>
+                        <span class="process-tip" ng-if="editor['remanentStyle']==2">已售20% </span>
+                        <div class="process-wrap" ng-if="editor['remanentStyle']==2">
+                            <p class="process-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

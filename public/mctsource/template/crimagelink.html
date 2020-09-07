@@ -1,0 +1,114 @@
+<div class="js-collection-region">
+    <ul class="choices ui-sortable">
+        <li class="choice" ng-repeat="list in editors[index]['images']">
+            <div class="choice-image" ng-if="list.thumbnail">
+                <img ng-src="{{list.thumbnail}}" width="120" height="120" class="thumb-image">
+                <a class="modify-image js-trigger-image" href="javascript: void(0);" ng-click="chooseLinkImage($index)">重新上传</a>
+            </div>
+            <div class="choice-image" ng-show="!list.thumbnail">
+                <a class="add-image js-trigger-image" href="javascript: void(0);" ng-click="chooseLinkImage($index)">+添加图片</a>
+            </div>
+            <div class="choice-content">
+                <div class="control-group">
+                    <label class="control-label">文字：</label>
+                    <div class="controls">
+                        <input class="form-control" type="text" value="" maxlength="5" ng-model="list['linkTitle']">
+                    </div>
+                </div>
+                <div class="control-group" ng-show="!list.linkUrl">
+                    <label class="control-label">链接：</label>
+                    <div class="controls">
+                        <div class="dropdown hover">
+                            <a class="js-dropdown-toggle dropdown-toggle control-action" href="javascript:void(0);">设置链接到的页面地址
+                                <i class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="js-modal-magazine" href="javascript:void(0);" ng-click="choosePageLink($index,1)">微页面及分类</a></li>
+                                <li>
+                                    <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseShop($index,1)">商品<span  ng-if='changeWaiLinkFlag'>及分类</span></a></li>
+                                <li>
+                                    <a class="js-modal-goods maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,1)">营销活动</a></li>
+                                <li>
+                                    <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,3,shop_url,3)">店铺主页</a></li>
+                                <li>
+                                    <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,3,member_url,4)">会员主页</a></li>
+                                <li>
+                                    <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseSpellModel($index,1)">拼团</a></li>
+                                <li>
+                                   <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseMen($index,1)">会员卡</a></li>
+                                <li ng-if="wai_setting">
+                                    <a class="js-modal-goods" href="javascript:void(0);" ng-click="changeWaiLink($index,3,$event)">{{(from && from=='xcx')?'小程序路径':'自定义外链'}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="up_tip">建议宽度180px</div>
+                <div class="control-group" ng-show="list.linkUrl">
+                    <label class="control-label">链接：</label>
+                    <div class="controls">
+                        <div class="control-action clearfix">
+                            <div class="pull-left js-link-to link-to">
+                                <a href="javascript:void(0);" class="new-window link-to-title">
+                                    <span class="label label-success">
+                                        <em class="link-to-title-text" ng-bind="list.linkName" style="border-left:none;padding:5px"></em></span>
+                                </a>
+                                <a href="javascript:void(0);" class="js-delete-link link-to-title close-modal" title="删除" ng-click="removeLink($index,1)">×</a>
+                            </div>
+                            <div class="dropdown hover pull-right" ng-show="list.dropDown">
+                                <a class="js-dropdown-toggle dropdown-toggle" href="javascript:void(0);">修改
+                                    <i class="caret"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="js-modal-magazine" href="javascript:void(0);" ng-click="choosePageLink($index,1)">微页面及分类</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseShop($index,1)">商品<span  ng-if='changeWaiLinkFlag'>及分类</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-goods hide maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,1)">营销活动</a></li>
+                                    <li>
+                                        <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,3,shop_url,3)">店铺主页</a></li>
+                                    <li>
+                                        <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,3,member_url,5)">会员主页</a></li>
+                                    <li>
+                                        <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseSpellModel($index,1)">拼团</a>
+                                    </li>
+                                    <li>
+                                        <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseMen($index,1)">会员卡</a>
+                                    </li>
+                                    <li ng-if="wai_setting">
+                                        <a class="js-modal-goods" href="javascript:void(0);" ng-click="changeWaiLink($index,3,$event)">{{(from && from=='xcx')?'小程序路径':'自定义外链'}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown hover pull-right" ng-show="!list.dropDown">
+                                <a class="js-dropdown-toggle dropdown-toggle" href="javascript:void(0);">修改
+                                    <i class="caret"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="js-modal-magazine" href="javascript:void(0);" ng-click="choosePageLink($index,1)">微页面及分类</a></li>
+                                        <li>
+                                            <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseShop($index,1)">商品<span  ng-if='changeWaiLinkFlag'>及分类</span></a></li>
+                                        <li>
+                                            <a class="js-modal-goods maketing_active" href="javascript:void(0);" ng-click="chooseActivity($index,1)">营销活动</a></li>
+                                        <li>
+                                            <a class="js-modal-homepage" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,3,shop_url,3)">店铺主页</a></li>
+                                        <li>
+                                            <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseLinkUrl($event,$index,3,member_url,4)">会员主页</a></li>
+                                        <li>
+                                            <a class="js-modal-usercenter" href="javascript:void(0);" ng-click="chooseSpellModel($index,1)">拼团</a></li>
+                                        <li>
+                                            <a class="js-modal-goods" href="javascript:void(0);" ng-click="chooseMen($index,1)">会员卡</a></li>
+                                        <li ng-if="wai_setting">
+                                            <a class="js-modal-goods" href="javascript:void(0);" ng-click="changeWaiLink($index,3,$event)">{{(from && from=='xcx')?'小程序路径':'自定义外链'}}</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

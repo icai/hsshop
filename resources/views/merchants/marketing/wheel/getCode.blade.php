@@ -1,0 +1,1 @@
+{!! QrCode::size(150)->generate(URL($data)); !!}

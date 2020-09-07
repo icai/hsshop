@@ -1,0 +1,42 @@
+.hide{display: none;}
+label{font-weight: normal;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.flex_center{display: flex; justify-content: space-around;}
+.flex_star{display: flex; justify-content: flex-start; align-items: flex-end;}
+.choosed{background: dodgerblue; color: white;}
+.w365{width:365px !important;}
+
+.main .main_content{padding: 10px 30px;}
+.main .main_content .sorts{height: 50px; line-height: 50px; font-size: 16px;}
+.main .main_content .sorts .verLine{margin: 0 5px;}
+.main .main_content .addNews_list{padding: 30px; border: 1px solid #ccc;}
+.main .main_content .addNews_list .classifyList{width: 30%; height: 300px; overflow-y: scroll; border: 1px solid #ccc;}
+.main .main_content .addNews_list .classifyList p{line-height: 25px; margin: 0 40px; padding: 5px 10px; font-size: 16px;}
+.main .main_content .addNews_list .classifyList p:hover{cursor: pointer; background: #f0f0f0; color: #333;}
+.main .main_content .addNews_list .news_classify{margin-left: 60px;}
+.main .main_content .addNews_list .news_classify .input-group{margin-right: 10px;}
+.main .main_content .addNews_list .news_detail .inpGroup{width: 100%; margin: 10px 0;}
+.main .main_content .addNews_list .news_detail .inpGroup .inpName{width: 120px; margin-right: 15px; text-align: right;}
+.main .main_content .addNews_list .news_detail .inpGroup input{height: 34px; width: 200px; padding: 5px; border: 1px solid #ccc; border-radius: 5px;}
+.main .main_content .addNews_list .news_detail .imgDiv{margin: 40px 60px; overflow: hidden;}
+.main .main_content .addNews_list .news_detail .imgDiv .imgGroup .littleImg{float: left;}
+.main .main_content .addNews_list .news_detail .imgDiv .filepath{top: 0; left: 5px; height: 34px; opacity: 0; width: 80px;border: 1px solid red;}
+.main .main_content .addNews_list .news_detail img{margin-right: 30px; margin-bottom: 30px; margin-top: 10px}
+.main .main_content .addNews_list .news_detail button{margin: 0 5px;}
+.main .main_content .addNews_list .btn-lg{margin-left: calc(50% - 53px);}
+.main .main_content .addNews_list .pushsel{width: 369px; display: inline-block;}
+
+.upImg{display: flex; justify-content: flex-start; }
+.img_item{position: relative; display: inline-block}
+.img_item .delImg{position: absolute; z-index: 50; right: -8px; top: -8px;}
+.hint{line-height: 120px; color:#fe5722}
+
+/*底部提交按钮*/
+.btn_group{text-align:center}
+
+
+
+
+
+

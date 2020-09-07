@@ -1,0 +1,707 @@
+body{
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+select{
+  padding:0 0.3rem;
+  border-radius: .06rem;
+  border:0.02rem solid #E5E5E5;
+}
+.content-body{
+  padding: 0 0.3rem;
+  display: flex;
+  flex-direction:column;
+}
+.res_title{
+  font-size: .32rem;
+  text-indent:.2rem;
+  position: relative;
+  font-weight: bold;
+  padding-bottom:0.3rem;
+}
+.res_tip_bitian{
+  color: #FF3232;
+  font-size: 0.24rem;
+  padding-left: 0.12rem;
+  font-weight: normal;
+}
+.dateTime input{
+  height: 0.88rem;
+  border: 0.02rem solid #E5E5E5;
+  padding-left: 0.3rem;
+  font-size: 0.3rem;
+  border-radius:0.06rem;
+  vertical-align: middle;
+  text-align: left;
+  background: #fff;
+  box-sizing: border-box;
+}
+.dateTime .double{
+  width: 2.84rem;
+}
+.dateTime .single{
+  width: 6.54rem;
+}
+.date_box{
+  display: flex;
+  justify-content: space-around;
+}
+.fengefu{
+  display: inline-block;
+  width: 0.14rem;
+  height: 0.02rem;
+  background-color: #666666;
+  margin: 0 0.10rem;
+  margin-top: 0.65rem;
+  vertical-align: middle;
+}
+.date_inp{
+  position: relative;
+}
+.date_inp span{
+  position: absolute;
+  width: 0.36rem;
+  height: 0.36rem;
+  right: 0.2rem;
+  top: 0.45rem;
+  background: url("../images/res_date.png") no-repeat;
+  background-size: 100% 100%;
+}
+.text input {
+  width: 100%;
+  height: 0.84rem;
+  font-size: 0.3rem;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  border: 0.02rem solid #E5E5E5;
+  vertical-align: middle;
+  border-radius:0.06rem;
+  background-color: #FAFAFA;
+  color: #333333;
+}
+.text textarea{
+  width: 100%;
+  height: 1.94rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  border: 0.02rem solid #E5E5E5;
+  font-size: 0.3rem;
+  border-radius:0.06rem;
+}
+.appoint_box{
+  border: 0.02rem solid #E5E5E5;
+  border-radius:0.06rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+}
+
+.appoint_box ul li {
+  border-bottom: 0.02rem solid #E5E5E5;
+  width: 100%;
+  font-size: 0.3rem;
+  box-sizing: border-box;
+  line-height: 0.4rem;
+}
+.appoint_box ul li:last-child {
+  border: 0
+}
+.appoint_box ul li input{
+  margin-right: 0.1rem;
+  position: relative;
+  top: 0.04rem;
+}
+.appoint_radio{
+  margin-top: 0.2rem;
+}
+.appoint_box ul li label{
+  display: inline-block;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+.appoint_text .selectBox{
+  position: relative;
+  height:1.2rem
+}
+.appoint_text .selectBox select{
+  position: absolute;
+  top:0;bottom:0;
+  margin:auto;
+  width:100%;
+  height:0.6rem
+}
+
+.appoint_radio_box ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.appoint_radio_box ul li {
+  width: 3rem;
+  padding: 0 0.01rem;
+  border: 0.02rem solid #E5E5E5;
+  margin-bottom: 0.3rem;
+}
+.appoint_radio_image{
+  height: 2.52rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.appoint_radio_image img{
+  width: 100%;
+}
+.appoint_radio_txt{
+  font-size: 0.3rem;
+  width: 100%;
+  padding: 0.3rem 0.2rem;
+  line-height: 0.4rem;
+  box-sizing: border-box;
+  border-top: 0.02rem solid #E5E5E5;
+  word-break:break-all;
+}
+.appoint_radio_txt input {
+  margin-right: 0.1rem;
+}
+.appoint_radio_box ul li.appoint_radio_box_big{
+  width: 100%;
+}
+.appoint_radio_img{
+  width: 100%;
+}
+.appoint_radio_img img{
+  width: 100%;
+  vertical-align:top;
+}
+
+.address_box{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.2rem;
+}
+.address_box div{
+  position: relative;
+  width: 24%;
+  border: 0.02rem solid #E6E6E6;
+  padding: 0 0.35rem 0 0.1rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 0.08rem;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.address_box div::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #999999;
+  right: 0.1rem;
+  top: 50%;
+  margin-top: -5px;
+}
+.phone_box{
+  margin-top: 0.2rem;
+  font-size: 0.36rem;
+  padding-left: 0.3rem;
+}
+
+.image_box{
+  margin-top: .4rem;
+}
+.moren_img{
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../images/res_upload.png") no-repeat;
+  background-size: cover;
+  margin-left: .4rem;
+}
+
+/* 副标题统一样式 */
+.subtitle{
+  color:#999999;
+  font:0.24rem/0.32rem '';
+  margin-bottom: 0.2rem;
+}
+[v-cloak]{
+  display:none
+}
+
+/* num组件 */
+.num-content{
+  position: relative;
+}
+.num-content span{
+  position:absolute;
+  font:0.32rem/0.32rem '';
+  right:0.24rem;
+  top:50%;
+}
+/* 分割线组件 */
+.line .dotted{
+  border-bottom:1px dotted #999999
+}
+.line .dashed{
+  border-bottom:1px dashed #999999
+}
+.line .solid{
+  border-bottom:1px solid #999999
+}
+.line .double{
+  border-bottom:3px double #999999
+}
+.line .left{
+  text-align:left
+}
+.line .center{
+  text-align:center
+}
+.line .right{
+  text-align:right
+}
+.line .subLeft{
+  text-align:left
+}
+.line .subCenter{
+  text-align:center
+}
+.line .subRight{
+  text-align:right
+}
+.line .title{
+  font-size:0.4rem;
+  line-height:0.8rem;
+  height:0.8rem
+}
+.line .sub-title{
+  font-size:.3rem;
+  line-height:0.5rem;
+  white-space: pre-wrap;
+  padding: 0 0.3rem;
+}
+/* 外观设置组件 */
+.face-type{
+  color:rgb(192, 192, 192);
+
+}
+.face-type .title{
+  font-weight:bold;
+  font-size:0.6rem;
+  padding:0.1rem 0 0.6rem;
+}
+.face-type .subTitle{
+  font-size:0.3rem;
+  padding-top:0.1rem
+}
+
+/* 图片设置组件 */
+.image img{
+  width:100%
+}
+
+/* 地域设置组件 */
+.address{
+  font-size:0.32rem
+}
+
+.address .title{
+  font-weight:bold
+}
+
+.address .form-group{
+  display: inline-block;
+}
+
+.address .form-control{
+  border:1px solid #E6E6E6;
+  border-radius: 3px;
+  font:0.3rem/0.6rem '微软雅黑';
+  padding:0 0.2rem;
+  background-color: #ffffff;
+}
+
+.address .provice,.address .city,.address .dist{
+  width: 2.1rem
+}
+
+/* 自定义单选框 */
+input[type="radio"] + label::before {
+  content: "\a0"; /*不换行空格*/
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: .9em;
+  height: .85em;
+  margin-right: .4em;
+  border-radius: 50%;
+  border: 1px solid #D1D1D1;
+  text-indent: .15em;
+  margin-top:-0.06rem
+}
+input[type="radio"]:checked + label::before {
+  background-image: url("../images/res_radio_checked.png");
+  background-size: 100% 100%;
+  border:none;
+  font-size:14px;
+  width: 1.05em;
+  height: 1em;
+}
+input[type="radio"] {
+  position: absolute;
+  color:#f4e925;
+  clip: rect(0, 0, 0, 0);
+}
+/* 自定义复选框 */
+input[type="checkbox"] + label::before {
+  content: "\a0"; /*不换行空格*/
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: .9em;
+  height: .85em;
+  margin-right: .4em;
+  border-radius: 1%;
+  border: 1px solid #D1D1D1;
+  text-indent: .15em;
+  margin-top:-0.06rem
+}
+input[type="checkbox"]:checked + label::before {
+  background-image: url("../images/res_box_checked.png");
+  background-size: 100% 100%;
+  border:none;
+  font-size:14px;
+  width: 1.05em;
+  height: 1em;
+}
+input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+/* 上传图片 */
+.SetImage .uploadPicture{
+  width:3.5rem;
+  height:3.5rem
+}
+.SetImage .logoChange{
+  display: block;
+  font-size:0.16rem
+}
+.SetImage .subtitle{
+  line-height:0.4rem;
+  padding:0.1rem 0 0.16rem
+}
+
+.dateTime .line{
+  color:#999999;
+  font-size:0.16rem
+}
+
+/* 文本预约 */
+
+.appoint_text{
+  margin-top:0.24rem
+}
+.appoint_text .title{
+  font-size:0.32rem;
+  font-weight:bold
+}
+.appoint_text input{
+  display: none
+}
+.appoint_text select{
+  font-size:0.3rem
+}
+/* 预约时间 */
+.appoint_time{
+  margin-top:0.24rem
+}
+.appoint_time .title{
+  font-size:0.32rem;
+  font-weight:bold
+}
+.appoint_time input{
+  display: none
+}
+.appoint_time select{
+  font-size:0.3rem
+}
+.appoint_time .selectBox{
+  position: relative;
+  height:1.2rem
+}
+.appoint_time .selectBox select{
+  position: absolute;
+  top:0;bottom:0;
+  margin:auto;
+  width:100%;
+  height:0.6rem
+}
+.time_box{
+  border: 0.02rem solid #E5E5E5;
+  border-radius:0.06rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+}
+.time_box ul{
+  display: flex;
+  flex-wrap: wrap
+}
+.time_box ul li {
+  width:50%;
+  font-size: 0.3rem;
+  box-sizing: border-box;
+  line-height: 0.4rem;
+}
+.time_box ul li:first-child {
+  width:0;
+  overflow:hidden
+}
+
+.time_box ul li input{
+  margin-right: 0.1rem;
+  position: relative;
+  top: 0.04rem;
+}
+.time_box ul li label{
+  display: inline-block;
+  width: 100%;
+  padding: 0.2rem;
+}
+/* 图片预约组件 */
+.appoint_image{
+  font-size:0.3rem;
+  padding:0.4rem;
+  background: white
+}
+.appoint_image input{
+  position: static;
+
+}
+.appoint_image label{
+  display: block;
+}
+.appoint_image label strong{
+  background:rgba(0,0,0,0.5);
+  color:white;
+  border-radius:0.5rem;
+  padding:0.1rem 0.2rem;
+}
+.appoint_image label strong span{
+  font-size:0.4rem
+}
+.appoint_image strong{
+  font-weight: normal
+}
+.appoint_image .image_box{
+  position: relative;
+  border-radius: 4px;
+  border:1px solid #E6E6E6
+}
+.appoint_image .image_box strong{
+  position: absolute;
+  bottom:1rem;
+  left: .2rem
+}
+.appoint_image .image_box img{
+  width:100%;
+}
+.appoint_image .image_box p{
+  background:#f8f8f8;
+  line-height:0.8rem;
+  text-indent: 0.4rem
+}
+
+/* 文本投票 */
+.set_vote_text{
+  padding:0.4rem
+}
+.set_vote_text input{
+  display: none
+}
+.set_vote_text .title{
+  font-size:0.32rem;
+  font-weight:bold
+}
+
+/* 图片投票组件 */
+.set_vote_image{
+  font-size:0.3rem;
+  padding:0.4rem;
+  background: white
+}
+.set_vote_image input{
+  position: static;
+
+}
+.set_vote_image label{
+  display: block;
+}
+.set_vote_image label strong{
+  background:rgba(0,0,0,0.5);
+  color:white;
+  border-radius:0.5rem;
+  padding:0.1rem 0.2rem;
+}
+.set_vote_image label strong span{
+  font-size:0.4rem
+}
+.set_vote_image strong{
+  font-weight: normal
+}
+.set_vote_image .image_box{
+  position: relative;
+  border-radius: 4px;
+}
+.set_vote_image .image_box strong{
+  position: absolute;
+  bottom:1rem;
+  left: .2rem
+}
+.set_vote_image .image_box img{
+  width:100%;
+}
+.set_vote_image .image_box p{
+  background:#f8f8f8;
+  line-height:0.8rem;
+  text-indent: 0.2rem
+}
+.set_vote_image .flex-box{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between
+}
+.set_vote_image .image-height-box{
+  width:48%;
+  
+}
+.set_vote_image .image-height-box img{
+  height:2.5rem
+}
+.set_vote_image .image-height-box:first-child{
+  margin-right:.2rem
+}
+
+/* submit */
+.line-submit{
+  text-align: center
+}
+.submitBtn{
+  color:white;
+  font-weight:bold;
+  width:92%;
+  border-radius: 3px;
+  font-size:0.32rem;
+  padding:0.2rem 0;
+  border:1px solid #333
+}
+
+.layui-layer-page  .layui-layer-btn{
+  padding:0
+}
+.layui-layer-page .layui-layer-content{
+  text-align:center;
+  font-size:0.48rem;
+  line-height:1.2rem
+}
+.layui-layer-page .layui-layer-btn a{
+  font-weight:normal;
+  color:black;
+  background: white;
+  border:1px solid #999999
+}
+.layui-layer-page .layui-layer-btn .layui-layer-btn0{
+  color:#62b900
+}
+.set_num input{
+  display: inline-block;
+  width: 100%;
+  border:1px solid #e5e5e5;
+  font-size:0.32rem;
+  line-height: 0.8rem;
+  border-radius: 3px;
+  padding-left:0.2rem
+}
+
+/* 图片自定义单选框 */
+input[type="radio"] + b::before {
+  content: "\a0"; /*不换行空格*/
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: .4em;
+  border-radius: 50%;
+  border: 1px solid #D1D1D1;
+  text-indent: .15em;
+  margin-top:-0.06rem
+}
+input[type="radio"]:checked + b::before {
+  background-image: url("../images/res_radio_checked.png");
+  background-size: 100% 100%;
+  border:none;
+  font-size:14px;
+  width: 1.2em;
+  height: 1.2em;
+}
+input[type="radio"] {
+  position: absolute;
+  color:#f4e925;
+  clip: rect(0, 0, 0, 0);
+}
+/* 自定义复选框 */
+input[type="checkbox"] + b::before {
+  content: "\a0"; /*不换行空格*/
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: .4em;
+  border-radius: 1%;
+  border: 1px solid #D1D1D1;
+  text-indent: .15em;
+  margin-top:-0.06rem
+}
+input[type="checkbox"]:checked + b::before {
+  background-image: url("../images/res_box_checked.png");
+  background-size: 100% 100%;
+  border:none;
+  font-size:14px;
+  width: 1.2em;
+  height: 1.2em;
+}
+input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.res_title:before{
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width:.06rem;
+  height:.32rem;
+  background: #F72F37;
+  left:0;
+  top:0px
+}
+[v-cloak]{
+  display: none !important
+}
+.distpicker{
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+}

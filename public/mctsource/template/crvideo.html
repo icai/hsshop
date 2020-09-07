@@ -1,0 +1,21 @@
+<div class="control-group options r_active" style="display: block;">
+    <div class="add-option js-add-option" style="padding:10px;">
+        <span class="r_active_title">视频：</span>
+        <div class="r_active_content">
+            <div class="dropdown hover" style="display:inline-block;" ng-if="editors[index].id == 0">
+                <div class="js-dropdown-toggle dropdown-toggle control-action" href="javascript:void(0);">
+                    <i class="icon-add"></i><a style="margin-left:3px;" href="javascript:void(0);" ng-click="openVideoModel()">添加视频</a>
+                </div>
+                <a href="javascript:void(0);" ng-click="uploadVideo()">上传视频</a>
+            </div>
+            <div ng-if="editors[index].id != 0">
+                <div class="crvideo_img">
+                    <div class="play_icon"></div>
+                    <img ng-src="{{editors[index].videoItem.file_cover?host+editors[index].videoItem.file_cover:'/hsshop/image/static/video_bg.jpg'}}">
+                </div>
+                <a style="margin-left:3px;vertical-align: bottom;" href="javascript:void(0);" ng-click="openVideoModel()">重新选择视频</a>
+                <a style="margin-left:3px;vertical-align: bottom;" ng-click="uploadVideo()" href="javascript:void(0);">上传视频</a>
+            </div>
+        </div>
+    </div>
+</div>

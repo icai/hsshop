@@ -1,0 +1,89 @@
+.action-footer {
+    float: left;
+    margin-top: 14px;
+    width: 12.5%;
+    text-align: left;
+}
+input[type='checkbox'] {
+    width: 14px;
+    height: 14px;
+}
+.condent_data ul li.index-li {
+    text-align: left;
+}
+.index-li>input {
+    margin-left: 40%;
+    vertical-align: top;
+    margin-right: 4px;
+}
+#all-kam {
+    vertical-align: top;
+}
+.allkam-label {
+    margin-left: 40%;
+}
+.del-box {
+    position: relative;
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.del-box>a {
+    display: inline-block;
+    padding: 11px 12px;
+    color: #333;
+    border: 1px solid #bbb;
+}
+.del-box>a:hover {
+    color: #3197fa;
+    border-color: #3197fa;
+}
+.ui-popover {
+    position: absolute;
+    z-index: 1010;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+    width: 250px;
+    top: -6px;
+    right: -255px;
+    display: none;
+}
+.ui-popover .ui-popover-inner {
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px 20px;
+    z-index: 2;
+}
+.zent-btn-primary {
+    color: #fff !important;
+    background: #3283fa !important;
+    border-color: #3283fa !important;
+}
+.zent-btn-cancel {
+    color: #333 !important;
+    background: #E5E5E5 !important;
+    border-color: #E5E5E5 !important;
+    margin-left: 10px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    z-index: 1;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -moz-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}

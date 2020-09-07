@@ -1,0 +1,22 @@
+.content .hint{
+	height: auto;
+	width: calc(100% - 40px);
+	padding: 10px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	background: #FFC;
+	border: 1px solid #fc6;
+}
+.content .hint li{list-style: disc;}
+.content .hint li a{color: #27F;}
+
+.content .dataDiv{ width: 100%; height: auto; min-height: 100px; }
+.content .dataDiv ul{display: flex; justify-content: flex-start; align-items: center; height: 40px; border-bottom: 1px solid #E4E4E4;}
+.content .dataDiv ul:hover{background: #F8F8F8;}
+.content .dataDiv ul li{text-align: center;}
+.content .dataDiv ul li{width: 15%;}
+.content .dataDiv ul li:nth-child(1){width: 25%;}
+.content .dataDiv .dataDiv_title{background: #f8f8f8; font-size: 15px;}
+.content .dataDiv .dataDiv_content a{color: dodgerblue;}
+
+.del_popover{box-sizing: content-box;}

@@ -1,0 +1,306 @@
+.common-helps-entry {line-height: 30px;font-size: 12px;padding-left: 10px;}
+.common-helps-entry a{color: #38f;text-decoration: none;}
+.hs-btn {display: inline-block;border-radius: 2px;line-height: 1.42857143; padding: 6px 12px;cursor: pointer;color: #333;background: #f8f8f8;border: 1px solid #ddd;text-align: center;font-size: 13px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.batch-delet:hover{color: #333333;}
+.hs-btn-success {color: #fff;background: #44BB00;border-color: #44BB00;margin-right: 5px;}
+.hs-btn-success:hover, .hs-btn-success:focus {color: #fff; background: rgba(68,187,0,.9); border-color: rgba(68,187,0,.9);}
+
+/*主要内容*/
+.content .main_content ul{ display: flex; justify-content: space-between; align-items: center; padding: 0 10px; border-bottom:1px solid #E5E5E5; }
+.content .main_content ul li{min-height: 44px;line-height: 44px; overflow: hidden;}
+.content .main_content ul li:nth-child(1){width: 5%;text-align: center;}
+.content .main_content ul li:nth-child(2){width: 20%;text-align: center;}
+.content .main_content ul li:nth-child(3){width: 20%;text-align: center;}
+.content .main_content ul li:nth-child(4){width: 10%;text-align: center;}
+.content .main_content ul li:nth-child(5){width: 10%;text-align: center;}
+.content .main_content ul li:nth-child(6){width: 25%;text-align: center;} 
+.content .main_content .main_content_title{background: #F2F2F2;}
+.content .main_content ul a{color: #3197FA;word-break: break-all;}
+.content .main_content ul a:hover{color: #187dde;}
+.content .main_content ul:not(.main_content_title):hover{background: #F8F8F8;}
+/*分页器*/
+.content .pageNum{ height: 50px; padding-right: 30px; display: flex; justify-content: flex-end; align-items: center; }
+/*去除分页器中的第一页 和 最后一页*/
+.content .pageNum .pagination .first, .content .pageNum .pagination .last{display: none;}
+
+/*推广秒杀*/
+.widget-promotion {
+    position: absolute;
+    z-index: 100;
+    width: 360px;
+    height: 320px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.widget-promotion::after,.widget-promotion::before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    right: -19px;
+    border: 10px solid transparent;
+    border-left-color: white
+}
+
+.widget-promotion::before {
+    right: -21px;
+    border-left-color: #ccc
+}
+
+.widget-promotion-tab li {
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    background: #f2f2f2;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.widget-promotion-tab li:first-child {
+    border-top-left-radius: 9px
+}
+
+.widget-promotion-tab li:last-child {
+    border-top-right-radius: 9px
+}
+
+.widget-promotion-tab li.active {
+    background: #fff
+}
+
+.widget-promotion-tab li+li {
+    border-left: 1px solid #ccc
+}
+
+.widget-promotion-main {
+    min-height: 200px;
+    padding: 10px 15px 20px
+}
+
+.widget-promotion-main label {
+    margin: 10px 0 5px;
+    font-size: 12px;
+    line-height: 12px
+}
+
+.widget-promotion-main input[type="text"] {
+    width: 195px
+}
+.widget-promotion-main .js-btn-copy{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+.widget-promotion-main button.btn {
+    width: 55px
+}
+
+.widget-promotion-main select {
+    width: 166px
+}
+
+.widget-promotion-main .widget-promotion-content {
+    margin-top: 15px;
+    padding-left: 20px
+}
+.widget-promotion-content a{
+    color:#38f;
+}
+
+.widget-promotion-main .qrcode-popover.popover,.popover-fare {
+    z-index: 1000
+}
+
+.widget-promotion-main .qrcode-popover.popover .arrow,.popover-fare .arrow {
+    top: 33px
+}
+
+.widget-promotion-main .qrcode-popover .popover-inner {
+    width: 365px
+}
+
+.widget-promotion-main .qrcode-popover .popover-content {
+    padding: 0
+}
+
+.widget-promotion-main .qrcode-popover.loading .qrcode-content {
+    visibility: hidden
+}
+
+.widget-promotion-main .qrcode-header {
+    padding: 10px;
+    border-bottom: 1px solid #E4E4E4
+}
+
+.widget-promotion-main .qrcode-header .close {
+    margin-top: -3px
+}
+
+.widget-promotion-main .qrcode-title {
+    font-size: 16px
+}
+
+.widget-promotion-main .qrcode-content {
+    background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+}
+
+.widget-promotion-main .qrcode-content.hide {
+    display: none
+}
+
+.widget-promotion-main .qrcode-left-sidebar {
+    height: 200px;
+    overflow: auto;
+    width: 164px;
+    text-align: right
+}
+
+.widget-promotion-main .qrcode-left-sidebar .btn-delete-qrcode {
+    display: none
+}
+
+.widget-promotion-main .qrcode-left-sidebar li {
+    padding: 10px 20px 10px 10px;
+    border-bottom: 1px solid #E4E4E4;
+    cursor: pointer
+}
+
+.widget-promotion-main .qrcode-left-sidebar li.active {
+    position: relative;
+    background-color: #FFF
+}
+
+.widget-promotion-main .qrcode-left-sidebar li.active .btn-delete-qrcode {
+    display: inline-block
+}
+
+.widget-promotion-main .qrcode-left-sidebar li.active::after {
+    position: absolute;
+    top: 14px;
+    right: 1px;
+    content: "";
+    border: 4px solid transparent;
+    border-left: 6px solid #F60
+}
+
+.widget-promotion-main .qrcode-left-sidebar li:hover .btn-delete-qrcode {
+    display: inline-block
+}
+
+.widget-promotion-main .qrcode-right-sidebar {
+    background-color: #FFF;
+    width: 165px;
+    min-height: 200px;
+    padding: 0 0 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.widget-promotion-main .qrcode-right-sidebar img {
+    padding-top: 10px;
+    width: 150px;
+    margin: -10px -10px 0 0
+}
+.widget-promotion-main .qrcode-right-sidebar .qr_img {
+    width:160px;
+    height:160px;
+}
+.widget-promotion-main .qrcode-links {
+    padding: 5px 13px
+}
+
+.widget-promotion-main .qrcode-create-button {
+    padding: 10px 20px 10px 10px;
+    display: block;
+    color: #38f;
+}
+
+.widget-promotion-main .qrcode-text {
+    color: #F60;
+    margin-top: 5px
+}
+
+.widget-promotion-main .qrcode-form-create {
+    margin: 20px 0 0;
+    background-color: #FFF;
+    overflow: hidden;
+    padding: 0 10px
+}
+
+.widget-promotion-main .btn-create-qrcode {
+    margin-right: 10px
+}
+
+.widget-promotion-main .qrcode-help {
+    margin-right: -20px;
+    font-size: 12px
+}
+
+.widget-promotion-main .form-horizontal .control-label {
+    margin-top: 0;
+    width: 100px;
+    float:left;
+}
+
+.widget-promotion-main .form-horizontal .control-group {
+    margin-bottom: 10px
+}
+
+.widget-promotion-main .form-horizontal .controls {
+    margin-left: 110px
+}
+
+.widget-promotion-main .form-horizontal label.radio.inline {
+    margin-top: 0
+}
+
+.widget-promotion-main .form-horizontal .input-append input[type=text],.widget-promotion-main .form-horizontal .input-prepend input[type=text] {
+    width: 120px
+}
+
+.widget-promotion-main .input-prepend .add-on,.widget-promotion-main .input-append .add-on {
+    width: 25px;
+    line-height:28px;
+}
+.alert {
+    padding: 10px 35px 10px 15px;
+    color: #333;
+    background-color: #FFF5CB;
+    border-color: #FDEEB2;
+    border-radius: 0;
+}
+.widget-promotion .alert {
+    margin-bottom: 10px;
+}
+.widget-promotion-main .qrcode-help {
+    margin-right: -20px;
+    font-size: 12px;
+}
+
+body .batchDel{
+	border-radius: 5px;
+}
+body .batchDel .layui-layer-title{
+	border-radius: 5px 5px 0 0;
+	background: white;
+}
+body .batchDel .layui-layer-btn .layui-layer-btn0{
+	background: dodgerblue;
+	border-radius: 5px;
+}
+body .batchDel .layui-layer-btn .layui-layer-btn1{
+	background: #ccc;
+	border-radius: 5px;
+}

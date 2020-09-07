@@ -1,0 +1,358 @@
+<div class="control-group" ng-if="editor['listStyle']==1 && editor['goods'].length">
+    <ul class="sc-goods-list clearfix size-0 cardshop pic" ng-show="editor['cardStyle']==1">
+        <li class="goods-card big-pic cardshop " ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix info-no-title info-price">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-sub-title c-black" ng-show="editor['goodInfo']">{{good['info']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+    </ul>
+    <ul class="sc-goods-list clearfix size-0 normal pic" ng-show="editor['cardStyle']==3">
+        <li class="goods-card big-pic normal" ng-class="{1:'has-sub-title',3:''}[editor['cardStyle']] || {true:'has-sub-title',false:''}[editor['goodInfo']]"  ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix  info-price">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-sub-title c-black" ng-hide="editor['cardStyle']==3 && !editor['goodInfo']">{{good['info']}}</p>
+                    <p clas="goods-price" style="position: absolute;right: 10px;top: 0;" ng-show="editor['priceShow']"><em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+<div class="control-group" ng-if="editor['listStyle']==1 && !editor['goods'].length">
+    <ul class="sc-goods-list clearfix size-0 cardshop pic" ng-show="editor['cardStyle']==1">
+        <li class="goods-card big-pic cardshop " ng-repeat="good in editor['thGoods'][0]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix info-no-title info-price">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-sub-title c-black" ng-show="editor['goodInfo']">{{good['info']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+    </ul>
+    <ul class="sc-goods-list clearfix size-0 normal pic" ng-show="editor['cardStyle']==3">
+        <li class="goods-card big-pic normal" ng-class="{1:'has-sub-title',3:''}[editor['cardStyle']] || {true:'has-sub-title',false:''}[editor['goodInfo']]"  ng-repeat="good in editor['thGoods'][0]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix  info-price">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-sub-title c-black" ng-hide="editor['cardStyle']==3 && !editor['goodInfo']">{{good['info']}}</p>
+                    <p clas="goods-price" style="position: absolute;right: 10px;top: 0;" ng-show="editor['priceShow']"><em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+<div class="control-group" ng-if="editor['listStyle']==2 && editor['goods'].length">
+    <ul class="sc-goods-list clearfix size-1 cardshop pic" ng-show="editor['cardStyle']==1">
+        <li class="goods-card small-pic cardshop" ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em>
+                    </p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="sc-goods-list clearfix size-1 waterfall pic" ng-show="editor['cardStyle']==2">
+        <li class="sc-waterfall-half clearfix" ng-repeat="good in editor['goods']">
+            <ul class="clearfix">
+                <li class="goods-card goods-list small-pic waterfall">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                            <p class="goods-price" ng-show="editor['priceShow']">
+                                <em>{{good['price']}}</em></p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                         <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="sc-goods-list clearfix size-1 normal pic" ng-show="editor['cardStyle']==3">
+        <li class="goods-card small-pic normal" ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+    </ul> 
+
+    <ul class="sc-goods-list clearfix size-1 promotion pic" ng-show="editor['cardStyle']==4">
+        <li class="goods-card small-pic promotion" ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div class="goods-buy btn1">
+                    我要抢购
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+<div class="control-group" ng-if="editor['listStyle']==2 && !editor['goods'].length">
+    <ul class="sc-goods-list clearfix size-1 cardshop pic" ng-show="editor['cardStyle']==1">
+        <li class="goods-card small-pic cardshop" ng-repeat="good in editor['thGoods'][0]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em>
+                    </p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="sc-goods-list clearfix size-1 waterfall pic" ng-show="editor['cardStyle']==2">
+        <li class="sc-waterfall-half clearfix" ng-repeat="good in editor['thGoods'][0]">
+            <ul class="clearfix">
+                <li class="goods-card goods-list small-pic waterfall">
+                    <a href="javascript: void(0);" class="link js-goods clearfix">
+                        <div class="photo-block">
+                            <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                        <div class="info clearfix ">
+                            <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                            <p class="goods-price" ng-show="editor['priceShow']">
+                                <em>{{good['price']}}</em></p>
+                            <p class="goods-price-taobao"></p>
+                        </div>
+                         <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="sc-goods-list clearfix size-1 normal pic" ng-show="editor['cardStyle']==3">
+        <li class="goods-card small-pic normal" ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+    </ul> 
+
+    <ul class="sc-goods-list clearfix size-1 promotion pic" ng-show="editor['cardStyle']==4">
+        <li class="goods-card small-pic promotion" ng-repeat="good in editor['thGoods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div class="goods-buy btn1">
+                    我要抢购
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+<div class="control-group" ng-if="editor['listStyle']==3">
+    <ul class="sc-goods-list clearfix size-2 cardshop pic" ng-if="editor['cardStyle']==1 && good.length" ng-repeat="good in editor['thGoods']">
+        <li class="goods-card big-pic cardshop">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good[0]['thumbnail']}}"></div>
+                <div class="info clearfix  info-price">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good[0]['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good[0]['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+        <li class="goods-card small-pic cardshop" ng-if="good[1]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good[1]['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good[1]['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good[1]['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+        <li class="goods-card small-pic cardshop" ng-if="good[2]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good[2]['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good[2]['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good[2]['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+                <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+            </a>
+        </li>
+    </ul>
+    <ul class="sc-goods-list clearfix size-2 normal pic" ng-if="editor['cardStyle']==3" ng-repeat="good in editor['thGoods']">
+        <li class="goods-card big-pic normal">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good[0]['thumbnail']}}"></div>
+                <div class="info clearfix  info-price">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good[0]['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good[0]['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+        <li class="goods-card small-pic normal" ng-if="good[1]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good[1]['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good[1]['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good[1]['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+        <li class="goods-card small-pic normal" ng-if="good[2]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good[2]['thumbnail']}}"></div>
+                <div class="info clearfix ">
+                    <p class="goods-title" ng-show="editor['goodName']">{{good[2]['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good[2]['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+<div class="control-group" ng-if="editor['listStyle']==4 && editor['goods'].length">
+    <ul class="sc-goods-list clearfix size-3 cardshop list" ng-show="editor['cardStyle']==1">
+        <li class="goods-card cardshop" ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info">
+                    <p class="goods-title" ng-show="editor['goodName'] || editor['listStyle'] == 4">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                    <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                </div>
+            </a>
+        </li> 
+    </ul>
+    <ul class="sc-goods-list clearfix size-3 normal list" ng-show="editor['cardStyle']==3">
+        <li class="goods-card normal" ng-repeat="good in editor['goods']">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info">
+                    <p class="goods-title" ng-show="editor['goodName'] || editor['listStyle'] == 4">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                    <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>
+<div class="control-group" ng-if="editor['listStyle']==4 && !editor['goods'].length">
+    <ul class="sc-goods-list clearfix size-3 cardshop list" ng-show="editor['cardStyle']==1">
+        <li class="goods-card cardshop" ng-repeat="good in editor['thGoods'][0]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info">
+                    <p class="goods-title" ng-show="editor['goodName'] || editor['listStyle'] == 4">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                    <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                </div>
+            </a>
+        </li> 
+    </ul>
+    <ul class="sc-goods-list clearfix size-3 normal list" ng-show="editor['cardStyle']==3">
+        <li class="goods-card normal" ng-repeat="good in editor['thGoods'][0]">
+            <a href="javascript: void(0);" class="link js-goods clearfix">
+                <div class="photo-block">
+                    <img class="goods-photo js-goods-lazy" ng-src="{{good['thumbnail']}}"></div>
+                <div class="info">
+                    <p class="goods-title" ng-show="editor['goodName'] || editor['listStyle'] == 4">{{good['name']}}</p>
+                    <p class="goods-price" ng-show="editor['priceShow']">
+                        <em>{{good['price']}}</em></p>
+                    <p class="goods-price-taobao"></p>
+                    <div ng-show="editor['showSell']" class="goods-buy" ng-class="{1:'btn1',2:'btn2',3:'btn3',4:'btn4'}[editor['btnStyle']]"></div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="component-border"></div>
+</div>

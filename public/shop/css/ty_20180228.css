@@ -1,0 +1,117 @@
+.public_hint{
+	position: relative;
+	padding: 5px 0;
+	height: 13px;
+	width: 100%;
+	font-size: 13px;
+	color: white;
+	background: red;
+}
+.public_hint p{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.message_input{
+	width: calc(100% - 60px);
+	padding: 30px;
+	background: white;
+}
+.input_div{
+	padding: 8px 0;
+}
+.input_div span{
+	display: inline-block;
+	width: 70px;
+	font-size: 15px;
+}
+.input_div input{
+	padding: 5px;
+	height: 20px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+.message_input #submit{
+	margin-left: calc(50% - 30px);
+	margin-top: 35px;
+	width: 60px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	color: white;
+	background: dodgerblue;
+}
+
+.dialog_div{
+	display: none;
+}
+.dialog_div .dialog_board{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 10;
+}
+.dialog_div .dialog{
+	position: absolute;
+	top: calc(50% - 56px);
+	left: calc(50% - 100px);
+	width: 200px;
+	background: white;
+	border-radius: 5px;
+	z-index: 11;
+}
+.dialog_content{
+	padding: 30px 10px;
+	font-size: 15px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.fun_btn span{
+	display: inline-block;
+	padding: 10px;
+	width: calc(50% - 23px);
+	text-align: center;
+}
+.fun_btn span:nth-child(1){
+	color: dodgerblue;
+	border-right: 1px solid #ccc;
+}
+
+.list_div{
+	padding: 10px 10px;
+	background: white;
+	margin-top: 50px;
+	/*border-top: 1px solid #ccc;*/
+}
+.list_div .list{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #e1e1e1;
+	color: #696969;
+}
+.list_div .list li{
+	padding: 8px;
+	text-align: center;
+}
+.list_div .list li:nth-child(1){ width: 30%; }
+.list_div .list li:nth-child(2){ width: 10%; }
+.list_div .list li:nth-child(3){ width: 10%; }
+.list_div .list li:nth-child(4){ width: 50%; }
+
+.search {
+	width: 60px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	color: white;
+	background: dodgerblue;
+}

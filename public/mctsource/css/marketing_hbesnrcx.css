@@ -1,0 +1,263 @@
+/*公共样式*/
+.img_wrap{display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center;}
+.img_wrap img{max-width:100%;max-height:100%;display:block;}
+.items_ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.items_ellipisis2{overflow:hidden;text-overflow:ellipsis;display:flex;display:-webkit-box;display:-moz-box;line-clamp: 2;-webkit-line-clamp: 2;-moz-line-clamp: 2;box-orient: vertical;-webkit-box-orient: vertical;-moz-box-orient: vertical;word-wrap:break-word;word-break:break-all;}
+.c_gray{color:#999;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.blue_38f{color:#38f;} 
+.blue_38f:hover{color:#27f;}
+a.blue_38f:focus{color:#38f;text-decoration:none;}
+.blue_00f{color:#00f;}
+a.blue_00f:hover{color:#00f;}
+a.blue_00f:focus{color:#00f;}
+.green{color:#49c800;}
+.red{color:#f30;}
+.orange_f60{color:#f60;}
+.orange_f70{color:#f70;}
+.gray_999{color:#999;}
+.gray_ccc{color:#ccc;}
+.mgb15{margin-bottom:15px;}
+.mgb30{margin-bottom:30px;}
+.mgr10{margin-right:10px;}
+.mgtb30{margin:30px 0;}
+.mgb100{margin-bottom:100px;}
+.mgl15{margin-left:15px;}
+.main{overflow-x:visible;}
+.w50{width:50px;}
+.w250{width: 250px;}
+.w350{width: 350px;}
+.empty_items{font-size:12px;text-align:center;line-height:150px;border:1px solid #dcdcdc;}
+.chart_items{min-height:300px;border:1px solid #e4e4e4;}
+.block{display:block;}
+strong{display:block;}
+input[type="text"]:focus{
+	border-color:rgba(82,168,236,.8);
+	outline:0;
+	outline:dotted thin\9;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
+}
+.box_flex1{
+	display: block;
+	box-flex:1;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+}
+.display_box{
+	display: flex;
+	display: -moz-box;
+	display:-webkit-box;
+	box-align:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	box-pack:center;
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+}
+/* 消息推送 */
+.ad_header{
+	padding: 20px;
+    background: #f8f8f8;
+}
+/*横幅*/
+.ad_banner{
+	background: #ffc;
+    border:1px solid #fc6;
+    padding: 7px 15px;
+}
+/*导航模块*/
+.module_nav{}
+.module_nav:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.module_nav li{
+	min-width: 80px;
+	float: left;
+	padding:10px 15px;
+	color: #333;
+    border: 1px solid #e5e5e5;
+    border-left:0;
+    background: #f8f8f8;
+}
+.module_nav li:first-child{
+	border-left: 1px solid #e5e5e5;
+}
+.module_nav li.hover{
+	border-bottom-color: #fff;
+    background: #fff;
+}
+.module_nav li a{
+	font-size:12px;
+	text-align:center;
+	display: block;
+}
+.message_tip{text-align: right;padding:10px;border-bottom:1px solid #e5e5e5;}
+/*共同顶部样式覆盖*/
+.panel-heading{}
+.panel-heading .common_top{background:none;padding:0;margin-bottom:0;}
+/*表单*/
+.rechange_items{margin-left:-20px;}
+.rechange_items .box_flex1{width: 50%;}
+.rechange_items .panel{min-height:300px;margin-left:20px;}
+.form_group{margin-bottom:10px;}
+.group_name{min-width: 120px;text-align: right;display: block;}
+.group_content{margin-left:10px;}
+.group_content select{
+	min-width: 100px;
+	padding:4px 6px;
+	color: #555;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+/*自动充值列表*/
+.rechange_list{margin-left:-10px;}
+.rechange_list:after{content:"";display: block;clear: both;}
+.rechange_list li{width: 33.3%;float: left;}
+.rechange_list li a{
+	height: 62px;
+	padding:0 10px;
+	font-size:12px;
+	background-color: #f8f8f8;
+    border: 1px solid #eee;
+    margin: 0 0 10px 10px;
+    text-align: center;
+    line-height: 2;
+    border-radius: 2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    box-sizing: border-box;
+    color: #666;
+    display: block;
+}
+.rechange_list li a .num{
+	border-bottom: 1px dashed #ddd;
+}
+.rechange_list li a .price strong{
+	color: #000;
+	display: inline-block;
+	margin-right:5px;
+}
+/*按钮*/
+.switch_items{
+	width: 80px;
+	height: 30px;
+	position: relative;
+}
+
+.switch_items input{
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin:0;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	position: absolute;
+	opacity: 0;
+	filter:  opacity(0); 
+	z-index: 3;
+}
+/*默认状态*/
+.switch_items label {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height:30px;
+	display: block;
+	background: #666;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	position: relative;
+}
+.switch_items label:before{
+	content:"";
+	width:26px;
+	height: 26px;
+	display: block;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	background: #fff;
+	top:2px;
+	left: 2px;
+	position: absolute;
+}
+.switch_items label:after{
+	content:"未启用";
+	width:46px;
+	height: 100%;
+	right:4px;
+	top:0;
+	background:none;
+	position: absolute;	
+}
+
+/*关闭*/
+.switch_items:hover label{
+	background:#333;
+}
+.switch_items:hover label:after{
+	content:"启用";
+}
+/* 开启（默认状态）*/
+.switch_items input:checked~label{
+	background:#4b0;
+}
+.switch_items input:checked~label:before{
+	content:"已开启";
+	width:46px;
+	height: 100%;
+	left:4px;
+	top:0;
+	background: none;
+	position: absolute;	
+}
+.switch_items input:checked~label:after{
+	content:"";
+	width:26px;
+	height: 26px;
+	display: block;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	background: #fff;
+	top:2px;
+	right: 2px;
+	position: absolute;
+}
+.switch_items:hover input:checked ~ label{
+	background:#d00;
+}
+.switch_items:hover input:checked~ label:before{
+	content:"禁止";
+}
+/*充值弹框*/
+.modal_list{padding:10px 20px;}
+.modal_list dl{display:block;margin-bottom: 10px;}
+.modal_list dl:after{content:"";display: block;clear: both;}
+.modal_list dl dt{width:130px;height:30px;float:left;text-align:right;display: block;}
+.modal_list dl dd{margin-left:90px;display: block;}
+.modal_tip{width: 310px;
+    margin-top: 10px;
+    padding: 10px 6px;
+    border: 1px solid #FDEEB2;
+    border-width: 1px 2px;
+    color: #333;
+    background: #fff6cc;
+    font-size: 12px;
+}

@@ -1,0 +1,31 @@
+<div>
+    <div class="control-group options r_active" style="display: block;">
+        <div class="add-option js-add-option"style="padding:10px;">
+            <span class="r_active_title">营销活动：</span>
+            <div class="r_active_content" ng-if="!editors[index]['content'].length">
+                <div class="dropdown hover" style="display:inline-block;">
+                    <div class="js-dropdown-toggle dropdown-toggle control-action" href="javascript:void(0);">
+                        <i class="icon-add"></i><a style="margin-left:3px;" href="javascript:void(0);">添加活动</a>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="js-modal-magazine" data-type="feature" href="javascript:void(0);" ng-click="killModelShow(1)">秒杀</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="r_active_content" ng-if="editors[index]['content'].length">
+                <div class="pull-left link-to">
+                    <a href="javascript:void(0);" class="new-window link-to-title kill_title" style="position:relative;overflow:visible;">
+                        <span class="label label-success">
+                            {{editors[index]['content'][0]['activeType']}}
+                            <em class="link-to-title-text" ng-bind="editors[index]['content'][0]['activeName']"></em>
+                        </span>
+                        <div class="delete_success" ng-click="deleteActive()">x</div>
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="js-add-component add-component" ng-click="killModelShow(1)">修改</a>
+            </div>
+        </div>
+    </div>
+</div>

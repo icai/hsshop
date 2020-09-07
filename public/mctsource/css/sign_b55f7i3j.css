@@ -1,0 +1,393 @@
+/*card上面的导航 签到页面*/
+.widget-app-board {
+    padding: 20px;
+    background: #f8f8f8;
+    zoom: 1;
+}
+.ui-box {
+    margin-bottom: 15px;
+}
+.widget-app-board-info {
+    float: left;
+    width: 80%;
+}
+.widget-app-board-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.widget-app-board-info p {
+    line-height: 20px;
+}
+.widget-app-board-control {
+    float: left;
+    width: 20%;
+}
+.ui-switcher-off {
+    background: #666;
+}
+.ui-switcher {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    padding: 2px;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: middle;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.ui-switcher-off:before {
+    top: 2px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 18px;
+    -webkit-transition: rotate 100s;
+    -moz-transition: rotate 100s;
+    transition: rotate 100s;
+}
+
+.ui-switcher:before {
+    position: absolute;
+    left: 2px;
+}
+.ui-switcher-off:after {
+    top: 2px;
+    display: inline-block;
+    width: 62px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: top;
+    content: '\672A\542F\7528';
+    padding-right: 8px;
+}
+.ui-switcher:after {
+    position: absolute;
+    right: 2px;
+}
+.widget-app-board:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.ui-switcher-on:hover {
+    background: #d00;
+}
+.ui-switcher:hover {
+    color: #fff;
+}
+.ui-switcher-on {
+    background: #4b0;
+    color: #fff;
+}
+.ui-switcher-on:before {
+    top: 2px;
+    display: inline-block;
+    width: 62px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: top;
+    content: '\5DF2\542F\7528';
+    padding-left: 8px;
+}
+.ui-switcher:before {
+    position: absolute;
+    left: 2px;
+}
+.ui-switcher-on:after {
+    top: 2px;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 18px;
+    -webkit-transition: rotate 100s;
+    -moz-transition: rotate 100s;
+    transition: rotate 100s;
+}
+.ui-switcher:after {
+    position: absolute;
+    right: 2px;
+}
+.ui-switcher-on:hover:before {
+    content: '\7981\7528'
+}
+/*签到页面右侧*/
+.checkin-snapshot {
+    width: 320px;
+    height: 504px;
+    background-size: cover;
+    background-image: url(../images/checkin_snapshot.png);
+}
+
+/*签到页面左侧*/
+.js-gift-error select{
+    float:left;
+}
+.js-gift-error .opts-wrap{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-left:130px;
+}
+.checkin-rule-list-opt{
+    padding-top:10px;
+    border-top:1px solid #ddd;
+}
+.checkin-rule-wrap{
+    margin-top:10px;
+    border-top:1px solid #ddd;
+}
+.width_30{
+    width:30% !important;
+}
+.width_50{
+    width:50% !important;
+}
+.field-title {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.form-horizontal .controls textarea {
+	width: 80%;
+    height: 80px;
+}
+.rule-list-empty-info {
+    padding: 0 15px 10px 15px;
+    color: #999;
+}
+.editer-content .setting {
+    display: flex;
+    width: 50%;
+}
+.richtext:after{clear:both;display:table;content:'';}
+.checkin-preview-btn-wrap {position: absolute;right: 0;top: -40px;}
+/*.btn:hover,.btn:link,.btn:visited,.btn:active{background:#fff;}*/
+
+/*二维码*/
+.qrcode{height:277px;}
+.popover-qrcode {
+    width: 260px
+}
+.popover.left>.arrow {
+    top: 50%;
+    right: -6px;
+    margin-top: -11px;
+    border-right-width: 0;
+    border-left-color: #999;
+    border-left-color: rgba(0,0,0,.25);
+}
+.qrcode .arrow:after {
+    content: "";
+    border-right-color: #f8f8f8;
+    left: -11px;
+    top: -10px;
+    border-style: solid;
+    border-width: 6px 7px 6px 0;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+}
+.popover-qrcode .popover-content {
+    padding: 0
+}
+.popover-qrcode .popover-qrcode-content {
+    height: 200px
+}
+.popover-qrcode .popover-qrcode-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #E4E4E4
+}
+.popover-qrcode .scan-info {
+    text-align: center
+}
+.popover-qrcode .popover-qrcode-footer {
+    padding: 10px 15px
+}
+.popover-qrcode .close {
+    float: right;
+    margin-top: -3px
+}
+.popover-qrcode .qrcode-wrap {
+    width: 160px;
+    margin: 0 auto
+}
+.popover-qrcode .qrcode-wrap img {
+    height: 160px
+}
+.popover-image-text {
+    border-radius: 0;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #F2F2F2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 310px;
+    -webkit-box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.4)
+}
+.popover-image-text .popover-content {
+    padding: 0
+}
+.popover-image-text ul {
+    margin-left: -20px
+}
+.popover-image-text ul li {
+    float: left;
+    width: 145px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.popover-image-text ul li a {
+    color: #333
+}
+.popover-image-text ul li p {
+    font-size: 14px;
+    line-height: 14px
+}
+.popover-image-text ul .image-text-color-block {
+    border: 1px solid #e5e5e5;
+    height: 80px;
+    margin-top: 10px;
+    background: #f2f2f2
+}
+.popover-image-text ul .multi-image-text .image-text-color-block {
+    height: 35px
+}
+
+/*分享图片*/
+.up_tip{
+    color:#999;
+    font-size: 12px;
+    overflow: hidden;
+    margin-left:100px;
+}
+.add-goods{
+    color:#3197FA;
+    display:inline-block;
+    width:80px;
+    height:80px;
+    background-color: #fff;
+    line-height:80px;
+    text-align: center;
+    cursor: pointer;
+    border:1px dashed #ddd;
+    font-size:12px;
+}
+.add-goods2{
+    position: relative;
+    top: -32px;
+    left: 10px;
+}
+.add-goods:hover,.add-goods:visited,.add-goods:link,.add-goods:active{color:#337ab7;}
+.add-goods input{position: absolute;right: 0;left: 0;top: 0;bottom: 0;opacity: 0;width: 30px;}
+.help-block{margin-left: 10px;}
+.share_img_box{display: inline-block;position: relative;}
+.share_img_box .delete{position: absolute;top: -10px;right: -10px; width: 20px;height: 20px;color: #fff;background: rgba(0,0,0,0.3);text-align: center;line-height: 17px;border-radius: 50%;font-size: 12px;}
+
+.design_bottom{position: fixed;
+    min-width: 770px;
+    bottom: 0;
+    left: 230px;
+    right: 230px;
+    padding: 11px;
+    background-color: #ffc;
+    text-align: center;
+    z-index: 100;
+}
+/*分享图片模态框样式修改*/
+.myModal-adv .modal-content {
+    width:880px;
+    height:715px;
+}
+.myModal-adv .modal-body .category-list-region{
+    width:180px;
+}
+.modal-header .close{
+    margin:15px;
+}
+.myModal-adv .modal-body .attachment-list-region{
+    padding-top:20px;
+    padding-left:170px;
+}
+.add_group_list{
+    width: 120px;
+    margin: 26px auto 12px;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer;
+}
+.add_group_box {
+    width: 206px;
+    height: 129px;
+    background: url(../images/add_group_box.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 99999;
+    padding: 10px 20px 0 20px;
+    box-sizing: border-box;
+    bottom:50px;
+    left: 28px;
+}
+.add_group_title {
+    font-size: 14px;
+    color: #333333;
+}
+.add_group_input {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    height: 32px;
+    line-height: 32px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin:10px auto;
+    font-size: 14px;
+}
+.add_group_btn .btn_left {
+    float: left;
+    background-color: #3197FA;
+    color: #fff;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add_group_btn .btn_right {
+    float: right;
+    background-color: #e6e6e6;
+    color: #000;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.queueList { padding-top:50px;padding-bottom: 50px}
+.category-list { padding:0 20px}
+.myModal-adv .modal-body .category-list-region { background:#fff }
+.myModal-adv .modal-body .category-list-region li{ background:#fff }
+.myModal-adv .modal-body .category-list-region li.active{ background:#f2f2f2 }

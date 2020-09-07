@@ -1,0 +1,36 @@
+.money_red{color:#f60;font-size:24px;}
+.red_f30{color:#f30;}
+/*充值表单*/
+.recharge_items{border:1px solid #e5e5e5;}
+.recharge_items .recharge_header{margin-bottom:15px;font-size:14px;color:#333;background:#f8f8f8;height:40px;line-height:40px;padding-left:12px;border-bottom:1px solid #e5e5e5;}
+.form-horizontal .control-label{font-weight:normal;}
+/*问题说明*/
+.question_items{border:1px solid #e5e5e5;padding:30px 50px;}
+.question_items .question_title{margin-bottom:20px;}
+.question_items h5{font-weight:bold;margin-bottom:8px;}
+.question_items .question_des{margin-bottom:20px;}
+/*支付导航*/
+.js-pay>li{background:#e5e5e5;}
+.js-pay.nav-tabs>li>a {margin-right:0;}
+/*警告框*/
+.wran_item{background:#fff7cc;border:1px solid #fdeeb2;color:#333;margin:20px 0;padding:15px 10px;}
+/*支付盒子*/
+.recharge_wrap{position:relative;margin-bottom:50px;}
+/*线上支付*/
+.QRcode_wrap{width:200px;margin-left:68px;}
+.qrcode_confirm{left:280px;bottom:0px;position:absolute;}
+.QRcode_marke{border:2px solid #979797;width:36px;height:34px;margin-bottom:10px;position:relative;}
+.QRcode_marke:before{content:"";width:13px;height:38px;background:#fff;top:-2px;left:50%;margin-left:-7px;position:absolute;}
+.QRcode_marke:after{content:"";width:40px;height:13px;background:#fff;left:-2px;top:50%;margin-top:-7px;position:absolute;}
+.QRcode_line{width: 38px;height: 2px;background: #979797;margin-top: 13px;margin-left: -3px;position: relative;z-index: 3}
+.recharge_info{margin-bottom:40px;color:#979797;font-size:14px;}
+.pay_question{color: #3283fa;border-color: #3283fa;background: #fff;}
+.pay_question:hover{color:#3283fa;}
+/*线下支付*/
+.gray_bg{padding: 20px;background: #f8f8f8;margin-bottom:10px;}
+.gray_bg>p{margin-bottom: 20px;}
+/*证明*/
+.gray_ccc{color:#ccc;}
+.mgb10{margin-bottom:10px;}
+.mal85{margin-left:85px;}
+.pointer{cursor:pointer;}

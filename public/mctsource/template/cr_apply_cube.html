@@ -1,0 +1,130 @@
+<div class="editer-content">
+    <div>
+        <div class="control-group crcube" style="display: block;">
+           <div class="component-title">
+               <span class="component-title_name">魔方</span>
+           </div>
+            <!-- 选择模板 -->
+            <div class="control-group select-template">
+                <label class="control-label">
+                    选择模板:
+                </label>
+                <div class="controls">
+                    <div class="cube-template {{$index == editors[index].telType?'selected':''}}" ng-repeat="item in cube.template" ng-click="selectedTel($index)">
+                        <div class="cube-template-img_wrapper">
+                            <img ng-src="{{_host + item.img}}" width="90px" height="64px">
+                        </div>
+                        <p class="cube-template-name">{{item.title}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 布局 -->
+            <div class="control-group select-template">
+                <label class="control-label" style="padding-top: 0">
+                    布局:
+                </label>
+                <div class="controls clearfix" style="position: relative;">
+                    <!-- 特例 -->
+                    <div class="cube-layout-item" ng-if="editors[index].telType == 0">
+                        <ul class="cube-row" ng-repeat="item in editors[index].position">
+                            <li class="cube-item" style="width: 161px;height: {{editors[index].aspectRatio == 0?161:161*editors[index].aspectRatio}}px;"></li>
+                        </ul>
+                        <div class="cube-selected {{$index == cube.selectLayoutIndex?'selected':''}}" style="width: 161px;height: {{editors[index].aspectRatio == 0?161:161*editors[index].aspectRatio}}px;top:0px;left:{{$index*161+$index}}px;" ng-repeat="item in editors[index].position" ng-click="selectedLayout($index)">
+                            <div class="cube-selected-text" ng-if="!editors[index].content[$index].img">宽度375像素</div>
+                            <img ng-src="{{editors[index].content[$index].img}}" alt="" ng-if="editors[index].content[$index].img">
+                        </div>
+                    </div>
+                    <div class="cube-layout-item" ng-if="editors[index].telType == 1">
+                        <ul class="cube-row" ng-repeat="item in editors[index].position">
+                            <li class="cube-item" style="width: 107px;height: {{editors[index].aspectRatio == 0?107:107*editors[index].aspectRatio}}px;"></li>
+                        </ul>
+                        <div class="cube-selected {{$index == cube.selectLayoutIndex?'selected':''}}" style="width: 107px;height: {{editors[index].aspectRatio == 0?107:107*editors[index].aspectRatio}}px;top:0px;left:{{$index*107+$index}}px;" ng-repeat="item in editors[index].position" ng-click="selectedLayout($index)">
+                            <div class="cube-selected-text" ng-if="!editors[index].content[$index].img">宽度250像素</div>
+                            <img ng-src="{{editors[index].content[$index].img}}" alt="" ng-if="editors[index].content[$index].img">
+                        </div>
+                    </div>
+                    <div class="cube-layout-item" ng-if="editors[index].telType == 7">
+                        <ul class="cube-row" ng-repeat="item in editors[index].position">
+                            <li class="cube-item" style="width: 64px;height: {{editors[index].aspectRatio == 0?64:64*editors[index].aspectRatio}}px;"></li>
+                        </ul>
+                        <div class="cube-selected {{$index == cube.selectLayoutIndex?'selected':''}}" style="width: 64px;height: {{editors[index].aspectRatio == 0?64:64*editors[index].aspectRatio}}px;top:0px;left:{{$index*64    +$index}}px;" ng-repeat="item in editors[index].position" ng-click="selectedLayout($index)">
+                            <div class="cube-selected-text" ng-if="!editors[index].content[$index].img">宽度150像素</div>
+                            <img ng-src="{{editors[index].content[$index].img}}" alt="" ng-if="editors[index].content[$index].img">
+                        </div>
+                    </div>
+                    <!-- 普通 -->
+                    <div class="cube-layout-item" ng-if="editors[index].telType != 0 && editors[index].telType != 1 && editors[index].telType != 7">
+                        <!-- 布局控制 -->
+                        <ul class="cube-row" ng-repeat="item in [0,1,2,3]">
+                            <li class="cube-item" style="width: 80px;height: {{editors[index].aspectRatio == 0?80:80*editors[index].aspectRatio}}px;" ng-if="editors[index].telType == 2"></li>
+                            <li class="cube-item" style="width: 80px;height: 80px;" ng-if="editors[index].telType != 2" ng-repeat="item in [0,1,2,3]">+</li>
+                        </ul>
+                        <!-- 样式展示 -->
+                        <div class="cube-selected {{$index == cube.selectLayoutIndex?'selected':''}}" ng-if="editors[index].telType == 2" style="width: {{80*item.width+item.width-1}}px;height: {{editors[index].aspectRatio == 0?80:80*editors[index].aspectRatio}}px;;top:{{item.top*80+item.top}}px;left:{{item.left*80+item.left}}px;" ng-repeat="item in cube.template[editors[index].telType].position" ng-click="selectedLayout($index)">
+                            <div class="cube-selected-text" ng-if="!editors[index].content[$index].img">
+                                {{187.5*item.width| number : 0}}x{{187.5*item.height| number : 0}}像素
+                                <div>或等同比例</div>
+                            </div>
+                            <img ng-src="{{editors[index].content[$index].img}}" alt="" ng-if="editors[index].content[$index].img">
+                        </div>
+                        <div class="cube-selected {{$index == cube.selectLayoutIndex?'selected':''}}" ng-if="editors[index].telType != 2" style="width: {{80*item.width+item.width-1}}px;height: {{80*item.height+item.height-1}}px;top:{{item.top*80+item.top}}px;left:{{item.left*80+item.left}}px;" ng-repeat="item in cube.template[editors[index].telType].position" ng-click="selectedLayout($index)">
+                            <div class="cube-selected-text" ng-if="!editors[index].content[$index].img">
+                                {{187.5*item.width| number : 0}}x{{187.5*item.height| number : 0}}像素
+                                <div>或等同比例</div>
+                            </div>
+                            <img ng-src="{{editors[index].content[$index].img}}" alt="" ng-if="editors[index].content[$index].img">
+                        </div>
+                    </div>
+                    <div class="cube-layout-info">选定布局区域，在下方添加图片</div>
+                    <p class="help-block error-message pd_120 fl" ng-show="editors[index].isPromptAddPic" style="padding-left: 0;width: 100%;">请添加图片</p>
+                </div>
+            </div>
+            <div class="cube-margin-box" ng-mousemove="sliderMove($event)" ng-if="!hide">
+                <div class="margin-label">图片间距:</div>
+                <div class="margin-container">
+                    <div class="slider-main">
+                        <div class="slider-container" id="slider-container" ng-click="changeMargin($event)">
+                            <div class="slider-trace" style="width: {{editors[index].margin/30*100}}%;"></div>
+                        </div>
+                        <div class="slider-point-container" style="left: {{editors[index].margin/30*100}}%">
+                            <div class="toolTips-content">
+                                <div class="toolTips-inner">{{editors[index].margin}}</div>
+                                <i class="toolTips-arrow"></i>
+                            </div>
+                            <span class="slider-point" ng-mousedown="enableSlider($event)"></span>
+                        </div>
+                    </div>
+                    <div class="slider-input-container">
+                        <input type="number" class="slider-input" ng-model="editors[index].margin" ng-model-options="{ updateOn: 'blur' }" onkeypress='return( /[\d]/.test(String.fromCharCode(event.keyCode) ) )'>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="cube-margin-box">
+                <div class="margin-label">图片放大:</div>
+                <div class="margin-container">
+                    <input style="position:relative" type="checkbox" name="size" value="1" ng-true-value="1" ng-false-value="0" ng-model="editors[index]['resize_image']" ng-checked="editors[index]['resize_image']==1">点击放大(当图片没有链接时)
+                </div>
+            </div>
+            <!-- 添加图片 -->
+            <div class="cube-add-content">
+                <div class="cube-add-item clearfix">
+                    <div class="cube-add-pic" ng-click="cubeAddPic()" ng-if="!editors[index].content[cube.selectLayoutIndex].img">
+                        <i>+</i>
+                        <div>添加图片</div>
+                    </div>
+                    <div class="cube-change-pic" ng-if="editors[index].content[cube.selectLayoutIndex].img">
+                        <img ng-src="{{editors[index].content[cube.selectLayoutIndex].img}}" alt="">
+                        <p class="cube-afresh-upload" ng-click="cubeAddPic()">重新上传</p>
+                    </div>
+                    
+                    <div class="cube-add-title" ng-if="editors[index].addTitle">
+                        <label>蒙版标题：</label>
+                        <input type="text" ng-model="editors[index].content[cube.selectLayoutIndex].title">
+                    </div>
+                </div>
+                <div class="cube-add-picInfo">友情提示：图片比例与要求的不一致会被裁剪</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="editer-content">
+    <div class="control-group">
+        <label class="control-label">
+            <em class="required">*</em>标题：
+        </label>
+        <div class="controls page_title">
+            <input class="form-control" type="text" name="title" ng-model="editors[index].title" required>
+        </div>
+        <label class="control-label res_time">描述：</label>
+        <div class="controls page_title res_time">
+            <input class="form-control" type="text" name="title" ng-model="editors[index].subtitle">
+        </div>
+        <label class="control-label res_time">是否必填：</label>
+        <div class="controls res_time" style="padding-top: 2px">
+            <input style='vertical-align: middle' ng-model="editors[index]['required']" ng-checked="editors[index]['required']" class="ng-pristine ng-valid ng-touched" type="checkbox" name="title" value=""><span style='vertical-align: middle;margin-left: 5px' >必须填写</span>
+        </div>
+        <div class='res_vote_option'>
+            <p>选项</p>
+        </div>
+        <div class='vote_choice'>
+            <ul>
+                <li ng-repeat="item in editors[index]['sub_rules']">
+                    <span ng-click='removeimgBooking($index)'>x</span>
+                    <div>
+                        <label class="control-label">
+                            <em class="required">*</em>选项：
+                        </label>
+                        <div class="controls">
+                            <div class="controls page_title addImges">
+                                <ul class="module-goods-list clearfix ui-sortable" name="goods">
+                                    <li class="sort ng-scope" ng-show="item.imgflag">
+                                        <a href="javascript:void(0);" target="_blank">
+                                            <img ng-src="{{item.image}}" width="50" height="50">
+                                        </a>
+                                        <a class="close-modal js-delete-goods small" data-id="" title="删除" ng-click="removeShareImg($index)">×</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="js-add-goods add-goods" ng-click="addShareImages($index)">
+                                            <i class="icon-add"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="help-block error-message ng-hide" ng-show="(pageSeting.share_title || pageSeting.share_desc) && !pageSeting.share_img">此项不能为空</p>
+                            </div>
+                            <input class="form-control" type="text" name="option" ng-model='item.title' placeholder='标题'>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class='add_option'>
+            <i class='icon-add'></i>
+            <a class="js-new-field" href="javascript:;" ng-click='addimgBookingOpn()'>增加一个选项</a>
+        </div>
+    </div>
+</div>

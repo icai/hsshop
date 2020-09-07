@@ -1,0 +1,42 @@
+.export_data_content .clearfix li{
+    float:left;
+    margin-left:10px
+}
+
+.export_data_item{
+    border:1px solid #bbb
+}
+
+
+.data_title{
+    font-weight:bold;
+    font-size:15px;
+    line-height:40px;
+    padding:0 15px
+}
+
+.data_title .item_time{
+    text-indent: 100px
+}
+
+.export_data_content{
+    background:#deefff;
+    padding:10px 15px
+}
+
+.data_download input{
+    margin:15px;
+    border:1px solid #bbb;
+    line-height:30px;
+    width:100px;
+    border-radius: 2px
+}
+
+.loading_more{
+    text-align: center;
+    line-height:30px;
+    border:1px solid #bbb;
+    margin-top:15px
+}
+
+.loading_more a{color: #666}

@@ -1,0 +1,120 @@
+/*顶部按钮*/
+.widget-list-filter {
+    margin-bottom: 15px;
+}
+.widget-list-filter:after{
+    clear:both;
+    content:'';
+    display:table;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right!important;
+}
+.switch {
+    width: 60px;
+    height: 26px;
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: #999;
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    transition: all .3s cubic-bezier(.78,.14,.15,.86);
+}
+.switch.actived {
+    border-color: #4b0;
+    background-color: #4b0;
+}
+.switch.actived::after {
+    left: 33px;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.switch::after {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 1px;
+    border-radius: 100%;
+    background-color: #fff;
+    content: " ";
+    cursor: pointer;
+    -webkit-transition: left .3s cubic-bezier(.78,.14,.15,.86);
+    transition: left .3s cubic-bezier(.78,.14,.15,.86);
+}
+.modal{
+    display:block;
+}
+.btn-success {
+    font-size: 13px;
+    border-radius: 2px;
+    background-color: #4B0;
+    border-color: #4B0;
+}
+.btn-success:hover,.btn-success:active,.btn-success:visited,.btn-success:link{
+    background-color: #4B0;
+    border-color: #4B0;
+}
+/*列表*/
+.content .main_content .main_content_title {
+    background: #F2F2F2;
+}
+.content .main_content ul:not(.main_content_title):hover {
+    background: #F8F8F8;
+}
+.content .main_content ul {
+    width: 100%;
+    min-height: 44px;
+    /*line-height: 44px;*/
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    padding: 11px 10px 11px 30px;
+    border-bottom: 1px solid #E5E5E5;
+    justify-content: left;
+    align-items: center;
+}
+.content .main_content ul li{
+    /*padding: 10px;*/
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}
+.content .main_content ul li:nth-of-type(1){
+    width: 10%;
+}
+.content .main_content ul li:nth-of-type(2){
+    width: 45%;
+    text-align:center;
+}
+.content .main_content ul li:nth-of-type(3){
+    width: 45%;
+    overflow:hidden;
+    text-align: center
+}
+.content .main_content ul li:nth-of-type(4){
+    width: 43%;
+    text-align:center;
+}
+.activity_img img{
+    max-width:100px;
+    max-height:100px;
+    display:inline-block;
+}
+[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}

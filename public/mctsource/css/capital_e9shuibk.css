@@ -1,0 +1,14 @@
+/*货币*/
+.coin_header{padding:10px 20px;border:1px solid #dcdcdc;}
+.coin_info{margin-left:100px;padding:15px;border-left: 1px solid #dcdcdc;}
+/*分割线*/
+hr{width: 100%;border:1px dotted #dcdcdc;}
+/*常见问题块*/
+.common_top{}
+.common_top .common_line{width:3px;background:#07d;}
+.question_wrap{
+	padding: 20px;
+	border:1px solid #dcdcdc;
+}
+.question_wrap h5{font-weight: bold;margin-bottom:10px;}
+.question_wrap p{line-height: 30px;}

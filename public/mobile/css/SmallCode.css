@@ -1,0 +1,219 @@
+p {
+	margin-bottom: .1rem;
+}
+.content {
+	padding-bottom: 0;
+	background: #fff;
+}
+section .app_header {
+	background: url("../images/smbanner.png") no-repeat;
+	background-size: cover;
+	height: 6rem;
+	display: flex;
+}
+.app_header a{
+	width: 2.8rem;
+	height: 0.78rem;
+	line-height: 0.78rem;
+	font-size: 0.3rem;
+	color: #ffffff;
+	border: 0.02rem solid #ffffff;
+	display: block;
+	margin: 0 auto;
+	margin-top: 4.3rem;
+	text-align: center;
+}
+.small_title{
+	font-size: 0.4rem;
+	color: #4E5256;
+	text-align: center;
+	font-weight: bold;
+}
+.virtue_p{
+	color: #999999;
+	font-size: 0.26rem;
+	line-height: 0.36rem;
+}
+.small_virtue{
+	padding: 0.88rem 0.32rem 0 0.32rem;
+}
+.small_virtue ul li{
+	display: flex;
+	padding: 0.5rem 0.36rem;
+	border-bottom: 0.02rem solid #E5E5E5;
+}
+.small_virtue ul li:last-child{
+	border-bottom: none;
+}
+.small_virtue ul li div:first-child {
+	width: 1.07rem;
+	margin-top: 0.2rem;
+	margin-right: 0.7rem;
+}
+.small_virtue ul li div:first-child img{
+	width: 100%;
+}
+.virtue_li_title{
+	color: #333333;
+	font-size: 0.32rem;
+	margin-bottom: 0.3rem;
+}
+.small_feature{
+	background-color: #F5F5F7;
+	padding: 0.78rem 0.2rem 0.26rem 0.2rem;
+}
+.small_feature ul{
+	display: flex;
+	flex-wrap:wrap;
+	padding-top: 1.02rem;
+}
+.small_feature ul li{
+	text-align: center;
+	margin-bottom: 0.56rem;
+	width: 50%;
+}
+.small_feature_img{
+	width: 1.66rem;
+	margin: 0 auto;
+}
+.small_feature_img img{
+	width: 100%;
+}
+.small_feature_title{
+	padding: 0.3rem 0 0.2rem 0;
+}
+.small_virtue ul li div.small_serve_div{
+	margin-right: 0.5rem;
+	margin-top: 0;
+}
+.small_virtue ul li.small_serve_li{
+	padding-right: 0;
+	border-bottom: none;
+	padding-bottom: 0.2rem;
+}
+.small_serve{
+	padding-right: 0.2rem;
+	padding-bottom: 0.7rem;
+}
+.small_serve h4{
+	margin-bottom: 0.64rem;
+}
+
+.small_client{
+	width: 100%;
+	background-color: #F5F5F7;
+	padding-bottom: 0.2rem;
+	padding-top: 0.78rem;
+}
+.small_client ul{
+	padding-top: 1.09rem;
+	display: flex;
+	flex-wrap:wrap;
+}
+.small_client ul li{
+	width: 33.333%;
+	text-align: center;
+	margin-bottom: 0.99rem;
+}
+.small_client ul li img{
+	width: 0.9rem;
+	height: 0.9rem;
+	margin-bottom: 0.3rem;
+}
+.small_client ul li p{
+	font-size: 0.28rem;
+	color: #333333;
+}
+.small_scene{
+	padding-top: 0.85rem;
+	padding-bottom: 0.63rem;
+}
+.small_scene ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.96rem 0.52rem 0 0.52rem;
+}
+.small_scene ul li{
+	margin: 0 0.27rem 0.47rem 0.27rem;
+	background-color: #FAFAFA;
+}
+.small_scene ul li img{
+	width: 2.64rem;
+	height: 2.1rem;
+}
+.small_scene ul li div{
+	width: 0.3rem;
+	height: 0.04rem;
+	background-color: #3197FA;
+	margin: 0 auto;
+}
+.small_scene ul li p{
+	height: 0.85rem;
+	line-height: 0.85rem;
+	text-align: center;
+	font-size: 0.28rem;
+	color: #333333;
+}
+.small_industry{
+	width: 100%;
+	height: 7.8rem;
+	background: url("../images/xcx_bg.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.small_industry h4{
+	color: #ffffff;
+	padding-top: 0.8rem;
+	text-align: center;
+	font-size: 0.36rem;
+	font-weight: normal;
+}
+.small_industry div{
+	width: 6.86rem;
+	height: 5.08rem;
+	background: url("../images/industry.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.55rem auto;
+}
+.small_appoin{
+	width: 100%;
+	height: 1.8rem;
+	background: url("../images/yuyuebg.png") no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.small_appoin a span{
+	color: #ffffff;
+	font-size: 0.3rem;
+	vertical-align: middle;
+	margin-right: 0.3rem;
+}
+.small_appoin a p{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.4rem;
+	height: 0.4rem;
+	background: url("../images/small_arrow.png") no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0.08rem;
+}
+
+.order-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: .33rem 0;
+	text-align: center;
+	color: #2589FF;
+	font-size: .36rem;
+	font-weight: 700;
+	background-color: rgba(255, 255, 255, .9)
+}
+.order-footer:link,
+.order-footer:active,
+.order-footer:visited{
+	color: #2589FF;
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/**
+* creater 华亢 2018/07/09
+*/
+/* 采用grid 8 进行布局 */
+.red {
+  color: red; }
+
+.hide {
+  display: none; }
+
+.noData {
+  font: 48px/64px '微软雅黑';
+  font-weight: bold;
+  color: #f2f2f2;
+  margin: 24px 0;
+  text-align: center; }
+
+/**
+* creater 华亢 2018/07/09
+*/
+.top-wrap .top {
+  font-size: 16px; }
+.top-wrap .top ul {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6; }
+.top-wrap .top ul li {
+  display: inline-block;
+  padding: 0 8px; }
+.top-wrap .top ul .schedule {
+  cursor: pointer; }
+.top-wrap .top ul .checked {
+  font-weight: bold;
+  color: #3197FA; }
+
+.article-wrap {
+  width: 80%;
+  margin: 0 auto; }
+
+/* 协议弹窗 */
+.layui-layer {
+  border-radius: 5px; }
+.layui-layer .layui-layer-title {
+  font-size: 24px;
+  line-height: 64px;
+  background: white;
+  text-align: center;
+  height: 64px; }
+.layui-layer .layui-layer-close {
+  margin-right: 8px; }
+.layui-layer .layui-layer-close::before {
+  content: 'x';
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: white; }
+.layui-layer .layui-layer-ico {
+  background: none; }
+
+#contract {
+  padding: 8px 64px;
+  position: relative; }
+#contract p {
+  line-height: 24px; }
+#contract .final {
+  text-align: right;
+  font: 16px/32px '';
+  padding-bottom: 32px; }
+#contract .marginBottom {
+  margin-bottom: 8px; }
+#contract .marginBottom2 {
+  margin-bottom: 16px; }
+
+/* status 2 确认协议 */
+.comfirm-service .comfirm-title {
+  font: 14px/32px '微软雅黑';
+  margin: 24px 0;
+  margin-left: 10%; }
+.comfirm-service .comfirm-table table {
+  width: 80%;
+  border: 1px solid #e6e6e6;
+  margin: 0 auto; }
+.comfirm-service .comfirm-table table thead {
+  background: #f2f2f2; }
+.comfirm-service .comfirm-table table thead tr th {
+  border: 1px solid #e6e6e6; }
+.comfirm-service .comfirm-table table thead tr th:nth-of-type(2) {
+  width: 400px; }
+.comfirm-service .comfirm-table table tbody tr td {
+  border: 1px solid #e6e6e6; }
+.comfirm-service .comfirm-table table tbody tr td:nth-of-type(2) {
+  width: 400px;
+  padding: 24px; }
+.comfirm-service .comfirm-submit {
+  width: 80%;
+  margin: 16px auto;
+  background: #f5f5f5;
+  padding: 40px 24px 32px; }
+.comfirm-service .comfirm-submit .will-pay {
+  text-align: right; }
+.comfirm-service .comfirm-submit .will-pay .getPrice {
+  font-size: 24px; }
+.comfirm-service .comfirm-submit .will-pay .getPrice:before {
+  content: '￥';
+  color: #FF4343;
+  font-size: 16px; }
+.comfirm-service .comfirm-submit .clearfix {
+  padding: 24px 0 0; }
+.comfirm-service .comfirm-submit .clearfix .pull-left {
+  padding-top: 8px; }
+.comfirm-service .comfirm-submit .clearfix .pull-left label {
+  font-weight: normal; }
+.comfirm-service .comfirm-submit .clearfix .pay-now {
+  background: #ff4342;
+  color: white;
+  padding: 8px 40px;
+  border-radius: 5px; }
+
+.getVersionName {
+  color: #FF4343; }
+
+/*# sourceMappingURL=serviceDetail.css.map */

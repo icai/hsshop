@@ -1,0 +1,54 @@
+.flex_star{display: flex; justify-content: flex-start; align-items: center;}
+.flex_end{display: flex; justify-content: flex-end; align-items: center;}
+.flex_center{display: flex; justify-content: space-between; align-items: center;}
+.flex_around{display: flex; justify-content: space-around; align-items: center;}
+.flex_middle{display: flex; justify-content: center; align-items: center;}
+.rtv{position: relative;}
+.abt{position: absolute; top: 0;}
+.fix{position: fixed;}
+.wd_30{width: 30%;}
+.wd_40{width: 40%;}
+.a_active{color: dodgerblue;}
+.active{background: #3388FF; }
+.text_left{text-align: left !important;}
+.content{height: auto;}
+.content a{color: rgb(51,150,255);}
+.content a:hover{color: #2277FF;}
+.content label{font-weight: normal;}
+/*搜索*/
+.show_data{overflow: hidden;}
+.show_data .searchDiv{float: right; margin: 20px 0; width: 400px; }
+.show_data .searchDiv select{width: 160px;}
+.show_data .searchDiv input{width: 160px;}
+
+.table{margin-top: 50px;}
+.table .intro{}
+.table .intro .logo{width: 80px;height: 80px;display: inline-block;}
+.table .intro .name{margin-left: 5px;color: #38f;vertical-align: top;}
+.noData{padding:50px;text-align: center;font-size: 16px;color: #666; border:1px solid #eee;margin-top: 75px;}
+/*add by 韩瑜 2018-8-16 样式优化*/
+.nav-tabs>li>a:hover { border-color: #ddd #ddd #ddd;}
+.nav-tabs {
+    margin-bottom: 10px;
+}
+.nav-tabs>li>a {
+    border-radius: 0px;
+    margin-right: -1px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+.mgl10 {
+    margin-left: 10px;
+}
+td p{
+	overflow: hidden;
+    word-wrap: break-word;
+    width: 320px;
+}
+.flo-lef{
+	display: inline;
+}
+td{
+    vertical-align: middle!important;
+}

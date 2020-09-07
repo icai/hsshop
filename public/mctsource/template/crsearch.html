@@ -1,0 +1,56 @@
+<div class="control-group search_wrap">
+	<P class="title">
+        <span>商品搜索</span>
+    </P>
+    <div class="search_item">
+	    <label class="control-label search_bg">背景色：</label>
+	    <div class="controls">
+	        <input class="form-control color_input_l" type="color" value="#f8f8f8" name="color" ng-model="editors[index]['bgColor']">
+	        <!--add by 韩瑜 2018-9-5 添加16进制颜色输入框-->
+	        <input class="form-control color_input " maxlength="7" type="text" value="#f8f8f8" ng-model="editors[index]['bgColor']" >
+	        <!--end-->
+	        <span class="item_text" ng-click="clearcolor($scope)">重置</span>
+	    </div>
+    </div>
+    <div class="search_item">
+	    <label class="control-label">搜索框文本：</label>
+	    <div class="controls">
+	        <input class="form-control" maxlength="15" type="text" value="最多15个字" ng-model="editors[index]['searchName']">
+	        <span class="item_text item_text_r" ng-click="clearsearch($scope)">删除</span>
+	    </div>
+    </div>
+    <div class="search_item">
+	    <label class="control-label">样式选择：</label>
+	    <div class="controls">
+	        <label class="radio inline">
+	            <input type="radio" name="searchType" value="1" ng-model="editors[index]['searchStyle']" ng-checked="editors[index]['searchStyle']==1">样式一
+	        </label>
+	        <label class="radio inline">
+	            <input type="radio" name="searchType" value="2" ng-model="editors[index]['searchStyle']" ng-checked="editors[index]['searchStyle']==2">样式二
+	        </label>
+	        <label class="radio inline">
+	            <input type="radio" name="searchType" value="3" ng-model="editors[index]['searchStyle']" ng-checked="editors[index]['searchStyle']==3">样式三
+	        </label>
+	    </div>
+    </div>
+    <div class="search_item">
+	    <div class="custom-search" ng-style="{backgroundColor:editors[index]['bgColor']}" ng-show="editors[index]['searchStyle']==1">
+	        <div class="search">
+	        	<img ng-src="{{host+'mctsource/images/search_icon_2.png'}}" alt="" />
+	        	<span>{{editors[index]['searchName']}}</span>
+	        </div>
+	    </div>
+	    <div class="custom-search" ng-style="{backgroundColor:editors[index]['bgColor']}" ng-show="editors[index]['searchStyle']==2">
+	        <div class="search search2">
+	        	<img ng-src="{{host+'mctsource/images/search_icon_2.png'}}" alt="" />
+	        	<span>{{editors[index]['searchName']}}</span>
+	        </div>
+	    </div>
+	    <div class="custom-search" ng-style="{backgroundColor:editors[index]['bgColor']}" ng-show="editors[index]['searchStyle']==3">
+	        <div class="search search3">
+	        	<img ng-src="{{host+'mctsource/images/search_icon_2.png'}}" alt="" />
+	        	<span>{{editors[index]['searchName']}}</span>
+	        </div>
+	    </div>
+    </div>
+</div>

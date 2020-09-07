@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "servicePublic";
+
+/* 协议弹窗 */
+.layui-layer{
+    border-radius: 5px;
+    .layui-layer-title{
+        font-size:24px;
+        line-height:64px;
+        background:white;
+        text-align:center;
+        height:64px;
+    }
+    .layui-layer-close{
+        margin-right:8px;
+        &::before{
+            content: 'x';
+            font-size:16px;
+            width: 24px;
+            height:24px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            background: rgba(0,0,0,.5);
+            border-radius: 50%;
+            color:white
+        }
+
+    }
+    .layui-layer-ico{
+        background: none
+    }
+}
+#contract{
+    padding:8px 64px;
+    position: relative;
+    p{
+        line-height:24px
+    }
+    .final{
+        text-align: right;
+        font:16px/32px '';
+        padding-bottom: 32px;
+    }
+    .marginBottom{
+        margin-bottom: 8px
+    }
+    .marginBottom2{
+        margin-bottom: 16px
+    }
+}
+
+/* status 2 确认协议 */
+.comfirm-service{
+    .comfirm-title{
+        font:14px/32px '微软雅黑';
+        margin:24px 0;
+        margin-left:10%;
+        
+    }
+    .comfirm-table{
+        table{
+            width: 80%;
+            border:1px solid #e6e6e6;
+            margin:0 auto;
+            thead{
+                background: #f2f2f2;
+                tr{
+                    th{
+                        border:1px solid #e6e6e6;
+                    }
+                    th:nth-of-type(2){
+                        width:400px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        border:1px solid #e6e6e6;
+                    }
+                    td:nth-of-type(2){
+                        width:400px;
+                        padding:24px;
+                    }
+                }
+            }
+        }
+    }
+    .comfirm-submit{
+        width: 80%;
+        margin:16px auto;
+        background: #f5f5f5;
+        padding:40px 24px 32px;
+        .will-pay{
+            text-align: right;
+            .getPrice{
+                font-size:24px;
+                &:before{
+                    content: '￥';
+                    color:#FF4343;
+                    font-size:16px
+                }
+            }
+        }
+        .clearfix{
+            padding:24px 0 0;
+            .pull-left{
+                padding-top:8px;
+                label{
+                    font-weight:normal
+                }
+            }
+            .pay-now{
+                background: #ff4342;
+                color:white;
+                padding:8px 40px;
+                border-radius: 5px
+            }
+        }
+    }
+}
+.getVersionName{
+    color:#FF4343
+}
